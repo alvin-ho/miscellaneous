@@ -1,0 +1,1 @@
+192.168.184.184 - [2016-07-20 11:23:00]  /api/registration.php - SQLSTATE[01000]: Warning: 1265 Data truncated for column 'create_date' at row 1 - - {"title":"mr","firstname":"test","lastname":"abc","email":"abc@example.com","tnc":"on"}

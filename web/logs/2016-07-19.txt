@@ -1,0 +1,3 @@
+192.168.184.184 - [2016-07-19 11:47:02]  /html/rsvp.php?_q=Ynd4ejQx - SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'vipmaster_id' - - {"_q":"Ynd4ejQx"}
+192.168.184.184 - [2016-07-19 12:23:17]  /html/rsvp.php?_q=Ynd4ejQx - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'exception' in 'field list' - - {"_q":"Ynd4ejQx"}
+192.168.184.184 - [2016-07-19 12:24:26]  /html/rsvp.php?_q=Ynd4ejQx - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'exception' in 'field list' - - {"_q":"Ynd4ejQx"}

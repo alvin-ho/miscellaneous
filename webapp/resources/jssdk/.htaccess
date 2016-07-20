@@ -1,0 +1,2 @@
+RewriteEngine ON
+RewriteRule Fbsdk.js Fbsdk.php [L]

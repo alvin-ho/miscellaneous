@@ -1,0 +1,5 @@
+# enable SSI disable directory browsing
+AddType text/html .html
+AddHandler server-parsed .html
+Options -Indexes +FollowSymLinks +Includes
+DirectoryIndex index.php index.html disabled

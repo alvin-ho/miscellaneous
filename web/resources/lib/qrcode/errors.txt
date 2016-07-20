@@ -1,0 +1,1224 @@
+2014-11-13 10:09:07: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:13:26: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:13:27: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:16:15: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:16:22: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:16:26: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:16:34: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:16:39: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:16:46: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:17:56: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:18:10: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:30:06: empty string!!!2014-11-13 10:30:15: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:31:15: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:42:38: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:42:54: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:43:11: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:44:53: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 10:48:59: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 12:20:07: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-13 12:20:10: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\facebookapps\php\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\facebookapps\php\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 11:59:07: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 12:01:23: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 12:01:24: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 12:04:20: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 12:10:10: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 12:11:03: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 12:11:57: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 12:12:05: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 12:12:07: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 12:12:20: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 12:12:49: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 12:12:57: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 12:12:57: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-17 12:12:57: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-19 07:06:32: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+2014-11-19 07:08:53: <br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\Program Files (x86)\xampp\htdocs\henderson_mcp\include\lib\qrcode\qrmask.php</b> on line <b>155</b><br />
