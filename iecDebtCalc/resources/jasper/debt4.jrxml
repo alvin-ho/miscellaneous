@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="debt2" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="63a1b05d-513a-4f2b-abf3-966cfffc8d44">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="c2e4445a-1b38-4707-ba1c-caa4226d6407"/>
+	<parameter name="PATH" class="java.lang.String"/>
+	<parameter name="XAISLABELEN" class="java.lang.String"/>
+	<field name="category" class="java.lang.String"/>
+	<field name="amount" class="java.lang.Number"/>
+	<field name="series" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="99" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="c7f891e8-9156-4863-8676-75d9712488f9" mode="Opaque" x="0" y="65" width="802" height="30" forecolor="#4B2384" backcolor="#2CB7B4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[         Personal loan overview]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="f0a6dd86-5793-4ac0-98f5-4eee4266eaa0" x="680" y="-20" width="123" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="13c5a8e1-5278-483b-b0da-27890a69d194" mode="Transparent" x="625" y="15" width="180" height="33" forecolor="#4B2384" backcolor="#1D70B7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="20" isBold="false" isItalic="false" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Debt calculator"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="5f9a9afa-afc7-4e65-91dc-820e87de3f9b" x="0" y="0" width="140" height="51"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/logo-iec.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="611688f4-dd09-41ab-8a57-ad241d53b75d" x="1" y="65" width="30" height="30" forecolor="#2CB7B4" backcolor="#2CB7B4"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/icon-report.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<summary>
+		<band height="434" splitType="Stretch">
+			<stackedBarChart>
+				<chart isShowLegend="true" customizerClass="org.hksfc.sfc.iec.pdf.BarChartCustomizer" renderType="draw" theme="default">
+					<reportElement uuid="2df5180b-8175-4597-a7a0-c6335a2f2dc7" mode="Transparent" x="0" y="3" width="802" height="250"/>
+					<chartTitle position="Top">
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartSubtitle>
+					<chartLegend position="Right">
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartLegend>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{series}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{amount}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot isShowLabels="false" isShowTickLabels="true" isShowTickMarks="false">
+					<plot orientation="Horizontal">
+						<seriesColor seriesOrder="0" color="#2CB7B4"/>
+						<seriesColor seriesOrder="1" color="#F2C700"/>
+						<seriesColor seriesOrder="2" color="#4B2384"/>
+					</plot>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat>
+							<labelFont>
+								<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+							</tickLabelFont>
+						</axisFormat>
+					</categoryAxisFormat>
+					<valueAxisLabelExpression><![CDATA[$P{XAISLABELEN}]]></valueAxisLabelExpression>
+					<valueAxisFormat>
+						<axisFormat>
+							<labelFont>
+								<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+							</tickLabelFont>
+						</axisFormat>
+					</valueAxisFormat>
+				</barPlot>
+			</stackedBarChart>
+			<frame>
+				<reportElement uuid="489d4817-0d69-474b-ace9-3f0c4db2c0db" x="0" y="258" width="802" height="170"/>
+				<staticText>
+					<reportElement uuid="420fbb75-e74a-4af4-a61b-df712f682cfc" x="17" y="32" width="785" height="20"/>
+					<textElement>
+						<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[• Do a budget to work out your monthly spending, savings and borrowings and check how much you can afford repayments ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8807dee6-4d0c-4b76-9708-978114337e9b" x="10" y="9" width="792" height="20" forecolor="#2CB7B4"/>
+					<textElement>
+						<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[Review the following before you take out personal loan:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="11b047da-617d-42f2-b699-5573b356d801" x="17" y="55" width="785" height="20"/>
+					<textElement>
+						<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[• Only borrow what you need and what you can comfortably repay. Do not be tempted to borrow more even if you qualify for a bigger amount ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="6a7821e2-aebb-491d-a1ed-905ad7ad9f37" x="17" y="78" width="785" height="20"/>
+					<textElement>
+						<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[• Shop around for interest rates and watch for any extra charges]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="0d56a4f1-189b-4787-a8d7-7803bcf4120a" x="17" y="101" width="785" height="20"/>
+					<textElement>
+						<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[• Choose the right type of loan that meets your needs]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d3eff80c-e9d6-4bc4-8281-a8198808cd29" x="17" y="125" width="785" height="20"/>
+					<textElement>
+						<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[• Make your payments on time to avoid penalties and pay off your debt quickly to minimise total interest payments]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="ed541a08-10e5-431a-aa35-d1537504e67f" x="17" y="148" width="785" height="20"/>
+					<textElement>
+						<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[• Avoid unnecessary multiple sources of credit to keep an easy track of repayments]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</summary>
+</jasperReport>

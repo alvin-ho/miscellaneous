@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="budget" pageWidth="595" pageHeight="842" columnWidth="565" leftMargin="15" rightMargin="15" topMargin="15" bottomMargin="15" uuid="545f16be-495c-46e6-93fd-f23b557e520c">
+	<property name="ireport.zoom" value="1.3310000000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="447"/>
+	<parameter name="p3BarTitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Annual figure"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3SavingTitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Saving distribution"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3ExpenseTitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Expense distribution"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Saving1" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[38]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Saving2" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[22]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Saving3" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[40]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense1" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[12]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense2" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense3" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense4" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense5" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense6" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense7" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense8" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense9" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[5]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense10" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense11" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Saving1Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Saving/Investment - Regular"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Saving2Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Saving/Investment - Lump sum"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Saving3Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Retirement schemes"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense1Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Household"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense2Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Transport"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense3Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Food and drinks"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense4Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Leisure/Lifestyle"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense5Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Shopping"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense6Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Health and beauty"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense7Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Education and profession"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense8Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Family and friends"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense9Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Taxation"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense10Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Financial commitments"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense11Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Miscellaneous"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PATH" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Budget planner"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Subtitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Summary"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense12" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense13" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense12Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Miscellaneous"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense13Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Miscellaneous"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3IncomeTitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Income distribution"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Income1Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Salary"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Income2Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Spouse's Salary"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Income3Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Other income"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Income1" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[12]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Income2" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[12]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Income3" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Result" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["ShortFall HKD 0.0"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3ResultBgSrc" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ResultIcon" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p3E1" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p3E2" class="java.lang.Number"/>
+	<parameter name="p3E3" class="java.lang.Number"/>
+	<parameter name="p3E4" class="java.lang.Number"/>
+	<parameter name="p3E1Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p3E2Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p3E3Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p3E4Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="DollarPrefix" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="amount" class="java.lang.Number">
+		<fieldDescription><![CDATA[amount]]></fieldDescription>
+	</field>
+	<field name="category" class="java.lang.String">
+		<fieldDescription><![CDATA[category]]></fieldDescription>
+	</field>
+	<variable name="color" class="java.lang.String">
+		<initialValueExpression><![CDATA["#51A6A2"]]></initialValueExpression>
+	</variable>
+	<variable name="amount_1" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{amount}]]></variableExpression>
+	</variable>
+	<summary>
+		<band height="812">
+			<pieChart>
+				<chart customizerClass="org.hksfc.sfc.iec.pdf.PiePlotCustomizer" renderType="draw" theme="aegean">
+					<reportElement uuid="90dbb28e-01c5-4abe-aa19-1739d3e8d6f1" mode="Transparent" x="0" y="431" width="565" height="130" isRemoveLineWhenBlank="true"/>
+					<chartTitle>
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartSubtitle>
+					<chartLegend position="Right">
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartLegend>
+				</chart>
+				<pieDataset>
+					<pieSeries>
+						<keyExpression><![CDATA["儲蓄及投資"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Saving2}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Saving2}.intValue() > 0) ? $P{p3Saving2}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["退休計劃"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Saving3}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Saving3}.intValue() > 0) ? $P{p3Saving3}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+				</pieDataset>
+				<piePlot isShowLabels="true" isCircular="true" labelFormat="">
+					<plot>
+						<seriesColor seriesOrder="0" color="#51A6A2"/>
+						<seriesColor seriesOrder="1" color="#DB603F"/>
+						<seriesColor seriesOrder="2" color="#F1B648"/>
+					</plot>
+					<itemLabel>
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</itemLabel>
+				</piePlot>
+			</pieChart>
+			<pieChart>
+				<chart customizerClass="org.hksfc.sfc.iec.pdf.PiePlotCustomizer" theme="aegean">
+					<reportElement uuid="12a2cace-5895-47de-ad6d-87b2fe3dda36" x="0" y="586" width="565" height="189"/>
+					<chartTitle>
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartSubtitle>
+					<chartLegend position="Right">
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartLegend>
+				</chart>
+				<pieDataset>
+					<pieSeries>
+						<keyExpression><![CDATA["家居"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense1}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense1}.intValue() > 0) ? $P{p3Expense1}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["交通"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense2}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense2}.intValue() > 0) ? $P{p3Expense2}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["食品及飲品"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense3}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense3}.intValue() > 0) ? $P{p3Expense3}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["親友"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense8}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense8}.intValue() > 0) ? $P{p3Expense8}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["稅項"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense9}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense9}.intValue() > 0) ? $P{p3Expense9}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["財務承擔"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense10}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense10}.intValue() > 0) ? $P{p3Expense10}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["生活消閒"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense4}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense4}.intValue() > 0) ? $P{p3Expense4}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["購物"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense5}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense5}.intValue() > 0) ? $P{p3Expense5}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["健康美容"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense6}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense6}.intValue() > 0) ? $P{p3Expense6}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["教育及專業資格"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense7}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense7}.intValue() > 0) ? $P{p3Expense7}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["養老準備"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense11}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense11}.intValue() > 0) ? $P{p3Expense11}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["金融及法律意見"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense12}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense12}.intValue() > 0) ? $P{p3Expense12}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["雜項"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense13}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense13}.intValue() > 0) ? $P{p3Expense13}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+				</pieDataset>
+				<piePlot labelFormat="">
+					<plot labelRotation="0.0">
+						<seriesColor seriesOrder="0" color="#1C94A4"/>
+						<seriesColor seriesOrder="1" color="#8E7355"/>
+						<seriesColor seriesOrder="2" color="#9DBF8D"/>
+						<seriesColor seriesOrder="3" color="#DC543A"/>
+						<seriesColor seriesOrder="4" color="#91BDD8"/>
+						<seriesColor seriesOrder="5" color="#AC63E9"/>
+						<seriesColor seriesOrder="6" color="#FE6965"/>
+						<seriesColor seriesOrder="7" color="#ECB284"/>
+						<seriesColor seriesOrder="8" color="#7E8AA2"/>
+						<seriesColor seriesOrder="9" color="#466673"/>
+						<seriesColor seriesOrder="10" color="#FBB144"/>
+						<seriesColor seriesOrder="11" color="#E0669C"/>
+						<seriesColor seriesOrder="12" color="#29BC72"/>
+					</plot>
+					<itemLabel>
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</itemLabel>
+				</piePlot>
+			</pieChart>
+			<textField>
+				<reportElement uuid="df5be0dd-2cf9-497b-93a3-b5085058fa84" x="0" y="406" width="555" height="25" forecolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="15" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["儲蓄及投資分佈"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b96901a3-0c65-491f-a1d5-de9164e8e892" x="0" y="561" width="555" height="25" forecolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="15" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["支出分佈"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0161e35c-c6fb-4255-b2f9-8fe4f5458de6" x="0" y="106" width="555" height="25" forecolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="15" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["按月計算金額 (港元)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="99de9128-a175-40e4-9055-c8b2fab9978f" x="328" y="10" width="240" height="33" forecolor="#4B2384" backcolor="#4B2384"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="20" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["個人收支計算機"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ceb23d65-75f7-4862-91f5-88071c8abda2" x="0" y="251" width="555" height="25" forecolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="15" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["收入分佈"]]></textFieldExpression>
+			</textField>
+			<pieChart>
+				<chart customizerClass="org.hksfc.sfc.iec.pdf.PiePlotCustomizer" renderType="draw" theme="aegean">
+					<reportElement uuid="9e4cd1c1-17dd-4b28-8300-d9af2d62894b" mode="Transparent" x="0" y="276" width="565" height="130" isRemoveLineWhenBlank="true"/>
+					<chartTitle position="Top">
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartSubtitle>
+					<chartLegend position="Right">
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartLegend>
+				</chart>
+				<pieDataset>
+					<pieSeries>
+						<keyExpression><![CDATA["薪金"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Income1}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Income1}.intValue() > 0) ? $P{p3Income1}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["配偶薪金"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Income2}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Income2}.intValue() > 0) ? $P{p3Income2}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["其他收入"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Income3}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Income3}.intValue() > 0) ? $P{p3Income3}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+				</pieDataset>
+				<piePlot isShowLabels="true" isCircular="true" labelFormat="">
+					<plot>
+						<seriesColor seriesOrder="0" color="#96B9D6"/>
+						<seriesColor seriesOrder="1" color="#E4B385"/>
+						<seriesColor seriesOrder="2" color="#4C6472"/>
+					</plot>
+					<itemLabel>
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</itemLabel>
+				</piePlot>
+			</pieChart>
+			<image>
+				<reportElement uuid="14e597ef-7b1e-4180-b02b-68faffec939a" x="442" y="134" width="52" height="52"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ResultIcon}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="915816a9-d808-45bd-9c92-c9b91812c182" x="179" y="134" width="52" height="52"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/icon-report-saving.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="882a7370-4fcf-4cf3-93ed-d8044d62edba" x="301" y="134" width="52" height="52"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/icon-report-expenses.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="651a1291-44e0-40e1-902f-040f4626258a" x="58" y="134" width="52" height="52"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/icon-report-income.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="5bbe5600-dbf5-4aa8-8afd-019a7ffc9b89" x="58" y="213" width="52" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DollarPrefix}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d4e3cfba-3929-4a42-b6e1-b8b43eea26c1" x="59" y="198" width="52" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E1Title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4f0f3b60-bb51-4156-aeac-5949a7bc0204" x="172" y="198" width="67" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E2Title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a8b6a81d-f1fb-4c6c-b7e9-ef414f0703ad" x="301" y="198" width="52" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E3Title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="64f24961-0657-4c63-a027-f1041c8508d6" x="436" y="198" width="64" height="15" forecolor="#65A7FC">
+					<printWhenExpression><![CDATA[new Boolean($P{p3E4}.doubleValue() > 0)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E4Title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="41041443-915d-42ad-8392-346f04caf549" x="179" y="213" width="52" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DollarPrefix}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d3b68007-1522-4e3c-ad73-3cb9b3477a50" x="300" y="213" width="52" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DollarPrefix}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9825ec04-28f3-404b-841f-4643b082b716" x="436" y="213" width="64" height="15" forecolor="#65A7FC">
+					<printWhenExpression><![CDATA[new Boolean($P{p3E4}.doubleValue() > 0)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DollarPrefix}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="b7eaaa33-cc31-4094-b653-422ae8ba4c82" x="33" y="228" width="102" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="3350ecdf-7842-44e9-8bf6-0b64d459092f" x="154" y="228" width="102" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="baf8b28a-2fed-46b2-89e2-250bdf2e5c91" x="277" y="228" width="102" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E3}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="6c4da87f-3761-451e-ae58-0b8fb74d40f3" x="419" y="228" width="102" height="15" forecolor="#65A7FC">
+					<printWhenExpression><![CDATA[new Boolean($P{p3E4}.doubleValue() > 0)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E4}]]></textFieldExpression>
+			</textField>
+			<textField pattern="new Boolean($P{p3E4}.doubleValue() &lt;= 0)">
+				<reportElement uuid="64bb7364-2605-4522-9b2a-e9ec35caa700" x="437" y="198" width="64" height="15" forecolor="#DB603F">
+					<printWhenExpression><![CDATA[new Boolean($P{p3E4}.doubleValue() <= 0)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E4Title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a4e9d04d-ce17-4bfa-8704-0016ed30eca0" x="436" y="213" width="64" height="15" forecolor="#DB603F">
+					<printWhenExpression><![CDATA[new Boolean($P{p3E4}.doubleValue() <= 0)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DollarPrefix}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="2f50dc0d-02d1-4c5b-873f-6da997cdeaf3" x="419" y="228" width="102" height="15" forecolor="#DB603F">
+					<printWhenExpression><![CDATA[new Boolean($P{p3E4}.doubleValue() <= 0)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="MYuen HK Medium" isBold="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E4}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement uuid="f4da7015-69a9-43de-8d91-833d68654c0e" x="256" y="157" width="20" height="5" forecolor="#FFFFFF" backcolor="#88878C"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="ec79c79d-8f4a-4fde-bada-3d110137a287" mode="Opaque" x="134" y="157" width="20" height="5" forecolor="#FFFFFF" backcolor="#88878C"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="a48a5124-a7e9-47db-8e2e-1b4286b83351" x="391" y="154" width="20" height="5" forecolor="#FFFFFF" backcolor="#88878C"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="f2d4672f-f05f-44f4-9319-d8fc5a085fc5" x="391" y="164" width="20" height="5" forecolor="#FFFFFF" backcolor="#88878C"/>
+			</rectangle>
+			<image>
+				<reportElement uuid="5e45bbba-e99c-4edf-b9cb-8636d30abe64" x="0" y="0" width="140" height="51"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/logo-iec.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="c5b645ea-f2c6-4fe5-8ddc-8eaf3ae9e501" mode="Opaque" x="0" y="65" width="565" height="25" forecolor="#4B2384" backcolor="#2DBDB6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["         概要"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="f8a7a91f-9ebc-42c0-959b-4cd30814cd82" x="6" y="70" width="18" height="18"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/ico-report.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</summary>
+</jasperReport>

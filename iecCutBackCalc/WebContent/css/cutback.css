@@ -1,0 +1,987 @@
+@charset "utf-8";
+body {
+	font-size: 10px;
+	/*	background: none repeat scroll 0 0 #E3E3E3;*/
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+}
+
+.footer {
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+	background-color: #4a2680;
+	height: 131px;
+	color: #fff;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	font-size: 13px;
+}
+
+.footer p {
+	line-height: 1.5;
+}
+
+.footer a {
+	color: #fff;
+}
+
+.footer .footerinner {
+	width: 970px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.footer .row {
+	width: 100%;
+	clear: both;
+	display: table;
+}
+
+.footer .row1 {
+	height: 46px;
+	margin: 18px -18px;
+}
+
+.footer .row2 {
+	margin-top: 18px
+}
+
+.footer .logo {
+	width: 162px;
+	padding: 0 18px;
+	border-right: 1px solid #fff;
+	height: 46px;
+	display: table-cell
+}
+
+.footer .psBox {
+	padding: 0 18px;
+	height: 46px;
+	vertical-align: middle;
+	display: table-cell
+}
+
+.footer .rights {
+	display: table-cell
+}
+
+.footer .nevBox {
+	display: table-cell;
+	margin: 0 -10px;
+}
+
+.footer .nevBox a {
+	float: left;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	padding: 0 10px;
+}
+
+
+/* HEADER WRAPPER */
+
+.header .wrapper,
+.content .wrapper {
+	width: 970px;
+	margin: 0 auto;
+	min-width: 970px;
+	position: relative;
+}
+
+.header .wrapper {
+	z-index: 300;
+}
+
+a.logo-iec {
+	float: left;
+}
+
+.header {
+	background: #fff;
+	border-top: 25px solid #fff;
+	height: 85px;
+	margin-bottom: 15px;
+}
+
+.header .wrapper {
+	width: 970px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header .wrapper .logo {
+	background: url('images/net_worth_result01_03b_03.gif') no-repeat 0 0;
+	width: 230px;
+	height: 85px;
+	display: block;
+}
+
+.cutbacktitle-01 {
+	text-align: center;
+	background: url(../images/common/calculator/cut_back_result01_03.png) no-repeat 236px center;
+	padding: 15px 0
+}
+
+.cutbacktitle-01-tc {
+	text-align: center;
+	background: url(../images/common/calculator/cut_back_result01_03.png) no-repeat 319px center;
+	;
+	padding: 15px 0
+}
+
+body {
+	font-size: 10px;
+	background: #fff;
+	/*background: #fff;*/
+	 
+}
+
+div.header {
+	background: #ffffff;
+}
+
+a.btn {
+	background: #4c2683;
+	color: #fff !important;
+	padding: 6px 8px;
+	width: auto !important;
+	display: inline-block;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+a.btn:hover {
+	background: #701b74;
+	font-weight: normal;
+}
+
+.cutback {
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+	font-size: 10px;
+}
+
+.cutback-wrapper {
+	margin: 0 auto;
+	padding: 0;
+	width: 970px;
+}
+
+.cutback-wrapper h1 {
+	padding: 20px 0;
+	/*	padding:0;*/
+}
+
+.cutback .cutback-wrapper p {
+	font-size: 15px;
+}
+
+.calcContainer {
+	margin: 0;
+	padding: 0;
+	height: 1%;
+}
+
+.calcContainer:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0pt;
+	visibility: hidden;
+}
+
+.calcHeaderContainer {
+	margin: 0;
+	padding: 0;
+	height: 60px;
+}
+
+.calcHeaderContainer:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0pt;
+	visibility: hidden;
+}
+
+.calcHeaderLeft {
+	margin: 0;
+	padding: 0;
+	width: 714px;
+	float: left;
+}
+
+.calcHeaderRight {
+	margin: 0 0 0 1px;
+	padding: 0;
+	width: 255px;
+	height: 60px;
+	float: left;
+	background-color: #4c2683;
+}
+
+
+/*POPUP CSS FOR THE CALCULATOR*/
+.fancybox-content{padding: 5px;}
+.calculator-popup {
+	width: 100%;
+	background: none;
+/*	    padding: 0 10px;*/
+}
+
+.calculator-popup .calculator-popup-t {
+	background: url(../images/common/calculator/bg-calculator-popup-t.png) 0 0 no-repeat;
+	width: 877px;
+	height: 37px;
+}
+
+.calculator-popup .calculator-popup-b {
+	background: url(../images/common/calculator/bg-calculator-popup-b.png) 0 0 no-repeat;
+	width: 877px;
+	height: 37px;
+}
+
+.calculator-popup .calculator-popup-innerwrapper {
+/*	background: url(../images/common/calculator/bg-calculator-popup-m.png) 0 0 repeat-y;*/
+	width: 100%;
+	background-color: #fff;
+	-moz-border-radius: 10px;
+	     border-radius: 10px;
+/*	margin: 12px auto;*/
+	-moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.37);
+	     box-shadow: 0 0 12px rgba(0, 0, 0, 0.37);
+	padding: 30px 0;
+	
+	
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner {
+	padding: 15px 50px;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner h1 {
+	margin-top: 0;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner .tac {
+	text-align: center;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner .btn {
+	width: 120px !important;
+	font-size: 1.4em;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner ul li {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.cutback ul.tab {
+	position: relative;
+	/* height: 60px;*/
+	/*height: 30px;*/
+}
+
+.cutback ul.tab li {
+	float: left;
+	width: 653px;
+	height: 60px;
+	margin-right: 1px;
+	position: relative;
+	margin-bottom: 0 !important;
+	background-color: #48b6bd
+}
+
+.cutback ul.tab li a {
+	color: #fff;
+	font-size: 1.5em;
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+	width: 583px;
+	height: 43px;
+	/*display: table-cell; background: #48b6bd;top: -1px; */
+	top: 0px \9;
+	padding-left: 70px;
+	position: relative;
+	/*padding-top: 17px;*/
+}
+
+.cutback ul.tab li a span {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	background: #48b6bd;
+	text-align: left;
+}
+
+.cutback ul.tab li a span.cutback_title {
+	top: 17px;
+	left: 70px;
+	width: 400px;
+	height: 0px;
+}
+
+.cutback ul.tab li a span.assumption {
+	top: 0px;
+}
+
+.cutback ul.tab li a:hover,
+.cutback ul.tab li a.active {
+	background: none;
+}
+
+.cutback ul.tab li a:hover span,
+.cutback ul.tab li a.active span {
+	background: #48b6bd;
+}
+
+.cutback ul.tab li a:hover span.cutback_title,
+.cutback ul.tab li a.active span.cutback_title {
+	background: none;
+}
+
+.cutback ul.tab li.tab-assumption {
+	width: 59px;
+	height: 59px;
+}
+
+.cutback ul.tab li.tab-assumption a {
+	width: 59px;
+}
+
+.cutback .landingMenu {
+	margin: 0;
+	padding: 0;
+	height: 1%;
+	position: relative;
+}
+
+.cutback .landingMenu:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0pt;
+	visibility: hidden;
+}
+
+.cutback .landingMenu .col1 {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 60px;
+	height: 60px;
+	background-color: #48b6bd;
+}
+
+.cutback .landingMenu .col2 {
+	margin: 0 1px 0 0;
+	padding: 0;
+	float: left;
+	width: 594px;
+	height: 60px;
+	background-color: #48b6bd;
+}
+
+.cutback .landingMenu .col2 span,
+.cutback .reportMenu .col2 span {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #4c2683;
+	position: absolute;
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+	top: 16px;
+	left: 70px;
+}
+
+.cutback .landingMenu .col3 {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 59px;
+	height: 60px;
+	background-color: #48b6bd;
+}
+
+.cutback .reportMenu {
+	margin: 0;
+	padding: 0;
+	height: 1%;
+	position: relative;
+}
+
+.cutback .reportMenu:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0pt;
+	visibility: hidden;
+}
+
+.cutback .reportMenu .col1 {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 60px;
+	height: 60px;
+	background-color: #48b6bd;
+}
+
+.cutback .reportMenu .col2 {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 654px;
+	height: 60px;
+	background-color: #48b6bd;
+}
+
+.cutback .cutback-wrapper .floatR {
+	float: right;
+}
+
+.cutback .cutback-wrapper .floatL {
+	float: left;
+}
+
+.cutback .cutback-wrapper .close-all {
+	font-size: 1.5em;
+}
+
+.cutback .cutback-wrapper .form-wrapper .form-innerwrapper {
+	display: none;
+	width: 970px;
+	padding: 20px 60px 60px;
+	background: #fff;
+	box-sizing: border-box;
+	border: 4px solid #48b6bd;
+	margin-top: 1px;
+	margin-bottom: 40px;
+}
+
+.cutback .cutback-wrapper .form-wrapper .form-innerwrapper.active {
+	display: block;
+}
+
+.cutback .cutback-wrapper .calcContainerRight ul.expand-list li {
+	background: url(../images/common/calculator/bg-calculator-plus-right.gif) 0 20px no-repeat;
+}
+
+.cutback .cutback-wrapper .calcContainerRight ul.expand-list li.open {
+	background: url(../images/common/calculator/bg-calculator-minus-right.gif) 0 20px no-repeat;
+}
+
+.cutback .cutback-wrapper ul.expand-list li {
+	padding: 15px 0 5px;
+	border-bottom: 1px #e3e3e3 solid;
+	padding-left: 15px;
+	background: url(../images/common/calculator/bg-calculator-plus-right.gif) 0px 20px no-repeat;
+}
+
+.cutback .cutback-wrapper ul.expand-list li.open {
+	background: url(../images/common/calculator/bg-calculator-minus-right.gif) 0px 20px no-repeat;
+}
+
+.cutback .cutback-wrapper ul.expand-list li h2 {
+	font-weight: normal;
+	margin: 0;
+	color: #4a2680;
+	padding-bottom: 15px;
+	margin-left: -15px;
+	padding-left: 55px;
+	font-size: 1.4em !important;
+}
+
+.cutback .cutback-wrapper ul.expand-list li table,
+.rating table {
+	display: none;
+	width: 100%;
+	border: 0;
+	border-spacing: 0;
+	*border-collapse: collapse;
+}
+
+.cutback .cutback-wrapper table tr td,
+.rating table tr td {
+	padding-bottom: 3px;
+	border: none;
+	font-size: 15px !important;
+}
+
+.rating table tr.savings {
+	display: none;
+}
+
+.rating table tr td p {
+	margin: 0;
+	padding: 0;
+}
+
+.rating table tr td p span {
+	color: #4c2683;
+	font-weight: bold;
+}
+
+.rating table tr td.width1 {
+	width: 26px;
+}
+
+.rating table tr td.width2 {
+	width: 220px;
+}
+
+.report {
+	margin: 0;
+	padding: 0;
+}
+
+.cutback .form-wrapper .report h3 {
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #492580;
+}
+
+.billboardContainer {
+	margin: 0;
+	padding: 0;
+	/*height:1%;*/
+}
+
+.billboardContainer .billboardItem {
+	color: #f0c600;
+}
+
+.billboardContainer .billboardPrice {
+	color: #4c2683;
+	font-weight: bold;
+}
+
+.billboardContainer .billboardPrice.first {
+	font-size: 22px;
+}
+
+.billboardContainer .billboardPrice.second {
+	font-size: 18px;
+}
+
+
+/*
+.billboardContainer.last {
+	border-bottom:1px solid #CCC;
+}
+.billboardContainer:after {
+	clear:both;
+	content:".";
+	display:block;
+	height:0pt;
+	visibility:hidden;
+}
+.cutback .form-wrapper .billboardCol {
+	margin:0 5px 0 0;
+	padding:10px;
+	float:left;
+	width:197px;
+	position:relative;
+}
+.cutback .form-wrapper .billboardCol.noborder {
+	border:none;
+}
+.cutback .form-wrapper .billboardCol h4 {
+	margin:0;
+	padding:0;
+	font-size:16px;
+	font-weight:bold;
+	color:#492580;
+}
+.cutback .form-wrapper .billboardCol p {
+	margin:0;
+	padding:0;
+}
+.cutback .form-wrapper .billboardCol p span.billboardPrice {
+	color:#00b0f0;
+	font-weight:bold;
+}
+.cutback .form-wrapper .billboardCol p span.billboardItem {
+	color:#f0c600;
+}
+.cutback .form-wrapper .billboardCol .billboardColLeft {
+	margin:0;
+	padding:0;
+	float:left;
+	width:20px;
+}
+.cutback .form-wrapper .billboardCol .billboardColRight {
+	margin:0;
+	padding:0;
+	float:left;
+	width:177px;
+}
+*/
+
+.cutback .cutback-wrapper ul.expand-list li.open table {
+	display: block;
+}
+
+.cutback .cutback-wrapper ul.expand-list li a {
+	outline: 0;
+}
+
+.cutback .cutback-wrapper ul.expand-list li a h2 {
+	position: relative;
+}
+
+.cutback .cutback-wrapper ul.expand-list li a h2 img {
+	position: absolute;
+	top: -5px;
+	left: 16px;
+}
+
+.cutback .cutback-wrapper table tr td.topic {
+	color: #48b6bd;
+}
+
+.cutback .cutback-wrapper table tr td.topic img {
+	margin-right: 10px;
+}
+
+.cutback .cutback-wrapper input.input-other,
+.cutback .cutback-wrapper table tr td select,
+.cutback .cutback-wrapper .form-wrapper .form-innerwrapper table tr td input[type="text"] {
+	border: 1px #d3d3d3 solid;
+	padding: 4px;
+}
+
+.cutback .cutback-wrapper table tr td select {
+	width: 80%;
+}
+
+.cutback .cutback-wrapper table tr td input[type="text"] {
+	width: 80%;
+}
+
+.cutback .cutback-wrapper table tfoot tr td {
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+
+.cutback .cutback-wrapper .form-wrapper .form-innerwrapper a.btn {
+	width: 140px !important;
+	float: right;
+	margin-left: 10px;
+}
+
+.cutback .cutback-wrapper .tab-report {
+	width: 714px !important;
+	display: none;
+}
+
+.cutback .cutback-wrapper .tab-report a {
+	color: #fff;
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+	width: 644px !important;
+	height: 43px;
+	display: table-cell;
+	background: #48b6bd !important;
+	padding-left: 70px;
+	position: relative;
+	padding-top: 17px;
+}
+
+.cutback .cutback-wrapper .tab-report span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	background: #48b6bd !important;
+	text-align: center;
+}
+
+.cutback .cutback-wrapper .otherSavings {
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+.cutback .cutback-wrapper .otherSavings table {
+	margin: 0;
+	padding: 0;
+	table-layout: auto;
+}
+
+.cutback .cutback-wrapper .otherSavings table tr th {
+	color: #492580;
+	font-weight: bold;
+	text-align: left;
+	font-size: 16px;
+}
+
+.cutback .cutback-wrapper .otherSavings table tr td span.otherItem {
+	color: #f0c600;
+}
+
+.cutback .cutback-wrapper .otherSavings table tr td span.otherPrice {
+	color: #00B0F0;
+	font-weight: bold;
+}
+
+.calcHeaderRight .share-wrapper {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 1px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.calcHeaderRight .share-wrapper a {
+	margin: 10px;
+	padding: 1px 0;
+	display: inline-block;
+}
+
+.calcHeaderRight .summary {
+	height: 60px;
+	background: #48b6bd;
+	display: table-cell;
+	vertical-align: middle;
+	width: 176px;
+	color: #fff;
+	font-size: 2em;
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+	padding-left: 70px;
+}
+
+.calcHeaderRight .summary span {
+	position: absolute;
+	top: 31px;
+	left: 0;
+	display: inline-block;
+	height: 46px;
+	width: 60px;
+	background: #4c2683;
+	text-align: center;
+	padding-top: 14px;
+}
+
+.cutback .cutback-wrapper .willSave {
+	margin: 0 0 20px;
+	padding: 0 0 15px 0;
+	border-bottom: 1px solid #CCC;
+	position: relative;
+}
+
+.cutback .cutback-wrapper .willSave h3 {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.cutback .cutback-wrapper .willSave p {
+	margin: 0 0 5px 0;
+	padding: 0;
+	text-align: center;
+	font-size: 22px;
+}
+
+.cutback .cutback-wrapper .willSave p.price,
+.cutback .cutback-wrapper .willSave p.annualExpense {
+	font-weight: bold;
+	color: #4c2683;
+}
+
+.jqplot-data-label {
+	font-size: 1.8em;
+	color: #fff;
+}
+
+.jqplot-table-legend {
+	font-size: 1.5em;
+}
+
+.summaryContainer {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+.summaryContainer .totalSave {
+	margin: 15px 0 15px 0;
+	padding: 0;
+	border-bottom: 1px solid #CCC;
+}
+
+.summaryContainer .totalSave p {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+.summaryContainer .totalSave p.price {
+	font-size: 16px;
+	color: #4c2683;
+	font-weight: bold;
+}
+
+.summaryContainer .rating {
+	margin: 0;
+	padding: 0;
+}
+
+.summaryContainer .rating h3 {
+	margin: 10px 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	color: #492580;
+}
+
+.padding_left {
+	padding-left: 15px!important;
+}
+
+.jqplot-table-legend .jqplot-table-legend-label {
+	margin: 0;
+	padding: 0;
+}
+
+.jqplot-table-legend {
+	margin: 0 6px 6px 6px !important;
+}
+
+.btnContainer {
+	margin: 0;
+	padding: 0;
+	height: 54px;
+}
+
+.donext {
+	margin: 0;
+	padding: 10px 0 0 0;
+	border-top: 1px solid #CCCCCC;
+}
+
+.donext h2 {
+	color: #4c2683 !important;
+}
+
+.donext ul {
+	margin: 5px 0 0 0;
+	padding: 0 0 0 19px;
+	list-style-type: disc;
+}
+
+.donext ul li {
+	margin: 0;
+	padding: 0 0 3px 0;
+	font-size: 15px;
+	color: #666666;
+	list-style: disc !important;
+}
+
+.rating {
+	margin: 0 auto;
+	padding: 50px 0 0 0;
+	width: 530px;
+	height: 120px;
+}
+
+.rating:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0pt;
+	visibility: hidden;
+}
+
+.rating-col-left {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 306px;
+}
+
+
+/*
+.rating-col-left p {
+	margin:0;
+	padding:0;
+	font-size:16px !important;
+	font-weight:bold;
+	color:#4c2683;
+	position:absolute;
+	top:35px;
+	left:47px;
+}
+.rating-col-left p a {
+	color:#4c2683;
+	text-decoration:underline;
+}
+*/
+
+.rating-col-right {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 220px;
+}
+
+.rating-col-right p {
+	margin: 0;
+	padding: 0;
+	color: #4c2683;
+	text-align: center;
+}
+
+.rating-col-right p.title {
+	font-weight: bold;
+}
+
+.rating-col-right ul {
+	margin: 0 auto;
+	padding: 14px 0 0 0;
+	list-style: none;
+	width: 172px;
+}
+
+.rating-col-right ul li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 34px;
+	color: #4c2683;
+	text-align: center;
+}
+
+.ratingThanks {
+	margin: 0;
+	padding: 40px 0 0 0;
+}
+
+.ratingThanks p {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	text-align: center;
+}
+
+
+/*
+.footer .click-link-wrapper .innerwrapper ul li.enews a.btn {
+	font-size:12px;
+}
+*/
+
+.billboardContainer table.blank-table tbody tr td {
+	padding-bottom: 20px !important;
+}

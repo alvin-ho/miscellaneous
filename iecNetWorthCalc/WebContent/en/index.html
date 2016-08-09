@@ -1,0 +1,628 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Net worth calculator</title>
+	<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+	<meta name="description" content="" />
+	<meta name="robots" content="all" />
+	<meta name="author" content="" />
+	<meta name="rating" content="General" />
+	<!-- Social Link -->
+	<meta property="og:type" content="website" />
+	<!-- must be absolute path to make stable reference for facebook, should not be an internal or private network -->
+	<meta property="og:image" content="https://www.thechinfamily.hk/tools/networth/common/fbimages/fbimage.jpg" />
+	<meta property="og:image:secure_url" content="https://www.thechinfamily.hk/tools/networth/common/fbimages/fbimage.jpg" />
+	<!-- ended -->
+	<meta property="og:image:type" content="image/jpg" />
+	<meta property="og:url" content="https://www.thechinfamily.hk/tools/networth/en/index.html" />
+	<meta property="og:title" content="Net worth calculator" />
+	<meta property="og:description" content="Check out how good you are at managing your wealth! Use our calculator to work out if what you own outweighs what you owe." />
+	<!-- ended -->
+
+	<!-- jQuery lib -->
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../js/jquery-migrate-1.2.1.min.js"></script>
+
+
+	<link href="../css/html4-reset.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/default.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/layout.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/jquery.fancybox-1.3.4.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="../js/jquery-ui-1.11.1/jquery-ui.css" type="text/css" rel="stylesheet" media="all" />
+
+	<link href="../css/footer/lib/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../css/footer/lib/footer.css" rel="stylesheet" type="text/css" />
+	<script src="../css/footer/lib/bootstrap.min.js" type="text/javascript"></script>
+
+	<!-- Fancybox for DISCLAIMER -->
+	<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.js"></script>
+	<script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui-1.11.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/d3.v3.min.js"></script>
+	<script type="text/javascript" src="../js/RadarChart.js"></script>
+	<script type="text/javascript" src="../js/d3-transform.js"></script>
+	<script type="text/javascript" src="../js/numeral.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.browser.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="../js/function.js"></script>
+	<script type="text/javascript" src="../js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="../js/jspdf.debug.js"></script>
+	<script type="text/javascript" src="../js/jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="../js/jspdf.plugin.png_support.js"></script>
+	<script type="text/javascript" src="../js/main_pdf_en.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7132094/6453152/css/fonts.css" />
+	<script type="text/javascript" src="https://fast.fonts.net/jsapi/c550c076-1bd6-411f-ac61-2ea18430c967.js"></script>
+
+
+
+	<style>
+		@font-face {
+			font-family: 'Gotham Rounded A';
+			src:url('../css/GothamRnd-Book.eot') format( 'eot'),
+				url('../css/GothamRnd-Book.woff') format( 'woff'),
+				url('../css/GothamRnd-Book.otf') format( 'otf'),
+				url('../css/GothamRnd-Book.ttf') format( 'truetype');
+		}
+	</style>
+
+
+	<!--
+	<script>
+		function fbShare(url, title, descr, image, winWidth, winHeight) {
+			var winTop = (screen.height / 2) - (winHeight / 2);
+			var winLeft = (screen.width / 2) - (winWidth / 2);
+			window.open('https://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
+		}
+	</script>
+-->
+
+	<!-- <a href="javascript:fbShare('https://www.thechinfamily.hk/tools/networth/en/index.html', 'IEC Net worth calculator', 'Check out how good you are at managing your wealth! Use our calculator to work out if what you own outweighs what you owe.', 'https://www.thechinfamily.hk/web/images/tc/tools-and-resources/tools/tools-head-banner_tc.jpg', 520, 350)" class="icoFb"></a>-->
+
+
+
+
+	<!-- Google Code for Remarketing Tag -->
+	<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: https://google.com/ads/remarketingsetup
+--------------------------------------------------->
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 926048988;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+	</script>
+	<noscript>
+		<div style="display:inline;">
+			<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/926048988/?value=0&amp;guid=ON&amp;script=0" />
+		</div>
+	</noscript>
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window,
+			document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '1666299540302495');
+		fbq('track', "PageView");
+	</script>
+	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1666299540302495&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+
+
+
+</head>
+
+<body class="en">
+	<div class="header">
+		<div class="wrapper">
+			<a href="https://www.thechinfamily.hk/web/en/" class="logo"></a>
+		</div>
+	</div>
+	<!-- /header -->
+	<div class="calculator">
+		<h1>Net worth calculator</h1>
+		<div class="inner">
+			<p>Knowing your net worth is important to assessing your financial situation and achieving your financial goals. This net worth calculator helps you work out if what you own outweighs what you owe and therefore helping you to check out how good you are at managing your wealth.</p>
+			<a href="javascript:;" class="btnFancy"></a>
+			<form id="cal_form" action="../SpreadSheet?locale=en" method="POST">
+				<div class="dataInner">
+					<div class="newLeft">
+						<div class="dataDiv"><span class="text">Gross annual salary</span>
+							<label>HKD
+								<input type="text" maxlength="13" name="grossSalary" id="g_1" value="" placeholder="0" onkeypress="return validateQty(event);">
+							</label>
+						</div>
+						<div class="dataDiv"><span class="text">Annual extra income from savings and investment</span>
+							<label>HKD
+								<input type="text" maxlength="13" id="g_2" name="extraIncome" value="" placeholder="0" onkeypress="return validateQty(event);">
+							</label>
+						</div>
+					</div>
+					<div class="newRight">
+						<div class="dataDiv right"><span class="text">Gross annual expenses</span>
+							<label>HKD
+								<input type="text" maxlength="13" id="g_3" name="grossExpenses" value="" placeholder="0" onkeypress="return validateQty(event);">
+							</label>
+						</div>
+						<div class="dataDiv right"><span class="text">Income tax</span>
+							<label>HKD
+								<input type="text" maxlength="13" maxlength="13" name="incomeTax" id="g_4" value="" placeholder="0" onkeypress="return validateQty(event);">
+							</label>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="assetsInner">
+					<a href="javascript:;" class="btnCollapse">Collapse all</a>
+					<h3>Assets<a href="javascript:;" class="btnToolTips" title="Please input the current market value of your assets."></a></h3>
+					<div class="box liquidAssets">
+						<h4>Liquid assets</h4>
+						<div class="dataDiv icoCash"><span class="text">Cash</span><span class="slider" id="a1Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" name="liquidCash" id="a_1" value="" placeholder="0" data-this-target="icoCash" data-max-val="50000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoSavings"><span class="text">Savings account</span><span class="slider" id="a2Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_2" name="liquidSavings" value="" placeholder="0" data-this-target="icoSavings" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoCurrent"><span class="text">Current account</span><span class="slider" id="a3Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_3" name="liquidCurrent" value="" placeholder="0" data-this-target="icoCurrent" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoFixedDeposit"><span class="text">Fixed deposit</span><span class="slider" id="a3aSlider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_3a" name="liquidFixed" value="" placeholder="0" data-this-target="icoFixedDeposit" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoOtherLiquidAssets"><span class="text">Other liquid assets</span><span class="slider" id="a3bSlider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_3b" name="liquidOther" value="" placeholder="0" data-this-target="icoOtherLiquidAssets" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+					</div>
+					<div class="box investmentAssets">
+						<h4>Investment assets</h4>
+						<div class="dataDiv icoProperties"><span class="text">Investment properties</span><span class="slider" id="a4Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_4" name="investmentProperties" value="" placeholder="0" data-this-target="icoProperties" data-max-val="5000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoMpf"><span class="text">MPF / ORSO / Retirement fund<a href="javascript:;" class="btnToolTips" title="For ORSO employee, benefits are determined by a formula which usually take into account years of service and your final salary. Please input your best estimate."></a></span><span class="slider" id="a5Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_5" name="investmentMpf" value="" placeholder="0" data-this-target="icoMpf" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoInsurance"><span class="text">Cash value of life insurance<a href="javascript:;" class="btnToolTips" title="Please refer to your policy statement or check with your insurance agent."></a></span><span class="slider" id="a6Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_6" name="investmentInsurance" value="" placeholder="0" data-this-target="icoInsurance" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoFunds"><span class="text">Funds</span><span class="slider" id="a7Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_7" name="investmentFunds" value="" placeholder="0" data-this-target="icoFunds" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoStocks"><span class="text">Stocks</span><span class="slider" id="a8Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_8" name="investmentStocks" value="" placeholder="0" data-this-target="icoStocks" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoBonds"><span class="text">Bonds</span><span class="slider" id="a9Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_9" name="investmentBonds" value="" placeholder="0" data-this-target="icoBonds" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoOther"><span class="text">Other investment assets</span><span class="slider" id="a10Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_10" name="investmentOther" value="" placeholder="0" data-this-target="icoOther" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+					</div>
+					<div class="box personalAssets">
+						<h4>Personal assets</h4>
+						<div class="dataDiv icoResidential"><span class="text">Residential property</span><span class="slider" id="a11Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_11" name="personalResidential" value="" placeholder="0" data-this-target="icoResidential" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoJewellery"><span class="text">Jewellery, watches and other accessories</span><span class="slider" id="a12Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_12" name="personalJewellery" value="" placeholder="0" data-this-target="icoJewellery" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoCar"><span class="text">Car</span><span class="slider" id="a13Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_13" name="personalCar" value="" placeholder="0" data-this-target="icoCar" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoPersonalUse"><span class="text">Other assets for personal use</span><span class="slider" id="a14Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="a_14" name="personalUse" value="" placeholder="0" data-this-target="icoPersonalUse" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+					</div>
+				</div>
+				<div class="liabilitiesInner">
+					<h3>Liabilities</h3>
+					<div class="box liabilitiesAssets">
+						<div class="dataDiv icoMortgage">
+							<span class="text">Outstanding mortgage loan</span>
+							<span class="slider" id="l1Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="l_1" name="liabilitiesMortgage" value="" placeholder="0" data-this-target="icoMortgage" data-max-val="5000000" data-monthly="1" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv question question1">
+							<span class="text">How much is your monthly repayment<br>on this mortgage loan?</span>
+							<span class="slider" id="l2Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="l_2" name="liabilitiesQuestion1" value="" placeholder="0" data-this-target="question1" data-max-val="50000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+							<span class="caption2">The amount you entered in &quot;Your monthly repayment&quot; must be lower than or equal to that in &quot;Your loan balance&quot;</span>
+						</div>
+						<div class="dataDiv icoCarLoan">
+							<span class="text">Outstanding car loan</span>
+							<span class="slider" id="l3Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="l_3" name="liabilitiesCarLoan" value="" placeholder="0" data-this-target="icoCarLoan" data-max-val="1000000" data-monthly="2" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv question question2">
+							<span class="text">How much is your monthly repayment<br>on this car loan?</span>
+							<span class="slider" id="l4Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="l_4" name="liabilitiesQuestion2" value="" placeholder="0" data-this-target="question2" data-max-val="50000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+							<span class="caption2">The amount you entered in &quot;Your monthly repayment&quot; must be lower than or equal to that in &quot;Your loan balance&quot;</span>
+						</div>
+						<div class="dataDiv icoCredit">
+							<span class="text">Outstanding credit card</span>
+							<span class="slider" id="l5Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="l_5" name="liabilitiesCredit" value="" placeholder="0" data-this-target="icoCredit" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoOverdraft">
+							<span class="text">Outstanding overdraft</span>
+							<span class="slider" id="l6Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="l_6" name="liabilitiesOverdraft" value="" placeholder="0" data-this-target="icoOverdraft" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv icoOtherLoan">
+							<span class="text">Other loan(s)<a href="javascript:;" class="btnToolTips" title="(eg student loan, personal loan,credit card cash instalment, tax loan and renovation loan)"></a></span>
+							<span class="slider" id="l7Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="l_7" name="liabilitiesOtherLoan" value="" placeholder="0" data-this-target="icoOtherLoan" data-max-val="500000" data-monthly="3" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+						</div>
+						<div class="dataDiv question question3">
+							<span class="text">How much is your monthly repayment<br>on these loans?</span>
+							<span class="slider" id="l8Slider"></span>
+							<label>HKD
+								<input type="text" maxlength="13" id="l_8" name="liabilitiesQuestion3" value="" placeholder="0" data-this-target="question3" data-max-val="50000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(Please input the value in the text box.)</p>
+							<span class="caption2">The amount you entered in &quot;Your monthly repayment&quot; must be lower than or equal to that in &quot;Your loan balance&quot;</span>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="clearfix"></div>
+			<div class="totalInner">
+				<div class="totalAssets">
+					<h3>Total assets: HKD <span>900,000,000</span></h3>
+				</div>
+				<div class="totalLiabilities">
+					<h3>Total liabilities: <span> HKD 900,000,000</span></h3>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="endInner">
+				<h3>Your total net worth: HKD <span> HKD 900,000,000</span></h3>
+				<a href="javascript:;" class="btnCheck">Check how good are you at managing your wealth</a>
+				<a href="javascript:;" class="btnReset">Reset</a>
+				<div class="socIco">
+					<a href="javascript:$('#cal_form').submit();" class="icoDoc"></a>
+					<a href="javascript:;" class="icoPrint" target="_blank"></a>
+					<a href="javascript:;" class="icoPdf" target="_blank"></a>
+					<a href="javascript:;" class="icoEmail icoEmail_en"></a>
+					<!--					<a href="javascript:fbShare('https://www.thechinfamily.hk/tools/networth/en/index.html', 'IEC Net worth calculator', 'Check out how good you are at managing your wealth! Use our calculator to work out if what you own outweighs what you owe.', 'https://www.thechinfamily.hk/web/images/tc/tools-and-resources/tools/tools-head-banner_tc.jpg', 520, 350)" class="icoFb"></a>-->
+					<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://www.thechinfamily.hk/tools/networth/en/index.html" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false" class="icoFb"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="result">
+		<!--
+		<div class="titleBar titleBar-summary">
+			<div class="row">
+				<p class="textBox">Summary</p>
+				<a href="javascript:;" class="btnFancy"></a>
+			</div>
+		</div>
+-->
+		<h2>How good are you at managing your wealth?</h2>
+		<div class="inner">
+			<p>There are many indicators that help illustrate your wealth management status; some key elements are your emergency fund, debt management and money management.</p>
+			<div class="chart" id="body">
+				<div class="emergencyFund">Emergency fund<span></span></div>
+				<div class="moneyManagement">Money management<span></span></div>
+				<div class="debtManagement">Debt management<span></span></div>
+				<div id="chart"></div>
+				<div class="hints">
+					<span class="left">Need attention</span>
+					<span class="right">Under control</span>
+				</div>
+			</div>
+			<div class="emergencyFunds resultBox">
+				<h4>Emergency funds</h4>
+				<h5>Your liquidity ratio <strong><span>1</span></strong></h5>
+				<p class="error">Please click “back” below to input your income and expenses.</p>
+				<div class="contentBox">
+					<p>The liquidity ratio is calculated by dividing your liquid assets by monthly expense. This ratio can be interpreted as having sufficient funds reserved for emergency use when unexpected event occurs. It is recommended that your emergency fund should cover between three to six months of your living expenses. If your liquidity ratio is below 3, it means that your emergency fund may not be adequate to meet your needs. You should consider saving more; or accessing an emergency fund from other sources such as family members.</p>
+				</div>
+				<span class="line"></span>
+			</div>
+			<div class="debtManagement resultBox">
+				<h4>Debt management</h4>
+				<h5>Your debt servicing ratio <strong><span>40</span>%</strong></h5>
+				<p class="error">Please click “back” below to input your income and expenses.</p>
+				<div class="contentBox">
+					<p>Debt servicing ratio is the percentage of your gross monthly income that goes towards paying debts and is calculated by dividing your monthly liabilities by your gross monthly income. It is essentially the ratio of your monthly debt obligations to your monthly income. Monthly debt obligations include all monthly repayments of all debt obligations (eg mortgage loans and all other personal loans). The lower the debt servicing ratio you have, the better your debt management status is.</p>
+					<p>Debt can be a growing problem if not managed properly. Even if you just owe a little, always make payments on time to keep your debt under control. Additional interest and /or penalty charges can add up quickly if you get behind on repayments.</p>
+					<p>You can consider managing your debts with the following options:</p>
+					<ul>
+						<li>Consider reducing the total outstanding debt and interest you have to pay. The repayment period will be shortened and amount of total interest to be paid will be smaller if your monthly payment amount is higher.</li>
+						<li>Pay off your debt as much as you can each month, at least pay the minimum you owe on each loan as this will protect your credit score. If you can afford paying more, pay the loan with the highest interest rate first.</li>
+						<li>Consider consolidating your loans, lines of credit and credit card balances into a single loan with a set repayment schedule.</li>
+						<li>Tell your lender that you’re experiencing financial difficulty. Sometimes, you may be able to extend the term of a loan or arrange to postpone repayments for a temporary period.</li>
+					</ul>
+				</div>
+				<span class="line"></span>
+			</div>
+			<div class="moneyManagement resultBox">
+				<h4>Money management</h4>
+				<h5>Your monthly savings ratio <strong><span>80</span>%</strong></h5>
+				<p class="error">Please click “back” below to input your income and expenses.</p>
+				<div class="contentBox">
+					<p>Savings ratio is the proportion of income which has been saved and is calculated by dividing your monthly surplus by your monthly income. The higher the savings ratio you have, the better your money management status is. Whatever your age or circumstances, it is good practice to work out your goals and start saving as early as you can.</p>
+					<p>Here are some tips helping you to save money and budget better:</p>
+					<ul>
+						<li>Reduce non-essential expenses.</li>
+						<li>Shop around to compare prices at different retail outlets, online and offline.</li>
+						<li>Start a spending diary or use our expense tracker mobile apps to keep track of your spending habits.</li>
+						<li>Avoid impulse buys. Try to stick to the items on your shopping list.</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Rating / Feedback section -->
+			<table border="0" cellspacing="0" cellpadding="0" class="opinion">
+				<tbody>
+					<tr>
+						<td width="50%" class="feedback">
+							<a href="mailto:info@thechinfamily.hk?subject=Feedback%20on%20Net%20worth%20calculator&amp;" id="feedback"><img src="../images/btn-feedback-e.jpg"></a>
+						</td>
+						<td width="50%" valign="middle" class="rating">
+							<p><strong>How satisfied are you with this Net Worth Calculator?</strong>
+								<br> (1 is the lowest, 5 is the highest)</p>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tbody>
+									<tr>
+										<td>
+											<input type="radio" name="rating" value="0" id="rating1">
+										</td>
+										<td>
+											<input type="radio" name="rating" value="0" id="rating2">
+										</td>
+										<td>
+											<input type="radio" name="rating" value="0" id="rating3">
+										</td>
+										<td>
+											<input type="radio" name="rating" value="0" id="rating4">
+										</td>
+										<td boder="0">
+											<input type="radio" name="rating" value="0" id="rating5">
+										</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>2</td>
+										<td>3</td>
+										<td>4</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- Rating / Feedback section -->
+			<div class="endInner">
+				<a href="javascript:;" class="btnBack">Back</a>
+				<div class="socIco">
+					<!--                 <a href="javascript:;" class="icoDoc" title="Download Excel version"></a>
+                                        <a href="javascript:;" class="icoPrint" title="Print"></a>
+                                        <a href="javascript:;" class="icoPdf" title="Save as PDF"></a>
+                                        <a href="javascript:;" class="icoEmail" title="Mail to friends"></a>
+                                        <a href="https://www.facebook.com/share.php?u=https://www.thechinfamily.hk/tools/net-worth/en/net-worth.html" class="icoFb" onClick="return fbs_click(400, 300)" target="_blank" title="Share in Facebook"></a> -->
+					<!--<a href="../excel/networth_en.xls" target="_blank" class="icoDoc"></a>-->
+					<a href="javascript:$('#cal_form').submit();" class="icoDoc"></a>
+					<a href="javascript:;" class="icoPrint" target="_blank"></a>
+					<a href="javascript:;" class="icoPdf" target="_blank"></a>
+					<a href="javascript:;" class="icoEmail icoEmail_en"></a>
+					<!--					<a href="javascript:fbShare('https://www.thechinfamily.hk/tools/networth/en/index.html', 'IEC Net worth calculator', 'Check out how good you are at managing your wealth! Use our calculator to work out if what you own outweighs what you owe.', 'https://www.thechinfamily.hk/web/images/tc/tools-and-resources/tools/tools-head-banner_tc.jpg', 520, 350)" class="icoFb"></a>-->
+					<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://www.thechinfamily.hk/tools/networth/en/index.html" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false" class="icoFb"></a>
+
+
+				</div>
+			</div>
+			<div class="canvas-wrapper" style="position:absolute;top:-9999px;left:-9999px;margin:0 auto;width:960px">
+				<canvas id="canvas-cal" width="960" height="1358" style="border:0px solid"></canvas>
+				<canvas id="canvas-result" width="960" height="1358" style="border:0px solid"></canvas>
+				<div class="image-container" style="display:none">
+					<img id="logo" src="../images/pdf/img-logo-iec.jpg" />
+					<img id="cal" src="../images/pdf/ico-calculator.gif" />
+					<img id="icon_assets" src="../images/pdf/ico-assets.gif" />
+					<img id="icon_liab" src="../images/pdf/ico-liabilities.gif" />
+					<img id="icon_totalAssets" src="../images/pdf/ico-total-assets.gif" />
+					<img id="icon_totalLiab" src="../images/pdf/ico-total-liabilities.gif" />
+					<img id="fund" src="../images/pdf/ico-result-1.gif" />
+					<img id="debt" src="../images/pdf/ico-result-2.png" />
+					<img id="money" src="../images/pdf/ico-result-3.png" />
+					<img id="legend_debt" src="../images/pdf/legend_debt.jpg" />
+					<img id="legend_fund" src="../images/pdf/legend_fund.jpg" />
+					<img id="legend_money" src="../images/pdf/legend_money.jpg" />
+					<img id="legend_ratio" src="../images/pdf/legend_ratio.jpg" />
+					<img id="result_graph" src="../images/pdf/result_graph.jpg" />
+					<img id="bg_total" src="../images/pdf/bg-total.gif" />
+					<img id="bg_radar" src="../images/pdf/bg_radar_en.png" />
+					<img id="radar" src="" />
+					<img id="dot" src="../images/pdf/dot-puple.gif" />
+					<img id="dot2" src="../images/pdf/dot-result-2.gif" />
+					<img id="dot3" src="../images/pdf/dot-result-3.gif" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix footerfix"></div>
+	<div class="footercontenter">
+		<div id="site-footer" class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="footer-left">
+							<div class="footer-logo">
+								<a href="http://www.thechinfamily.hk/web/iec/en/">
+									<img src="../images/common/iec-hk-logo.png" alt="" title="" />
+								</a>
+							</div>
+
+							<div class="footer-statement">
+								<p>The Chin Family is managed by the Investor Education Centre, which is supported by the Education Bureau and financial regulators.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="footer-right">
+							<div class="input-group">
+								<!--
+								<p>e-Newsletter</p>
+								<a class="btn btn-default" href="/web/en/tools-and-resources/e-newsletters/index.html">Latest Issue</a>&nbsp;&nbsp;
+		-->
+								<!--						<a class="btn btn-default" href="/subscription/subscription.jsp?lang=en">Subscribe</a>-->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-sm-push-5">
+						<div class="footer-hyperlinks-wrapper">
+							<ul id="footer-hyperlinks" class="footer-menu footer-hyperlinks">
+								<li><a href="https://www.thechinfamily.hk/web/common/apps/en/contact_enquiry.html">Contact Us</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/en/others/sitemap.html">Site Map</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/en/others/liability-statement.html">Liability Statement</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/en/others/privacy-policy.html">Privacy Policy</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/en/others/hyperlink-policy.html">Hyperlink Policy</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-5 col-sm-pull-7">
+						<p class="footer-copyright">Copyright &copy;2016 Investor Education Centre. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/google_analytics.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.icoPrint')[0].onclick = function () {
+				exportPDF(1);
+				printPDFTracking(0);
+			}
+			$('.icoPrint')[1].onclick = function () {
+				exportPDF(2);
+				printPDFTracking(0);
+			}
+			$('.icoPdf')[0].onclick = function () {
+				exportAndSaveToPDF(1);
+				downloadPDFTracking(0);
+			}
+			$('.icoPdf')[1].onclick = function () {
+				exportAndSaveToPDF(2);
+				downloadPDFTracking(0);
+			}
+			$('.icoDoc').click(function () {
+				saveExcelTracking(0);
+			})
+			$('.btnCheck').click(function () {
+				checkWealthTracking(0);
+				preGenerate(2);
+			})
+			$('.icoFb').click(function () {
+				facebookShareTracking(0);
+			})
+			$('.icoEmail').click(function () {
+				emailShareTracking(0);
+			})
+		})
+	</script>
+</body>
+
+</html>

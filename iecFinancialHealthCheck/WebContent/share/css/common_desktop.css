@@ -1,0 +1,21 @@
+body{}
+
+.wrapper{
+	width:970px; 
+	margin: 0 auto;
+}
+
+
+/***** Question *****/
+
+
+/***** Footer *****/
+
+#footer > .wrapper span.allRight{
+	float:right;
+}
+#swiffycontainer{ height: 240px;}
+
+/*#content{padding-bottom: 134px;}*/
+
+.footercontenter{position: absolute !important;}

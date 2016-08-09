@@ -1,0 +1,88 @@
+<!-- HTML5 to make used of canvas -->
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=Edge"/>		
+		<title></title>
+		<!-- style -->
+		<link href="../css/html4-reset.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="../css/calculator.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="../css/default.css" rel="stylesheet" type="text/css" media="all" />        	
+		<link rel="stylesheet" type="text/css" href="../css/jquery.jqplot.css" />		
+		<link rel="stylesheet" type="text/css" href="../css/jquery.fancybox-1.3.4.css" media="all" />				
+		<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css" media="all" />
+		
+		<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+		<script>
+		(function($){
+				$(window).load(function(){
+					$('.inner').mCustomScrollbar({
+						scrollInertia:250
+					});
+				});
+			})(jQuery);
+		</script>
+		
+		<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7132094/6453152/css/fonts.css" />
+<script type="text/javascript" src="https://fast.fonts.net/jsapi/c550c076-1bd6-411f-ac61-2ea18430c967.js"></script>
+
+	</head>
+	<body class="calculator-popup">
+	
+<!--	<div class="calculator-popup-t"></div>-->
+	<div class="calculator-popup-innerwrapper">
+		<div class="inner" style="height: 400px; width: 790px">	
+			<h1>儲蓄目標計算機簡介</h1>
+			<p>當你設定財務目標時，不管目標大小或年期長短，均具有激勵作用，鼓勵你達到目標。我們的儲蓄目標計算機助你以三種不同方式計算如何達到目標:</p>
+			<ul>
+			<li>你須定時地儲蓄多少，才可如期達到指定目標;</li>
+			<li>若你定時儲蓄固定金額，最終可儲蓄多少; 或</li>
+			<li>你需要多少時間才可達到你指定的儲蓄目標。</li>
+			</ul>
+			<p>儲蓄目標計算機提供以下功能，讓你:</p>
+			<ol>
+			<li><img src="../images/common/disclaimer/excel.png"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下載Excel表格至你的電腦，籌劃儲蓄目標。</li>
+			<li><img src="../images/common/disclaimer/pdf.png"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以PDF格式查看並儲存你的記錄。</li>
+			<li><img src="../images/common/disclaimer/print.png"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列印你的儲蓄目標計劃。</li>
+			<li><img src="../images/common/disclaimer/email.png"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通過電子郵件分享儲蓄目標計算機予你的朋友。</li>
+			<li><img src="../images/common/disclaimer/share.png"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通過Facebook分享儲蓄目標計算機予你的朋友。</li>
+			</ol>
+
+			<p>此計算機說明複利效應如何令你的儲蓄或投資有所增長，其結果、運算及圖表為最佳估值，僅供參考和說明之用，不應被視為作出理財決定時的唯一資訊來源。請向你的財務顧問或財務策劃師聯絡以獲得專業指導。</p>
+			<h1>計算機的假設</h1>
+			<p>儲蓄目標計算機於計算時有以下假設:</p>
+			<ul>
+			<li>「定時儲蓄金額」適用於你所選擇的儲蓄期的末段。</li>
+
+			<li>計算機並不包括某些因素，如通脹率和回報率的變化。當你訂立儲蓄目標時，你應一併考慮未來價格上漲的因素。</li>
+			<li>1年 = 12個月 = 52個星期；1個月= 52周／12 = 4.33周</li></ul>
+
+			<p>計算方式一: 你需儲蓄的金額是多少?</p>
+			<ul>
+			<li>你輸入的預期回報率是整段儲蓄期的一個年度固定比率，並按你選擇的複利息次數按周、月或年計算複利息。</li>
+
+			<li>每年計算複利僅適用於儲蓄期為一段完整年度。若你的儲蓄期並非完整的年度，計算機將提示你選擇以「每月」或「每周」方式計算複利。</li></ul>
+
+			<p>例子: 如果你在儲蓄期輸入「1年8個月」，並在「複利息次數」一欄選擇「每年一次」，基於按年複利的話，最後8個月並不設任何回報，所以計算機將提示你在該欄選擇以「每月一次」或「每周一次」計算複利。</p>
+
+
+			<p>計算方式二: 你最終可儲蓄的金額是多少?</p>
+			<ul>
+			<li>計算機所採用的複利息次數將根據你在「定時儲蓄金額」一欄中的選項計算。例如，當你打算每月儲蓄某個金額，你需在該欄選擇「每月」，則計算機將採用按月複利息。</li>
+			<li>如果你的定時儲蓄以每周一次為基礎，而你在「儲蓄期」輸入的月數並不是12的倍數，計算機將以1個月等於4.33周計算。</li>
+			<li>如果你的定時儲蓄以每年一次為基礎，而你的儲蓄期並非完整的年度，計算機將提示你把儲蓄期更改為完整年度。</li></ul>
+
+
+			<p>計算方式三: 儲蓄需時多久?</p>
+			<ul><li>與方式二類似，計算機所採用的複利息次數將根據你在「定時儲蓄金額」一欄中的選項計算。例如，當你打算每月儲蓄某個金額，你需在該欄選擇「每月」，則計算機將採用按月複利息。</li></ul>
+
+		</div>
+	</div>
+<!--	<div class="calculator-popup-b"></div>-->
+
+	</body>
+</html>

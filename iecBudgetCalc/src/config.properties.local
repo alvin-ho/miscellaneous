@@ -1,0 +1,23 @@
+# resource info
+#PATH=/profiles/app/iecBudgetCalcWeb/jasper/
+
+PATH=C:/Temp/profiles/app/iecBudgetCalcWeb/jasper/
+RESPATH=C:/Temp/profiles/app/iecBudgetCalcWeb/jasper/images/common/calculator/
+
+# budget
+BUDGETREPORTFILE1=budget_p1.jasper
+BUDGETREPORTFILE2=budget_p2.jasper
+BUDGETREPORTFILE3=budget_p3.jasper
+BUDGETREPORTFILE1TC=budget_p1.tc.jasper
+BUDGETREPORTFILE2TC=budget_p2.tc.jasper
+BUDGETREPORTFILE3TC=budget_p3.tc.jasper
+BUDGETHEADERARG2=attachment;filename=IEC_budget_planner.pdf
+
+#saving
+SAVINGHEADERARG2=attachment;filename=IEC_savings_goal.pdf
+SAVINGREPORTFILE1=saving.tab1.en.jasper
+SAVINGREPORTFILE2=saving.tab2.en.jasper
+SAVINGREPORTFILE3=saving.tab3.en.jasper
+SAVINGREPORTFILETC1=saving.tab1.tc.jasper
+SAVINGREPORTFILETC2=saving.tab2.tc.jasper
+SAVINGREPORTFILETC3=saving.tab3.tc.jasper

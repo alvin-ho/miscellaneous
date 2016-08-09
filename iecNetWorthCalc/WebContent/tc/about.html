@@ -1,0 +1,69 @@
+<!-- HTML5 to make used of canvas -->
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=Edge"/>		
+		<title></title>
+		<!-- style -->
+		<link href="../css/html4-reset.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="../css/default.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="../css/layout.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css" media="all" />
+		
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+		<script>
+		(function($){
+				$(window).load(function(){
+					$('.inner').mCustomScrollbar({
+						scrollInertia:250
+					});
+				});
+			})(jQuery);
+		</script>
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7132094/6453152/css/fonts.css" />
+<script type="text/javascript" src="https://fast.fonts.net/jsapi/c550c076-1bd6-411f-ac61-2ea18430c967.js"></script>
+
+	</head>
+
+	<body class="calculator-popup-about">
+	
+<!--	<div class="calculator-popup-t"></div>-->
+	<div class="calculator-popup-innerwrapper">
+		<div class="inner">	
+			<h2>資產淨值計算機簡介</h2>
+			<p>資產淨值計算機助你評估財務狀況及達成理財目標。根據你填寫的資產及債務價值，本計算機提供你的資產淨值概況和一些個人財務比率，助你檢視及有效地管理你的財富。</p>
+		
+			<p>資產淨值計算機提供以下功能，讓你: </p>
+
+            <ol>
+            	<li><img src="../css/images/btn-docs.gif">下載Excel版本至你的電腦，助你計算你的資產淨值。</li>
+            	<li><img src="../css/images/btn-print.gif">列印你的資產淨值及／或財富管理狀況。</li>
+            	<li><img src="../css/images/btn-pdf.gif">以PDF 格式查看並儲存你的記錄。</li>
+            	<li><img src="../css/images/btn-email.gif">通過電子郵件分享資產淨值計算機予你的朋友。</li>
+            	<li><img src="../css/images/btn-fb.gif">通過Facebook分享資產淨值計算機予你的朋友。</li>
+            </ol>
+
+            <h2>計算機的假設</h2>
+			<p>資產淨值計算機於計算時有以下假設：</p>
+            <ul>
+            	<li>資產淨值是由你所有的資產值減去你所有的債務而得出的數值。</li>
+            	<li>你所輸入的資產價值應以資產的現時市場價值計算。</li>
+            	<li>一般建議個人至少儲備三至六個月生活費的應急錢以應付緊急事故。如應急錢未能應付三個月的生活所需，圖表中的「應急錢」項目上將顯示2分或以下。</li>
+            	<li>根據2014年4月公布的<a href="https://www.thechinfamily.hk/web/iec/common/pdf/about_iec/IEC-research-knowledge-attitudes-and-behaviour-towards-money-management-chinese.pdf" target="_blank">《IEC調查研究：金融理財及借貸的知識、態度與行為》</a>，普遍香港市民平均將60%的每月收入用於日常生活的必需開支。如供款與入息比率超過或等於40% (即每月收入扣除日常生活的必需開支的剩餘部份)，你或遇到困難達致收支平衡，及應注意管理債務。圖表中的「債務管理」項目上將顯示0分。</li>
+				<!-- (資料來源:  <a href="https://www.hkma.gov.hk/chi/other-information/pws-faq/banking-stability.shtml" target="_blank">https://www.hkma.gov.hk/chi/other-information/pws-faq/banking-stability.shtml</a>) -->
+            	<li>根據2014年4月公布的<a href="https://www.thechinfamily.hk/web/iec/common/pdf/about_iec/IEC-research-knowledge-attitudes-and-behaviour-towards-money-management-chinese.pdf" target="_blank">《IEC調查研究：金融理財及借貸的知識、態度與行為》</a>，普遍香港市民平均把每月收入中的20%作為儲蓄。如儲蓄比率低於20%，圖表中的「理財」項目上將顯示2分或以下。</li>
+				<!-- (資料來源:  <a href="https://www.thechinfamily.hk/web/iec/tc/tools-and-resources/research/money-management-2014.html" target="_blank">http://www.thechinfamily.hk/web/iec/tc/tools-and-resources/research/money-management-2014.html</a>) -->
+            </ul>
+<!-- 			<div class="tac">
+				<a href="javascript:parent.$.fancybox.close();" class="btn">繼續</a>
+			</div> -->
+		</div>
+	</div>
+<!--	<div class="calculator-popup-b"></div>-->
+
+	</body>
+</html>

@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="budget" pageWidth="595" pageHeight="842" columnWidth="565" leftMargin="15" rightMargin="15" topMargin="15" bottomMargin="15" uuid="545f16be-495c-46e6-93fd-f23b557e520c">
+	<property name="ireport.zoom" value="1.0245201830476058"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="p3BarTitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Annual figure"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3SavingTitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Saving distribution"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3ExpenseTitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Expense distribution"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Saving1" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[38]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Saving2" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[22]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Saving3" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[40]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense1" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[12]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense2" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense3" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense4" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense5" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense6" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense7" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense8" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense9" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[5]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense10" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense11" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Saving1Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Saving/Investment - Regular"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Saving2Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Saving/Investment - Lump sum"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Saving3Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Retirement schemes"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense1Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Household"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense2Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Transport"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense3Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Food and drinks"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense4Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Leisure/Lifestyle"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense5Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Shopping"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense6Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Health and beauty"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense7Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Education and profession"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense8Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Family and friends"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense9Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Taxation"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense10Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Financial commitments"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense11Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Miscellaneous"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PATH" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Budget planner"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Subtitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Summary"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense12" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense13" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense12Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Miscellaneous"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Expense13Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Miscellaneous"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3IncomeTitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Income distribution"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Income1Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Salary"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Income2Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Spouse's Salary"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Income3Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Other income"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Income1" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[12]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Income2" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[12]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Income3" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3Result" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p3ResultBgSrc" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p3E1Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p3E2Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p3E3Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p3E4Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p3E1" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p3E2" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p3E3" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p3E4" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="ResultIcon" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="DollarPrefix" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="amount" class="java.lang.Number">
+		<fieldDescription><![CDATA[amount]]></fieldDescription>
+	</field>
+	<field name="category" class="java.lang.String">
+		<fieldDescription><![CDATA[category]]></fieldDescription>
+	</field>
+	<variable name="color" class="java.lang.String">
+		<initialValueExpression><![CDATA["#51A6A2"]]></initialValueExpression>
+	</variable>
+	<summary>
+		<band height="812">
+			<pieChart>
+				<chart customizerClass="org.hksfc.sfc.iec.pdf.PiePlotCustomizer" renderType="draw" theme="aegean">
+					<reportElement uuid="90dbb28e-01c5-4abe-aa19-1739d3e8d6f1" mode="Transparent" x="0" y="445" width="565" height="125" isRemoveLineWhenBlank="true"/>
+					<chartTitle>
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartSubtitle>
+					<chartLegend position="Right">
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartLegend>
+				</chart>
+				<pieDataset>
+					<pieSeries>
+						<keyExpression><![CDATA["Savings/Investment"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Saving2}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Saving2}.intValue() > 0) ? $P{p3Saving2}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Retirement schemes"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Saving3}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Saving3}.intValue() > 0) ? $P{p3Saving3}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+				</pieDataset>
+				<piePlot isCircular="true" labelFormat="">
+					<plot>
+						<seriesColor seriesOrder="0" color="#51A6A2"/>
+						<seriesColor seriesOrder="1" color="#DB603F"/>
+						<seriesColor seriesOrder="2" color="#F1B648"/>
+					</plot>
+					<itemLabel>
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</itemLabel>
+				</piePlot>
+			</pieChart>
+			<pieChart>
+				<chart customizerClass="org.hksfc.sfc.iec.pdf.PiePlotCustomizer" theme="aegean">
+					<reportElement uuid="12a2cace-5895-47de-ad6d-87b2fe3dda36" x="0" y="595" width="565" height="189"/>
+					<chartTitle>
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartSubtitle>
+					<chartLegend position="Right">
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartLegend>
+				</chart>
+				<pieDataset>
+					<pieSeries>
+						<keyExpression><![CDATA["Household"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense1}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense1}.intValue() > 0) ? $P{p3Expense1}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Transport"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense2}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense2}.intValue() > 0) ? $P{p3Expense2}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Food and drinks"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense3}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense3}.intValue() > 0) ? $P{p3Expense3}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Family and friends"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense8}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense8}.intValue() > 0) ? $P{p3Expense8}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Taxation"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense9}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense9}.intValue() > 0) ? $P{p3Expense9}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Finanical commitments"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense10}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense10}.intValue() > 0) ? $P{p3Expense10}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Leisure / Lifestyle"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense4}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense4}.intValue() > 0) ? $P{p3Expense4}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Shopping"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense5}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense5}.intValue() > 0) ? $P{p3Expense5}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Health and beauty"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense6}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense6}.intValue() > 0) ? $P{p3Expense6}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Education and profession"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense7}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense7}.intValue() > 0) ? $P{p3Expense7}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Planning for ageing"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense11}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense11}.intValue() > 0) ? $P{p3Expense11}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Financial and legal advice"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense12}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense12}.intValue() > 0) ? $P{p3Expense12}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Miscellaneous"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Expense13}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Expense13}.intValue() > 0) ? $P{p3Expense13}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+				</pieDataset>
+				<piePlot labelFormat="">
+					<plot labelRotation="0.0">
+						<seriesColor seriesOrder="0" color="#1C94A4"/>
+						<seriesColor seriesOrder="1" color="#8E7355"/>
+						<seriesColor seriesOrder="2" color="#9DBF8D"/>
+						<seriesColor seriesOrder="3" color="#DC543A"/>
+						<seriesColor seriesOrder="4" color="#91BDD8"/>
+						<seriesColor seriesOrder="5" color="#AC63E9"/>
+						<seriesColor seriesOrder="6" color="#FE6965"/>
+						<seriesColor seriesOrder="7" color="#ECB284"/>
+						<seriesColor seriesOrder="8" color="#7E8AA2"/>
+						<seriesColor seriesOrder="9" color="#466673"/>
+						<seriesColor seriesOrder="10" color="#FBB144"/>
+						<seriesColor seriesOrder="11" color="#E0669C"/>
+						<seriesColor seriesOrder="12" color="#29BC72"/>
+					</plot>
+					<itemLabel>
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</itemLabel>
+				</piePlot>
+			</pieChart>
+			<textField>
+				<reportElement uuid="df5be0dd-2cf9-497b-93a3-b5085058fa84" x="0" y="420" width="555" height="25" forecolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="15" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Savings and investments distribution"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b96901a3-0c65-491f-a1d5-de9164e8e892" x="0" y="570" width="555" height="25" forecolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="15" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Expenses distribution"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0161e35c-c6fb-4255-b2f9-8fe4f5458de6" x="0" y="121" width="555" height="25" forecolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="15" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Monthly figure (HKD)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="99de9128-a175-40e4-9055-c8b2fab9978f" x="325" y="10" width="240" height="33" forecolor="#4B2384" backcolor="#4B2384"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="20" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Budget planner"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ceb23d65-75f7-4862-91f5-88071c8abda2" x="0" y="270" width="555" height="25" forecolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="15" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Income distribution"]]></textFieldExpression>
+			</textField>
+			<pieChart>
+				<chart customizerClass="org.hksfc.sfc.iec.pdf.PiePlotCustomizer" renderType="draw" theme="aegean">
+					<reportElement uuid="9e4cd1c1-17dd-4b28-8300-d9af2d62894b" mode="Transparent" x="0" y="295" width="565" height="125" isRemoveLineWhenBlank="true"/>
+					<chartTitle position="Top">
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartSubtitle>
+					<chartLegend position="Right">
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartLegend>
+				</chart>
+				<pieDataset>
+					<pieSeries>
+						<keyExpression><![CDATA["Salary"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Income1}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Income1}.intValue() > 0) ? $P{p3Income1}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Spouse's salary"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Income2}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Income2}.intValue() > 0) ? $P{p3Income2}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Other income"]]></keyExpression>
+						<valueExpression><![CDATA[$P{p3Income3}]]></valueExpression>
+						<labelExpression><![CDATA[(($P{p3Income3}.intValue() > 0) ? $P{p3Income3}.toString() + "%" : "")]]></labelExpression>
+					</pieSeries>
+				</pieDataset>
+				<piePlot isCircular="true" labelFormat="">
+					<plot>
+						<seriesColor seriesOrder="0" color="#96B9D6"/>
+						<seriesColor seriesOrder="1" color="#E4B385"/>
+						<seriesColor seriesOrder="2" color="#4C6472"/>
+					</plot>
+					<itemLabel>
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</itemLabel>
+				</piePlot>
+			</pieChart>
+			<image>
+				<reportElement uuid="971ab457-1c63-433e-bb92-f90841818fb0" x="60" y="149" width="52" height="52"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/icon-report-income.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="dd591752-6380-4a7a-9cd2-7a51c8c790d0" x="181" y="149" width="52" height="52"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/icon-report-saving.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="f0dc73ac-0da2-4ef6-b16a-84a6474d3b9a" x="302" y="149" width="52" height="52"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/icon-report-expenses.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="f42ee747-56fd-468d-a03e-4f4388a1def5" x="442" y="149" width="52" height="52"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ResultIcon}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement uuid="ef300b15-0020-47aa-bdd5-132bb8dde9e6" mode="Opaque" x="136" y="170" width="20" height="5" forecolor="#FFFFFF" backcolor="#88878C"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="1f8e6de6-4a66-4ceb-8eed-50ad769f97cb" x="257" y="170" width="20" height="5" forecolor="#FFFFFF" backcolor="#88878C"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="cd872303-31d9-4391-820a-f94969d900ab" x="386" y="167" width="20" height="5" forecolor="#FFFFFF" backcolor="#88878C"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="7e80ebbb-1c5f-4a6f-8ce9-81ea1109a29b" x="386" y="177" width="20" height="5" forecolor="#FFFFFF" backcolor="#88878C"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="6e8859dc-cc9f-48f1-aee2-a834c9f99f37" x="60" y="224" width="52" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DollarPrefix}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="09aa15b3-2be8-4199-8269-c91fa223ea78" x="181" y="224" width="52" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DollarPrefix}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d9d9a60c-425e-4ed7-aa5f-379920fa3afb" x="297" y="224" width="64" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DollarPrefix}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="650523ab-84c4-4ae4-94c7-8c2d46432dbf" x="436" y="224" width="64" height="15" forecolor="#DB603F">
+					<printWhenExpression><![CDATA[new Boolean($P{p3E4}.doubleValue() <= 0)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DollarPrefix}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9f527ed6-fac6-4668-b602-b0df805948e2" x="436" y="209" width="64" height="15" forecolor="#DB603F">
+					<printWhenExpression><![CDATA[new Boolean($P{p3E4}.doubleValue() <= 0)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E4Title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c6fd5097-0c23-4e82-a21e-8759737b47ec" x="297" y="209" width="64" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E3Title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6de1ead0-0ee9-4da4-8f87-392dec5ba950" x="156" y="209" width="102" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E2Title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f42e49a2-1a33-45ac-828e-6e8257e5fca7" x="60" y="209" width="52" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E1Title}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="e665f113-8ff0-48b5-8768-7c6ca2bcbda5" x="35" y="239" width="102" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="bc1f8d78-2b0e-46d7-bb2d-8735138ea981" x="156" y="239" width="102" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="b01c0506-f787-489b-989c-dd172bf04b3d" x="278" y="239" width="102" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E3}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="026d8d69-7e8c-4987-93e8-ec5c319c9c2f" x="418" y="239" width="102" height="15" forecolor="#DB603F">
+					<printWhenExpression><![CDATA[new Boolean($P{p3E4}.doubleValue() <= 0)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2feded32-9ec8-4662-887c-d3bd812421d4" x="436" y="209" width="64" height="15" forecolor="#65A7FC">
+					<printWhenExpression><![CDATA[new Boolean($P{p3E4}.doubleValue() > 0)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E4Title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ae1751b3-f8ec-4729-b14c-9fc098b9fe1f" x="436" y="224" width="64" height="15" forecolor="#65A7FC">
+					<printWhenExpression><![CDATA[new Boolean($P{p3E4}.doubleValue() > 0)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DollarPrefix}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="246d43a5-e35c-4cf9-a787-7336eac3d2f4" x="418" y="239" width="102" height="15" forecolor="#65A7FC">
+					<printWhenExpression><![CDATA[new Boolean($P{p3E4}.doubleValue() > 0)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p3E4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="43ae6372-8bfd-4265-8cd2-0da821933aa3" mode="Opaque" x="0" y="65" width="565" height="25" forecolor="#4B2384" backcolor="#2DBDB6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["         Summary"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="502f6a1f-6694-4191-8d46-4d93a84ef020" x="0" y="0" width="140" height="51"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/logo-iec.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="90d08df5-8008-4311-9018-a2f57459c8f6" x="6" y="70" width="18" height="18"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/ico-report.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</summary>
+</jasperReport>

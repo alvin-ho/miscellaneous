@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="en_shortfall_detail" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d423836c-bed2-45c6-8ec1-955fa093de5f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="33"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="621" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="b825e1fc-13d1-42ae-b970-819f0ce9dc8e" mode="Transparent" x="136" y="591" width="40" height="20" forecolor="#414141" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Visit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="78095e9e-31a4-46cb-9401-1cd5befcf45c" mode="Transparent" x="170" y="590" width="276" height="19" forecolor="#2DBDB6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[https://www.thechinfamily.hk/web/en/pre-retiree/]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="7c360bbd-beea-4b8f-8427-79d16a2a5df6" x="39" y="123" width="25" height="17"/>
+				<imageExpression><![CDATA["iec-tactics.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="ffbc721f-98b8-4140-85c0-d8f4efc22c3b" mode="Transparent" x="65" y="126" width="450" height="14" forecolor="#2DBDB6" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Review investment strategy and improve investment outcome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="14ba9c3a-eaa4-4a90-a94a-6ad8580d1149" x="78" y="145" width="444" height="26" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[The investment decisions you make for your retirement will have a direct impact on your overall savings outcome.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="b06d87d2-f546-4449-8ee5-25a846d32708" x="66" y="149" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="be9ea45c-9814-4e94-9224-72c00343d927" x="78" y="170" width="444" height="63" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[For the MPF system, each scheme has different constituent funds for you to choose from. Different funds have different risk and return profiles. In general, the higher the potential return, the higher the potential risk. Carefully select the investment portfolio that can match with your risk and return profile. Visit MPF Education to learn more about MPF investments.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="eb554272-4d5d-4fd3-90ce-df3f78f4b7ae" x="66" y="174" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="e8fb5c1b-fd6c-4923-9c1c-67fa994d75ca" x="78" y="233" width="444" height="38" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Consider your investment horizon (ie the number of years before and after retirement), investment objectives and experience and assess your risk tolerance level.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="b4f16c21-033f-4121-87eb-a0265fc78006" x="66" y="236" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="fac0abbf-d4f8-4d31-af36-f3cb2b732198" x="39" y="265" width="22" height="22"/>
+				<imageExpression><![CDATA["iec-plusMoney.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="977ff1e8-d81e-4141-a605-5528c6062543" x="66" y="289" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="d5aa814f-2205-42a5-9fd6-a78581a410d1" x="77" y="285" width="444" height="51" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Seek ways to generate more income for your retirement savings or investments. For example, you can consider taking part-time or freelance jobs if this is accepted by your employer. For longer term, you can consider increasing your income via education and professional training.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="13346302-fec5-4576-b616-751565905bfb" mode="Transparent" x="65" y="271" width="203" height="14" forecolor="#2DBDB6" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Generate income]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="81cfe358-ee0b-4a41-afb8-3b3b22387c46" x="78" y="356" width="444" height="50" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[The expected amount you need for retirement is calculated based on the monthly retirement expenses you input. So, if you are facing a big gap for your retirement budget, you may reconsider your retirement lifestyle to see if you can spend less during retirement.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="980ab577-aa3e-4636-864b-0ffd80159222" x="39" y="336" width="25" height="19"/>
+				<imageExpression><![CDATA["iec-control.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="04cc5c13-480a-4763-8a0d-51ecb8d5ca91" x="66" y="410" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="b1f2c778-7679-4ece-a3a7-45842f7ef504" x="78" y="455" width="444" height="27" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Eat healthy and exercise regularly can keep you healthy and thus help to save medical costs.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="7976d245-4a89-4206-929e-3a4da764353a" x="66" y="360" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="ce2e499e-6d7f-4dca-9868-27e7341decb6" x="66" y="459" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="7909bb52-151e-4785-8f40-a7a8e10763ea" x="78" y="406" width="444" height="49" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Leading a simpler lifestyle may help to reduce the amount you need for retirement. For example, if you plan to have two annual trips during your retirement, you may cut it to one. Also, reducing eating out and preparing more meals at home can help save more money.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3bebf138-7eab-41f9-8db0-8d15071bbe69" mode="Transparent" x="65" y="339" width="203" height="14" forecolor="#2DBDB6" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Manage expenses during retirement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4e04c6f2-a555-4570-ad2d-614355b04122" x="77" y="507" width="445" height="53" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[If you are facing a big gap for your retirement budget, one possible option is to review the feasibility of delaying your target retirement age and continue working. This will reduce the total amount you need for retirement and allow you to have more time to accumulate employment earnings.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="46da7474-d644-4626-b940-d99e8063c518" mode="Transparent" x="65" y="488" width="203" height="14" forecolor="#2DBDB6" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Review target retirement age]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="30feb2ab-0447-45df-a113-3090b24dafde" x="39" y="482" width="22" height="24"/>
+				<imageExpression><![CDATA["iec-consider.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="9d98a2d1-ea52-4d1b-b18a-a4684e8c34c6" x="66" y="511" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="8cb69a8a-69a0-4920-86ff-88127c259f0a" x="78" y="71" width="444" height="14" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Consider to set aside some money for use in emergencies.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="6de9dda4-e00a-46fd-b489-f2d504ff82e1" x="66" y="74" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="cd96ed1f-f2dd-4cf8-af28-926eef50afb0" x="78" y="89" width="444" height="28" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Plan ahead and make paying of all existing debts – including mortgage, personal loan and credit card debts – a priority before you retire.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="ecda7a7f-12a3-46c3-91de-35bf4cd5553e" x="66" y="93" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="1914390b-5f43-470b-9688-6a5b0b65a32d" x="91" y="39" width="431" height="28" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Set some rules for shopping: for example, set a limit for birthday and festive presents or consider some homemade gifts.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="82a86740-37fc-48b3-a78e-607c42543660" x="79" y="43" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["square.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="183ab0bd-013f-4cef-8a71-722a2cf7628c" x="79" y="4" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["square.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="ffa39f76-5fc0-4934-a70b-cfb645a9d046" x="91" y="0" width="431" height="38" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Avoid impulse buys: think of the consequence of increasing debts before you use credit cards to pay for goods. If you have trouble avoiding purchase temptation, try leaving the credit cards at home.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ae7f5a81-5562-47ee-97b6-0521de208b0b" x="159" y="603" width="287" height="18" forecolor="#414141"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book"/>
+				</textElement>
+				<text><![CDATA[ for more information about retirement planning.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

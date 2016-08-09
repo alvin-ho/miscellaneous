@@ -1,0 +1,2371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="budget" pageWidth="595" pageHeight="842" columnWidth="565" leftMargin="15" rightMargin="15" topMargin="15" bottomMargin="15" uuid="545f16be-495c-46e6-93fd-f23b557e520c">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="p2ExpenseTitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Expense"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense1" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[12]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense2" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense3" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense4" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense5" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense6" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense7" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense8" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense9" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[5]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense10" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense11" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense12" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense13" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense14" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense15" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense16" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense17" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense18" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense19" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense20" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense21" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense22" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense23" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense24" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense25" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense26" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense27" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense28" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense29" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense30" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense31" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense32" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense33" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense34" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense35" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense36" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense37" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense38" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense39" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense40" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense41" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense42" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense43" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense44" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense45" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense46" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense47" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense48" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense49" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense50" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense51" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense52" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense1Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Health and beauty"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense2Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Medical services (eg General practitioner, specialist, physiotherapy, bonesetter, operation, medical checkup, etc.)"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense3Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Prescriptions and medicines"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense4Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Beauty and fitness services (eg facial treatment, massage, gym membership, etc.)"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense5Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Eye care/Glasses"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense6Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Hairdressing"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense7Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Others"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense8Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Education and profession"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense9Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Tuition fee"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense10Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Examination"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense11Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Textbooks"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense12Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Membership"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense13Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Others"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense14Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Family and friends"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense15Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Support for parents and other relatives"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense16Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Children"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense17Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Day care"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense18Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Tuition fee"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense19Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Interest class"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense20Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Clothing"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense21Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Pocket money"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense22Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Others"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense23Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Others"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense24Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Treats and gifts"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense25Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Celebrations"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense26Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Others"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense27Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Taxation"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense28Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Personal tax"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense29Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Profits tax"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense30Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Property tax"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense31Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Salaries tax"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense32Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Salaries tax of spouse"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense33Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Others"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense34Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Financial commitments"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense35Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Insurance"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense36Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Life"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense37Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Critical illness"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense38Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Home"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense39Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Medical"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense40Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Motor"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense41Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Travel"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense42Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Others"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense43Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Loan repayment"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense44Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Bank overdraft"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense45Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Car loan"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense46Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Mortgage loan"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense47Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Personal loan"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense48Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Credit card interest"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense49Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Finance-related fees and charges"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense50Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Donations/Charity"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense51Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Others"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense52Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Miscellaneous"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2TotalTitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Total"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Total" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PATH" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Budget planner"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Subtitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Summary"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense53" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p2Expense54" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p2Expense55" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p2Expense56" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p2Expense57" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p2Expense58" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p2Expense59" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p2Expense60" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p2Expense61" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p2Expense62" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p2Expense63" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p2Expense53Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p2Expense54Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p2Expense55Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p2Expense56Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p2Expense57Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p2Expense58Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p2Expense59Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p2Expense60Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p2Expense61Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p2Expense62Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p2Expense63Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p1Expense42" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense63" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense36" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense49" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense48" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense41" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense43" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense35" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense60" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense37" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense52" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense46" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense50" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense45" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense61" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense31" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense32" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense33" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense34" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense62" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense53" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense39" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense47" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p1Expense44" class="java.lang.Number" isForPrompting="false"/>
+	<parameter name="p2Expense98" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense99" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense36" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense37" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense38" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense39" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense40" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense41" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense_42" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense_42_2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense_42_3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense44" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense59" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense45" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense46" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense47" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense48" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense49" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense50" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense_51" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense_51_2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense_51_3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense32" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense33" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense34" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense35" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense36" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense37" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense39" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense60" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense41" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense61" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense62" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense63" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense_42" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense_42_2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense_42_3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s1Expense44" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="s1Expense45" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="s1Expense46" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="s1Expense47" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="s1Expense48" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="s1Expense49" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="s1Expense50" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="s1Expense52" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="s1Expense_53" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="s1Expense_53_2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="s1Expense_53_3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="s2Expense2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense53" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense54" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense55" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense4" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense5" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense6" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense_7" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense_7_2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense_7_3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense9" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense10" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense11" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense12" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense_13" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense_13_2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense_13_3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense61" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense62" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense98" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="s2Expense99" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t2Expense_42" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[12]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t2Expense_42_2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t2Expense_42_3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t2Expense_51" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t2Expense_51_2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t2Expense_51_3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t1Expense_42" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t1Expense_42_2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t1Expense_42_3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[5]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t1Expense_53" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t1Expense_53_2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t1Expense_53_3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t2Expense_7" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t2Expense_7_2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t2Expense_7_3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t2Expense_13" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t2Expense_13_2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="t2Expense_13_3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense_42" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[12]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense_42_2" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense_42_3" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense_51" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense_51_2" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense_51_3" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p1Expense_42" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p1Expense_42_2" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[13]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p1Expense_42_3" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[5]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p1Expense_53" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p1Expense_53_2" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p1Expense_53_3" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense_7" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense_7_2" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense_7_3" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense_13" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense_13_2" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p2Expense_13_3" class="java.lang.Number" isForPrompting="false">
+		<defaultValueExpression><![CDATA[3]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="amount" class="java.lang.Number">
+		<fieldDescription><![CDATA[amount]]></fieldDescription>
+	</field>
+	<field name="category" class="java.lang.String">
+		<fieldDescription><![CDATA[category]]></fieldDescription>
+	</field>
+	<summary>
+		<band height="812">
+			<line>
+				<reportElement uuid="ec48e976-3440-495d-b6dd-564506596480" x="288" y="123" width="1" height="670" forecolor="#CCCCCC"/>
+			</line>
+			<textField>
+				<reportElement uuid="c5a86fa2-90fb-4eff-926e-15bb86548849" x="6" y="117" width="140" height="20" forecolor="#4B2384"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Expenses"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3305fc9a-b629-4f13-b58b-001b2c3e7723" x="311" y="134" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Health and beauty"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="3e7106e8-f4d8-4402-af4d-c2d271ef8ba4" x="486" y="134" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1a567940-a32b-43aa-be16-ca7f53f5e72b" x="328" y="145" width="121" height="40"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Medical services (eg General practitioner, specialist, physiotherapy, bonesetter, operation, medical checkup, etc.)"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="7ebe7982-e57f-4da6-8fb2-824092f96fe4" x="485" y="145" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="bcf869bd-46f3-42a9-9e77-810f2d3abcd8" x="486" y="195" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense3}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="2a716624-4db7-4696-8b0c-1704fea5ad9a" x="486" y="226" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense4}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="03f4fe11-a800-4fd9-b31a-7c3a00d9ed79" x="486" y="255" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense5}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="7ddd415b-9568-4a5c-b02b-264bea7a4795" x="486" y="265" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense6}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="10715657-7fa6-44f7-be53-ebefd94297cb" x="486" y="275" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense_7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8708aeb8-fbe4-47c6-8730-f23d598b8953" x="328" y="195" width="121" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Prescriptions and medicines"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="bd5ca6f5-a752-4391-b269-3c78a913b1ae" x="328" y="226" width="121" height="29"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Beauty and fitness services (eg facial treatment, massage, gym membership, etc.)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ab32f9c7-5840-4480-975a-e44329e0a3ac" x="328" y="255" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Eye care/Glasses"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="50e5fe00-1b66-41aa-a475-539d88576091" x="328" y="265" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Hairdressing"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0db3c434-e01e-4407-857d-1bde1f9b8152" x="328" y="275" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t2Expense_7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8616eed3-eb5a-4409-bc40-cfa230810781" x="312" y="315" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Education and profession"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="84c37d17-8a23-4c5e-893b-752925a5cf0b" x="329" y="327" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Tuition fee"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e11d0eee-e5b0-42c3-a018-e4c401c85291" x="329" y="337" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Examination"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="edf07bed-c1f8-4a13-82f5-16de8aa0365d" x="329" y="347" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Textbooks"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="18f17219-81e8-4620-9d00-6a1f04f23325" x="329" y="357" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Membership"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0eeb7832-b588-46c2-a8e6-260a9405e4e6" x="329" y="367" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t2Expense_13}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="15258177-61bf-4422-a707-44f5df475572" x="487" y="315" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense8}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="e105af17-503b-4afc-b3f8-b97f872c4705" x="486" y="327" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense9}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="48e40b16-7648-4dca-a852-1f6de34949d5" x="486" y="337" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense10}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="8019d9fc-7850-4af9-94b7-f0d4e7a7ef5b" x="486" y="347" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense11}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="37dceda3-94b5-4b48-a771-67d5fad941ba" x="486" y="357" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense12}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="a2702547-29f9-43b5-90ed-cbdaba039753" x="486" y="367" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense_13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="30022ab6-bfc3-4a4c-9ea3-129137fad31f" x="308" y="117" width="148" height="20" forecolor="#4B2384"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Expenses"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="52c147d8-8035-4031-8e81-d3d355343efa" x="16" y="134" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Financial commitments"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b443f11f-3e64-4167-81bb-f84fd140d457" x="29" y="145" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Insurance"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="dc5a6e2b-c9c2-4234-92bb-70e0c3f65967" x="37" y="155" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Life"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3de1f2ef-578f-45eb-afe5-8bd746625d48" x="37" y="165" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Critical illness"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="291d7034-8d2a-4665-a1a0-4c033c52ca76" x="37" y="175" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Home"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="137c2274-b9f8-42f5-ac7a-115c80385539" x="37" y="185" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Medical"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a3de0f0c-4d66-45a7-bde0-5d8d1a9f351a" x="37" y="195" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Motor"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5adf4bcb-9b35-4e1e-93ee-af2046270c81" x="37" y="205" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Travel"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1a6a7a69-6358-453c-8e6b-3e0f3c09c32b" x="37" y="215" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t2Expense_42}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a4d58daa-11c9-4412-af2d-7a1e3e1aa06c" x="29" y="246" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Loan repayment"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0f48fde3-47cc-4236-adde-03f2685537e9" x="37" y="256" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Bank overdraft"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5cfb449a-8300-4d3d-93af-18d221550773" x="37" y="276" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Car loan"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="646ece68-189d-4a56-950b-16017cbf7f47" x="37" y="286" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Mortgage loan"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="eabde2aa-a5f8-459d-a01c-a6b19c380ee2" x="37" y="296" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Personal loan"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="732705b9-e333-4efb-9247-b07690fd2744" x="37" y="306" width="109" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Credit card loan and interest fee"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8b9218b7-aa8c-4bd5-8753-f6b52b3fcffd" x="37" y="316" width="92" height="18"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Finance-related fees and charges"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b2954ff3-2398-4c74-b264-69d81e817af1" x="29" y="334" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Donations/Charity"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b2687d58-259f-4df2-9dda-797069bea552" x="29" y="344" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t2Expense_51}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="6351074e-48b9-4d6e-ba21-9d467a50675d" x="195" y="134" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense34}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="3274d445-2976-49d6-aa73-b4beb9748f45" x="188" y="145" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense35}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="6358fa4d-dab1-4361-8261-808506a61d69" x="181" y="155" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense36}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="f61279b9-c736-44e7-94eb-2b425d318e88" x="181" y="165" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense37}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="e7979110-56a3-4cc7-a303-fc8d00e91681" x="181" y="175" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense38}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="46f6ac29-7e68-47e9-a4ab-642587f5ce81" x="181" y="185" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense39}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="5c5982b4-fef9-49d4-8f6a-7363491c1a0d" x="181" y="195" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense40}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="88cf9d45-bdb2-466f-913f-cd44ceb3b879" x="181" y="205" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense41}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="9075a3f7-4667-476f-8998-32ee714241b5" x="181" y="215" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense_42}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="d5a0c1ac-720a-4e8a-8f8f-397a11750ce3" x="188" y="246" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense43}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="0ebfb649-fba7-4b53-907a-eb781886a139" x="181" y="256" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense44}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="c0ceb87e-e23a-402c-b4ab-95b7b69c0896" x="181" y="276" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense45}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="ba36d627-3165-4544-ba91-38bd87d23389" x="181" y="286" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense46}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="de4c93d0-7654-4009-9190-c0831f14e662" x="181" y="296" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense47}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="5844d52a-cd89-49e4-985a-667c7a556bbc" x="181" y="306" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense48}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="50db077d-6ed8-4c5d-9924-ecf333c8af54" x="181" y="316" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense49}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="d2d36a64-c755-43e8-8ffe-209da09cf09d" x="188" y="334" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense50}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="142617a2-345b-48b9-bed0-de2e625b9b21" x="188" y="344" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense_51}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d298f632-3721-42a4-a4de-f4aa6692a2fc" x="312" y="466" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Miscellaneous"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f373d4ea-d9e5-4c89-8cdd-47cba6239b0e" x="311" y="486" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Total"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="f951d099-b369-4bef-a98f-4c67dc44d2f2" x="486" y="466" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense99}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="7fbb5a49-40be-400d-8f06-c8b202f4ab26" x="486" y="486" width="79" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="eb1635a8-0429-4331-b276-05f58e5c014b" x="325" y="10" width="240" height="33" forecolor="#4B2384" backcolor="#1D70B7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="20" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Budget planner"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3c38eb5b-c1d5-486c-90aa-eb6b92315153" x="328" y="185" width="121" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Dental care"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="f965540a-0861-4d87-bd56-1e7d3a1a2aef" x="486" y="185" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense53}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="388f0650-6d50-42ff-b643-77c641d52d59" x="328" y="205" width="121" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Health supplements"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="0308f3c6-5e03-4dc7-9a6a-69b5eb885850" x="486" y="205" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense54}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6970646e-c3fc-499a-8a64-7348c017df12" x="328" y="215" width="121" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Cosmetics and skincare products"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="8aff5676-640c-41a6-851e-3691f6e07ca3" x="486" y="215" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense55}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7fe82e6d-17a7-4a85-ab57-222eb5dfb5ec" x="37" y="266" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Revolving loan"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="760c6a34-addf-4ae4-8566-99fbe0cf37c2" x="181" y="266" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense59}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5a852d4c-4628-4ff8-a967-6343201d4dbb" x="311" y="406" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Planning for ageing"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="7b5a52ea-ca3c-4023-a8e2-73c73e81e63e" x="485" y="406" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense60}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="52d3023d-869e-4a59-aee5-07845254639c" x="332" y="416" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Long-term care spendings"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="791fe287-ff8c-413f-832a-92e946e6875c" x="486" y="416" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense61}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2a78f8c6-e9dd-45c3-ab66-041f24de372b" x="332" y="426" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Funeral/Burial expenses"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="2f9d3711-37b5-4859-a8b0-b95b62f3ccbc" x="486" y="426" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense62}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a550449d-7e5a-40b9-a6b8-0e4bd4f5c558" x="312" y="446" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Financial and legal advice"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="d01b5875-f53f-466d-907d-d0aa34a9fe9c" x="486" y="446" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense98}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="815b2357-4464-4553-816d-bd6292bb3a7d" x="188" y="526" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense_42}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cbe4a8b6-5464-4917-804f-d978f23b6eb5" x="27" y="618" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Mobile phone"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="94e7f5ef-a27d-40f9-9062-53f2177a023e" x="188" y="516" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense63}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="d18cdded-cb77-48d7-ac8f-d5cf1acac736" x="188" y="446" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense36}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2340de44-4849-4000-a34e-56cca3d414e4" x="27" y="516" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Holidays"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c536ad19-bdf1-49b8-ba28-7e739c46af4b" x="27" y="506" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Interest class/Hobbies"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8a556f80-34f0-4dbd-926e-8899f5525a8d" x="27" y="476" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Cigarettes"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="31c3661a-bf99-4a7f-ad6b-ba63129affba" x="188" y="628" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense49}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="71640be8-a51b-4efe-953f-ffb87fb723e2" x="27" y="628" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Clothing and footwear"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="c03ab859-f7dd-477d-bbaa-46cf1e07c882" x="188" y="618" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense48}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2e2a08ae-eef1-4813-978b-667d871b793a" x="27" y="658" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t1Expense_53}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="773c06cb-c438-497c-a134-dda620b6e35b" x="16" y="385" width="121" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Leisure/Lifestyle"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="85c4558f-f9a2-4661-8fa5-16a53e498ec5" x="188" y="486" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense41}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2021f1d0-5cbf-4e66-ab22-89c39a5ebd5c" x="27" y="456" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Sports"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8b31023f-3bbf-420b-974b-198340777a32" x="27" y="526" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t1Expense_42}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="437cc3f0-913b-4198-86ed-ea8c2b18d469" x="195" y="568" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense43}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="bd89359c-cbae-4c9f-a017-c3c257e967bb" x="27" y="638" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Accessories"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="248187e1-7063-429a-9ce5-4f45dacd53a4" x="188" y="436" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense35}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8d39c31b-3ad3-45a5-86bd-3cba3b5e1d1b" x="27" y="608" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Computer/Tablet"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d7b289b3-fafd-44b1-9538-cd9120acc534" x="27" y="486" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Lottery and Gambling"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="95645dd4-b99a-47ff-9417-831fb8bb5c9c" x="188" y="476" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense60}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b5b1241e-c89e-41eb-8281-cbdaec048263" x="27" y="426" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Games"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="82a5019b-17c9-41af-8c3a-f8c276864507" x="188" y="456" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense37}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="97340239-2ef8-4f0b-a4c3-03301413f8e6" x="188" y="648" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense52}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="28aab65b-3281-4cfe-98a5-3309960a2def" x="188" y="598" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense46}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="b910f853-0e00-41de-9894-2df442fcf77f" x="188" y="638" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense50}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="781345af-5b3c-4b56-a9d2-3603cc88f665" x="188" y="588" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense45}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="2df8f8dc-2983-43a3-b71e-db7bde3c281f" x="188" y="496" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense61}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b47772ab-ba90-45ef-a638-703c00b72d77" x="27" y="406" width="113" height="20"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Reading (eg Newspaper, magazines and books)"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="ac925ab8-4f63-4072-b51a-7931e56cc370" x="195" y="385" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense31}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a8a7ab08-4d01-4ac0-a95a-6b2592cc218e" x="27" y="598" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Household goods"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="bae280e3-32d3-4b2c-b817-fd740a5a406d" x="188" y="396" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense32}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="5c0ffa34-39f7-4de3-8b8f-07fcd3349fbc" x="188" y="406" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense33}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="ab1753c3-41ae-48ab-a79a-86bbb21e2859" x="188" y="426" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense34}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="a1778f52-e519-4fa3-ad22-b9139e28f07b" x="188" y="506" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense62}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="651c185a-dbdb-45f0-b2c8-51422a5eb18b" x="188" y="658" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense_53}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9e2ea681-fd4a-4e5b-b776-7e4d5cd527e3" x="27" y="466" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Photography"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="dad57e82-7420-4123-8fba-1f57cb91fffa" x="27" y="648" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Personal care products"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="efd21631-c1cc-4494-84de-cd5b3f8ff619" x="27" y="446" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Music"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="4d7d2ff3-48e5-471b-a30a-80e0f132d56f" x="188" y="466" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense39}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="daf9401b-ed3f-45e2-8c27-041b0e082fe8" x="27" y="396" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Art"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="012668a0-a85b-40e1-a0b4-193709e3ec1f" x="27" y="496" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Bars/Clubs"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f9883db4-5a1e-4218-9725-bce18647f6ed" x="27" y="436" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Movies"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="10bde4d3-e3f6-4c55-a5e3-3928561cee86" x="188" y="608" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense47}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="310375c9-89da-4c21-a812-47cf411ad8f2" x="188" y="578" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense44}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e85d120f-809d-4e1a-b908-6f8bdba886fd" x="16" y="568" width="124" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Shopping"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="abbc0a06-65f7-481d-8673-8b6f8ec76404" x="27" y="578" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Furniture"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="310a331e-d28c-4942-b5c2-2db120ae1898" x="27" y="588" width="113" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Home appliances, electric and gas"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="134" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Monthly"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="145" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Monthly"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="246" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Monthly"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="385" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Monthly"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="568" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Monthly"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="450" y="134" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Monthly"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="451" y="315" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Monthly"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="451" y="406" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Monthly"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="452" y="486" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Monthly"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="9075a3f7-4667-476f-8998-32ee714241b5" x="181" y="226" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense_42_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1a6a7a69-6358-453c-8e6b-3e0f3c09c32b" x="37" y="226" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t2Expense_42_2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="9075a3f7-4667-476f-8998-32ee714241b5" x="181" y="236" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense_42_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1a6a7a69-6358-453c-8e6b-3e0f3c09c32b" x="37" y="236" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t2Expense_42_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b2687d58-259f-4df2-9dda-797069bea552" x="29" y="354" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t2Expense_51_2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="142617a2-345b-48b9-bed0-de2e625b9b21" x="188" y="354" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense_51_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b2687d58-259f-4df2-9dda-797069bea552" x="29" y="364" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t2Expense_51_3}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="142617a2-345b-48b9-bed0-de2e625b9b21" x="188" y="364" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense_51_3}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="815b2357-4464-4553-816d-bd6292bb3a7d" x="188" y="536" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense_42_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8b31023f-3bbf-420b-974b-198340777a32" x="27" y="536" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t1Expense_42_2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="815b2357-4464-4553-816d-bd6292bb3a7d" x="188" y="546" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense_42_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8b31023f-3bbf-420b-974b-198340777a32" x="27" y="546" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t1Expense_42_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2e2a08ae-eef1-4813-978b-667d871b793a" x="27" y="668" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t1Expense_53_2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="651c185a-dbdb-45f0-b2c8-51422a5eb18b" x="188" y="668" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense_53_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2e2a08ae-eef1-4813-978b-667d871b793a" x="27" y="678" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t1Expense_53_3}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="651c185a-dbdb-45f0-b2c8-51422a5eb18b" x="188" y="678" width="80" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1Expense_53_3}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="10715657-7fa6-44f7-be53-ebefd94297cb" x="486" y="285" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense_7_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0db3c434-e01e-4407-857d-1bde1f9b8152" x="328" y="285" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t2Expense_7_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0db3c434-e01e-4407-857d-1bde1f9b8152" x="328" y="295" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t2Expense_7_3}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="10715657-7fa6-44f7-be53-ebefd94297cb" x="486" y="295" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense_7_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0eeb7832-b588-46c2-a8e6-260a9405e4e6" x="329" y="377" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t2Expense_13_2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="a2702547-29f9-43b5-90ed-cbdaba039753" x="486" y="377" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense_13_2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0">
+				<reportElement uuid="a2702547-29f9-43b5-90ed-cbdaba039753" x="486" y="387" width="73" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p2Expense_13_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0eeb7832-b588-46c2-a8e6-260a9405e4e6" x="329" y="387" width="100" height="10"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t2Expense_13_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="155" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense36}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="165" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense37}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="175" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense38}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="225" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense_42_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="205" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense41}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="195" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense40}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="185" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense39}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="215" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense_42}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="236" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense_42_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="286" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense46}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="276" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense45}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="296" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense47}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="306" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense48}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="256" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense44}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="316" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense49}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="266" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense59}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="334" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense50}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="344" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense_51}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="354" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense_51_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="364" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense_51_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="486" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense41}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="466" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense39}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="426" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense34}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="446" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense36}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="456" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense37}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="476" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense60}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="436" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense35}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="396" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense32}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="406" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense33}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="536" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense_42_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="496" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense61}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="526" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense_42}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="506" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense62}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="516" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense63}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="546" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense_42_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="618" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense48}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="578" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense44}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="668" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense_53_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="638" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense50}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="608" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense47}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="588" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense45}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="648" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense52}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="628" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense49}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="678" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense_53_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="598" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense46}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="146" y="658" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s1Expense_53}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="450" y="145" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="450" y="185" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense53}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="450" y="195" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="450" y="205" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense54}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="450" y="215" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense55}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="450" y="226" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="450" y="275" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense_7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="450" y="255" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="450" y="285" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense_7_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="450" y="296" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense_7_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="450" y="265" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="451" y="327" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="451" y="368" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense_13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="451" y="347" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="451" y="337" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="451" y="357" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="451" y="377" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense_13_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="451" y="387" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense_13_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="451" y="416" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense61}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="451" y="426" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{s2Expense62}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="452" y="446" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Monthly"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="592008e6-dc58-4558-b36d-87a7b6651b98" x="452" y="466" width="35" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gotham Rounded Book" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Monthly"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="398b0835-bcd5-4f6b-8923-38fc932b8f66" x="13" y="145" width="275" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="398b0835-bcd5-4f6b-8923-38fc932b8f66" x="13" y="395" width="275" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="398b0835-bcd5-4f6b-8923-38fc932b8f66" x="13" y="577" width="275" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="398b0835-bcd5-4f6b-8923-38fc932b8f66" x="295" y="145" width="270" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="398b0835-bcd5-4f6b-8923-38fc932b8f66" x="296" y="325" width="270" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="398b0835-bcd5-4f6b-8923-38fc932b8f66" x="296" y="416" width="270" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="398b0835-bcd5-4f6b-8923-38fc932b8f66" x="297" y="456" width="270" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="398b0835-bcd5-4f6b-8923-38fc932b8f66" x="297" y="485" width="270" height="1"/>
+			</line>
+			<image>
+				<reportElement uuid="e22e2fde-1e8f-48a2-acd4-fd4159a2fca7" x="0" y="0" width="140" height="51"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/logo-iec.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="8804ccd0-2627-44a6-a00c-c298909386fb" mode="Opaque" x="0" y="65" width="565" height="25" forecolor="#4B2384" backcolor="#2DBDB6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["         Summary"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="f016c80c-2200-4c13-97c0-f4a750429901" x="6" y="70" width="18" height="18"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/ico-report.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</summary>
+</jasperReport>

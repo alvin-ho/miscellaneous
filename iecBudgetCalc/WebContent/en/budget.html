@@ -1,0 +1,3392 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+	<!-- Social Link -->
+	<meta property="og:title" content="Budget Planner" />
+	<meta property="og:type" content="website" />
+	<!-- must be absolute path to make stable reference for facebook, should not be an internal or private network -->
+	<meta property="og:image" content="https://www.thechinfamily.hk/tools/common/fbimages/fbimage.jpg" />
+	<meta property="og:image:secure_url" content="https://www.thechinfamily.hk/tools/common/fbimages/fbimage.jpg" />
+	<meta property="og:image:type" content="image/jpg" />
+	<!-- ended -->
+	<meta property="og:url" content="https://www.thechinfamily.hk/tools/en/budget.html" />
+	<meta property="og:description" content="Use our budget planner to keep track of your finance. You can save your budget planner results on your computer, print out and do it later, or you can set up a budget by downloading our budgeting spreadsheet into your computer." />
+	<!-- ended -->
+
+	<script src="../js/config.js"></script>
+
+	<script type="text/javascript">
+
+		document.write("<link href=\"" + root_path + "/css/html4-reset.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+		document.write("<link href=\"" + root_path + "/css/layout.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+		//document.write("<link href=\"" + root_path + "/css/default.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+		document.write("<script src=\"" + root_path + "/js/jquery.js\"></scr" + "ipt>");
+		document.write("<script src=\"" + root_path + "/js/changeFont.js\"></scr" + "ipt>");
+		document.write("<script src=\"" + root_path + "/js/functions.js\"></scr" + "ipt>");
+		document.write("<script src=\"" + root_path + "/js/tsUtil.js\"></scr" + "ipt>");
+		document.write("<script src=\"" + root_path + "/js/sitemapUtil.js\"></scr" + "ipt>");
+		document.write("<script src=\"" + root_path + "/js/sitemap_breadcrumb.js\"></scr" + "ipt>");
+		document.write("<script src=\"" + root_path + "/js/iecGlobal.js\"></scr" + "ipt>");
+		document.write("<script src=\"" + root_path + "/js/google_analytics.js\"></scr" + "ipt>");
+
+		var loc = window.location.href;
+		var lang = 'en';
+		if (loc.search('lang=tc') !== -1 || loc.search('/tc/') !== -1) {
+			lang = 'tc';
+		}
+	</script>
+
+	<script>
+		var loc = window.location.href;
+		var lang = 'en';
+		if (loc.search('lang=tc') !== -1 || loc.search('/tc/') !== -1) {
+			lang = 'tc';
+		}
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="../css/default.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../css/calculator.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.jqplot.css" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.fancybox-1.3.4.css" media="all" />
+
+	<link href="../css/footer/lib/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../css/footer/lib/footer.css" rel="stylesheet" type="text/css" />
+	<script src="../css/footer/lib/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--font-->
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7132094/6453152/css/fonts.css" />
+	<script type="text/javascript" src="https://fast.fonts.net/jsapi/c550c076-1bd6-411f-ac61-2ea18430c967.js"></script>
+	<!--font end-->
+
+	<!-- <a href="javascript:fbShare('https://www.thechinfamily.hk/tools/networth/en/index.html', 'Budget Planner', 'Use our budget planner to keep track of your finance. You can save your budget planner results on your computer, print out and do it later, or you can set up a budget by downloading our budgeting spreadsheet into your computer.', 'https://www.thechinfamily.hk/web/images/tc/tools-and-resources/tools/tools-head-banner_tc.jpg', 520, 350)" class="icoFb"></a>-->
+	<!-- Google Code for Remarketing Tag -->
+	<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: https://google.com/ads/remarketingsetup
+--------------------------------------------------->
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 926048988;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+	</script>
+	<noscript>
+		<div style="display:inline;">
+			<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/926048988/?value=0&amp;guid=ON&amp;script=0" />
+		</div>
+	</noscript>
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window,
+			document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1666299540302495');
+		fbq('track', "PageView");
+	</script>
+	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1666299540302495&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+	<title>Budget Planner</title>
+
+</head>
+
+<body class="en">
+	<!-- 2013.12.26 to include header & footer -->
+	<div class="header">
+		<!--	<div class="useful-tools-wrapper">-->
+		<!-- USEFUL TOOL WITHIN THE HEADER, I.E. VIOLET AREA -->
+		<!--		<div class="useful-tools">-->
+		<!-- 2013.12.5 commonly include start -->
+		<!--			<div id="xxxsys_topLinkDiv" style="display:inline;"></div>-->
+		<!--			<div id="xxxsys_topSearchDiv" class="header-search"></div>-->
+		<!-- 2013.12.5 commonly include ended -->
+		<!--		</div>-->
+		<!-- /useful-tools -->
+		<!--	</div>-->
+		<!-- /useful-tools-wrapper -->
+		<div class="wrapper">
+			<!--		<div class="supported-by">-->
+			<!-- <p>The Investor Education Centre is supported by the financial regulators</p>
+			<img src="/images/common/img-supported-by.jpg" alt=""> -->
+			<!--		</div>-->
+			<!-- /supported-by -->
+			<!--
+		<script type="text/javascript">
+		document.writeln('<a href="' + root_path + '/en/index.html" class="logo-iec"><img src="' + root_path + '/images/common/img-logo-iec.jpg" alt="" /></a>');
+		</script>
+-->
+			<a href="https://www.thechinfamily.hk/web/en/" class="logo-iec"><img src="../images/common/img-logo-iec.jpg" alt="" /></a>
+			<div class="clearfix"></div>
+			<!--	</div>-->
+			<!-- /wrapper -->
+			<!--	<div id="sys_topMenuDiv">*** Include top-menu.html here ***</div>	-->
+			<!--	<script>ts_loadInclude("sys_topMenuDiv", root_path + "/" + lang + "/include/top-menu.html");</script>-->
+		</div>
+	</div>
+	<!-- 2013.12.26 to include header & footer ended -->
+	<form method="POST" action="../pdfBudget.do?lang=0" name="budget_form" id="budget_form">
+		<div class="calculator inner calculator-budget">
+			<div class="calculator-wrapper">
+				<h1>
+<!--			<img src="../images/common/calculator/icon-title.gif" alt="">-->
+			Budget planner</h1>
+				<p>Create a budget to understand your money habits and take control of your spending and savings. Our Budget Planner helps you keep track of your finance. You can save the results on your computer, print out and do it later, or you can set up a budget by downloading our budgeting spreadsheet into your computer.</p>
+				<div class="calculator-innerwrapper-left">
+					<ul class="tab">
+						<li><a href="javascript:;" class="active"><span><img src="../images/common/calculator/icon-income.png" alt="icon-income" /></span>Income</a></li>
+						<li><a href="javascript:;"><span><img src="../images/common/calculator/icon-savings-and-investments.png" alt="icon-savings-and-investments" /></span>Savings and<br />investments</a></li>
+						<li><a href="javascript:;"><span><img src="../images/common/calculator/icon-expenses.png" alt="icon-expenses" /></span>Expenses</a></li>
+						<!-- this is the result tab, i.e. 100% width-->
+						<li class="tab-report"><a href="javascript:;"><span><img src="../images/common/calculator/icon-report.png" alt="icon-report" /></span>Report</a></li>
+					</ul>
+					<!-- /tab -->
+					<!-- UPDATED 13 11 05 -->
+					<div class="tab-assumption"><a href="budget_disclaimer-2.html"><span><img src="../images/common/calculator/btn-assumption.jpg" alt="assumption"></span></a></div>
+					<div class="clearfix"></div>
+					<div class="form-wrapper">
+						<!-- income-wrapper start -->
+						<div class="form-innerwrapper active">
+							<!-- ***** new appended 2013.10.24 ***** -->
+							<a href="javascript:;" class="close-all floatR">Collapse all</a>
+							<ul class="expand-list">
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>Salary</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Basic salary</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income2' id='p1Income2' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Allowances or subsides(eg overtime, meal, transportation, housing, etc.)
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income3' id='p1Income3' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Commission
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income4' id='p1Income4' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Bonus
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income5' id='p1Income5' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Income_6' id='p1Income_6' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Spouse's salary</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Basic salary</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income16' id='p1Income16' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.22 ***** -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Allowances or subsides(eg overtime, meal, transportation, housing, etc.)
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income17' id='p1Income17' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Commission
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income18' id='p1Income18' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Bonus
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income19' id='p1Income19' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Income_20' id='p1Income_20' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.22 ***** -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Other income</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Income from savings and investment (eg rent, dividend, interests received, etc.)
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income9' id='p1Income9' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Pension</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income15' id='p1Income15' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Distribution from insurance plan (eg annuity)
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income10' id='p1Income10' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Government assistance
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income11' id='p1Income11' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Gifts from family and friends
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income12' id='p1Income12' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Income_13' id='p1Income_13' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+							</ul>
+							<p class="total">Total : <span class="beanData1">HKD 0.0</span></p>
+							<!-- /total -->
+							<a href="javascript:;" class="btn btn_save">Save in Excel</a>
+							<a href="javascript:;" class="btn" onclick="calculatorProcess(1)">Next</a>
+							<div class="clearfix"></div>
+						</div>
+						<div class="form-innerwrapper">
+							<!-- ***** new appended 2013.10.24 ***** -->
+							<a href="javascript:;" class="close-all floatR">Collapse all</a>
+							<ul class="expand-list">
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>Savings / Investment</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<!--
+									<tr>
+										<td class="topic" colspan="2" width="270">Regular</td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">Monthly</option><option value="1">Weekly</option><option value="2">Yearly</option>
+											</select>
+										</td>
+										<td width="35">
+											HKD
+										</td>
+										<td width="170">
+											<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving1' id='p1Saving1' />
+										</td>
+									</tr>
+									<tr>
+										<td class="topic" colspan="2" width="270">Lump sum</td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">Monthly</option><option value="1">Weekly</option><option value="2">Yearly</option>
+											</select>
+										</td>
+										<td width="35">
+											HKD
+										</td>
+										<td width="170">
+											<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving2' id='p1Saving2' />
+										</td>
+									</tr>
+									-->
+										<!-- Dynamic to get name from 2013.10.23 -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<input type="text" class="txtOthers" id="p1Saving9Title" name="p1Saving9Title" style="width:150px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving9' id='p1Saving9' />
+											</td>
+										</tr>
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<input type="text" class="txtOthers" id="p1Saving10Title" name="p1Saving10Title" style="width:150px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving10' id='p1Saving10' />
+											</td>
+										</tr>
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<input type="text" class="txtOthers" id="p1Saving11Title" name="p1Saving11Title" style="width:150px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving11' id='p1Saving11' />
+											</td>
+										</tr>
+										<!-- Dynamic to get name from 2013.10.23 -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												More
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Saving_2' id='p1Saving_2' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Retirement schemes</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Mandatory contributions</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving4' id='p1Saving4' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Voluntary contributions</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving5' id='p1Saving5' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Saving_6' id='p1Saving_6' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+							</ul>
+							<p class="total">Total : <span class="beanData2">HKD 0.0</span></p>
+							<!-- /total -->
+							<a href="javascript:;" class="btn btn_save">Save in Excel</a>
+							<a href="javascript:;" class="btn" onclick="calculatorProcess(2)">Next</a>
+							<a href="javascript:;" class="btn" onclick="calculatorProcess(0)">Previous</a>
+							<div class="clearfix"></div>
+						</div>
+						<div class="form-innerwrapper">
+							<!-- ***** new appended 2013.10.24 ***** -->
+							<a href="javascript:;" class="close-all floatR">Collapse all</a>
+							<ul class="expand-list">
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>Household</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Rent</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense2' id='p1Expense2' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Management fee</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense3' id='p1Expense3' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Rates and government rent</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense4' id='p1Expense4' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Water and sewage fee</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense5' id='p1Expense5' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Electricity</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense6' id='p1Expense6' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Gas / Other household fuels</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense7' id='p1Expense7' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Internet / Broadband</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense8' id='p1Expense8' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Pay TV</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense9' id='p1Expense9' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Fixed telephone line service</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense10' id='p1Expense10' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Mobile phone service</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense11' id='p1Expense11' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Domestic helper</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense12' id='p1Expense12' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Home maintenance / Renovation / Repairs</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense13' id='p1Expense13' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Pet / Pet food / Veterinary fee</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense14' id='p1Expense14' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Expense_15' id='p1Expense_15' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Transport</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Fare</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense17' id='p1Expense17' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic" colspan="2">Motor vehicle</td>
+											<td width="180" style="visibility: hidden;">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35" style="visibility: hidden;">
+												HKD
+											</td>
+											<td width="170" style="visibility: hidden;">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense54' id='p1Expense54' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Purchase and repair</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense18' id='p1Expense18' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Fuel</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense19' id='p1Expense19' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">License</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense20' id='p1Expense20' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Parking and tunnel tolls</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense21' id='p1Expense21' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Insurance</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense55' id='p1Expense55' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Registration and examination</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense56' id='p1Expense56' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Expense_22' id='p1Expense_22' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Food and drinks</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Grocery shopping</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense24' id='p1Expense24' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Eating out</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense25' id='p1Expense25' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- 2013.9.27 added -->
+										<!--
+									<tr>
+										<td class="topic padding_left" colspan="2" width="270">Restaurant</td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">Monthly</option><option value="1">Weekly</option><option value="2">Yearly</option>
+											</select>
+										</td>
+										<td width="35">
+											HKD
+										</td>
+										<td width="170">
+											<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense57' id='p1Expense57' />
+										</td>
+									</tr>
+									-->
+										<!--
+									<tr>
+										<td class="topic padding_left" colspan="2" width="270">Takeaway</td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">Monthly</option><option value="1">Weekly</option><option value="2">Yearly</option>
+											</select>
+										</td>
+										<td width="35">
+											HKD
+										</td>
+										<td width="170">
+											<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense58' id='p1Expense58' />
+										</td>
+									</tr>
+									-->
+										<!--
+									<tr>
+										<td class="topic" colspan="2" width="270">Alcohol</td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">Monthly</option><option value="1">Weekly</option><option value="2">Yearly</option>
+											</select>
+										</td>
+										<td width="35">
+											HKD
+										</td>
+										<td width="170">
+											<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense26' id='p1Expense26' />
+										</td>
+									</tr>
+									-->
+										<!-- /tr -->
+										<!--
+									<tr>
+										<td class="topic" colspan="2" width="270">Cigarettes</td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">Monthly</option><option value="1">Weekly</option><option value="2">Yearly</option>
+											</select>
+										</td>
+										<td width="35">
+											HKD
+										</td>
+										<td width="170">
+											<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense27' id='p1Expense27' />
+										</td>
+									</tr>
+									-->
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Snacks</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense28' id='p1Expense28' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Coffee</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense29' id='p1Expense29' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Alcohol</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense30' id='p1Expense30' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Expense_27' id='p1Expense_27' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Family and friends</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Support for parents and other relatives</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense15' id='p2Expense15' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">Children</td>
+											<td width="180" style="visibility: hidden;">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35" style="visibility: hidden;">
+												HKD
+											</td>
+											<td width="170" style="visibility: hidden;">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense16' id='p2Expense16' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Day care / Baby sitting</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense17' id='p2Expense17' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Tuition fee</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense18' id='p2Expense18' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Interest class / Activities</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense19' id='p2Expense19' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Clothing</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense20' id='p2Expense20' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Toys</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense56' id='p2Expense56' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Baby food / Sundries</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense57' id='p2Expense57' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Books / Reading materials</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense58' id='p2Expense58' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Pocket money</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense21' id='p2Expense21' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!--
+									<tr>
+										<td class="topic padding_left" colspan="2">
+											<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+											Others
+											<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+										</td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">Monthly</option><option value="1">Weekly</option><option value="2">Yearly</option>
+											</select>
+										</td>
+										<td width="35">
+											HKD
+										</td>
+										<td width="170">
+											<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_22' id='p2Expense_22' />
+										</td>
+									</tr>
+									-->
+										<!--
+									<tr>
+										<td class="topic" colspan="2">
+											Others
+										</td>
+										<td width="180" style="visibility: hidden;">
+											<select name="" id="">
+												<option value="0">Monthly</option><option value="1">Weekly</option><option value="2">Yearly</option>
+											</select>
+										</td>
+										<td width="35" style="visibility: hidden;">
+											HKD
+										</td>
+										<td width="170" style="visibility: hidden;">
+											<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_23' id='p2Expense_23' />
+										</td>
+									</tr><!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">Treats and gifts</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense24' id='p2Expense24' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">Celebrations</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense25' id='p2Expense25' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_26' id='p2Expense_26' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Taxation</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Personal assessment</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense28' id='p2Expense28' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Profits tax</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense29' id='p2Expense29' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Property tax</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense30' id='p2Expense30' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Salaries tax</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense31' id='p2Expense31' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Salaries tax of spouse</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense32' id='p2Expense32' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_33' id='p2Expense_33' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Financial commitments</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Insurance</td>
+											<td width="180" style="visibility: hidden;">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35" style="visibility: hidden;">
+												HKD
+											</td>
+											<td width="170" style="visibility: hidden;">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense35' id='p2Expense35' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Life</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense36' id='p2Expense36' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Critical illness</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense37' id='p2Expense37' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Home</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense38' id='p2Expense38' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Medical</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense39' id='p2Expense39' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Motor</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense40' id='p2Expense40' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Travel</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense41' id='p2Expense41' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_42' id='p2Expense_42' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">Loan repayment</td>
+											<td width="180" style="visibility: hidden;">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35" style="visibility: hidden;">
+												HKD
+											</td>
+											<td width="170" style="visibility: hidden;">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense43' id='p2Expense43' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Bank overdraft</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense44' id='p2Expense44' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Revolving loan</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense59' id='p2Expense59' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Car loan</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense45' id='p2Expense45' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Mortgage loan</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense46' id='p2Expense46' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Personal loan</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense47' id='p2Expense47' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Credit card loan and interest fee</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense48' id='p2Expense48' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">Finance-related fees and charges</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense49' id='p2Expense49' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">Donations / Charity</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense50' id='p2Expense50' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_51' id='p2Expense_51' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Leisure / Lifestyle</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Art</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense32' id='p1Expense32' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Reading(eg Newspaper, magazines and books)</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense33' id='p1Expense33' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Games</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense34' id='p1Expense34' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Movies</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense35' id='p1Expense35' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Music</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense36' id='p1Expense36' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Sports</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense37' id='p1Expense37' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270" style="display:none;">Travel</td>
+											<td width="180" style="display:none;">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35" style="display:none;">
+												HKD
+											</td>
+											<td width="170" style="display:none;">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense38' id='p1Expense38' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Photography</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense39' id='p1Expense39' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!--
+									<tr>
+										<td class="topic" colspan="2" width="270">Alcohol and Cigarettes</td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">Monthly</option><option value="1">Weekly</option><option value="2">Yearly</option>
+											</select>
+										</td>
+										<td width="35">
+											HKD
+										</td>
+										<td width="170">
+											<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense40' id='p1Expense40' />
+										</td>
+									</tr>
+									-->
+										<!-- /tr -->
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic" colspan="2" width="270" style="display:none;">Alcohol</td>
+											<td width="180" style="display:none;">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35" style="display:none;">
+												HKD
+											</td>
+											<td width="170" style="display:none;">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense59' id='p1Expense59' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Cigarettes</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense60' id='p1Expense60' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Lottery and Gambling</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense41' id='p1Expense41' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Bars / Clubs</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense61' id='p1Expense61' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Interest class / Hobbies</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense62' id='p1Expense62' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Holidays</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense63' id='p1Expense63' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Expense_42' id='p1Expense_42' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Shopping</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Furniture</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense44' id='p1Expense44' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Home appliances, electric and gas</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense45' id='p1Expense45' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Household goods</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense46' id='p1Expense46' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Computer / Tablet</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense47' id='p1Expense47' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Mobile phone</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense48' id='p1Expense48' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Clothing and footwear</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense49' id='p1Expense49' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Accessories</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense50' id='p1Expense50' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!--
+									<tr>
+										<td class="topic" colspan="2" width="270">Cosmetics and skincare products</td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">Monthly</option><option value="1">Weekly</option><option value="2">Yearly</option>
+											</select>
+										</td>
+										<td width="35">
+											HKD
+										</td>
+										<td width="170">
+											<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense51' id='p1Expense51' />
+										</td>
+									</tr>
+									 -->
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Personal care products</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense52' id='p1Expense52' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Expense_53' id='p1Expense_53' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Health and beauty</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Medical services (eg General practitioner, specialist, physiotherapy, bonesetter, operation, medical checkup, etc.)
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense2' id='p2Expense2' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Dental care</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense53' id='p2Expense53' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Prescriptions and medicines
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense3' id='p2Expense3' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Health supplements</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense54' id='p2Expense54' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Cosmetics and skincare products</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense55' id='p2Expense55' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Beauty and fitness services (eg facial treatment, massage, gym membership, etc.)
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense4' id='p2Expense4' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												Eye care / Glasses</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense5' id='p2Expense5' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Hairdressing</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense6' id='p2Expense6' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_7' id='p2Expense_7' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Education and profession</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Tuition fee</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense9' id='p2Expense9' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Examination</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense10' id='p2Expense10' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Textbooks</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense11' id='p2Expense11' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">Membership</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense12' id='p2Expense12' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												Others
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_13' id='p2Expense_13' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- END -->
+								<!-- 2013.9.27 -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Planning for ageing</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Long-term care spendings</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense61' id='p2Expense61' />
+											</td>
+										</tr>
+										<tr>
+											<td class="topic" colspan="2" width="270">Funeral / Burial expenses</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense62' id='p2Expense62' />
+											</td>
+										</tr>
+										<tr>
+											<td style="display:none;" class="topic" colspan="2" width="270">Planning for ageing</td>
+											<td style="display:none;" width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td style="display:none;" width="35">
+												HKD
+											</td>
+											<td style="display:none;" width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense60' id='p2Expense60' />
+											</td>
+										</tr>
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Financial and legal advice</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Financial and legal advice</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense63' id='p2Expense63' />
+											</td>
+										</tr>
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>Miscellaneous</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">Miscellaneous</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">Monthly</option>
+													<option value="1">Weekly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+											<td width="35">
+												HKD
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense52' id='p2Expense52' />
+											</td>
+										</tr>
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">Top</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+							</ul>
+							<p class="total">Total : <span class="beanData3">HKD 0.0</span></p>
+							<a href="javascript:;" class="btn btn_save">Save in Excel</a>
+							<a onclick="calculatorProcess(3)" class="btn btn_cal" href="javascript:;">Result</a>
+							<a onclick="calculatorProcess(1)" class="btn" href="javascript:;">Previous</a>
+							<div class="clearfix"></div>
+						</div>
+						<div class="form-innerwrapper result">
+							<ul class="expand-list expandAll">
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>Monthly figure (HKD)</h2></a>
+									<div id="chart1div" style="width:675px; height:190px;">&nbsp;</div>
+									<div id="sub_chart1div"></div>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>Income distribution</h2></a>
+									<p>please click on the item shown in the pie chart to view the details</p>
+									<div id="chart4div" style="width:675px; height:290px;">&nbsp;</div>
+									<div id="sub_chart4div"></div>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>Savings &amp; investments distribution</h2></a>
+									<p>please click on the item shown in the pie chart to view the details</p>
+									<div id="chart2div" style="width:675px; height:290px;">&nbsp;</div>
+									<div id="sub_chart2div"></div>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>Expenses distribution</h2></a>
+									<p>please click on the item shown in the pie chart to view the details</p>
+									<div id="chart3div" style="width:675px; height:400px;">&nbsp;</div>
+									<div id="sub_chart3div"></div>
+								</li>
+								<!-- li end -->
+							</ul>
+							<br>
+							<a onclick="calculatorProcess(2)" class="btn" href="javascript:;">Back</a>
+							<a href="javascript:;" class="btn btn_reset">Reset</a>
+							<!-- Rating / Feedback section -->
+							<div class="clear"></div>
+							<table border="0" cellspacing="0" cellpadding="0" class="opinion">
+								<tbody>
+									<tr>
+										<td width="50%" class="feedback">
+											<a href="mailto:info@thechinfamily.hk?subject=Feedback%20on%20Budget%20planner&amp;" id="feedback"><img src="../images/common/calculator/btn-feedback-e.jpg"></a>
+										</td>
+										<td width="50%" valign="middle" class="rating">
+											<p><strong>How satisfied are you with this Budget Planner?</strong>
+												<br> (1 is the lowest, 5 is the highest)</p>
+											<form>
+												<table border="0" cellspacing="0" cellpadding="0">
+													<tr>
+														<td>
+															<input type="radio" name="rating" value="1" id="rating1">
+														</td>
+														<td>
+															<input type="radio" name="rating" value="2" id="rating2">
+														</td>
+														<td>
+															<input type="radio" name="rating" value="3" id="rating3">
+														</td>
+														<td>
+															<input type="radio" name="rating" value="4" id="rating4">
+														</td>
+														<td boder="0">
+															<input type="radio" name="rating" value="5" id="rating5">
+														</td>
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>2</td>
+														<td>3</td>
+														<td>4</td>
+														<td>5</td>
+													</tr>
+												</table>
+											</form>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- End Rating / Feedback section -->
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="calculator-innerwrapper-right">
+					<div class="share-wrapper">
+						<a onclick="downloadExcelTracking(0)" href="javascript:;" title="Download Excel version"><img src="../images/common/calculator/btn-excel.png" alt="Download Excel version" /></a>
+						<!--
+					<a class="btn_record" href="javascript:;" title="View and save your record in Excel format"><img src="../images/common/calculator/btn_report.png" alt="View your record(s)" /></a>
+ 					-->
+						<a class="btn_submit" href="javascript:;" title="Save as PDF"><img src="../images/common/calculator/btn-pdf.png" alt="Save as PDF" /></a>
+						<a class="btn_print" href="javascript:;" title="Print"><img src="../images/common/calculator/btn-print.png" alt="Print" /></a>
+						<a class="btn_mailTo" href="javascript:;" title="Mail to friends"><img src="../images/common/calculator/btn-mail.png" alt="Mail to friends" /></a>
+						<!--							<a class="btn_shareFB" href="javascript:;" title="Share in Facebook"><img src="../images/common/calculator/btn-share.png" alt="Share in Facebook" /></a>-->
+						<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://www.thechinfamily.hk/tools/en/budget.html" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><img src="../images/common/calculator/btn-share.png" alt="Facebook 分享" /></a>
+					</div>
+					<div class="summary">
+						<span><img src="../images/common/calculator/icon-summy.png" alt="summary" /></span> Summary
+					</div>
+					<div class="padding10">
+						<ul class="expand-list">
+							<li class="open">
+								<a href="javascript:;">
+									<h2>Income per month</h2>
+								</a>
+								<h3 class="beanData1">HKD 0</h3>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+									<tbody>
+										<tr>
+											<td class="text">Salary: </td>
+										</tr>
+										<tr>
+											<td class="price p1Income1">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Spouse's salary: </td>
+										</tr>
+										<tr>
+											<td class="price p1Income7">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Other income: </td>
+										</tr>
+										<tr>
+											<td class="price p1Income8">HKD 0</td>
+										</tr>
+									</tbody>
+								</table>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<h2>Savings and investments<br />per month</h2>
+								</a>
+								<h3 class="beanData2">HKD 0</h3>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+									<tbody>
+										<tr>
+											<td class="text">Savings / Investment: </td>
+										</tr>
+										<tr>
+											<td class="price p1Saving3">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Retirement schemes: </td>
+										</tr>
+										<tr>
+											<td class="price p1Saving7">HKD 0</td>
+										</tr>
+									</tbody>
+								</table>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<h2>Expenses per month</h2>
+								</a>
+								<h3 class="beanData3">HKD 0</h3>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+									<tbody>
+										<tr>
+											<td class="text">Household: </td>
+										</tr>
+										<tr>
+											<td class="price p1Expense1">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Transport: </td>
+										</tr>
+										<tr>
+											<td class="price p1Expense16">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Food and drinks: </td>
+										</tr>
+										<tr>
+											<td class="price p1Expense23">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Family and friends: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense14">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Taxation: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense27">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Financial commitments: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense34">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Leisure / Lifestyle: </td>
+										</tr>
+										<tr>
+											<td class="price p1Expense31">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Shopping: </td>
+										</tr>
+										<tr>
+											<td class="price p1Expense43">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Health and beauty: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense1">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Education and profession: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense8">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Planning for ageing: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense60">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Financial and legal advice: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense98">HKD 0</td>
+										</tr>
+										<tr>
+											<td class="text">Miscellaneous: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense99">HKD 0</td>
+										</tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+						<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table result-talbe">
+							<tr>
+								<td style="color:#4c2683; font-weight:bold;">Result</td>
+							</tr>
+							<tr>
+								<td class="price beanData4">HKD 0</td>
+							</tr>
+						</table>
+					</div>
+					<!-- /padding10 -->
+				</div>
+				<!-- /calculator-innerwrapper-right -->
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- CHART DATA -->
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Income1' id='p1Income1' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Income7' id='p1Income7' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Income8' id='p1Income8' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Income14' id='p1Income14' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Saving3' id='p1Saving3' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Saving7' id='p1Saving7' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Saving8' id='p1Saving8' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Expense1' id='p1Expense1' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Expense16' id='p1Expense16' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Expense23' id='p1Expense23' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Expense31' id='p1Expense31' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Expense43' id='p1Expense43' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense1' id='p2Expense1' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense8' id='p2Expense8' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense14' id='p2Expense14' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense27' id='p2Expense27' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense34' id='p2Expense34' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense98' id='p2Expense98' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense99' id='p2Expense99' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Total' id='p2Total' />
+		<!-- BAR DATA : INCOME, SAVING, EXPENSE -->
+		<input class='hdnData' type='hidden' value='' name='beanData1' id='beanData1' />
+		<input class='hdnData' type='hidden' value='' name='beanData2' id='beanData2' />
+		<input class='hdnData' type='hidden' value='' name='beanData3' id='beanData3' />
+		<input class='hdnData' type='hidden' value='' name='beanData4' id='beanData4' />
+		<!-- PIE0 DATA -->
+		<input class='hdnData' type='hidden' value='' name='p3Income1' id='p3Income1' />
+		<input class='hdnData' type='hidden' value='' name='p3Income2' id='p3Income2' />
+		<input class='hdnData' type='hidden' value='' name='p3Income3' id='p3Income3' />
+		<!-- PIE1 DATA -->
+		<!--
+	<input class='hdnData' type='hidden' value='' name='p3Saving1' id='p3Saving1' />
+	-->
+		<input class='hdnData' type='hidden' value='' name='p3Saving2' id='p3Saving2' />
+		<input class='hdnData' type='hidden' value='' name='p3Saving3' id='p3Saving3' />
+		<!-- PIE2 DATE -->
+		<input class='hdnData' type='hidden' value='' name='p3Expense1' id='p3Expense1' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense2' id='p3Expense2' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense3' id='p3Expense3' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense4' id='p3Expense4' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense5' id='p3Expense5' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense6' id='p3Expense6' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense7' id='p3Expense7' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense8' id='p3Expense8' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense9' id='p3Expense9' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense10' id='p3Expense10' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense11' id='p3Expense11' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense12' id='p3Expense12' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense13' id='p3Expense13' />
+		<!-- ended -->
+		<!-- OTHERS FIELD -->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Income6' id='p1Income6' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Income13' id='p1Income13' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Income20' id='p1Income20' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Saving2' id='p1Saving2' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Saving6' id='p1Saving6' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Expense15' id='p1Expense15' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Expense22' id='p1Expense22' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Expense27' id='p1Expense27' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Expense42' id='p1Expense42' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Expense53' id='p1Expense53' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense7' id='p2Expense7' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense13' id='p2Expense13' />
+		<!--
+	<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense22' id='p2Expense22' />
+	<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense23' id='p2Expense23' />
+	-->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense26' id='p2Expense26' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense33' id='p2Expense33' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense42' id='p2Expense42' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense51' id='p2Expense51' />
+		<!-- ended -->
+	</form>
+	<!-- 2013.12.26 to include header & footer -->
+	<!--
+	<div class="clearfix"></div>
+	<div class="footer">
+		<div class="click-link-wrapper">
+			<div id="sys_footerTopDiv" class="innerwrapper"></div>
+		</div>
+		<div id="sys_footerDiv"></div>
+		<script>ts_loadInclude("sys_footerDiv", root_path + "/" + lang + "/include/footer_inner.html");</script>
+	</div>
+	<div class="clearfix"></div>
+	<div id="sys_footerBottomDiv" class="footer-hyper-link"></div>
+-->
+	<!-- 2013.12.26 to include header & footer ended -->
+	<div class="clearfix footerfix"></div>
+	<div class="footercontenter">
+		<div id="site-footer" class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="footer-left">
+							<div class="footer-logo">
+								<a href="http://www.thechinfamily.hk/web/iec/en/">
+									<img src="../images/common/iec-hk-logo.png" alt="" title="" />
+								</a>
+							</div>
+							<div class="footer-statement">
+								<p>The Chin Family is managed by the Investor Education Centre, which is supported by the Education Bureau and financial regulators.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="footer-right">
+							<div class="input-group">
+								<!--
+								<p>e-Newsletter</p>
+								<a class="btn btn-default" href="/web/en/tools-and-resources/e-newsletters/index.html">Latest Issue</a>&nbsp;&nbsp;
+		-->
+								<!--						<a class="btn btn-default" href="/subscription/subscription.jsp?lang=en">Subscribe</a>-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-sm-push-5">
+						<div class="footer-hyperlinks-wrapper">
+							<ul id="footer-hyperlinks" class="footer-menu footer-hyperhttps:">
+								<li><a href="https://www.thechinfamily.hk/web/common/apps/en/contact_enquiry.html">Contact Us</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/en/others/sitemap.html">Site Map</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/en/others/liability-statement.html">Liability Statement</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/en/others/privacy-policy.html">Privacy Policy</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/en/others/hyperlink-policy.html">Hyperlink Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-sm-pull-7">
+						<p class="footer-copyright">Copyright &copy;2016 Investor Education Centre. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- 2013.12.26 to include header & footer -->
+<script>
+	iecGlobalUpdate(lang);
+</script>
+<!-- jQuery lib -->
+<script src="../js/jquery-1.8.3.min.js"></script>
+<!-- Fancybox for DISCLAIMER -->
+<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<!-- script & css to include for using jqplot and frontend calculator -->
+<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="../js/excanvas.js"></script><![endif]-->
+<script src="../js/jquery.jqplot.js"></script>
+<script src="../js/jqplot.highlighter.min.js"></script>
+<script src="../js/jqplot.dateAxisRenderer.js"></script>
+<script src="../js/jqplot.canvasTextRenderer.js"></script>
+<script src="../js/jqplot.canvasAxisTickRenderer.js"></script>
+<script src="../js/jqplot.categoryAxisRenderer.js"></script>
+<script src="../js/jqplot.barRenderer.js"></script>
+<!-- for pie chart -->
+<script src="../js/jqplot.pieRenderer.js"></script>
+<script src="../js/jqplot.donutRenderer.js"></script>
+<script src="../js/cal.budget.js"></script>
+
+</html>

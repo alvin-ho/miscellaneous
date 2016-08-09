@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>資產淨值計算機</title>
+	<meta name="viewport" content="width=640,user-scalable=no, target-densitydpi=device-dpi">
+	<meta name="description" content="" />
+	<meta name="robots" content="all" />
+	<meta name="author" content="" />
+	<meta name="rating" content="General" />
+	<!-- Social Link -->
+	<meta property="og:type" content="website" />
+	<!-- must be absolute path to make stable reference for facebook, should not be an internal or private network -->
+	<meta property="og:image" content="https://www.thechinfamily.hk/tools/networth/common/fbimages/fbimage.jpg" />
+	<meta property="og:image:secure_url" content="https://www.thechinfamily.hk/tools/networth/common/fbimages/fbimage.jpg" />
+	<meta property="og:url" content="https://www.thechinfamily.hk/tools/networth/tc/index.html" />
+	<!-- ended -->
+	<meta property="og:image:type" content="image/jpg" />
+	<meta property="og:title" content="資產淨值計算機" />
+	<meta property="og:description" content="檢視你是否有效地管理你的財富！使用資產淨值計算機助你計算你所擁有的資產是否多於你所虧欠的債務。" />
+	<!-- ended -->
+	<script type="text/javascript" src="https://fast.fonts.net/jsapi/c550c076-1bd6-411f-ac61-2ea18430c967.js"></script>
+
+
+
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../js/jquery-migrate-1.2.1.min.js"></script>
+
+	<link href="../css/html4-reset.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/default.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/layout.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/jquery.fancybox-1.3.4.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="../js/jquery-ui-1.11.1/jquery-ui.css" type="text/css" rel="stylesheet" media="all" />
+
+	<link href="../css/footer/lib/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../css/footer/lib/footer.css" rel="stylesheet" type="text/css" />
+	<script src="../css/footer/lib/bootstrap.min.js" type="text/javascript"></script>
+	<!--	<script src="../share/js/npm.js" type="text/javascript"></script>-->
+
+	<!-- jQuery lib -->
+
+	<!-- Fancybox for DISCLAIMER -->
+	<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.js"></script>
+	<script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui-1.11.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/d3.v3.min.js"></script>
+	<script type="text/javascript" src="../js/RadarChart.js"></script>
+	<script type="text/javascript" src="../js/d3-transform.js"></script>
+	<script type="text/javascript" src="../js/numeral.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="../js/jquery.browser.js"></script>
+	<script type="text/javascript" src="../js/function.js"></script>
+	<script type="text/javascript" src="../js/jspdf.debug.js"></script>
+	<script type="text/javascript" src="../js/jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="../js/main_pdf_tc.js"></script>
+	<script type="text/javascript" src="../js/jquery.ui.touch-punch.min.js"></script>
+
+
+	<!--
+	<script>
+		function fbShare(url, title, descr, image, winWidth, winHeight) {
+			var winTop = (screen.height / 2) - (winHeight / 2);
+			var winLeft = (screen.width / 2) - (winWidth / 2);
+			window.open('https://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
+		}
+	</script>
+-->
+	<!-- <a href="javascript:fbShare('https://www.thechinfamily.hk/tools/networth/tc/index.html', 'IEC資產淨值計算機', '視你是否有效地管理你的財富！使用資產淨值計算機助你計算你所擁有的資產是否多於你所虧欠的債務。', 'https://www.thechinfamily.hk/web/images/tc/tools-and-resources/tools/tools-head-banner_tc.jpg', 520, 350)" class="icoFb"></a>-->
+
+	<!-- Google Code for Remarketing Tag -->
+	<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: https://google.com/ads/remarketingsetup
+--------------------------------------------------->
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 926048988;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+	</script>
+	<noscript>
+		<div style="display:inline;">
+			<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/926048988/?value=0&amp;guid=ON&amp;script=0" />
+		</div>
+	</noscript>
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window,
+			document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '1666299540302495');
+		fbq('track', "PageView");
+	</script>
+	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1666299540302495&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+
+
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7132094/6453152/css/fonts.css" />
+<script type="text/javascript" src="https://fast.fonts.net/jsapi/c550c076-1bd6-411f-ac61-2ea18430c967.js"></script>
+
+</head>
+
+<body class="tc">
+	<div class="header">
+		<div class="wrapper">
+			<a href="https://www.thechinfamily.hk/web/tc/" class="logo"></a>
+		</div>
+	</div>
+	<!-- /header -->
+	<div class="calculator">
+		<h1>資產淨值計算機</h1>
+		<div class="inner">
+			<p>了解自己的資產淨值對評估你的財務狀況及達成理財目標十分重要。我們的資產淨值計算機能助你計算你所擁有的資產是否多於你所虧欠的債務，助你檢視及有效地管理你的財富。</p>
+			<a href="javascript:;" class="btnFancy"></a>
+			<form id="cal_form" action="../SpreadSheet?locale=tc" method="POST">
+				<div class="dataInner">
+					<div class="newLeft">
+						<div class="dataDiv"><span class="text">全年總收入</span>
+							<label>港元
+								<input type="text" maxlength="13" name="grossSalary" id="g_1" value="" placeholder="0" onkeypress="return validateQty(event);">
+							</label>
+						</div>
+						<div class="dataDiv"><span class="text">儲蓄或投資的額外收入 (以年計)</span>
+							<label>港元
+								<input type="text" maxlength="13" id="g_2" name="extraIncome" value="" placeholder="0" onkeypress="return validateQty(event);">
+							</label>
+						</div>
+					</div>
+					<div class="newRight">
+						<div class="dataDiv right"><span class="text">全年總開支</span>
+							<label>港元
+								<input type="text" maxlength="13" id="g_3" name="grossExpenses" value="" placeholder="0" onkeypress="return validateQty(event);">
+							</label>
+						</div>
+						<div class="dataDiv right"><span class="text">全年入息稅</span>
+							<label>港元
+								<input type="text" maxlength="13" name="incomeTax" id="g_4" value="" placeholder="0" onkeypress="return validateQty(event);">
+							</label>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="assetsInner">
+					<a href="javascript:;" class="btnCollapse">關閉全部</a>
+					<h3>資產<a href="javascript:;" class="btnToolTips" title="請輸入你資產的現時市場價值"></a></h3>
+					<div class="box liquidAssets">
+						<h4>流動資產</h4>
+						<div class="dataDiv icoCash"><span class="text">現金</span><span class="slider" id="a1Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" name="liquidCash" id="a_1" value="" placeholder="0" data-this-target="icoCash" data-max-val="50000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoSavings"><span class="text">存款戶口</span><span class="slider" id="a2Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_2" name="liquidSavings" value="" placeholder="0" data-this-target="icoSavings" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoCurrent"><span class="text">支票戶口</span><span class="slider" id="a3Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_3" name="liquidCurrent" value="" placeholder="0" data-this-target="icoCurrent" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoFixedDeposit"><span class="text">定期存款</span><span class="slider" id="a3aSlider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_3a" name="liquidFixed" value="" placeholder="0" data-this-target="icoFixedDeposit" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoOtherLiquidAssets"><span class="text">其他流動資產</span><span class="slider" id="a3bSlider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_3b" name="liquidOther" value="" placeholder="0" data-this-target="icoOtherLiquidAssets" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+					</div>
+					<div class="box investmentAssets">
+						<h4>投資項目</h4>
+						<div class="dataDiv icoProperties"><span class="text">投資物業</span><span class="slider" id="a4Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_4" name="investmentProperties" value="" placeholder="0" data-this-target="icoProperties" data-max-val="5000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoMpf"><span class="text">強積金/ 職業退休計劃/ 其他退休計劃<a href="javascript:;" class="btnToolTips" title="職業退休計劃僱員的利益通常會因應成員的服務年期及離職時的薪金計算。請輸入你的最佳估值。"></a></span><span class="slider" id="a5Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_5" name="investmentMpf" value="" placeholder="0" data-this-target="icoMpf" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoInsurance"><span class="text">人壽保險現金價值<a href="javascript:;" class="btnToolTips" title="請參考你的保單報告或向你的保險經紀查詢。"></a></span><span class="slider" id="a6Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_6" name="investmentInsurance" value="" placeholder="0" data-this-target="icoInsurance" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoFunds"><span class="text">基金</span><span class="slider" id="a7Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_7" name="investmentFunds" value="" placeholder="0" data-this-target="icoFunds" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoStocks"><span class="text">股票</span><span class="slider" id="a8Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_8" name="investmentStocks" value="" placeholder="0" data-this-target="icoStocks" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoBonds icoBonds-tc"><span class="text">債券</span><span class="slider" id="a9Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_9" name="investmentBonds" value="" placeholder="0" data-this-target="icoBonds" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoOther"><span class="text">其他投資項目</span><span class="slider" id="a10Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_10" name="investmentOther" value="" placeholder="0" data-this-target="icoOther" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+					</div>
+					<div class="box personalAssets">
+						<h4>個人財產</h4>
+						<div class="dataDiv icoResidential"><span class="text">自住物業</span><span class="slider" id="a11Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_11" name="personalResidential" value="" placeholder="0" data-this-target="icoResidential" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoJewellery"><span class="text">珠寶首飾，名錶和其他飾物</span><span class="slider" id="a12Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_12" name="personalJewellery" value="" placeholder="0" data-this-target="icoJewellery" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoCar"><span class="text">車</span><span class="slider" id="a13Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_13" name="personalCar" value="" placeholder="0" data-this-target="icoCar" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoPersonalUse"><span class="text">其他個人財產</span><span class="slider" id="a14Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="a_14" name="personalUse" value="" placeholder="0" data-this-target="icoPersonalUse" data-max-val="1000000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+					</div>
+				</div>
+				<div class="liabilitiesInner">
+					<h3>債務</h3>
+					<div class="box liabilitiesAssets">
+						<div class="dataDiv icoMortgage">
+							<span class="text">物業按揭結欠</span>
+							<span class="slider" id="l1Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="l_1" name="liabilitiesMortgage" value="" placeholder="0" data-this-target="icoMortgage" data-max-val="5000000" data-monthly="1" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv question question1">
+							<span class="text">每月償還多少物業按揭供款?</span>
+							<span class="slider" id="l2Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="l_2" name="liabilitiesQuestion1" value="" placeholder="0" data-this-target="question1" data-max-val="50000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+							<p class="caption2">你所輸入的「每月供款」必須低於或等於「貸款結欠」。</p>
+						</div>
+						<div class="dataDiv icoCarLoan">
+							<span class="text">汽車貸款結欠</span>
+							<span class="slider" id="l3Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="l_3" name="liabilitiesCarLoan" value="" placeholder="0" data-this-target="icoCarLoan" data-max-val="1000000" data-monthly="2" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv question question2">
+							<span class="text">你每月償還多少汽車貸款結欠?</span>
+							<span class="slider" id="l7Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="l_4" name="liabilitiesQuestion2" value="" placeholder="0" data-this-target="question2" data-max-val="50000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+							<p class="caption2">你所輸入的「每月供款」必須低於或等於「貸款結欠」。</p>
+						</div>
+						<div class="dataDiv icoCredit">
+							<span class="text">信用卡結欠</span>
+							<span class="slider" id="l4Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="l_5" name="liabilitiesCredit" value="" placeholder="0" data-this-target="icoCredit" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoOverdraft">
+							<span class="text">私人透支結欠</span>
+							<span class="slider" id="l5Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="l_6" name="liabilitiesOverdraft" value="" placeholder="0" data-this-target="icoOverdraft" data-max-val="500000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv icoOtherLoan">
+							<span class="text">其他貸款<a href="javascript:;" class="btnToolTips" title="(如學生貸款、私人貸款、信用卡現金套現、稅務貸款和家居維修貸款)"></a></span>
+							<span class="slider" id="l6Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="l_7" name="liabilitiesOtherLoan" value="" placeholder="0" data-this-target="icoOtherLoan" data-max-val="500000" data-monthly="3" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+						</div>
+						<div class="dataDiv question question3">
+							<span class="text">你每月償還多少款額?</span>
+							<span class="slider" id="l8Slider"></span>
+							<label>港元
+								<input type="text" maxlength="13" id="l_8" name="liabilitiesQuestion3" value="" placeholder="0" data-this-target="question3" data-max-val="50000" onkeypress="return validateQty(event);">
+							</label>
+							<p class="caption">(請在欄位輸入數值。)</p>
+							<p class="caption2">你所輸入的「每月供款」必須低於或等於「貸款結欠」。</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="clearfix"></div>
+			<div class="totalInner">
+				<div class="totalAssets">
+					<h3>所有資產: 港元 <span>900,000,000</span></h3>
+				</div>
+				<div class="totalLiabilities">
+					<h3>所有債務:港元 <span>900,000,000</span></h3>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="endInner">
+				<h3>你的總資產淨值: <br/>港元 <span>900,000,000</span></h3>
+				<a href="javascript:;" class="btnCheck">檢視你能否妥善地管理你的財富</a>
+				<a href="javascript:;" class="btnReset">重置</a>
+				<div class="socIco">
+					<a href="javascript:$('#cal_form').submit();" class="icoDoc"></a>
+					<a href="javascript:void(0)" class="icoPrint" target="_blank"></a>
+					<a href="javascript:void(0)" class="icoPdf" target="_blank"></a>
+					<a href="javascript:;" class="icoEmail icoEmail_tc"></a>
+					<!--					<a href="javascript:fbShare('https://www.thechinfamily.hk/tools/networth/tc/index.html', 'IEC資產淨值計算機', '視你是否有效地管理你的財富！使用資產淨值計算機助你計算你所擁有的資產是否多於你所虧欠的債務。', 'https://www.thechinfamily.hk/web/images/tc/tools-and-resources/tools/tools-head-banner_tc.jpg', 520, 350)" class="icoFb"></a>-->
+					<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://www.thechinfamily.hk/tools/networth/tc/index.html" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false" class="icoFb"></a>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="result">
+		<h2>你能妥善地管理你的財富嗎？</h2>
+		<div class="inner">
+			<p>坊間有不同的指標可助你了解你的財富管理概況；當中主要指標包括應急錢、債務管理及理財。</p>
+			<div class="chart" id="body">
+				<div class="emergencyFund">應急錢<span></span></div>
+				<div class="moneyManagement">理財<span></span></div>
+				<div class="debtManagement">債務管理<span></span></div>
+				<div id="chart"></div>
+				<div class="hints">
+					<span class="left">值得注意</span>
+					<span class="right">在掌握中</span>
+				</div>
+			</div>
+			<div class="emergencyFunds resultBox">
+				<h4>應急錢</h4>
+				<h5>你的流動性比率是 <strong><span>1</span></strong></h5>
+				<p class="error">請按「返回」鍵輸入你的收入和支出。</p>
+				<div class="contentBox">
+					<p>流動性比率是由你的流動資產除以每月平均開支來計算的。此比率可以看作當有緊急事故發生時，你是否有足夠應急錢以應付所需。建議你的應急錢可應付三至六個月生活費用。如果你的流動性比率低於3，則代表你的應急錢可能不足以應付所需。你應該考慮儲蓄更多；或者從其他途徑籌集足夠資金例如，尋求家人的幫助。</p>
+				</div>
+				<span class="line"></span>
+			</div>
+			<div class="debtManagement resultBox">
+				<h4>債務管理</h4>
+				<h5>供款與入息比率是 <strong><span>40</span>%</strong></h5>
+				<p class="error">請按「返回」鍵輸入你的收入和支出。</p>
+				<div class="contentBox">
+					<p>供款與入息比率是每月總收入中用來支付債務的百份比，計算方法是由每月的收入除以每月的債務。這個比率亦是你每月總收入中對債務所作出的承擔，每月應償還的債務包括你所有的債務還款金額 (例如按揭貸款和所有其他私人貸款)。該供款與入息比率越低時，代表你的債務管理狀況越佳。</p>
+					<p>若不妥善管理，債務問題將日益擴大。即使欠款微不足道，你亦必須堅持準時還款，避免債務失控。如果你拖欠還款，利息或罰款均會迅速累積。</p>
+					<p>你可考慮以下建議管理債務:</p>
+					<ul>
+						<li>盡量減少總債務結欠和所支付的利息。因為當每月還款額越高，還款期便越短而且所需支付的還款利息總額也越少。</li>
+						<li>每月盡量償還欠款，至少償還每筆貸款的最低還款額，以保護你的信貸評分。如果你有能力增加還款額，你應首先償還利率最高的貸款。</li>
+						<li>考慮合併你的貸款、信用限額及信用卡結餘，變成一筆有固定還款時間表的貸款。</li>
+						<li>告知貸款機構你出現了財政困難。在很多情況下，貸款機構會願意研究你的情況並與你共同解決問題，例如延長貸款期或安排暫時延遲還款。</li>
+					</ul>
+				</div>
+				<span class="line"></span>
+			</div>
+			<div class="moneyManagement resultBox">
+				<h4>理財</h4>
+				<h5>你的儲蓄比率是 <strong><span>80</span>%</strong></h5>
+				<p class="error">請按「返回」鍵輸入你的收入和支出。</p>
+				<div class="contentBox">
+					<p>儲蓄比率是你每月總收入中會用作儲蓄的百份比，計算方法是你每月盈餘除以每月收入。越高的儲蓄比率代表你的理財管理狀況越佳。雖然財務目標會隨人生的不同階段而轉變，但無論你的年紀或環境如何，你都應訂立目標，及早開始儲蓄。</p>
+					<p>以下貼士有助你節省金錢和妥善制定預算：</p>
+					<ul>
+						<li>減少非必要的消費</li>
+						<li>比較不同門市和網上商店的價格</li>
+<!--						<li>記錄每日開支，留意自己的消費習慣</li>-->
+					<li>記錄每日開支或使用我們的收支管家流動應用程式，留意自己的消費習慣</li>
+						<li>避免一時衝動購物，只購買清單上的貨品</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Rating / Feedback section -->
+			<div class="clear"></div>
+			<table border="0" cellspacing="0" cellpadding="0" class="opinion">
+				<tbody>
+					<tr>
+						<td width="50%" class="feedback">
+							<a href="mailto:info@thechinfamily.hk?subject=Feedback%20on%20Net%20worth%20calculator&amp;" id="feedback"><img src="../images/btn-feedback-c.jpg"></a>
+						</td>
+						<td width="50%" valign="middle" class="rating">
+							<p><strong>你滿意這個資產淨值計算機嗎？</strong>
+								<br> (1分為最低，5分為最高)
+							</p>
+							<form>
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td>
+											<input type="radio" name="rating" value="1" id="rating1">
+										</td>
+										<td>
+											<input type="radio" name="rating" value="2" id="rating2">
+										</td>
+										<td>
+											<input type="radio" name="rating" value="3" id="rating3">
+										</td>
+										<td>
+											<input type="radio" name="rating" value="4" id="rating4">
+										</td>
+										<td boder="0">
+											<input type="radio" name="rating" value="5" id="rating5">
+										</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>2</td>
+										<td>3</td>
+										<td>4</td>
+										<td>5</td>
+									</tr>
+								</table>
+							</form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- End Rating / Feedback section -->
+			<div class="endInner">
+				<a href="javascript:;" class="btnBack">返回</a>
+				<div class="socIco">
+					<!--                 <a href="javascript:;" class="icoDoc" title="下載Excel版本"></a>
+                                        <a href="javascript:;" class="icoPrint" title="列印"></a>
+                                        <a href="javascript:;" class="icoPdf" title="儲存PDF 格式"></a>
+                                        <a href="javascript:;" class="icoEmail" title="電子郵件分享"></a>
+                                        <a href="https://www.facebook.com/share.php" class="icoFb" onClick="return fbs_click(400, 300)" target="_blank" title="Facebook分享"></a> -->
+
+					<!--<a href="../excel/networth_en.xls" target="_blank" class="icoDoc"></a>-->
+					<a href="javascript:$('#cal_form').submit();" class="icoDoc"></a>
+					<a href="javascript:void(0)" class="icoPrint" target="_blank"></a>
+					<a href="javascript:void(0);" class="icoPdf" target="_blank"></a>
+					<a href="javascript:;" class="icoEmail icoEmail_tc"></a>
+					<!--					<a href="javascript:fbShare('https://www.thechinfamily.hk/tools/networth/tc/index.html', 'IEC資產淨值計算機', '視你是否有效地管理你的財富！使用資產淨值計算機助你計算你所擁有的資產是否多於你所虧欠的債務。', 'https://www.thechinfamily.hk/web/images/tc/tools-and-resources/tools/tools-head-banner_tc.jpg', 520, 350)" class="icoFb"></a>-->
+					<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://www.thechinfamily.hk/tools/networth/tc/index.html" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false" class="icoFb"></a>
+
+				</div>
+			</div>
+			<div class="canvas-wrapper" style="position:absolute;top:-9999px;left:-9999px;margin:0 auto;width:960px">
+				<canvas id="canvas-cal" width="960" height="1358" style="border:0px solid"></canvas>
+				<canvas id="canvas-result" width="960" height="1358" style="border:0px solid"></canvas>
+				<div class="image-container" style="display:none">
+					<img id="logo" src="../images/pdf/img-logo-iec.jpg" />
+					<img id="cal" src="../images/pdf/ico-calculator.gif" />
+					<img id="icon_assets" src="../images/pdf/ico-assets.gif" />
+					<img id="icon_liab" src="../images/pdf/ico-liabilities.gif" />
+					<img id="icon_totalAssets" src="../images/pdf/ico-total-assets.gif" />
+					<img id="icon_totalLiab" src="../images/pdf/ico-total-liabilities.gif" />
+					<img id="fund" src="../images/pdf/ico-result-1.gif" />
+					<img id="debt" src="../images/pdf/ico-result-2.png" />
+					<img id="money" src="../images/pdf/ico-result-3.png" />
+					<img id="legend_debt" src="../images/pdf/legend_debt.jpg" />
+					<img id="legend_fund" src="../images/pdf/legend_fund.jpg" />
+					<img id="legend_money" src="../images/pdf/legend_money.jpg" />
+					<img id="legend_ratio" src="../images/pdf/legend_ratio.jpg" />
+					<img id="result_graph" src="../images/pdf/result_graph.jpg" />
+					<img id="bg_total" src="../images/pdf/bg-total.gif" />
+					<img id="bg_radar" src="../images/pdf/bg_radar_tc.png" />
+					<img id="radar" src="" />
+					<img id="dot" src="../images/pdf/dot-puple.gif" />
+					<img id="dot2" src="../images/pdf/dot-result-2.gif" />
+					<img id="dot3" src="../images/pdf/dot-result-3.gif" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<div class="clearfix footerfix"></div>
+
+
+	<div class="footercontenter">
+		<div id="site-footer" class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="footer-left">
+							<div class="footer-logo">
+								<a href="http://www.thechinfamily.hk/web/iec/tc/">
+									<img src="../images/common/iec-hk-logo.png" alt="" title="" />
+								</a>
+							</div>
+
+							<div class="footer-statement">
+								<p>錢家有道由投資者教育中心管理，<br/>並獲教育局及金融監管機構支持。</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="footer-right">
+							<div class="input-group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-sm-push-5">
+						<div class="footer-hyperlinks-wrapper">
+							<ul id="footer-hyperlinks" class="footer-menu footer-hyperlinks">
+								<li><a href="https://www.thechinfamily.hk/web/common/apps/tc/contact_enquiry.html">聯絡我們</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/sitemap.html">網站指南</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/liability-statement.html">免責聲明</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/privacy-policy.html">私隱政策聲明</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/hyperlink-policy.html">超連結政策</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-sm-pull-7">
+						<p class="footer-copyright">© 2016 投資者教育中心 版權所有。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/google_analytics.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.icoPrint')[0].onclick = function () {
+				exportPDF(1);
+				printPDFTracking(1);
+			}
+			$('.icoPrint')[1].onclick = function () {
+				exportPDF(2);
+				printPDFTracking(1);
+			}
+			$('.icoPdf')[0].onclick = function () {
+				exportAndSaveToPDF(1);
+				downloadPDFTracking(1);
+			}
+			$('.icoPdf')[1].onclick = function () {
+				exportAndSaveToPDF(2);
+				downloadPDFTracking(1);
+			}
+			$('.icoDoc').click(function () {
+				saveExcelTracking(1);
+			})
+			$('.btnCheck').click(function () {
+				checkWealthTracking(1);
+				preGenerate(2);
+			})
+			$('.icoFb').click(function () {
+				facebookShareTracking(1);
+			})
+			$('.icoEmail').click(function () {
+				emailShareTracking(1);
+			})
+		})
+	</script>
+
+</body>
+
+</html>

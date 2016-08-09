@@ -1,0 +1,15 @@
+var root_path = "https://thechinfamily.intra.hksfc.org.hk/web";
+
+var FB_LINK = {
+	'cutback_en' : 'https://thechinfamily.intra.hksfc.org.hk/tools/cutback/en/cutback.html',
+	'cutback_tc' : 'https://thechinfamily.intra.hksfc.org.hk/tools/cutback/tc/cutback.html',
+	'fb' : 'https://www.facebook.com/sharer/sharer.php'
+};
+
+var EXTERNAL_LINK = {
+	'en' : 'http://thechinfamily.intra.hksfc.org.hk/web/en/tools-and-resources/calculators/reference.html',
+	'tc' : 'http://thechinfamily.intra.hksfc.org.hk/web/tc/tools-and-resources/calculators/reference.html'
+};
+
+var hyperlink_path = "https://thechinfamily.intra.hksfc.org.hk/";
+

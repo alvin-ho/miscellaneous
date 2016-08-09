@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="zh-hk">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<title>削減開支計算機</title>
+	<!-- Social Link -->
+	<meta property="og:title" content="削減開支計算機" />
+	<meta property="og:type" content="website" />
+	<!-- must be absolute path to make stable reference for facebook, should not be an internal or private network -->
+	<meta property="og:image" content="https://www.thechinfamily.hk/tools/cutback/common/fbimages/fbimage.jpg" />
+	<meta property="og:image:secure_url" content="https://www.thechinfamily.hk/tools/cutback/common/fbimages/fbimage.jpg" />
+	<meta property="og:url" content="https://www.thechinfamily.hk/tools/cutback/tc/cutback.html" />
+	<!-- ended -->
+	<meta property="og:description" content="定期檢討開支可讓你增加儲蓄。削減開支計算機協助你界定消費優先次序(如必需品和一般消費項目) 和削減不必要的開支，以省錢累積財富。你可以將報告貯存於電腦內、列印出來作日後之用，或者直接下載此計算機使用。" />
+	<!-- ended -->
+
+
+	<script src="../js/config-cutback.js"></script>
+
+	<!-- 2013.12.26 to include header & footer -->
+	<script type="text/javascript">
+	document.write("<link href=\""+root_path+"/css/html4-reset.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+	document.write("<link href=\""+root_path+"/css/layout.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+	document.write("<link href=\""+root_path+"/css/default.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+	document.write("<script src=\""+root_path+"/js/jquery.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/changeFont.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/functions.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/tsUtil.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/sitemapUtil.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/sitemap_breadcrumb.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/iecGlobal.js\"></scr" + "ipt>");
+	document.write("<script src=\"" + root_path + "/js/google_analytics.js\"></scr" + "ipt>");
+	</script>
+	<!-- GA event & tracking -->
+	<script src="../js/ga_tracker.js"></script>
+	<!-- 2014.2.7 ended -->
+	<script>
+		var loc = window.location.href;
+		var lang = 'en';
+		if (loc.search('lang=tc') !== -1 || loc.search('/tc/') !== -1) {
+			lang = 'tc';
+		}
+	</script>
+
+
+	<!-- style -->
+	<link href="../css/default.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/cutback.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.fancybox-1.3.4.css" media="all" />
+	<!-- UPDATED FOR THE POPUP START -->
+	<link rel="stylesheet" type="text/css" href="../css/cal-popup.css" media="all" />
+	<!-- ENDED -->
+
+	<link href="../css/footer/lib/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../css/footer/lib/footer.css" rel="stylesheet" type="text/css" />
+	<script src="../css/footer/lib/bootstrap.min.js" type="text/javascript"></script>
+
+
+
+	<!--
+	<script>
+		function fbShare(url, title, descr, image, winWidth, winHeight) {
+			var winTop = (screen.height / 2) - (winHeight / 2);
+			var winLeft = (screen.width / 2) - (winWidth / 2);
+			window.open('https://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
+		}
+	</script>
+-->
+
+	<!-- <a href="javascript:fbShare('https://www.thechinfamily.hk/tools/networth/en/index.html', 'IEC Net worth calculator', 'Check out how good you are at managing your wealth! Use our calculator to work out if what you own outweighs what you owe.', 'https://www.thechinfamily.hk/web/images/tc/tools-and-resources/tools/tools-head-banner_tc.jpg', 520, 350)" class="icoFb"></a>-->
+
+
+
+
+	<!-- Google Code for Remarketing Tag -->
+	<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 926048988;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+	</script>
+	<noscript>
+		<div style="display:inline;">
+			<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/926048988/?value=0&amp;guid=ON&amp;script=0" />
+		</div>
+	</noscript>
+
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window,
+			document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '1666299540302495');
+		fbq('track', "PageView");
+	</script>
+	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1666299540302495&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7132094/6453152/css/fonts.css" />
+<script type="text/javascript" src="https://fast.fonts.net/jsapi/c550c076-1bd6-411f-ac61-2ea18430c967.js"></script>
+
+</head>
+
+<body>
+
+	<!-- 2013.12.26 to include header & footer -->
+	<div class="header">
+		<!--	<div class="useful-tools-wrapper">-->
+		<!-- USEFUL TOOL WITHIN THE HEADER, I.E. VIOLET AREA -->
+		<!--		<div class="useful-tools">-->
+		<!-- 2013.12.5 commonly include start -->
+		<!--			<div id="xxxsys_topLinkDiv" style="display:inline;"></div>-->
+		<!--			<div id="xxxsys_topSearchDiv" class="header-search"></div>-->
+		<!-- 2013.12.5 commonly include ended -->
+		<!--		</div>-->
+		<!-- /useful-tools -->
+		<!--	</div>-->
+		<!-- /useful-tools-wrapper -->
+		<div class="wrapper">
+			<div class="supported-by">
+				<!-- <p>The Investor Education Centre is supported by the financial regulators</p>
+			<img src="/images/common/img-supported-by.jpg" alt=""> -->
+			</div>
+			<!-- /supported-by -->
+			<a href="https://www.thechinfamily.hk/web/tc/" class="logo-iec"><img src="../images/common/img-logo-iec.jpg" alt="" /></a>
+
+			<!--
+		<script type="text/javascript">
+		document.writeln('<a href="' + root_path + '/en/index.html" class="logo-iec"><img src="' + root_path + '/images/common/img-logo-iec.jpg" alt="" /></a>');
+		</script>
+-->
+			<div class="clearfix"></div>
+		</div>
+		<!-- /wrapper -->
+		<!--	<div id="sys_topMenuDiv">-->
+		<!--*** Include top-menu.html here ***-->
+		<!--	</div>	-->
+		<!--	<script>ts_loadInclude("sys_topMenuDiv", root_path + "/" + lang + "/include/top-menu.html");</script>-->
+	</div>
+	<!-- 2013.12.26 to include header & footer ended -->
+
+	<form method="POST" action="../pdfCutBack.do?lang=0" name="cutback_form" id="cutback_form">
+		<div class="cutback inner">
+			<div class="cutback-wrapper">
+				<h1 class="cutbacktitle-01-tc">削減開支計算機</h1>
+				<p>定期檢討開支可讓你增加儲蓄。削減開支計算機協助你界定消費優先次序(如必需品和一般消費項目)和削減不必要的開支，以省錢累積財富。你可以將報告貯存於電腦內、列印出來作日後之用，或者直接下載此計算機使用。</p>
+
+				<div class="calcContainer">
+					<div class="calcHeaderContainer">
+						<div class="calcHeaderLeft">
+							<ul class="tab">
+								<li><a class="active" href="javascript:;"><span><img alt="icon-income" src="../images/common/calculator/icon-cutback.png"></span><span class="cutback_title">你希望削減的項目</span></a></li>
+								<!--
+							<li><a href="javascript:;"><span><img alt="icon-savings-and-investments" src="../images/common/calculator/icon-savings-and-investments.png"></span>Existing<br>cut-back</a></li>
+							<li><a href="javascript:;"><span><img alt="icon-expenses" src="../images/common/calculator/icon-expenses.png"></span>Compare<br/>results</a></li>
+							-->
+								<li class="tab-assumption"><a href="cutback_assumption.html"><span class="assumption"><img alt="簡介" src="../images/common/calculator/btn-assumption.jpg"></span></a></li>
+								<!-- this is the result tab, i.e. 100% width-->
+								<li class="tab-report" style="display:none;"><a class="reportTitle" href=""><span><img alt="概要" src="../images/common/calculator/icon-report.png"></span>概要</a></li>
+							</ul>
+						</div>
+						<div class="calcHeaderRight">
+							<div class="share-wrapper">
+								<a title="下載Excel版" onclick="downloadExcelTracking(1)" href="javascript:;"><img alt="下載Excel版" src="../images/common/calculator/btn-excel.png"></a>
+								<a title="下載PDF版" href="" class="btn_save_pdf"><img alt="下載PDF版" src="../images/common/calculator/btn-pdf.png"></a>
+								<a title="列印" href="" class="btn_print"><img alt="列印" src="../images/common/calculator/btn-print.png"></a>
+								<a title="電郵分享" href="" class="btn_mailTo"><img alt="電郵分享" src="../images/common/calculator/btn-mail.png"></a>
+								<!--							<a title="Facebook分享" href="" class="btn_shareFB"><img alt="Facebook分享" src="../images/common/calculator/btn-share.png"></a>-->
+
+								<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://www.thechinfamily.hk/tools/cutback/tc/cutback.html" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><img alt="Facebook分享" src="../images/common/calculator/btn-share.png"></a>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="form-wrapper">
+						<div class="form-innerwrapper active">
+							<a href="" class="close-all floatR">關閉全部</a>
+							<p>請選擇下列最多十五種消費項目</p>
+							<ul class="expand-list">
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2><img alt="" src="../images/common/calculator/icon-family.png"> 親友</h2></a>
+									<table class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="350">子女</td>
+											<td width="230" style="visibility: hidden;">&nbsp;</td>
+											<td width="35" style="visibility: hidden;">&nbsp;</td>
+											<td width="220" style="visibility: hidden;">&nbsp;</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">興趣班／活動</td>
+											<td>
+												<select name="item1" id="item1" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item1" id="p1Item1" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">衣服</td>
+											<td>
+												<select name="item2" id="item2" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item2" id="p1Item2" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">玩具</td>
+											<td>
+												<select name="item3" id="item3" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item3" id="p1Item3" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">零用錢</td>
+											<td>
+												<select name="item4" id="item4" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item4" id="p1Item4" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">款待及禮物</td>
+											<td>
+												<select name="item5" id="item5" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item5" id="p1Item5" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">慶祝活動</td>
+											<td>
+												<select name="item6" id="item6" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item6" id="p1Item6" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- other -->
+										<tr>
+											<td class="topic" colspan="2">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input id="otherName1" name="otherName1" type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td>
+												<select name="iotherSelect1" id="iotherSelect1" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1 ipt_serialize" maxlength="10" type="text" value="" name="p1otherItem1" id="p1otherItem1" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<li>
+									<a href="javascript:;"><h2><img alt="" src="../images/common/calculator/icon-food.png"> 食品及飲品</h2></a>
+									<table class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="350">食品雜貨</td>
+											<td width="230">
+												<select name="item7" id="item7" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="220">
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item7" id="p1Item7" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">外出用膳</td>
+											<td>
+												<select name="item8" id="item8" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item8" id="p1Item8" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">零食</td>
+											<td>
+												<select name="item9" id="item9" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item9" id="p1Item9" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">咖啡</td>
+											<td>
+												<select name="item10" id="item10" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item10" id="p1Item10" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">酒類</td>
+											<td>
+												<select name="item11" id="item11" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item11" id="p1Item11" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- other -->
+										<tr>
+											<td class="topic" colspan="2">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input id="otherName2" name="otherName2" type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td>
+												<select name="iotherSelect2" id="iotherSelect2" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1 ipt_serialize" maxlength="10" type="text" value="" name="p1otherItem2" id="p1otherItem2" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+									</table>
+								</li>
+								<!-- li end -->
+								<li>
+									<a href="javascript:;"><h2><img alt="" src="../images/common/calculator/icon-health.png"> 健康及美容</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="350">保健食品</td>
+											<td width="230">
+												<select name="item12" id="item12" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="220">
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item12" id="p1Item12" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">化裝品及護膚品</td>
+											<td>
+												<select name="item13" id="item13" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item13" id="p1Item13" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">美容及健身服務</td>
+											<td>
+												<select name="item14" id="item14" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item14" id="p1Item14" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">理髮</td>
+											<td>
+												<select name="item15" id="item15" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item15" id="p1Item15" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">眼部護理／眼鏡</td>
+											<td>
+												<select name="item16" id="item16" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item16" id="p1Item16" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input id="otherName3" name="otherName3" type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td>
+												<select name="iotherSelect3" id="iotherSelect3" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1 ipt_serialize" maxlength="10" type="text" value="" name="p1otherItem3" id="p1otherItem3" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+									</table>
+								</li>
+								<!-- li end -->
+								<li>
+									<a href="javascript:;"><h2><img alt="" src="../images/common/calculator/icon-leisure.png"> 生活消閒</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="350">博彩及賭博</td>
+											<td width="230">
+												<select name="item17" id="item17" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="220">
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item17" id="p1Item17" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">興趣班</td>
+											<td>
+												<select name="item18" id="item18" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item18" id="p1Item18" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">閱讀</td>
+											<td>
+												<select name="item19" id="item19" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item19" id="p1Item19" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">遊戲</td>
+											<td>
+												<select name="item20" id="item20" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item20" id="p1Item20" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">電影／戲劇</td>
+											<td>
+												<select name="item21" id="item21" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item21" id="p1Item21" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">音樂</td>
+											<td>
+												<select name="item22" id="item22" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item22" id="p1Item22" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">運動</td>
+											<td>
+												<select name="item23" id="item23" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item23" id="p1Item23" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">攝影</td>
+											<td>
+												<select name="item24" id="item24" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item24" id="p1Item24" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">香煙</td>
+											<td>
+												<select name="item25" id="item25" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item25" id="p1Item25" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">酒吧／會所</td>
+											<td>
+												<select name="item26" id="item26" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item26" id="p1Item26" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">參觀展覽</td>
+											<td>
+												<select name="item27" id="item27" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item27" id="p1Item27" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!--
+										<tr>
+											<td class="topic" colspan="2">度假</td>
+											<td>
+												<select name="item28" id="item28" class="selectP1">
+													<option value="1">每周</option><option value="2">每月</option><option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item28" id="p1Item28" />
+											</td>
+										</tr><!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input id="otherName4" name="otherName4" type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td>
+												<select name="iotherSelect4" id="iotherSelect4" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1 ipt_serialize" maxlength="10" type="text" value="" name="p1otherItem4" id="p1otherItem4" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+									</table>
+								</li>
+								<!-- li end -->
+								<li>
+									<a href="javascript:;"><h2><img alt="" src="../images/common/calculator/icon-shopping.png"> 購物</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="350">傢俬及家電器</td>
+											<td width="230">
+												<select name="item29" id="item29" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="220">
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item29" id="p1Item29" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">家庭用品</td>
+											<td>
+												<select name="item30" id="item30" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item30" id="p1Item30" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">流動電話</td>
+											<td>
+												<select name="item31" id="item31" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item31" id="p1Item31" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">電腦／平板電腦</td>
+											<td>
+												<select name="item32" id="item32" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item32" id="p1Item32" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">衣履</td>
+											<td>
+												<select name="item33" id="item33" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item33" id="p1Item33" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">配飾(例：珠寶, 名錶, 手袋)</td>
+											<td>
+												<select name="item34" id="item34" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item34" id="p1Item34" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">個人護理用品</td>
+											<td>
+												<select name="item35" id="item35" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item35" id="p1Item35" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input id="otherName5" name="otherName5" type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td>
+												<select name="iotherSelect5" id="iotherSelect5" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td>
+												港元
+											</td>
+											<td>
+												<input class="txtInputP1 ipt_serialize" maxlength="10" type="text" value="" name="p1otherItem5" id="p1otherItem5" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+									</table>
+								</li>
+								<!-- li end -->
+								<li>
+									<a href="javascript:;"><h2><img alt="" src="../images/common/calculator/icon-transport.png"> 交通</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="350">的士車費</td>
+											<td width="230">
+												<select name="item36" id="item36" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="220">
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item36" id="p1Item36" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">購買車輛／租賃</td>
+											<td>
+												<select name="item37" id="item37" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item37" id="p1Item37" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input id="otherName6" name="otherName6" type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="iotherSelect6" id="iotherSelect6" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class="txtInputP1 ipt_serialize" maxlength="10" type="text" value="" name="p1otherItem6" id="p1otherItem6" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+									</table>
+								</li>
+								<!-- li end -->
+								<li>
+									<a href="javascript:;"><h2><img alt="" src="../images/common/calculator/icon-travelling.png"> 旅遊</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="350">導遊團費</td>
+											<td width="230">
+												<select name="item38" id="item38" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="220">
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item38" id="p1Item38" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">交通費用</td>
+											<td>
+												<select name="item39" id="item39" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item39" id="p1Item39" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">住宿費用</td>
+											<td>
+												<select name="item40" id="item40" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class="txtInputP1" maxlength="10" type="text" value="" name="p1Item40" id="p1Item40" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input id="otherName7" name="otherName7" type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="iotherSelect7" id="iotherSelect7" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class="txtInputP1 ipt_serialize" maxlength="10" type="text" value="" name="p1otherItem7" id="p1otherItem7" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+									</table>
+								</li>
+								<!-- li end -->
+								<li>
+									<a href="javascript:;"><h2><img alt="" src="../images/common/calculator/icon-others.png"> 其他</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="350">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input id="otherName8" name="otherName8" type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="230">
+												<select name="iotherSelect8" id="iotherSelect8" class="selectP1">
+													<option value="1">每周</option>
+													<option value="2">每月</option>
+													<option value="3">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="220">
+												<input class="txtInputP1 ipt_serialize" maxlength="10" type="text" value="" name="p1otherItem8" id="p1otherItem8" />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+									</table>
+								</li>
+								<!-- li end -->
+
+							</ul>
+
+							<table width="100%" class="blank-table">
+								<tbody>
+									<tr>
+										<td width="203" class="topic">你的年均收入為</td>
+										<td width="36">港元</td>
+										<td width="220">
+											<input type="text" class="field3" id="annual_income" name="annual_income" maxlength="10" value="">
+										</td>
+										<td width="195">&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<a class="btn btn_save_excel" href="">儲存為Excel</a>
+							<a class="btn btn_reset" href="">重設</a>
+							<a class="btn btn_calc" href="">計算</a>
+
+
+						</div>
+						<!--
+						<div class="form-innerwrapper">
+							<p>2</p>
+						</div>
+						<div class="form-innerwrapper">
+							<p>3</p>
+						</div>
+						-->
+						<div class="form-innerwrapper report">
+							<div class="willSave">
+								<h3>你將會節省</h3>
+								<p class="price">每年<span class="price"></span></p>
+								<p class="annualIncome">(相當於你的年薪<span class="incomePercent"></span>%)</p>
+							</div>
+
+							<h3>節省項目分佈</h3>
+
+							<div class="billboardContainer">
+								<table width="800" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+									<tr class="billboardCol" style="display:none;">
+										<td width="50"><img alt="" src="../images/common/calculator/no1.jpg"></td>
+										<td width="95" style="padding-top:15px"><img class="catIcon" src="" alt="" /></td>
+										<td width="655" style="padding-top:15px"><span class="billboardCat"></span>－<span class="billboardItem"></span>
+											<br/> 你將每年節省 <span class="billboardPrice first"></span>
+										</td>
+									</tr>
+									<tr class="billboardCol" style="display:none;">
+										<td><img alt="" src="../images/common/calculator/no2.jpg"></td>
+										<td style="padding-top:15px"><img class="catIcon" src="" alt="" /></td>
+										<td style="padding-top:15px"><span class="billboardCat"></span>－<span class="billboardItem"></span>
+											<br/> 你將每年節省 <span class="billboardPrice second"></span>
+										</td>
+									</tr>
+									<tr class="billboardCol" style="display:none;">
+										<td><img alt="" src="../images/common/calculator/no3.jpg"></td>
+										<td style="padding-top:15px"><img class="catIcon" src="" alt="" /></td>
+										<td style="padding-top:15px"><span class="billboardCat"></span>－<span class="billboardItem"></span>
+											<br/> 你將每年節省 <span class="billboardPrice"></span>
+										</td>
+									</tr>
+								</table>
+							</div>
+
+							<div class="otherSavings" style="display:none;">
+								<table width="800" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+									<tr>
+										<th colspan="2" width="410">其他節省項目</th>
+										<th width="190">每年節省</th>
+									</tr>
+									<tr class="otherCol" style="display:none;">
+										<td width="45"><img class="otherCatIcon" src="" alt="" width="34" /></td>
+										<td width="465"><span class="otherCat"></span>－<span class="otherItem"></span></td>
+										<td width="290"><span class="otherPrice"></span></td>
+									</tr>
+									<tr class="otherCol" style="display:none;">
+										<td><img class="otherCatIcon" src="" alt="" width="34" /></td>
+										<td><span class="otherCat"></span>－<span class="otherItem"></span></td>
+										<td><span class="otherPrice"></span></td>
+									</tr>
+									<tr class="otherCol" style="display:none;">
+										<td><img class="otherCatIcon" src="" alt="" width="34" /></td>
+										<td><span class="otherCat"></span>－<span class="otherItem"></span></td>
+										<td><span class="otherPrice"></span></td>
+									</tr>
+									<tr class="otherCol" style="display:none;">
+										<td><img class="otherCatIcon" src="" alt="" width="34" /></td>
+										<td><span class="otherCat"></span>－<span class="otherItem"></span></td>
+										<td><span class="otherPrice"></span></td>
+									</tr>
+									<tr class="otherCol" style="display:none;">
+										<td><img class="otherCatIcon" src="" alt="" width="34" /></td>
+										<td><span class="otherCat"></span>－<span class="otherItem"></span></td>
+										<td><span class="otherPrice"></span></td>
+									</tr>
+									<tr class="otherCol" style="display:none;">
+										<td><img class="otherCatIcon" src="" alt="" width="34" /></td>
+										<td><span class="otherCat"></span>－<span class="otherItem"></span></td>
+										<td><span class="otherPrice"></span></td>
+									</tr>
+									<tr class="otherCol" style="display:none;">
+										<td><img class="otherCatIcon" src="" alt="" width="34" /></td>
+										<td><span class="otherCat"></span>－<span class="otherItem"></span></td>
+										<td><span class="otherPrice"></span></td>
+									</tr>
+									<tr class="otherCol" style="display:none;">
+										<td><img class="otherCatIcon" src="" alt="" width="34" /></td>
+										<td><span class="otherCat"></span>－<span class="otherItem"></span></td>
+										<td><span class="otherPrice"></span></td>
+									</tr>
+									<tr class="otherCol" style="display:none;">
+										<td><img class="otherCatIcon" src="" alt="" width="34" /></td>
+										<td><span class="otherCat"></span>－<span class="otherItem"></span></td>
+										<td><span class="otherPrice"></span></td>
+									</tr>
+									<tr class="otherCol" style="display:none;">
+										<td><img class="otherCatIcon" src="" alt="" width="34" /></td>
+										<td><span class="otherCat"></span>－<span class="otherItem"></span></td>
+										<td><span class="otherPrice"></span></td>
+									</tr>
+									<tr class="otherCol" style="display:none;">
+										<td><img class="otherCatIcon" src="" alt="" width="34" /></td>
+										<td><span class="otherCat"></span>－<span class="otherItem"></span></td>
+										<td><span class="otherPrice"></span></td>
+									</tr>
+									<tr class="otherCol" style="display:none;">
+										<td><img class="otherCatIcon" src="" alt="" width="34" /></td>
+										<td><span class="otherCat"></span>－<span class="otherItem"></span></td>
+										<td><span class="otherPrice"></span></td>
+									</tr>
+								</table>
+							</div>
+
+							<!--<div id="chart" style="height:400px;width:670px;"></div>-->
+
+
+							<input type="hidden" id="cutback_data" name="cutback_data" value="">
+							<input type="hidden" id="cutback_category_data" name="cutback_category_data" value="">
+							<input type="hidden" id="total_save" name="total_save" value="">
+							<input type="hidden" id="percent_income" name="percent_income" value="">
+
+							<div class="btnContainer">
+								<a class="btn btn_edit" href="">編輯</a>
+								<a class="btn btn_save_pdf" href="">下載PDF版本</a>
+								<a class="btn btn_save_excel" href="">儲存為Excel</a>
+							</div>
+
+							<div class="donext">
+								<h2>下一步該做什麼?</h2>
+								<ul>
+									<li>利用<a class="link1" href="https://www.thechinfamily.hk/tools/tc/saving.html" target="_blank">儲蓄目標計算機</a>。</li>
+									<li>運用<a class="link2" href="https://www.thechinfamily.hk/tools/tc/budget.html" target="_blank">個人收支計算機</a>制定預算了解自己的理財習慣。</li>
+									<li>進一步了解如何<a class="link3" href="www.thechinfamily.hk/web/tc/managing-your-money/debts-and-borrowing/managing-debts-effectively.html" target="_blank">妥善管理債務</a>。</li>
+									<li>學習如何<a class="link4" href="https://www.thechinfamily.hk/web/tc/managing-your-money/savings.html" target="_blank">儲蓄</a>。</li>
+								</ul>
+							</div>
+
+							<div class="rating">
+								<div class="rating-col-left">
+									<a class="tellus" href=""><img alt="Tell us what you think" src="../images/common/calculator/rate_mail_icon_tc.png"></a>
+								</div>
+								<div class="rating-col-right">
+									<div class="ratingStart">
+										<p class="title">你滿意這個
+											<br/>削減開支計算機嗎？</p>
+										<p>(1分為最低，5分為最高)</p>
+										<ul>
+											<li>
+												<input type="radio" class="ratingClick" name="rating" value="1">
+												<br/>1</li>
+											<li>
+												<input type="radio" class="ratingClick" name="rating" value="2">
+												<br/>2</li>
+											<li>
+												<input type="radio" class="ratingClick" name="rating" value="3">
+												<br/>3</li>
+											<li>
+												<input type="radio" class="ratingClick" name="rating" value="4">
+												<br/>4</li>
+											<li>
+												<input type="radio" class="ratingClick" name="rating" value="5">
+												<br/>5</li>
+										</ul>
+									</div>
+									<div class="ratingThanks" style="display:none;">
+										<p>多謝你的評價。</p>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</form>
+
+<div class="clearfix footerfix"></div>
+
+
+
+
+	<div class="footercontenter">
+	<div id="site-footer" class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="footer-left">
+						<div class="footer-logo">
+							<a href="http://www.thechinfamily.hk/web/iec/tc/">
+								<img src="../images/common/iec-hk-logo.png" alt="" title="" />
+							</a>
+						</div>
+
+						<div class="footer-statement">
+							<p>錢家有道由投資者教育中心管理，<br/>並獲教育局及金融監管機構支持。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="footer-right">
+						<div class="input-group">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-7 col-sm-push-5">
+					<div class="footer-hyperlinks-wrapper">
+						<ul id="footer-hyperlinks" class="footer-menu footer-hyperlinks">
+							<li><a href="https://www.thechinfamily.hk/web/common/apps/tc/contact_enquiry.html">聯絡我們</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/sitemap.html">網站指南</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/liability-statement.html">免責聲明</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/privacy-policy.html">私隱政策聲明</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/hyperlink-policy.html">超連結政策</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-5 col-sm-pull-7">
+					<p class="footer-copyright">© 2016 投資者教育中心 版權所有。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!-- 2013.12.26 to include header & footer -->
+	<!--<div class="clearfix"></div>-->
+	<!--<div class="footer">-->
+	<!--	<div class="click-link-wrapper">-->
+	<!--		<div id="sys_footerTopDiv" class="innerwrapper"></div> -->
+	<!--		/innerwrapper -->
+	<!--	</div>-->
+	<!-- /click-link-wrapper -->
+	<!--	<div id="sys_footerDiv">-->
+	<!--*** Include footer_inner.html here ***-->
+	<!--	</div>-->
+	<!--	<script>ts_loadInclude("sys_footerDiv", root_path + "/" + lang + "/include/footer_inner.html");</script>-->
+	<!--</div>-->
+	<div class="clearfix"></div>
+	<!--<div id="sys_footerBottomDiv" class="footer-hyper-link"></div>-->
+	<!-- 2013.12.26 to include header & footer ended -->
+
+	<!-- 2013.12.26 to include header & footer -->
+	<script>
+		iecGlobalUpdate(lang);
+	</script>
+
+	<!-- jQuery lib -->
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<!-- Fancybox for DISCLAIMER -->
+	<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.js"></script>
+	<script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<!-- script & css to include for using jqplot and frontend calculator -->
+	<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="../js/excanvas.js"></script><![endif]-->
+	<!--<script src="../js/jquery.jqplot.js"></script>-->
+	<!-- for bar chart -->
+	<!--
+	<script src="../js/jqplot.dateAxisRenderer.js"></script>
+	<script src="../js/jqplot.canvasTextRenderer.js"></script>
+	<script src="../js/jqplot.canvasAxisTickRenderer.js"></script>
+	<script src="../js/jqplot.categoryAxisRenderer.js"></script>
+	<script src="../js/jqplot.barRenderer.js"></script>
+	<script src="../js/jqplot.pointLabels.min.js"></script>
+	-->
+	<!-- for pie chart -->
+	<!--
+	<script src="../js/jqplot.pieRenderer.js"></script>
+	<script src="../js/jqplot.donutRenderer.js"></script>
+	-->
+	<script src="../js/cutback.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/jquery.jqplot.css" />
+	<!-- developer function -->
+	<!--<script type="text/javascript" src="../js/functions2.js"></script>-->
+
+	<!-- 2013.10.28 to include header & footer -->
+
+	<script>
+		document.write("<script src=\"" + root_path + "/common/js/global.js\"></scr" + "ipt>");
+	</script>
+	<script>
+		document.write("<script src=\"" + root_path + "/en/js/items.js\"></scr" + "ipt>");
+	</script>
+
+	<!--	developer testing-->
+
+	<!--	developer testing-->
+	<!-- 2013.10.28 to include header & footer ended -->
+</body>
+
+</html>

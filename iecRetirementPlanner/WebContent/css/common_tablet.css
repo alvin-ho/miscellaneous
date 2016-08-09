@@ -1,0 +1,736 @@
+body{
+	min-width: 760px;
+}
+
+
+.wrapper{	
+	width:760px;	
+	margin: 0 auto;
+}
+
+/***** Header *****/
+
+a.logo-iec{
+	margin-left:20px;
+}
+
+span.titleimg  {
+	margin-left:180px;
+}
+
+span.toolsSelect{	
+	margin-right:33px;
+}
+
+
+
+/***** Content *****/
+
+.description .leftCol{
+	width:60%;
+}
+
+.description .rightCol{
+	width:30%;
+}
+
+.description a.explainBtn
+{
+	padding:14px 0 0 70px;
+	height:45px;
+}
+
+.sliderWidget
+{
+	width:52%;
+}
+
+.sliderWidget.shortM_Widget.m_expenses
+{
+	width:52%;
+}
+
+.question.m_expenses
+{
+	width:23%;
+}
+
+/***** Question *****/
+.qTitle_LongImg {
+	background:url('../../images/tc/qTitleImg2.gif') no-repeat left center;
+	height:82px;
+}
+.qTitle {	
+	width: 104%;
+	left: -4%;
+}
+.mBanner {
+	display:none;
+}
+
+.timeLinePadd{
+	padding:27px 20px;
+}
+.normalPadd{
+	//padding: 27px 20px;
+	padding: 27px  0 27px 20px;
+}
+input[type=radio].css-checkbox + label.css-label {
+	 background-position: 23px 0;
+}
+
+input[type=radio].css-checkbox:checked + label.css-label {
+    background-position: 23px -19px;
+}
+
+.radioName { 
+	padding-left:0;
+}
+
+.leftCol > .cbContainer:nth-child(2)
+ {	
+	padding-right:22px;
+}
+
+/***** steptrack *****/
+.step_check .prepage .inner p
+{
+	margin: 13px 0px 0px 30px;
+}
+
+.step_check .prepage .inner img
+{
+	display:none;
+}
+.step_check .nextpage .inner p
+{
+	margin: 13px 0px 0px 38px;
+}
+
+.step_check .nextpage .inner img
+{
+	display:none;
+}
+
+#sectionTab
+{
+	width:18%;
+}
+
+#sectionTab li a{
+	font-size: 12px;
+	padding: 18px 0px 18px 40px;
+}
+
+/*****loanpage  *****/
+.successresult
+{
+	min-width:740px;
+	height:370px;
+	padding: 32px 10px 10px 10px;
+}
+
+.successresult .moneypig
+{
+	/*float:right;*/
+}
+.successresult > .result_pics
+{
+	width:226px;
+	height:300px;
+	float:left;
+}
+
+.successresult .content p:nth-child(1)
+{
+	margin-bottom: none;
+}
+
+.successresult > .content
+{
+	float:right;
+	width:62%;
+}
+/***** income_and_expense *****/
+.income_and_expense .questionContainer
+{
+	margin-bottom:30px;
+}
+
+.income_and_expense .successresult 
+{
+	min-width: 740px;
+	height: 380px;
+	padding: 45px 10px 10px 10px;
+}
+
+#sectionTab
+{
+	width:18%;
+}
+
+#sectionTab li a{
+	font-size: 12px;
+	padding: 18px 0px 18px 40px;
+}
+/*****investment *****/
+
+/****dragtree start****/
+/*#dropTree
+{
+	width:65%;
+	float:right;
+}
+
+.dragTreeRadioGroup
+{
+	display: inline-block;
+	margin-bottom: 10px;
+	width:100%;
+}
+
+#choice1, #choice2, #choice3, #choice4{
+	float:left;
+}
+
+#dropTree input[type=radio].css-checkbox + label.css-label
+{
+	padding-right:0px;
+}
+
+.padtoleft
+{
+	width:80%;
+}
+
+.firstspan
+{
+	padding-top: 10px;
+}
+
+.dragTreePadd
+{
+	padding: 15px;
+}
+*/
+
+
+/***** dragTree end****/
+
+.question
+{
+	width:23%;
+}
+
+.retireSchemes_slide3 .questCheckBox
+{
+	width:100%;
+}
+
+.retireSchemes_slide3 .mount, .retireSchemes_slide3 .itemMount
+{
+	width: 81px;
+}
+
+#retirement_Plan .schemesContent .longQuestion
+{
+	 margin: 25px 0px 0px 0px;
+}
+
+#retirement_Plan .sectionOne .mobileQuestionWidth
+{
+	width:44%;
+}
+
+.schemesContent .mountContainer
+{
+	width: 20%;
+	margin-left:6px;
+	text-align: right;
+}
+
+.schemesContent .mountPercent
+{
+	width:15%;
+	margin-left:36px;
+}
+
+.schemesContent .short_Widget
+{
+	width: 49.3%;
+}
+
+.schemesContent .longQuestion
+{
+	width: 28%;
+}
+
+#schemes_t1 .schemesTitle
+{
+	padding-right: 21px;
+}
+
+.longqBox
+{
+	margin-left: 37px;
+	width: 94%;
+}
+
+.questCheckBox
+{
+	width:100%;
+}
+.longqBox  .qTitle
+{
+	left: -2.3%;
+	width: 102.45%;
+}
+
+.Form_SavInvest .Form_Item
+{
+	padding: 13px 0px 13px 52px;
+}
+
+/*width: 102.45%;*/
+.result
+{
+	width:740px;
+	height:361px;
+}
+
+.underpig{
+	margin-top: 113px;
+}
+
+#tabs ul  li.pinen {	width:99%;	}
+#tabs ul  li a{
+	padding:18px 11px 0px 42px;
+	display:block;
+	font-size:12px;
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+	color:#000;
+}
+
+#tabs ul .pinen a
+{
+	min-height:68px;
+}	
+
+#tabs ul .pinchi a
+{
+	min-height:54px;
+}	
+
+#tabs a.yellowBtn{
+	background:url(../../images/tc/yellowFill.png) no-repeat 10px center;
+}
+#tabs a.greenBtn{
+	background:url(../../images/tc/greenFill.png) no-repeat 10px center;
+}
+#tabs a.redBtn{
+	background:url(../../images/tc/redFill.png) no-repeat 10px center;
+}
+.resultContainer .moneypig {
+	width: 36%;
+}
+.resultContainer .actionBtn{
+	right:10px;
+}
+.indication {
+	padding:20px 20px 20px 20px;
+}
+
+#index .indexbanner
+{	
+	display:block;
+}
+#index .animateIndex
+{
+	display:none;
+}
+/***** Rate *****/
+.rating #feedback, .rating #u_rate{
+	margin-right:32px;
+}
+
+.rating #u_rate{
+	margin-right:52px;
+}
+
+.span.titleimg
+{
+	font-size:2.0em;
+}
+
+.entabCon div.innerresult
+{
+	min-height:544px;
+}
+.calcLeft .animate_GIF
+{
+	left: 6px;
+}
+
+.calcRight,.calcLeft
+{
+	width:48%;
+	margin-right:0px;
+}
+.calcRight .animate_GIF
+{
+	left: 27px;
+}
+
+.calcRight .animate_describe
+{
+	margin-left: 85px;
+}
+
+.Form_Item_Title
+{
+	width:55%;
+}
+
+.Form_Item .mountContainer
+{
+	width:29%;
+}
+
+.sai_slide4 .Form_Item .mountContainer:nth-child(3)
+{
+	width:23%;
+}
+ 
+.Form_Item .Form_SavInvest .colW1
+{
+	width:10%;
+}
+
+.Form_SavInvest .colW2
+{
+	width:28%;
+}
+
+.Form_SavInvest .colW3
+{
+	width:28%;
+}
+
+
+.Form_SavInvest .colW4
+{
+	/*width:21%;*/
+}
+
+.sai_slide4 .Form_SavInvest .Form_Item_Title
+{
+	width: 16%;
+}
+
+.sai_slide4 .Form_SavInvest .Form_TitleDesc
+{
+	padding: 13px 6px 13px 52px;
+}
+
+.sai_slide4 .calcRes .mountContainer:nth-child(4)
+{
+	padding-left:31px;
+	
+}
+
+.Form_Item
+{
+	padding: 5px 0px 5px 46px;
+}
+
+
+
+.Form_SavInvest .colW1
+{
+	  width: 16%;
+}
+
+.slideCon
+{
+	display:block;
+}
+
+.addArrow  .ocIcon 
+{
+	display:none;
+}
+
+.swFull
+{
+	margin: 25px 0px 0px 120px;
+}
+
+.other_slide5 .question
+{
+	width:100%;
+}
+
+.other_slide5 .shortP_Widget
+{
+	width:52%;
+	margin:25px 0px 0px 120px;
+	
+}
+
+.re_header, .re1_header, .balance_header{
+	background-size:contain;
+	height:265px;
+}
+
+.mobileTab
+{
+	display:none;
+}
+
+.re_header .re_money_l {
+  top: 155px;
+  left: 90px;
+ 
+}
+
+.re_header .tablet_money_l,.re_header .tablet_money_r
+{
+	 width: 181px;
+	 font-size:12px;
+}
+
+.re1_header >div.mobile_re1_money_l
+{
+	left: 64px;
+    font-size: 12px;
+	width: 29%;
+}
+
+.re1_header >div.mobile_re1_money_r
+{
+	left: 461px;
+    font-size: 12px;
+	width:27%;
+}
+
+.re_header .tablet_money_l
+{
+    top: 146px;
+    left: 88px;
+}
+.re_header .re_money_r {
+   top: 200px;
+   left: 472px;
+}
+
+..middle_header_line{	background-position:270px center;	}
+
+
+.goodPlan{	width:100%;	}
+.re1_action {	width:100%;	}
+.re1_actiontitle{	background-position:250px 0px;	}
+.middle_header_line{	background-position:270px center;	}
+
+.re_more_box{	width:100%;}	
+.re_more_box1{	width:17%;   margin: 3% 2% 0% 2%;}
+.re_more_box2{	width:18%;   margin-top: 3%;}
+.re_more_box1 .more_box_details, .re_more_box2 .more_box_details{	width:100%;}
+.re_more_box .more_box_img1{	  margin: 15% auto;	width:41px;	}
+.re_more_box .more_box_img2{	  margin: 13% auto;	width:75px;	}
+.re_more_box .more_box_img3{	  margin: 10% auto;	width:80px;	padding-top:7px;	}
+.re_more_box .more_box_img4{	  margin: 14% auto;	width:65px;	}
+.re_more_box .more_box_img5{	  margin: 12% auto;	width:80px;	}
+.breakLine{	/*content:'';*/display:none;	}
+
+/***** Footer *****/
+#footer > .wrapper span.allRight{
+	float:right;
+}
+
+/***** Mobile Menu *****/
+#mmenuTitle{
+	display:none;
+}
+
+
+
+.re1_header .balance_Left_T{		top:185px; left:90px;	}
+.re1_header .balance_Right_T{	top:185px; left:495px;	}
+
+
+.re1_header .no_shortfall_Left_T{	top:205px; left:90px;	}
+.re1_header .no_shortfall_Right_T{	top:145px; left:450px;	}
+
+.more_box_details{display:block;}
+
+.tableTabs{display:block;}
+
+#mobileSlider{display:none;}
+
+.controls{display:none;}
+.re_action_trangle1
+{
+	left:40px;
+}
+
+.re_action_trangle2
+{
+	left:178px;
+}
+
+.re_action_trangle3
+{
+	left:315px;
+}
+.re_action_trangle4
+{
+	left:452px;
+}
+
+.re_action_trangle5
+{
+	left:590px;
+}
+
+.tabletMiddle_header_line
+{
+	background-position: 264px center;
+	padding-left: 47px;
+}
+
+.planPageBtn:nth-child(5) {	display:none;	}
+
+.pigPad,.pigPad_en
+{
+	text-align:center;
+}
+.re1_planContainer
+{
+	
+}
+
+#headCaption > .paddtxtC
+{
+	text-align:left;
+	 padding-left: 40px;
+}
+
+#headCaption > .paddtxtC_en
+{
+	text-align:left;
+	 padding-left: 26px;
+}
+
+.sliderWidget_T{	width:47%;	}
+.sliderWidget.shortM_Widget.m_expenses.sliderWidget_T{	width:47%;	}
+.sliderWidget_T .minus{	margin-right:5px;	}
+.sliderWidget_T .add{	margin-left:5px;	}
+
+.mountContain_T{	width:28%;	text-align:right;	}
+
+.retireSchemes_slide3 .sectionTitle
+{
+	width:100%;
+}
+
+.mleft_Title{	margin-left:0;	}
+.re1_link{	line-height:22px;	}
+.re1_actiontitle_en{	background-position: 210px 0px;	}
+.retireSchemes_slide3 .slideCon
+{
+	display:block;
+}
+
+
+.mountContainer_en
+{
+	width: 33%!important;
+}
+
+
+
+.tabletHide
+{
+	display:none;
+}
+
+.tabletQuestionWidth
+{	
+	width:30%;
+}
+
+.expected_annual_en
+{
+	left: 114px;
+    top: -18px;
+}
+
+.mobileShow
+{
+	display:none;
+}
+
+.middle_header_line_tc
+{
+	background-position: 282px center;
+}
+
+.re_top_budget2
+{
+	margin: 20px 0px 0px 80px;
+}
+
+.calcRes .mountContainer >span.entire_response{  margin-right: 0px;}
+
+.sai_slide4  .calcRes .mountContainer:nth-of-type(3){text-align:right;}
+
+.sai_slide4  .calcRes .annualReturnWords:nth-of-type(3){text-align:left;padding-left: 35px;}
+
+.t_mountCointain_Width{	margin-left: 42px;	}
+
+.sectionFour .sectionPadd{	padding:0px 43px 35px 43px;	}
+
+.expected_retire_en_tips{  top: -18px;left: 122px;}
+
+.expected_inflation_en{  top: -18px; left: 89px;}
+
+.expected_inflation_ch{top:-19px;left:147px;}
+
+.expectedRate_en{  top: -18px;left: 150px;}
+
+.expectedRate_tc{top: -18px;left: 68px;}
+
+.employer_voluntury_en{ left: 100px;top: -19px;}
+
+.employer_voluntury_ch{/* left:24px; */top:-19px;}
+
+.existing_en{ left: 83px;top: -20px;}
+
+.existing_ch{left:47px;top:-22px;}
+
+.expected_annual_en{  left: 116px;top: -20px;}
+
+.expected_annual_ch{  left: 152px;top: -20px;}
+
+.expected_annual_mpf_en{left: 111px;top: -23px;}
+
+.expected_annual_mpf_tc{  left: 105px;top: -22px;}
+
+.current_balance_en{left: 104px; top: -19px;}
+
+.current_balance_ch{left:29px;top:-20px;}
+
+.monthly_savings_en{  left: 104px; top: -19px;}
+
+.expected_return_en{  left: 103px; top: -18px;}
+
+.monthly_special_ch{/* left: 23px; */ top: -20px;}
+
+.monthly_special_en{left:-29px;top:2px;}
+
+.accordion .planTitle {	padding: 15px 30px 15px 0px;	}
+.radGroup2 +span.m_t_WordPosition{	display:inline-block;	width:95%;	vertical-align:top;	}
+
+.re_top .re_top_budget1_tch{vertical-align:bottom;}
+
+.mResTitle{	display:none;	}

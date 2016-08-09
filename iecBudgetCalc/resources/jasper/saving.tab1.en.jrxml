@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DataSourceReport" pageWidth="595" pageHeight="842" columnWidth="565" leftMargin="15" rightMargin="15" topMargin="15" bottomMargin="15" uuid="472e7edf-e7c1-4379-a4aa-34559ceec757">
+	<property name="ireport.zoom" value="1.3636363636363635"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="344"/>
+	<style name="Sans_Normal" isDefault="true" fontName="DejaVu Sans" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Sans_Bold" fontName="DejaVu Sans" fontSize="12" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Sans_Italic" fontName="DejaVu Sans" fontSize="12" isBold="false" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#D9C9C3">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#FFECE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#FFFAF8"/>
+		</conditionalStyle>
+	</style>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<subDataset name="Table Dataset 1" uuid="cbdd149c-2a62-4512-8695-b328a649f1a5"/>
+	<subDataset name="Table Dataset 2" uuid="d4a34069-3830-45b2-9776-e94cf99fa33d"/>
+	<parameter name="res_path" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="savingForImg" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["icon-summy-others.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="savingForWord" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="withCIA" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="withoutCIA" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="period" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="contribute" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="linechart_period" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[${id}]]>
+	</queryString>
+	<field name="amount1" class="java.lang.Number">
+		<fieldDescription><![CDATA[amount1]]></fieldDescription>
+	</field>
+	<field name="amount2" class="java.lang.Number">
+		<fieldDescription><![CDATA[amount2]]></fieldDescription>
+	</field>
+	<field name="category1" class="java.lang.String">
+		<fieldDescription><![CDATA[category1]]></fieldDescription>
+	</field>
+	<field name="category2" class="java.lang.String">
+		<fieldDescription><![CDATA[category2]]></fieldDescription>
+	</field>
+	<group name="Bar Group"/>
+	<summary>
+		<band height="799">
+			<textField>
+				<reportElement uuid="d8ed2c75-9f14-42fc-ac5f-207233ec4171" mode="Transparent" x="54" y="200" width="494" height="33" forecolor="#4B2384" backcolor="#4B2384"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="15" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Start saving early to contribute less and reach your goal earlier"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="cabdbf5f-8ceb-46a8-8f39-c4479be529d6" x="0" y="185" width="564" height="1" forecolor="#F1F1F1" backcolor="#F1F1F1"/>
+			</line>
+			<textField>
+				<reportElement uuid="b37c54bc-a5c6-4e15-bf20-82706b7d1d9c" mode="Transparent" x="0" y="251" width="565" height="50" forecolor="#666666" backcolor="#666666"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["The earlier you start saving, the sooner you’ll allow yourself to benefit from compounding.  Your savings grow not only by the amount you contribute, and the interest generated on that amount, but also earn interest on the interest."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="501b5b8b-611c-4101-b323-9847816d4c3c" mode="Transparent" x="0" y="309" width="565" height="43" forecolor="#666666" backcolor="#666666"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["With compound interest, you will contribute   <style size=\"16\" isBold=\"false\" forecolor=\"#4b2384\">HKD " + $P{contribute} + "</style>   " + $P{period} + " as compared to regular savings without compound interest."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9ff63d61-6942-4c1c-9fac-21215ea26524" mode="Transparent" x="0" y="479" width="565" height="55" forecolor="#666666" backcolor="#666666"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Apart from less contributions, you can also achieve your savings goal earlier with the same amount of monthly contribution with the power of compound interest. The below chart shows how you can achieve your savings goal in the saving period you selected:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7f507d98-2771-4aa8-ada5-97bba56b7864" mode="Transparent" x="0" y="530" width="565" height="27" forecolor="#4B2384" backcolor="#4B2384"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="16" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["How much you need to save"]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="bbf1b28b-a237-4614-a62f-1d6c19f0ff33" x="465" y="-13" width="100" height="14"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Gotham Rounded Book" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement uuid="ad90a3d1-eb27-42cb-b9b1-4a43684ba102" mode="Opaque" x="0" y="358" width="267" height="25" forecolor="#2CB7B4" backcolor="#2CB7B4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="fe0c3783-4a7f-4ba7-9944-bbc9cba1c5e6" mode="Opaque" x="269" y="358" width="296" height="25" forecolor="#2CB7B4" backcolor="#2CB7B4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="a8ec7f75-1d0d-4a1b-b2ae-d7c0707bc830" mode="Opaque" x="0" y="384" width="268" height="25" forecolor="#666666" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="92879d8f-6bb5-4bd1-a82d-bd9227a9f78f" mode="Opaque" x="268" y="384" width="297" height="25" forecolor="#666666" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="8db00dfb-8050-433b-873a-9e0fe0832448" mode="Opaque" x="0" y="409" width="268" height="25" forecolor="#666666" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="1e0f8263-cd24-459f-844d-d9140788bcf6" mode="Opaque" x="268" y="409" width="297" height="25" forecolor="#666666" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="8da5a1e0-4c5c-44d8-8264-dbe3b0a80a7c" mode="Opaque" x="268" y="434" width="297" height="30" forecolor="#666666" backcolor="#FFFFFF"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="63d2148c-9864-4543-87cb-eaee987b1549" mode="Transparent" x="0" y="358" width="267" height="25" forecolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="10"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Compound interest"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8da5de3d-e6b4-4b00-b394-45000aec2fd6" mode="Transparent" x="269" y="358" width="296" height="25" forecolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="10"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Amount needed to be saved " + $P{period}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="413ba770-9627-401f-98fc-f452a41a8264" mode="Transparent" x="0" y="384" width="268" height="25" forecolor="#666666" backcolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["With compound interest"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7079fd46-29c8-40d5-afeb-7ff4dcae5690" mode="Transparent" x="1" y="409" width="268" height="25" forecolor="#666666" backcolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="10"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Without compound interest"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0850cd7c-5fa2-4438-b830-abdcb7f7288e" mode="Transparent" x="269" y="384" width="296" height="25" forecolor="#666666" backcolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="10"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["HKD " + $P{withCIA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="375d396f-c5f0-40d0-8689-4d6b3711916e" mode="Transparent" x="269" y="409" width="296" height="25" forecolor="#666666" backcolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="10"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["HKD " + $P{withoutCIA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0fb4dc4d-1704-4f13-99ee-7c36a698fa28" mode="Transparent" x="269" y="434" width="296" height="30" forecolor="#4B2384" backcolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="15" isBold="false"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["HKD " + $P{contribute}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d14cc4a0-615b-4fb1-bb25-d85bfef6f3b5" mode="Transparent" x="185" y="127" width="353" height="35" forecolor="#666666" backcolor="#666666"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["You will have to save <style size=\"16\" isBold=\"false\" forecolor=\"#4b2384\">HKD " + $P{withCIA} + "</style> " + $P{period}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="61d5d52c-702c-4c32-b448-44407c11d2c3" x="23" y="202" width="30" height="30"/>
+				<imageExpression><![CDATA[$P{res_path} + "bg-summary-topic-12.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="f9575985-2115-4e74-8d34-102370494a08" x="115" y="113" width="38" height="38">
+					<printWhenExpression><![CDATA[(!"icon-summy-others.png".equals($P{savingForImg}))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{res_path} + $P{savingForImg}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="0ba921af-b8f4-476e-a6e6-adada0273f1e" mode="Transparent" x="60" y="153" width="150" height="25" forecolor="#4B2384" backcolor="#4B2384">
+					<printWhenExpression><![CDATA[(!"icon-summy-others.png".equals($P{savingForImg}))]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{savingForWord}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="39a790e5-4482-4331-9531-c30a59af77d1" mode="Transparent" x="114" y="778" width="155" height="20" forecolor="#666666" backcolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["  Without compound interest"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a459dc43-9d0e-4996-91fd-a2f9172c996b" mode="Transparent" x="315" y="778" width="179" height="20" forecolor="#666666" backcolor="#666666"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["  With compound interest"]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement uuid="2528b51f-733c-4eae-890b-e3899ceffdbc" x="105" y="783" width="10" height="10" forecolor="#FFFFFF" backcolor="#3EA8A4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="f0268f16-d2aa-46f8-b75e-355cb9179766" x="305" y="783" width="10" height="10" forecolor="#FFFFFF" backcolor="#DC543A"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="67a8c666-f685-43ca-8a3f-f1c4d617fb0f" mode="Transparent" x="1" y="758" width="564" height="15" forecolor="#666666" backcolor="#666666"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{linechart_period}]]></textFieldExpression>
+			</textField>
+			<lineChart>
+				<chart isShowLegend="false">
+					<reportElement uuid="c936c244-ddbc-4870-898f-78a7a1c5deef" x="-13" y="557" width="590" height="197" forecolor="#666666"/>
+					<chartTitle>
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartSubtitle>
+					<chartLegend>
+						<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+					</chartLegend>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["series1"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{category1}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{amount1}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["series2"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{category2}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{amount2}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<linePlot>
+					<plot>
+						<seriesColor seriesOrder="0" color="#DC543A"/>
+						<seriesColor seriesOrder="1" color="#3EA8A4"/>
+					</plot>
+					<categoryAxisFormat>
+						<axisFormat>
+							<labelFont>
+								<font fontName="Gotham Rounded Book" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="Gotham Rounded Book" size="6" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+							</tickLabelFont>
+						</axisFormat>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat verticalTickLabels="false">
+							<labelFont>
+								<font fontName="Gotham Rounded Book" size="6" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="Gotham Rounded Book" size="6" pdfFontName="Gotham Rounded Book" isPdfEmbedded="true"/>
+							</tickLabelFont>
+						</axisFormat>
+					</valueAxisFormat>
+				</linePlot>
+			</lineChart>
+			<textField>
+				<reportElement uuid="67a8c666-f685-43ca-8a3f-f1c4d617fb0f" mode="Transparent" x="11" y="542" width="37" height="15" forecolor="#666666" backcolor="#666666"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["HKD"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0ba921af-b8f4-476e-a6e6-adada0273f1e" mode="Transparent" x="65" y="121" width="142" height="35" forecolor="#4B2384" backcolor="#4B2384">
+					<printWhenExpression><![CDATA[("icon-summy-others.png".equals($P{savingForImg}))]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					<paragraph rightIndent="30"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{savingForWord}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="f3160a03-7ec4-4af6-b0c3-289f2a8989c2" x="0" y="0" width="140" height="51"/>
+				<imageExpression><![CDATA[$P{res_path} + "logo-iec.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="99de9128-a175-40e4-9055-c8b2fab9978f" x="362" y="21" width="219" height="25" forecolor="#4B2384" backcolor="#4B2384"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="17" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Savings goal calculator"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3ae5847c-cf00-4289-8d34-4e1ba0765b51" mode="Opaque" x="0" y="65" width="565" height="25" forecolor="#4B2384" backcolor="#2DBDB6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["         Summary"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="8a8f11d3-92a0-4ff7-90db-d3c818077c0e" x="6" y="70" width="18" height="18"/>
+				<imageExpression><![CDATA[$P{res_path} + "ico-report.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</summary>
+</jasperReport>

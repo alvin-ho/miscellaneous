@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="debt" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="147591df-c3f0-405a-a675-bb4a5a107743">
+	<property name="ireport.zoom" value="1.3310000000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="PATH" class="java.lang.String"/>
+	<parameter name="OLSUMNUM" class="java.lang.String"/>
+	<parameter name="OLSUMPRI" class="java.lang.String"/>
+	<parameter name="OLSUMDEBT" class="java.lang.String"/>
+	<parameter name="OLSUMCOST" class="java.lang.String"/>
+	<parameter name="OLSUMPERIOD" class="java.lang.String"/>
+	<parameter name="DSR" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="totalpay" class="java.lang.String"/>
+	<field name="totalcost" class="java.lang.String"/>
+	<field name="repay" class="java.lang.String"/>
+	<field name="period" class="java.lang.String"/>
+	<field name="principal" class="java.lang.String"/>
+	<field name="rate" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="1" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="211" splitType="Stretch">
+			<frame>
+				<reportElement uuid="33351f41-e576-4ad7-99e3-458b92879078" x="0" y="102" width="802" height="58"/>
+				<box topPadding="0">
+					<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+					<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+				</box>
+				<staticText>
+					<reportElement uuid="a5a5b0da-d763-4c16-8156-7c629e2c51eb" x="24" y="8" width="65" height="20"/>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[貸款數目]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="a11b5164-f907-482e-bef3-2b64c781898f" x="102" y="8" width="125" height="20"/>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[貸款金額]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="968daaa1-87ac-4970-a817-e26500827638" x="237" y="8" width="166" height="20"/>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[債務總金額(包括利息)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fe39bf1b-02d2-41ae-967d-c90542bad079" x="416" y="8" width="142" height="20"/>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[總利息]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="114e2dea-b8d8-49fc-aad5-a385b4b639ad" x="571" y="8" width="96" height="20"/>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[還款期]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="a33edea5-adab-4d3c-8e93-bdfa443e256d" x="24" y="30" width="65" height="25" forecolor="#4B2384">
+						<printWhenExpression><![CDATA[(!$F{name}.equals("0"))]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Top">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{OLSUMNUM}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="ea76ac86-c453-42ed-88aa-c13305006bec" x="102" y="30" width="125" height="25" forecolor="#4B2384">
+						<printWhenExpression><![CDATA[(!$F{name}.equals("0"))]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Top">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{OLSUMPRI}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="547241db-bd6b-426d-9f79-b699ee2d8407" x="237" y="30" width="166" height="25" forecolor="#2CB7B4">
+						<printWhenExpression><![CDATA[(!$F{name}.equals("0"))]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Top">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{OLSUMDEBT}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="8a515717-0dcd-4352-b766-9dc39a5f9b2a" x="416" y="30" width="142" height="25" forecolor="#4B2384">
+						<printWhenExpression><![CDATA[(!$F{name}.equals("0"))]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Top">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{OLSUMCOST}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="a038f6b4-fa07-4f62-8cf8-8985c56843f5" x="571" y="30" width="96" height="25" forecolor="#4B2384">
+						<printWhenExpression><![CDATA[(!$F{name}.equals("0"))]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Top">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{OLSUMPERIOD}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement uuid="81927b3f-326d-4926-9c38-95127f93ba6d" x="0" y="174" width="802" height="37"/>
+				<box>
+					<pen lineColor="#CCCCCC"/>
+					<topPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<bottomPen lineColor="#CCCCCC"/>
+					<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+				</box>
+				<staticText>
+					<reportElement uuid="7f9ec4d8-80b7-4001-b611-19b34a798b03" x="21" y="7" width="117" height="20"/>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[來源 / 目的]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8bb53a72-d350-4c90-b59f-210ad550a746" x="143" y="7" width="100" height="20"/>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[貸款金額]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="515615a4-9624-46be-aa75-8731c604a63f" x="260" y="7" width="128" height="20"/>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[債務總金額 (包括利息)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d7a5ebb4-0258-4c00-9cd0-821f599f294e" x="392" y="7" width="70" height="20"/>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[平息 (以年計)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="5922ac64-049c-4e9c-b6ea-b9698405b8c8" x="469" y="7" width="123" height="20"/>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[利息]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="97e003f0-d79d-4519-b120-9a6cfce962ac" x="600" y="7" width="119" height="20"/>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[每月平均還款額]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f9d4a1cc-50f3-497a-bd0b-d2d2526750ae" x="723" y="7" width="62" height="20"/>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[還款期]]></text>
+				</staticText>
+				<line>
+					<reportElement uuid="d8028cc9-b908-4ede-80d9-3435e3b06a46" x="21" y="32" width="760" height="1" forecolor="#999999"/>
+				</line>
+			</frame>
+			<textField>
+				<reportElement uuid="fb016962-9c09-4cd9-80b3-c39a701c0a50" x="682" y="132" width="106" height="25" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{DSR}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DSR}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="526df008-7058-4837-b490-c03ddf09580c" x="682" y="110" width="106" height="20" forecolor="#000000">
+					<printWhenExpression><![CDATA[$P{DSR}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[債務收入比率]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="499c7bcc-c6c9-4601-90e7-6acfe46d11a5" x="680" y="-20" width="123" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="95e2bcb0-21b8-4b56-b1fa-b9830db55fe8" mode="Opaque" x="0" y="65" width="802" height="30" forecolor="#4B2384" backcolor="#2CB7B4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[          其他貸款概覽]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="e22b2eee-0d42-4d8f-bff8-161f4b64feab" mode="Transparent" x="690" y="15" width="115" height="33" forecolor="#4B2384" backcolor="#1D70B7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="20" isBold="false" isItalic="false" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["債務計算機"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="c07fd75c-3f79-4e1c-9d7b-b6c27197b1d5" x="0" y="0" width="140" height="51"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/logo-iec.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="e9a845ff-d7fa-4261-9272-103ba5a5d6d1" x="1" y="65" width="30" height="30" forecolor="#2CB7B4" backcolor="#2CB7B4"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/icon-report.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30">
+			<frame>
+				<reportElement uuid="9fb6e317-994a-40dd-a7ae-7bc0a12b4ece" x="0" y="0" width="802" height="30"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="1.0" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="1.0" lineColor="#CCCCCC"/>
+				</box>
+				<textField>
+					<reportElement uuid="a05038d6-b1f7-4e13-903b-885af7c3b126" x="21" y="2" width="117" height="28">
+						<printWhenExpression><![CDATA[(!$F{name}.equals("0"))]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="7ea1eb66-1eb0-4846-8a1b-65f0c1cfe11f" x="143" y="2" width="100" height="28">
+						<printWhenExpression><![CDATA[(!$F{name}.equals("0"))]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{principal}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="956260da-ffdc-4ee4-be36-adcc8233babf" x="260" y="2" width="126" height="28">
+						<printWhenExpression><![CDATA[(!$F{name}.equals("0"))]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{totalpay}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="9e37fc50-1bb6-454c-820c-8bab445933e7" x="392" y="2" width="70" height="28">
+						<printWhenExpression><![CDATA[(!$F{name}.equals("0"))]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{rate}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="e18808c8-61d7-4e9c-b872-cfd2aa2e68c5" x="469" y="2" width="123" height="28">
+						<printWhenExpression><![CDATA[(!$F{name}.equals("0"))]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{totalcost}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="38f3f8e3-3871-45df-85d7-9ebe8a47d6c1" x="600" y="2" width="119" height="28">
+						<printWhenExpression><![CDATA[(!$F{name}.equals("0"))]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{repay}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="3cb80a0b-a7cf-4cdb-b939-0c4c581acacc" x="723" y="2" width="62" height="28">
+						<printWhenExpression><![CDATA[(!$F{name}.equals("0"))]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{period}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<summary>
+		<band height="10">
+			<line>
+				<reportElement uuid="ff3f397c-7d05-4543-8546-c9c4cef9ffca" x="0" y="0" width="802" height="1" forecolor="#CCCCCC"/>
+			</line>
+		</band>
+	</summary>
+</jasperReport>

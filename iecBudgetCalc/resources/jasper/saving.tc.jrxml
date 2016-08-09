@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DataSourceReport" pageWidth="595" pageHeight="842" columnWidth="565" leftMargin="15" rightMargin="15" topMargin="15" bottomMargin="15" uuid="472e7edf-e7c1-4379-a4aa-34559ceec757">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Sans_Normal" isDefault="true" fontName="DejaVu Sans" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Sans_Bold" fontName="DejaVu Sans" fontSize="12" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Sans_Italic" fontName="DejaVu Sans" fontSize="12" isBold="false" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+	<parameter name="Title" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Saving goal calculator"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Subtitle" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Summary"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PATH" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InfoTitle1" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["How will have to save :"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InfoTitle2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Saving purpose :"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InfoTitle3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Savings goal :"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InfoTitle4" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Amount you have already :"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InfoTitle5" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Expected interest rate :"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InfoTitle6" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Saving period :"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InfoTitle7" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Compound interval :"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Info1" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["HKD 39 / per month"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Info2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Education"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Info3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["HKD 1,000"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Info4" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["HKD 10"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Info5" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["10% p.a."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Info6" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["1 year 1 month"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Info7" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["weekly"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TimeItem" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["year"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AmountItem" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Amount (HKD)"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[${id}]]>
+	</queryString>
+	<field name="amount" class="java.lang.Number">
+		<fieldDescription><![CDATA[amount]]></fieldDescription>
+	</field>
+	<field name="category" class="java.lang.String">
+		<fieldDescription><![CDATA[category]]></fieldDescription>
+	</field>
+	<group name="Bar Group"/>
+	<title>
+		<band height="11"/>
+	</title>
+	<columnHeader>
+		<band height="101">
+			<image>
+				<reportElement uuid="4ff12ad4-59ef-4345-86de-5fc3ddc97ebb" x="0" y="0" width="565" height="100"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/img-header-report.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="675dd1f6-e759-4deb-8849-f226102859ed" x="50" y="60" width="100" height="41" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["概要"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="83f1ddf9-69e0-448e-990b-2c8ee111ceec" mode="Transparent" x="301" y="27" width="240" height="33" forecolor="#1D70B7" backcolor="#1D70B7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="20" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["儲蓄目標計算機"]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<summary>
+		<band height="655">
+			<textField>
+				<reportElement uuid="d742411d-41a4-4995-8933-bdef13cb93d5" x="20" y="189" width="180" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InfoTitle3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2b169b01-a1b5-4463-88e6-aa56341b23e0" x="20" y="229" width="180" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InfoTitle4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b721fb72-e797-4474-831f-9a050ac0820c" x="20" y="269" width="180" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InfoTitle5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ad7ecdba-e89c-4714-8b26-3f40a4a47187" x="20" y="309" width="180" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InfoTitle6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="14305a70-6517-45d3-8e86-bffaff379a8d" x="20" y="349" width="180" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InfoTitle7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="25a45888-57f2-4de4-9d2e-de6c46cd3ecb" x="20" y="149" width="180" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InfoTitle1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="89a1badb-8c5f-4180-a3c5-478a3016d356" x="20" y="109" width="180" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" isBold="false" isItalic="false" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InfoTitle2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ef3f39ab-c32f-49c2-bd8e-32954a8d82d2" x="237" y="109" width="180" height="23" forecolor="#FCAF1A"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Info2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ed511946-0b0c-4a18-9bee-d5ffe0d388c3" x="237" y="149" width="180" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Info1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="45f6515f-2ed1-487a-8a4b-d61ee285c882" x="237" y="189" width="180" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Info3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="eed23a80-6fb8-450e-9b9f-ab5a4dd949f5" x="237" y="229" width="180" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Info4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9e1fa0f0-719e-4e0d-8ec9-f725b723e47f" x="237" y="269" width="180" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Info5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="370612f5-0caf-4e0b-b1c9-271d6291fdbd" x="237" y="309" width="180" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Info6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="63fbffb6-6172-435d-b3b2-147001e71623" x="237" y="349" width="180" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="MYuen HK Light" size="14" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Info7}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="40e46c31-641f-44b6-8f1e-6db78481f050" x="465" y="-126" width="100" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<image hAlign="Center">
+				<reportElement uuid="54def650-9b5e-4121-840a-c7a99a45d90d" x="227" y="51" width="60" height="52"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/" + $P{Title}]]></imageExpression>
+			</image>
+		</band>
+	</summary>
+</jasperReport>

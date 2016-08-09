@@ -1,0 +1,71 @@
+<!-- HTML5 to make used of canvas -->
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=Edge"/>		
+		<title></title>
+		<!-- style -->
+		<link href="../css/html4-reset.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="../css/debt.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="../css/default.css" rel="stylesheet" type="text/css" media="all" />        	
+		<link rel="stylesheet" type="text/css" href="../css/jquery.jqplot.css" />		
+		<link rel="stylesheet" type="text/css" href="../css/jquery.fancybox-1.3.4.css" media="all" />				
+		<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css" media="all" />
+		
+		<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+		<script>
+		(function($){
+				$(window).load(function(){
+					$('.inner').mCustomScrollbar({
+						scrollInertia:250
+					});
+				});
+			})(jQuery);
+		</script>
+	</head>
+	<body class="calculator-popup">
+	
+<!--	<div class="calculator-popup-t"></div>-->
+	<div class="calculator-popup-innerwrapper">
+		<div class="inner" style="height: 400px; width: 790px">	
+			<h1>關於債務計算機</h1>
+			<p>債務計算機助你了解個人的債務概況，包括信用卡，私人貸款和其他貸款(例如：家人及朋友) ，同時提供提示和建議，協助大家妥善管理債務問題。</p>
+			
+			<p>計算機亦會顯示在不同還款額、不同還款期和不同年利率下的還款情況，方便市民大眾檢視和比較；並可計算債務收入比率，量度債務佔收入的比例，從而讓大家了解自己的債務負擔。你應注意，因計算方式略有不同，此計算機或不適用於樓宇按揭及學生貸款。</p>
+			<p>債務計算機提供以下債務計算：</p>
+
+			<ol type="1">
+				<li>信用卡<br/><br/>此計算機計算信用卡債務還款情況，根據輸入的結欠金額、實際年利率及每月平均還款額，可計算出還款期及借貸總成本。實際年利率可參閱信用卡結單。假設沒有其他費用及收費，此計算機會將實際年利率轉換為實際每月利息，從而計算還清信用卡債務所須的還款期及借貸總成本。</li>
+				<li>私人貸款<br/><br/>此計算機計算私人貸款還款情況，根據你輸入的貸款金額、貸款年期及實際年利率，可計算出每月平均還款額。實際年利率可參閱貸款的條文及其他相關文件。假設沒有其他費用及收費，此計算機會將實際年利率轉換為實際每月利息，從而計算還清債務所須的每月平均還款額。</li>
+				<li>其他貸款<br/><br/>此計算機計算繳付平息的一般貸款的還款情況，根據輸入的貸款金額、貸款年期及平息(以年計)，可計算出每月平均還款額。平息是指借貸金額的一個固定利率，計算方式並不會考慮債務本金隨每月遞減。假設沒有其他費用及收費，此計算機會計算還清債務所須的每月平均還款額。</li>
+			</ol>
+
+			<p>債務計算機提供以下功能讓你：</p>
+			<ol>
+			<li><img src="../images/common/disclaimer/pdf.png"/>&nbsp;&nbsp;以PDF格式查看並儲存你的記錄。</li>
+			<li><img src="../images/common/disclaimer/print.png"/>&nbsp;&nbsp;列印你的債務概覽報告。</li>
+			<li><img src="../images/common/disclaimer/email.png"/>&nbsp;&nbsp;通過電子郵件分享債務計算機予你的朋友。</li>
+			<li><img src="../images/common/disclaimer/share.png"/>&nbsp;&nbsp;通過Facebook分享債務計算機予你的朋友。</li>
+			</ol>
+			
+			<h1>計算機的假設</h1>
+			<p>投資者教育中心債務計算機於計算時有以下假設：</p>
+			<ul>
+				<li>借貸成本是以實際年利率計算，其中考慮到利息和額外費用例如行政費、申請費等，但並不包括信用卡的年費或因持卡人未能根據協議履行其義務的徵費(如拖欠財務費用)或發卡銀行提供額外的服務而收取的費用 (如臨時提高信用額的收費)。</li>
+				<li>假設信用卡和私人貸款沒有年費。</li>
+				<li>假設每月於付款到期日或之前還款。</li>
+				<li>假設每期還款時間為每月的結束日。</li>
+				<li>假設在還款期間，沒有額外的信用卡消費，未入賬分期付款或預借現金加到信用卡的賬單上。</li>
+				<li>最低還款額以信用卡未償餘額的2%或每月利息加未償餘額的1%或港元50計算 (以較高者計算)。</li>
+				<li>當圖表中的數值差異太大，圖表的結果或未能準確顯示。</li>
+			</ul>
+		</div>
+	</div>
+<!--	<div class="calculator-popup-b"></div>-->
+
+	</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<meta name="viewport" content="width=device-width,user-scalable=no, target-densitydpi=device-dpi">
+<meta name="description" content="" />     
+    
+<link href="../css/html4-reset.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/layout-print.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- jQuery lib -->
+<script src="../js/jquery-1.8.3.min.js"></script>
+<!-- Fancybox for DISCLAIMER -->
+<script type="text/javascript" src="../js/d3.v3.min.js"></script>
+<script type="text/javascript" src="../js/RadarChart.js"></script>
+<script type="text/javascript" src="../js/d3-transform.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7132094/6453152/css/fonts.css" />
+<script type="text/javascript" src="https://fast.fonts.net/jsapi/c550c076-1bd6-411f-ac61-2ea18430c967.js"></script>
+
+</head>
+<body class="en">
+<div class="header">
+    <div class="wrapper"><a href="javascript:;" class="logo"></a></div>
+</div><!-- /header -->
+<div class="result">
+    <h2>How good are you at managing your wealth?</h2>
+    <div class="inner">
+        <p>There are many indicators that help illustrate your wealth management status; some key elements are your emergency fund, debt management and money management.</p>
+        <div class="chart" id="body">
+            <div class="emergencyFund">Emergency fund<span></span></div>
+            <div class="moneyManagement">Money management<span></span></div>
+            <div class="debtManagement">Debt management<span></span></div>
+            <div id="chart"></div>
+            <div class="hints">
+                <span class="left">Need attention</span>
+                <span class="right">Under control</span>
+            </div>
+        </div>
+        <div class="emergencyFunds resultBox">
+            <h4>Emergency funds</h4>
+            <h5>Your liquidity ratio <strong><span>1</span></strong></h5>
+            <p class="error">Please provide the figures of your income and expenses</p>
+            <div class="contentBox">
+                <p>The liquidity ratio this calculator uses  is calculated by dividing your liquid assets by monthly expense. The ratio can be interpreted as the sufficiency of your funds reserved for emergency uses such as unexpected crisis or risk in life. It is recommended to cover at least three to six months of living expenses as your emergency fund. If your liquidity ratio is below 3, you should consider to save more to meet any unexpected crisis.</p>
+            </div>
+            <span class="line"></span>
+        </div>
+        <div class="debtManagement resultBox">
+            <h4>Debt management</h4>
+            <h5>Your debt servicing ratio <strong><span>40</span>%</strong></h5>
+            <p class="error">Please provide the figures of your income and expenses</p>
+            <div class="contentBox">
+                <p>Debt servicing ratio is the percentage of your gross monthly income that goes toward paying debts and is calculated by dividing your monthly liabilities by your gross monthly income. The lower the debt-to-income ratio you have , the better your debt management status is.</p>
+                <p>Debt can be a growing problem if not managed properly. Even if you just owe a little, always make payment on time to keep your debt under control. Additional interest and /or penalty charges can add up quickly if you get behind on repayments.</p>
+                <p>You can consider managing your debts with the following options:</p>
+                <ul>
+                    <li>Pay off your debt as much as you can each month, at least pay the minimum you owe on each loan as this will protect your credit score. If you can afford to pay more, pay the loan with the highest interest rate first.</li>
+                    <li>Consider consolidating your loans, lines of credit and credit card balances into a single loan with a set repayment schedule.</li>
+                    <li>Tell your lender that you’re experiencing financial difficulty. Sometimes, you may be able to extend the term of a loan or arrange to postpone repayments for a temporary period.</li>
+                </ul>
+            </div>
+            <span class="line"></span>
+        </div>
+        <div class="moneyManagement resultBox">
+            <h4>Money management</h4>
+            <h5>Your monthly savings ratio <strong><span>80</span>%</strong></h5>
+            <p class="error">Please provide the figures of your income and expenses</p>
+            <div class="contentBox">
+                <p>Savings ratio is the proportion of income which has been saved and is calculated by dividing your monthly surplus by your monthly income. The higher the saving ratio you have, the better money management status and the quicker to achieve financial goals you are.</p>
+                <p>Whatever your age or circumstances, it is good practice to work out your goals and start saving as early as you can.</p>
+                <p>Here are some tips helping you to save money and budget better:</p>
+                <ul>
+                    <li>Avoid impulse buys which let you stick to your shopping list.</li>
+                    <li>Delay purchases; wait for a day or two before deciding to buy.</li>
+                    <li>Start a spending diary to keep track your spending habits</li>
+                    <li>Substitute the item with a similar, less expensive one.</li>
+                    <li>Compare prices at different retail outlets, online and offline.</li>
+                    <li>Set rules for shopping</li>
+                    <li>Reduce non-essential items.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/script.js"></script>
+<script>
+var d = [
+  [
+    {axis:"Money management",value:1},
+    {axis:"Emergency fund",value:1},
+    {axis:"Debt management",value:1}
+  ]
+];
+RadarChart.draw("#chart", d, mycfg);
+</script>
+</body>
+</html>

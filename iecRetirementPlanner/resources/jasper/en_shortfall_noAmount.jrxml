@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="shortfall_noAmount_01_en" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b48bb114-edfa-4f3e-94cb-6885204cbec3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="reserved" class="java.lang.String"/>
+	<parameter name="required" class="java.lang.String"/>
+	<parameter name="shortfall" class="java.lang.String"/>
+	<parameter name="additionalMonthlySaving" class="java.lang.String"/>
+	<parameter name="res_nper1" class="java.lang.String"/>
+	<parameter name="rateToDiscountTheShortfall" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="115" splitType="Stretch">
+			<image>
+				<reportElement uuid="2031e294-ae1f-46e1-8007-488fc7df3280" x="0" y="0" width="140" height="51">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="0" bottomPadding="0"/>
+				<imageExpression><![CDATA["iec-logo.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="3b1783c2-2627-4c8c-b1f0-ecc3603d7340" x="161" y="63" width="34" height="35">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["iec-retirement.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="4be681ed-45d4-450e-b40e-22fec4fb1033" x="205" y="70" width="180" height="22" forecolor="#4B2384">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Retirement Planner]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="a9e03f46-3251-4040-9bc8-2e00e0f084e8" x="431" y="100" width="124" height="15" forecolor="#414141"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="233" splitType="Stretch">
+			<image scaleImage="FillFrame" hAlign="Center">
+				<reportElement uuid="7306b97e-e805-4891-bc94-8da3ba644a56" mode="Transparent" x="0" y="30" width="555" height="195"/>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["shortfall_en.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="4009540b-c217-42a6-8897-4ee04f6827da" mode="Opaque" x="0" y="0" width="555" height="25" forecolor="#4B2384" backcolor="#2DBDB6">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="14" isBold="false" isItalic="false"/>
+					<paragraph leftIndent="15"/>
+				</textElement>
+				<text><![CDATA[    Result]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="76cf277e-5356-467f-9280-cb86c6fa6da5" x="5" y="5" width="15" height="15">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["icon-summy.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="427" splitType="Stretch">
+			<image>
+				<reportElement uuid="3699d57c-b8a9-4320-aef1-94bcca301b9a" x="87" y="61" width="75" height="65"/>
+				<imageExpression><![CDATA["iec-pigImg.png"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement uuid="7c312117-b0b3-46a0-a93c-480b0f23ae53" x="40" y="138" width="480" height="1" backcolor="#E5E5E5">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement uuid="84a985fa-42f4-4301-a289-ca33feff1b82" x="37" y="171" width="25" height="26"/>
+				<imageExpression><![CDATA["iec-moneyBag.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="4d2ba682-4e90-4a15-b1e3-bc4d961f0319" mode="Transparent" x="65" y="179" width="203" height="14" forecolor="#2DBDB6" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Save more for retirement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0c6a938a-19ac-4171-8239-5785148d5ae0" x="78" y="198" width="445" height="14" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Calculate how much you need to save or invest each month to close the gap:]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="161fd3c3-4e7e-45c8-8124-35dd25b893fc" x="66" y="200" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="cc1b6d6f-dbc9-469b-8019-ee135864bb10" mode="Opaque" x="37" y="215" width="486" height="68" backcolor="#F3F3F3">
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="10" leftPadding="40"/>
+				<textElement textAlignment="Left">
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Additional amount to save/invest for retirement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5c2e261c-43c6-4058-8c8a-5deff56e145c" mode="Transparent" x="77" y="246" width="23" height="16" forecolor="#FF3232" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[HKD]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement uuid="2b780de8-8617-4852-84f6-4f50fba9d8fb" mode="Transparent" x="103" y="238" width="404" height="28" forecolor="#FF3232" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="18" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{additionalMonthlySaving}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b7dc6ff7-83e3-46b2-8421-e3b0a05367a9" mode="Opaque" x="75" y="260" width="344" height="20" forecolor="#000000" backcolor="#F3F3F3"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" per month X " + $P{res_nper1} + " years Expected rate of return (p.a.) " +$P{rateToDiscountTheShortfall}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7700be1e-2337-4a2b-b9c7-5995762077dd" x="78" y="286" width="445" height="50" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Start your saving or investment plan as soon as possible. Saving early can really pay off due to the power of compound interest. The sooner you start saving, the sooner you start benefitting from the power of compound interest – which puts time to work on your savings.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="8d91478c-e552-44c2-b8ff-6196291353dc" x="66" y="291" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="18e454c8-49e4-4651-9995-8878688b44b7" x="78" y="335" width="445" height="14" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Spend less and save/invest more:]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="59071ec6-3c24-4724-9560-c8d8c7bfd53a" x="66" y="340" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="b9163c2e-374c-42bd-9ebf-098755e6768e" x="92" y="351" width="431" height="40" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Cut back on non-essential items: start a spending diary. If you keep a record of every dollar you spend, you’ll know exactly where your money is going, and be more conscious of your spending habits.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="c4efc65a-c6bc-4dcd-bc1a-773cc4f73b74" x="80" y="355" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["square.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="bbd40b43-3803-40a8-9f1e-dbe1da2eaa66" x="93" y="393" width="431" height="26" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Shop around to compare prices at different retail outlets, online and offline, you may find the same item or service for a lower price.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="9efcfc5b-9208-4fe4-971b-66c5c300adba" x="80" y="397" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["square.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="false">
+				<reportElement uuid="6e038032-7717-4e91-a199-c51c45bdfc6e" mode="Transparent" x="320" y="6" width="236" height="25" forecolor="#4B2384" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="18" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reserved}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c67764dd-8188-4802-b0cd-13b44e311f26" mode="Transparent" x="296" y="11" width="20" height="18" forecolor="#4B2384" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[HKD]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement uuid="4f0a8788-b4b4-4c85-801a-df6d62efe583" mode="Transparent" x="320" y="33" width="236" height="25" forecolor="#4B2384" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="18" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{required}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="dbe27c7a-e3fe-4a5d-89ad-2451062e66ff" mode="Transparent" x="40" y="10" width="256" height="19" forecolor="#414141" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Expected reserve accumulated when you retire]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2d6c13b0-a5b2-4dfd-89fe-043024143425" mode="Transparent" x="40" y="34" width="256" height="22" forecolor="#414141" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Expected amount required when you retire]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a549c358-7df9-4ce9-bbf4-ea28f9158982" mode="Transparent" x="296" y="38" width="20" height="18" forecolor="#4B2384" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[HKD]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement uuid="f0601ddc-7bea-4e40-af40-cec499e9bed5" mode="Transparent" x="269" y="95" width="285" height="23" forecolor="#FF3232" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="18" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{shortfall}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="43ef68f6-0e15-4e7e-a5e6-15874ae29527" mode="Transparent" x="169" y="77" width="385" height="15" forecolor="#414141" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[The expected reserve cannot cover the expected required amount,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6fb0c6c8-c756-43cc-a5bc-bfce9e00a19c" mode="Transparent" x="169" y="104" width="100" height="12" forecolor="#FF3232" backcolor="#FFFFFF">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[you still need HKD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0c71f0de-e1e4-41d8-a96a-71a5d6a08beb" mode="Transparent" x="227" y="149" width="142" height="20" forecolor="#000000" backcolor="#1A1A1A"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Your action plan]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="3de1e59e-2666-47d5-afec-b5fc16f4737e" x="204" y="147" width="20" height="20">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["iec-confirm.png"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

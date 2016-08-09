@@ -1,0 +1,3405 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+
+	<!-- Social Link -->
+	<meta property="og:title" content="個人收支計算機" />
+	<meta property="og:type" content="website" />
+	<!-- must be absolute path to make stable reference for facebook, should not be an internal or private network -->
+	<meta property="og:image" content="https://www.thechinfamily.hk/tools/common/fbimages/fbimage.jpg" />
+	<meta property="og:image:secure_url" content="https://www.thechinfamily.hk/tools/common/fbimages/fbimage.jpg" />
+	<!-- ended -->
+	<meta property="og:url" content="https://www.thechinfamily.hk/tools/tc/budget.html" />
+	<meta property="og:image:type" content="image/jpg" />
+	<meta property="og:description" content="個人收支計算機助你記錄所有資金出入，你可將預算結果儲存在你的電腦內、列印並於稍後再進行規劃，或將預算數據表下載到你的電腦，然後制定你的個人收支預算。" />
+	<!-- ended -->
+
+	<script src="../js/config.js"></script>
+
+	<script type="text/javascript">
+
+	document.write("<link href=\""+root_path+"/css/html4-reset.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+	document.write("<link href=\""+root_path+"/css/layout.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+	//document.write("<link href=\""+root_path+"/css/default.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+	document.write("<script src=\""+root_path+"/js/jquery.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/changeFont.js\"></scr" + "ipt>");
+	document.write("<script src=\"" + root_path + "/js/functions.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/tsUtil.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/sitemapUtil.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/sitemap_breadcrumb.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/iecGlobal.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/google_analytics.js\"></scr" + "ipt>");
+
+	var loc = window.location.href;
+	var lang = 'en';
+	if (loc.search('lang=tc') !== -1 || loc.search('/tc/') !== -1) {
+		lang = 'tc';
+	}
+
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="../css/default.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../css/calculator.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.jqplot.css" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.fancybox-1.3.4.css" media="all" />
+
+	<script src="../css/footer/lib/bootstrap.min.js" type="text/javascript"></script>
+	<link href="../css/footer/lib/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../css/footer/lib/footer.css" rel="stylesheet" type="text/css" />
+
+	<title>個人收支計算機</title>
+
+	<!-- <a href="javascript:fbShare('https://www.thechinfamily.hk/tools/networth/en/index.html', 'IEC Net worth calculator', 'Check out how good you are at managing your wealth! Use our calculator to work out if what you own outweighs what you owe.', 'https://www.thechinfamily.hk/web/images/tc/tools-and-resources/tools/tools-head-banner_tc.jpg', 520, 350)" class="icoFb"></a>-->
+
+	<!--						<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://www.thechinfamily.hk/tools/en/budget.html" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><img src="../images/common/calculator/btn-share.png" alt="Facebook 分享" /></a>-->
+
+
+
+	<!-- Google Code for Remarketing Tag -->
+	<!--
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+-->
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 926048988;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+	</script>
+	<noscript>
+		<div style="display:inline;">
+			<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/926048988/?value=0&amp;guid=ON&amp;script=0" />
+		</div>
+	</noscript>
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window,
+			document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '1666299540302495');
+		fbq('track', "PageView");
+	</script>
+	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1666299540302495&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+
+<!--font-->
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7132094/6453152/css/fonts.css" />
+	<script type="text/javascript" src="https://fast.fonts.net/jsapi/c550c076-1bd6-411f-ac61-2ea18430c967.js"></script>
+<!--font end-->
+
+</head>
+
+<body>
+
+	<!-- 2013.12.26 to include header & footer -->
+	<div class="header">
+		<!--
+	<div class="useful-tools-wrapper">
+
+		<div class="useful-tools">
+
+			<div id="xxxsys_topLinkDiv" style="display:inline;"></div>
+			<div id="xxxsys_topSearchDiv" class="header-search"></div>
+
+		</div>
+	</div>
+-->
+		<!-- /useful-tools-wrapper -->
+		<div class="wrapper">
+
+
+			<a href="https://www.thechinfamily.hk/web/tc/" class="logo-iec"><img src="../images/common/img-logo-iec.jpg" alt="" /></a>
+
+			<!--
+		<div class="supported-by">
+
+		</div>
+-->
+			<!-- /supported-by -->
+			<!--
+		<script type="text/javascript">
+		document.writeln('<a href="' + root_path + '/tc/index.html" class="logo-iec"><img src="' + root_path + '/images/common/img-logo-iec.jpg" alt="" /></a>');
+		</script>
+-->
+			<div class="clearfix"></div>
+		</div>
+		<!-- /wrapper -->
+		<!--	<div id="sys_topMenuDiv">-->
+		<!--*** Include top-menu.html here ***-->
+		<!--	</div>	-->
+		<!--	<script>ts_loadInclude("sys_topMenuDiv", root_path + "/" + lang + "/include/top-menu.html");</script>-->
+	</div>
+	<!-- 2013.12.26 to include header & footer ended -->
+
+	<form method="POST" action="../pdfBudget.do?lang=1" name="budget_form" id="budget_form">
+		<div class="calculator inner calculator-budget">
+			<div class="calculator-wrapper">
+				<h1>個人收支計算機</h1>
+				<p>制定預算了解自己的理財習慣，從而妥善管理支出及儲蓄。個人收支計算機助你記錄所有資金出入，你可將預算結果儲存在你的電腦內、列印並於稍後再進行規劃，或將預算數據表下載到你的電腦，然後制定你的個人收支預算。</p>
+				<div class="calculator-innerwrapper-left">
+					<ul class="tab">
+						<li><a href="javascript:;" class="active"><span><img src="../images/common/calculator/icon-income.png" alt="收入" /></span>收入</a></li>
+						<li><a href="javascript:;"><span><img src="../images/common/calculator/icon-savings-and-investments.png" alt="儲蓄及投資" /></span>儲蓄及投資</a></li>
+						<li><a href="javascript:;"><span><img src="../images/common/calculator/icon-expenses.png" alt="支出" /></span>支出</a></li>
+						<!-- this is the result tab, i.e. 100% width-->
+						<li class="tab-report"><a href="javascript:;"><span><img src="../images/common/calculator/icon-report.png" alt="報告" /></span>報告</a></li>
+					</ul>
+					<!-- /tab -->
+					<div class="tab-assumption"><a href="budget_disclaimer-2.html"><span><img src="../images/common/calculator/btn-assumption.jpg" alt="assumption"></span></a></div>
+					<div class="clearfix"></div>
+					<div class="form-wrapper">
+						<!-- income-wrapper start -->
+						<div class="form-innerwrapper active">
+							<!-- ***** new appended 2013.10.24 ***** -->
+							<a href="javascript:;" class="close-all floatR">關閉全部</a>
+							<ul class="expand-list">
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>薪金</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">基本薪金</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income2' id='p1Income2' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="75">補助或津貼(例：超時工作﹑膳食﹑交通或房屋等)</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income3' id='p1Income3' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="75">
+												佣金
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income4' id='p1Income4' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="75">
+												花紅
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income5' id='p1Income5' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="75">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Income_6' id='p1Income_6' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>配偶薪金</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">基本薪金</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income16' id='p1Income16' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<!-- ***** new appended 2013.10.22 ***** -->
+										<tr>
+											<td class="topic" colspan="2" width="75">補助或津貼(例：超時工作﹑膳食﹑交通或房屋等)</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income17' id='p1Income17' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="75">
+												佣金
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income18' id='p1Income18' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="75">
+												花紅
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income19' id='p1Income19' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="75">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Income_20' id='p1Income_20' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.22 ***** -->
+
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>其他收入</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												儲蓄及投資相關收入(例：租金﹑股息或利息等)
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income9' id='p1Income9' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic" colspan="2" width="270">退休金</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income15' id='p1Income15' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="270">保險計劃分派(例：年金)</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income10' id='p1Income10' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="270">政府援助</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income11' id='p1Income11' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="270">親友饋贈</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Income12' id='p1Income12' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Income_13' id='p1Income_13' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+
+							</ul>
+							<p class="total">總數 : <span class="beanData1">港元 0.0</span></p>
+							<!-- /total -->
+							<a href="javascript:;" class="btn btn_save">儲存為Excel</a>
+							<a href="javascript:;" class="btn" onclick="calculatorProcess(1)">下一頁</a>
+							<div class="clearfix"></div>
+						</div>
+
+						<div class="form-innerwrapper">
+							<!-- ***** new appended 2013.10.24 ***** -->
+							<a href="javascript:;" class="close-all floatR">關閉全部</a>
+							<ul class="expand-list">
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>儲蓄及投資</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<!--
+									<tr>
+										<td class="topic" colspan="2" width="270">定時儲蓄 / 投資 </td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">每月</option><option value="1">每周</option><option value="2">每年</option>
+											</select>
+										</td>
+										<td width="35">
+											港元
+										</td>
+										<td width="170">
+											<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving1' id='p1Saving1' />
+										</td>
+									</tr>
+
+									<tr>
+										<td class="topic" colspan="2" width="270">一筆過儲蓄 / 投資 </td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">每月</option><option value="1">每周</option><option value="2">每年</option>
+											</select>
+										</td>
+										<td width="35">
+											港元
+										</td>
+										<td width="170">
+											<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving2' id='p1Saving2' />
+										</td>
+									</tr>
+									-->
+
+										<!-- Dynamic to get name from 2013.10.23 -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<input type="text" class="txtOthers" id="p1Saving9Title" name="p1Saving9Title" style="width:150px;" maxlength="25" /> </td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving9' id='p1Saving9' />
+											</td>
+										</tr>
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<input type="text" class="txtOthers" id="p1Saving10Title" name="p1Saving10Title" style="width:150px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving10' id='p1Saving10' />
+											</td>
+										</tr>
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<input type="text" class="txtOthers" id="p1Saving11Title" name="p1Saving11Title" style="width:150px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving11' id='p1Saving11' />
+											</td>
+										</tr>
+										<!-- Dynamic to get name from 2013.10.23 -->
+
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												更多
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Saving_2' id='p1Saving_2' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>退休計劃</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">強制性供款</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving4' id='p1Saving4' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="270">自願性供款</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Saving5' id='p1Saving5' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Saving_6' id='p1Saving_6' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+							</ul>
+							<p class="total">總數 : <span class="beanData2">港元 0.0</span></p>
+							<!-- /total -->
+							<a href="javascript:;" class="btn btn_save">儲存為Excel</a>
+							<a href="javascript:;" class="btn" onclick="calculatorProcess(2)">下一頁</a>
+							<a href="javascript:;" class="btn" onclick="calculatorProcess(0)">上一頁</a>
+
+							<div class="clearfix"></div>
+						</div>
+
+						<div class="form-innerwrapper">
+							<!-- ***** new appended 2013.10.24 ***** -->
+							<a href="javascript:;" class="close-all floatR">關閉全部</a>
+							<ul class="expand-list">
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>家居</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">租金</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense2' id='p1Expense2' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">管理費</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense3' id='p1Expense3' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">差餉及地租</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense4' id='p1Expense4' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">水費及排污費</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense5' id='p1Expense5' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">電力</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense6' id='p1Expense6' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">煤氣 / 其他燃料</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense7' id='p1Expense7' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">上網 / 寬頻</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense8' id='p1Expense8' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">收費電視</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense9' id='p1Expense9' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">固網電話服務</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense10' id='p1Expense10' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">流動電話服務</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense11' id='p1Expense11' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">家務助理 / 傭工</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense12' id='p1Expense12' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">家居保養 / 裝修 / 維修</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense13' id='p1Expense13' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">寵物 / 寵物食品 / 獸醫</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense14' id='p1Expense14' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Expense_15' id='p1Expense_15' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>交通</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">交通費用</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense17' id='p1Expense17' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic" colspan="2"> 車輛</td>
+											<td width="180" style="visibility: hidden;">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35" style="visibility: hidden;">
+												港元
+											</td>
+											<td width="170" style="visibility: hidden;">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense54' id='p1Expense54' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic padding_left" colspan="2">購買及維修</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense18' id='p1Expense18' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">汽油</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense19' id='p1Expense19' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">牌照 </td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense20' id='p1Expense20' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">泊車及隧道收費</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense21' id='p1Expense21' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic padding_left" colspan="2">保險</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense55' id='p1Expense55' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">登記及考牌</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense56' id='p1Expense56' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Expense_22' id='p1Expense_22' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>食品及飲品</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">食品雜貨</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense24' id='p1Expense24' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">外出用膳</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense25' id='p1Expense25' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<!-- 2013.9.27 added -->
+										<!--
+									<tr>
+										<td class="topic padding_left" colspan="2" width="270">餐廳</td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">每月</option><option value="1">每周</option><option value="2">每年</option>
+											</select>
+										</td>
+										<td width="35">
+											港元
+										</td>
+										<td width="170">
+											<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense57' id='p1Expense57' />
+										</td>
+									</tr>
+									-->
+										<!--
+									<tr>
+										<td class="topic padding_left" colspan="2" width="270">外賣</td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">每月</option><option value="1">每周</option><option value="2">每年</option>
+											</select>
+										</td>
+										<td width="35">
+											港元
+										</td>
+										<td width="170">
+											<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense58' id='p1Expense58' />
+										</td>
+									</tr>
+									-->
+										<tr>
+											<td class="topic" colspan="2" width="270">零食</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense28' id='p1Expense28' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">咖啡</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense29' id='p1Expense29' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">酒類</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense30' id='p1Expense30' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Expense_27' id='p1Expense_27' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+
+
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>親友</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">供養父母及其他親戚</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense15' id='p2Expense15' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">子女</td>
+											<td width="180" style="visibility: hidden;">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35" style="visibility: hidden;">
+												港元
+											</td>
+											<td width="170" style="visibility: hidden;">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense16' id='p2Expense16' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">託管 / 保姆</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense17' id='p2Expense17' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">學費</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense18' id='p2Expense18' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">興趣班 / 活動</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense19' id='p2Expense19' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">衣服</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense20' id='p2Expense20' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic padding_left" colspan="2">玩具</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense56' id='p2Expense56' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">嬰兒食品 / 雜貨</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense57' id='p2Expense57' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">書籍 / 讀物</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense58' id='p2Expense58' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic padding_left" colspan="2">零用</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense21' id='p2Expense21' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!--
+									<tr>
+										<td class="topic padding_left" colspan="2">
+											<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+											其他
+											<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+										</td>
+										<td width="180">
+											<select name="" id="">
+												<option value="0">每月</option><option value="1">每周</option><option value="2">每年</option>
+											</select>
+										</td>
+										<td width="35">
+											港元
+										</td>
+										<td width="170">
+											<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_22' id='p2Expense_22' />
+										</td>
+									</tr>
+									-->
+										<!--
+									<tr>
+										<td class="topic" colspan="2">其他</td>
+										<td width="180" style="visibility: hidden;">
+											<select name="" id="">
+												<option value="0">每月</option><option value="1">每周</option><option value="2">每年</option>
+											</select>
+										</td>
+										<td width="35" style="visibility: hidden;">
+											港元
+										</td>
+										<td width="170" style="visibility: hidden;">
+											<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_23' id='p2Expense_23' />
+										</td>
+									</tr><!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">款待及禮物</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense24' id='p2Expense24' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">慶祝活動</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense25' id='p2Expense25' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_26' id='p2Expense_26' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>稅項</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">個人入息課稅</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense28' id='p2Expense28' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">利得稅</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense29' id='p2Expense29' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">物業稅</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense30' id='p2Expense30' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">薪俸稅</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense31' id='p2Expense31' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">配偶薪俸稅</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense32' id='p2Expense32' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_33' id='p2Expense_33' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>財務承擔</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">保險</td>
+											<td width="180" style="visibility: hidden;">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35" style="visibility: hidden;">
+												港元
+											</td>
+											<td width="170" style="visibility: hidden;">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p2Expense35' id='p2Expense35' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">人壽</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense36' id='p2Expense36' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">危疾</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense37' id='p2Expense37' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">家居</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense38' id='p2Expense38' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">醫療</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense39' id='p2Expense39' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">汽車</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense40' id='p2Expense40' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic padding_left" colspan="2">旅遊</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense41' id='p2Expense41' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_42' id='p2Expense_42' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">還款</td>
+											<td width="180" style="visibility: hidden;">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35" style="visibility: hidden;">
+												港元
+											</td>
+											<td width="170" style="visibility: hidden;">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense43' id='p2Expense43' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">銀行透支</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense44' id='p2Expense44' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic padding_left" colspan="2">循環貸款</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense59' id='p2Expense59' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic padding_left" colspan="2">汽車貸款</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense45' id='p2Expense45' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">按揭貸款</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense46' id='p2Expense46' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">私人貸款</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense47' id='p2Expense47' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">信用卡貸款及利息收費</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense48' id='p2Expense48' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic padding_left" colspan="2">財務相關費用</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense49' id='p2Expense49' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">捐款 / 慈善</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense50' id='p2Expense50' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_51' id='p2Expense_51' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+
+
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>生活消閒</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">藝術</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense32' id='p1Expense32' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">閱讀(例：報紙﹑雜誌及書籍)</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense33' id='p1Expense33' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">遊戲</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense34' id='p1Expense34' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">電影</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense35' id='p1Expense35' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">音樂</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense36' id='p1Expense36' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">運動</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense37' id='p1Expense37' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270" style="display:none;">旅遊</td>
+											<td width="180" style="display:none;">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35" style="display:none;">
+												港元
+											</td>
+											<td width="170" style="display:none;">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense38' id='p1Expense38' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">攝影</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense39' id='p1Expense39' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic" colspan="2" width="270" style="display:none;">酒精飲品</td>
+											<td width="180" style="display:none;">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35" style="display:none;">
+												港元
+											</td>
+											<td width="170" style="display:none;">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense59' id='p1Expense59' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">香煙</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense60' id='p1Expense60' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="270">博彩及賭博</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense41' id='p1Expense41' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic" colspan="2" width="270">酒吧 / 會所</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense61' id='p1Expense61' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">興趣班 / 啫好</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense62' id='p1Expense62' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">渡假</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense63' id='p1Expense63' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Expense_42' id='p1Expense_42' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>購物</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">家具</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense44' id='p1Expense44' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">家庭電器及氣體用具</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense45' id='p1Expense45' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">家庭用品</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense46' id='p1Expense46' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">電腦 / 平板電腦</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense47' id='p1Expense47' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">流動電話</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense48' id='p1Expense48' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">衣履</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense49' id='p1Expense49' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">飾物</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense50' id='p1Expense50' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="270">個人護理用品</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1' maxlength='10' type='text' value='' name='p1Expense52' id='p1Expense52' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP1 ipt_serialize' maxlength='10' type='text' value='' name='p1Expense_53' id='p1Expense_53' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>健康美容</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">醫療服務(例：普通科醫生﹑專科醫生﹑物理治療﹑跌打﹑手術﹑健康檢查)</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense2' id='p2Expense2' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic" colspan="2" width="270">牙科護理</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense53' id='p2Expense53' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<tr>
+											<td class="topic" colspan="2" width="270">處方及藥物</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense3' id='p2Expense3' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+										<!-- 2013.9.27 added -->
+										<tr>
+											<td class="topic" colspan="2" width="270">保健食品</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense54' id='p2Expense54' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">化妝品及護膚品</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense55' id='p2Expense55' />
+											</td>
+										</tr>
+										<!-- /tr -->
+
+
+										<tr>
+											<td class="topic" colspan="2" width="270">美容及健身服務(例：美容療程﹑按摩﹑健身中心會籍)</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense4' id='p2Expense4' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">護眼 / 眼鏡</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense5' id='p2Expense5' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">理髮</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense6' id='p2Expense6' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_7' id='p2Expense_7' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>教育及專業資格</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">學費</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense9' id='p2Expense9' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">考試</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense10' id='p2Expense10' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">課本</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense11' id='p2Expense11' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">會籍</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense12' id='p2Expense12' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<tr>
+											<td class="topic" colspan="2" width="270">
+												<a href="javascript:;" class="btn_serialize"><img src="../images/common/calculator/icon-plus.png" alt="icon-plus" /></a>
+												其他
+												<input type="text" class="txtOthers" style="width:90px;" maxlength="25" />
+											</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2 ipt_serialize' maxlength='10' type='text' value='' name='p2Expense_13' id='p2Expense_13' />
+											</td>
+										</tr>
+										<!-- /tr -->
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- END -->
+
+								<!-- 2013.9.27 -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>養老準備</h2></a>
+
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">長期護理開支</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense61' id='p2Expense61' />
+											</td>
+										</tr>
+										<tr>
+											<td class="topic" colspan="2" width="270">殮葬費</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense62' id='p2Expense62' />
+											</td>
+										</tr>
+										<tr>
+											<td style="display:none;" class="topic" colspan="2" width="270">Planning for ageing</td>
+											<td style="display:none;" width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td style="display:none;" width="35">
+												港元
+											</td>
+											<td style="display:none;" width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense60' id='p2Expense60' />
+											</td>
+										</tr>
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>金融及法律意見</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">金融及法律意見</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense63' id='p2Expense63' />
+											</td>
+										</tr>
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+
+
+								<!-- li start -->
+								<li>
+									<a href="javascript:;"><h2>雜項</h2></a>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+										<tr>
+											<td class="topic" colspan="2" width="270">雜項</td>
+											<td width="180">
+												<select name="" id="">
+													<option value="0">每月</option>
+													<option value="1">每周</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+											<td width="35">
+												港元
+											</td>
+											<td width="170">
+												<input class='txtInputP2' maxlength='10' type='text' value='' name='p2Expense52' id='p2Expense52' />
+											</td>
+										</tr>
+										<!-- ***** new appended 2013.10.24 ***** -->
+										<tfoot>
+											<tr>
+												<td colspan="5"><a href="javascript:;" class="btn-cal-top" onclick="calTop()">置頂</a></td>
+											</tr>
+										</tfoot>
+										<!-- ***** new appended 2013.10.24 ***** -->
+									</table>
+								</li>
+								<!-- li end -->
+							</ul>
+
+							<p class="total">總數 : <span class="beanData3">港元 0.0</span></p>
+							<a href="javascript:;" class="btn btn_save">儲存為Excel</a>
+							<a onclick="calculatorProcess(3)" class="btn btn_cal" href="javascript:;">結果</a>
+							<a onclick="calculatorProcess(1)" class="btn" href="javascript:;">上一頁</a>
+							<div class="clearfix"></div>
+
+						</div>
+
+						<div class="form-innerwrapper result">
+							<ul class="expand-list expandAll">
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>按月計算金額 (港元)</h2></a>
+									<div id="chart1div" style="width:675px; height:190px;">&nbsp;</div>
+									<div id="sub_chart1div"></div>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>收入分佈</h2></a>
+									<p>如需查看詳情，請點擊圓形圖中的該項目</p>
+									<div id="chart4div" style="width:675px; height:290px;">&nbsp;</div>
+									<div id="sub_chart4div"></div>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>儲蓄及投資分佈</h2></a>
+									<p>如需查看詳情，請點擊圓形圖中的該項目</p>
+									<div id="chart2div" style="width:675px; height:290px;">&nbsp;</div>
+									<div id="sub_chart2div"></div>
+								</li>
+								<!-- li end -->
+								<!-- li start -->
+								<li class="open">
+									<a href="javascript:;"><h2>支出分佈</h2></a>
+									<p>如需查看詳情，請點擊圓形圖中的該項目</p>
+									<div id="chart3div" style="width:675px; height:400px;">&nbsp;</div>
+									<div id="sub_chart3div"></div>
+								</li>
+								<!-- li end -->
+							</ul>
+
+
+
+							<br>
+							<a onclick="calculatorProcess(2)" class="btn" href="javascript:;">返回</a>
+							<a href="javascript:;" class="btn btn_reset">重設</a>
+
+							<!-- Rating / Feedback section -->
+							<div class="clear"></div>
+							<table border="0" cellspacing="0" cellpadding="0" class="opinion">
+								<tbody>
+									<tr>
+										<td width="50%" class="feedback">
+											<a href="mailto:info@thechinfamily.hk?subject=Feedback%20on%20Budget%20planner&amp;" id="feedback"><img src="../images/common/calculator/btn-feedback-c.jpg"></a>
+										</td>
+										<td width="50%" valign="middle" class="rating">
+											<p><strong>你滿意這個個人收支計算機嗎？</strong>
+												<br> (1分為最低，5分為最高)
+											</p>
+											<form>
+												<table border="0" cellspacing="0" cellpadding="0">
+													<tr>
+														<td>
+															<input type="radio" name="rating" value="1" id="rating1">
+														</td>
+														<td>
+															<input type="radio" name="rating" value="2" id="rating2">
+														</td>
+														<td>
+															<input type="radio" name="rating" value="3" id="rating3">
+														</td>
+														<td>
+															<input type="radio" name="rating" value="4" id="rating4">
+														</td>
+														<td boder="0">
+															<input type="radio" name="rating" value="5" id="rating5">
+														</td>
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>2</td>
+														<td>3</td>
+														<td>4</td>
+														<td>5</td>
+													</tr>
+												</table>
+											</form>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- End Rating / Feedback section -->
+							<div class="clearfix"></div>
+						</div>
+
+					</div>
+				</div>
+				<div class="calculator-innerwrapper-right">
+					<div class="share-wrapper">
+						<a onclick="downloadExcelTracking(1)" href="javascript:;" title="下載 Excel 版本"><img src="../images/common/calculator/btn-excel.png" alt="下載 Excel 版本" /></a>
+						<!--
+					<a class="btn_record" href="javascript:;" title="儲存為Excel檔案"><img src="../images/common/calculator/btn_report.png" alt="查看記錄" /></a>
+					 -->
+						<a class="btn_submit" href="javascript:;" title="下載 PDF 版本"><img src="../images/common/calculator/btn-pdf.png" alt="下載 PDF 版本" /></a>
+						<a class="btn_print" href="javascript:;" title="列印"><img src="../images/common/calculator/btn-print.png" alt="列印" /></a>
+						<a class="btn_mailTo" href="javascript:;" title="電郵分享"><img src="../images/common/calculator/btn-mail.png" alt="電郵分享" /></a>
+						<!--						<a class="" href="https://www.facebook.com/dialog/share?app_id=503795839804669&amp;display=popup&amp;href=https%3A%2F%2Fwww.thechinfamily.hk%2Ftools%2Fen%2Fbudget.html" target="_blank" title="Facebook 分享"><img src="../images/common/calculator/btn-share.png" alt="Facebook 分享" /></a>-->
+						<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://www.thechinfamily.hk/tools/tc/budget.html" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><img src="../images/common/calculator/btn-share.png" alt="Facebook 分享" /></a>
+
+					</div>
+					<div class="summary">
+						<span><img src="../images/common/calculator/icon-summy.png" alt="summary" /></span> 概要
+					</div>
+					<div class="padding10">
+						<ul class="expand-list">
+							<li class="open">
+								<a href="javascript:;">
+									<h2>每月收入</h2>
+								</a>
+								<h3 class="beanData1">港元 0</h3>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+									<tbody>
+										<tr>
+											<td class="text">薪金: </td>
+										</tr>
+										<tr>
+											<td class="price p1Income1">港元 0</td>
+										</tr>
+										<tr>
+											<td class="text">配偶薪金: </td>
+										</tr>
+										<tr>
+											<td class="price p1Income7">港元 0</td>
+										</tr>
+										<tr>
+											<td class="text">其他收入: </td>
+										</tr>
+										<tr>
+											<td class="price p1Income8">港元 0</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</li>
+							<li>
+								<a href="javascript:;">
+									<h2>每月儲蓄及投資</h2>
+								</a>
+								<h3 class="beanData2">港元 0</h3>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+									<tbody>
+										<tr>
+											<td class="text">儲蓄及投資: </td>
+										</tr>
+										<tr>
+											<td class="price p1Saving3">港元 0</td>
+										</tr>
+										<tr>
+											<td class="text">退休計劃: </td>
+										</tr>
+										<tr>
+											<td class="price p1Saving7">港元 0</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</li>
+							<li>
+								<a href="javascript:;">
+									<h2>每月支出</h2>
+								</a>
+								<h3 class="beanData3">港元 0</h3>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table">
+									<tbody>
+										<tr>
+											<td class="text">家居: </td>
+										</tr>
+										<tr>
+											<td class="price p1Expense1">港元 0</td>
+										</tr>
+										<tr>
+											<td class="text">交通: </td>
+										</tr>
+										<tr>
+											<td class="price p1Expense16">港元 0</td>
+										</tr>
+										<tr>
+											<td class="text">食品及飲品: </td>
+										</tr>
+										<tr>
+											<td class="price p1Expense23">港元 0</td>
+										</tr>
+
+										<tr>
+											<td class="text">親友: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense14">港元 0</td>
+										</tr>
+										<tr>
+											<td class="text">稅項: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense27">港元 0</td>
+										</tr>
+										<tr>
+											<td class="text">財務承擔: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense34">港元 0</td>
+										</tr>
+
+										<tr>
+											<td class="text">生活消閒: </td>
+										</tr>
+										<tr>
+											<td class="price p1Expense31">港元 0</td>
+										</tr>
+										<tr>
+											<td class="text">購物: </td>
+										</tr>
+										<tr>
+											<td class="price p1Expense43">港元 0</td>
+
+										</tr>
+										<tr>
+											<td class="text">健康美容: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense1">港元 0</td>
+										</tr>
+										<tr>
+											<td class="text">教育及專業資格: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense8">港元 0</td>
+										</tr>
+
+										<tr>
+											<td class="text">養老準備: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense60">港元 0</td>
+										</tr>
+										<tr>
+											<td class="text">金融及法律意見: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense98">港元 0</td>
+										</tr>
+
+										<tr>
+											<td class="text">雜項: </td>
+										</tr>
+										<tr>
+											<td class="price p2Expense99">港元 0</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</li>
+						</ul>
+
+						<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table result-talbe">
+							<tr>
+								<td style="color:#4a2680; font-weight:bold;">結果</td>
+							</tr>
+							<tr>
+								<td class="price beanData4">港元 0</td>
+							</tr>
+						</table>
+					</div>
+					<!-- /padding10 -->
+				</div>
+				<!-- /calculator-innerwrapper-right -->
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- CHART DATA -->
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Income1' id='p1Income1' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Income7' id='p1Income7' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Income8' id='p1Income8' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Income14' id='p1Income14' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Saving3' id='p1Saving3' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Saving7' id='p1Saving7' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Saving8' id='p1Saving8' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Expense1' id='p1Expense1' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Expense16' id='p1Expense16' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Expense23' id='p1Expense23' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Expense31' id='p1Expense31' />
+		<input class='txtInputP1 hdnInput' maxlength='15' type='hidden' value='' name='p1Expense43' id='p1Expense43' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense1' id='p2Expense1' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense8' id='p2Expense8' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense14' id='p2Expense14' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense27' id='p2Expense27' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense34' id='p2Expense34' />
+
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense98' id='p2Expense98' />
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Expense99' id='p2Expense99' />
+
+		<input class='txtInputP2 hdnInput' maxlength='15' type='hidden' value='' name='p2Total' id='p2Total' />
+		<!-- BAR DATA : INCOME, SAVING, EXPENSE -->
+		<input class='hdnData' type='hidden' value='' name='beanData1' id='beanData1' />
+		<input class='hdnData' type='hidden' value='' name='beanData2' id='beanData2' />
+		<input class='hdnData' type='hidden' value='' name='beanData3' id='beanData3' />
+		<input class='hdnData' type='hidden' value='' name='beanData4' id='beanData4' />
+		<!-- PIE0 DATA -->
+		<input class='hdnData' type='hidden' value='' name='p3Income1' id='p3Income1' />
+		<input class='hdnData' type='hidden' value='' name='p3Income2' id='p3Income2' />
+		<input class='hdnData' type='hidden' value='' name='p3Income3' id='p3Income3' />
+		<!-- PIE1 DATA -->
+		<!--
+	<input class='hdnData' type='hidden' value='' name='p3Saving1' id='p3Saving1' />
+	-->
+		<input class='hdnData' type='hidden' value='' name='p3Saving2' id='p3Saving2' />
+		<input class='hdnData' type='hidden' value='' name='p3Saving3' id='p3Saving3' />
+		<!-- PIE2 DATE -->
+		<input class='hdnData' type='hidden' value='' name='p3Expense1' id='p3Expense1' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense2' id='p3Expense2' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense3' id='p3Expense3' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense4' id='p3Expense4' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense5' id='p3Expense5' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense6' id='p3Expense6' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense7' id='p3Expense7' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense8' id='p3Expense8' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense9' id='p3Expense9' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense10' id='p3Expense10' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense11' id='p3Expense11' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense12' id='p3Expense12' />
+		<input class='hdnData' type='hidden' value='' name='p3Expense13' id='p3Expense13' />
+		<!-- ended -->
+
+		<!-- OTHERS FIELD -->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Income6' id='p1Income6' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Income13' id='p1Income13' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Income20' id='p1Income20' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Saving2' id='p1Saving2' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Saving6' id='p1Saving6' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Expense15' id='p1Expense15' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Expense22' id='p1Expense22' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Expense27' id='p1Expense27' />
+		<!-- ***** new appended 2013.10.22 ***** -->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Expense42' id='p1Expense42' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p1Expense53' id='p1Expense53' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense7' id='p2Expense7' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense13' id='p2Expense13' />
+		<!--
+	<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense22' id='p2Expense22' />
+	<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense23' id='p2Expense23' />
+	-->
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense26' id='p2Expense26' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense33' id='p2Expense33' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense42' id='p2Expense42' />
+		<input class='hdnData' maxlength='10' type='hidden' value='' name='p2Expense51' id='p2Expense51' />
+		<!-- ended -->
+	</form>
+
+	<!-- 2013.12.26 to include header & footer -->
+	<!--
+	<div class="clearfix"></div>
+	<div class="footer">
+		<div class="click-link-wrapper">
+			<div id="sys_footerTopDiv" class="innerwrapper"></div>
+		</div>
+		<div id="sys_footerDiv"></div>
+		<script>ts_loadInclude("sys_footerDiv", root_path + "/" + lang + "/include/footer_inner.html");</script>
+	</div>
+	<div class="clearfix"></div>
+	<div id="sys_footerBottomDiv" class="footer-hyper-link"></div>
+-->
+
+
+	<div class="clearfix footerfix"></div>
+
+
+
+
+
+
+
+	<div class="footercontenter">
+		<div id="site-footer" class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="footer-left">
+							<div class="footer-logo">
+								<a href="http://www.thechinfamily.hk/web/iec/tc/">
+									<img src="../images/common/iec-hk-logo.png" alt="" title="" />
+								</a>
+							</div>
+
+							<div class="footer-statement">
+								<p>錢家有道由投資者教育中心管理，<br/>並獲教育局及金融監管機構支持。</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="footer-right">
+							<div class="input-group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-sm-push-5">
+						<div class="footer-hyperlinks-wrapper">
+							<ul id="footer-hyperlinks" class="footer-menu footer-hyperlinks">
+								<li><a href="https://www.thechinfamily.hk/web/common/apps/tc/contact_enquiry.html">聯絡我們</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/sitemap.html">網站指南</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/liability-statement.html">免責聲明</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/privacy-policy.html">私隱政策聲明</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/hyperlink-policy.html">超連結政策</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-sm-pull-7">
+						<p class="footer-copyright">© 2016 投資者教育中心 版權所有。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 2013.12.26 to include header & footer ended -->
+<!-- 2013.12.26 to include header & footer -->
+<script>
+	iecGlobalUpdate(lang);
+</script>
+
+<!-- jQuery lib -->
+<script src="../js/jquery-1.8.3.min.js"></script>
+<!-- Fancybox for DISCLAIMER -->
+<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="../js/excanvas.js"></script><![endif]-->
+<!-- script & css to include for using jqplot and frontend calculator -->
+<script src="../js/jquery.jqplot.js"></script>
+<script src="../js/jqplot.highlighter.min.js"></script>
+<script src="../js/jqplot.dateAxisRenderer.js"></script>
+<script src="../js/jqplot.canvasTextRenderer.js"></script>
+<script src="../js/jqplot.canvasAxisTickRenderer.js"></script>
+<script src="../js/jqplot.categoryAxisRenderer.js"></script>
+<script src="../js/jqplot.barRenderer.js"></script>
+<!-- for pie chart -->
+<script src="../js/jqplot.pieRenderer.js"></script>
+<script src="../js/jqplot.donutRenderer.js"></script>
+<script src="../js/cal.budget.js"></script>
+
+</body>
+
+
+</html>

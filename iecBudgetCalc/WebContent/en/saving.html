@@ -1,0 +1,1263 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+
+	<!-- Social Link -->
+	<meta property="og:title" content="Savings Goal Calculator" />
+	<meta property="og:type" content="website" />
+	<!-- must be absolute path to make stable reference for facebook, should not be an internal or private network -->
+	<meta property="og:image" content="https://www.thechinfamily.hk/tools/common/fbimages/fbimage_saving.jpg" />
+	<meta property="og:image:secure_url" content="https://www.thechinfamily.hk/tools/common/fbimages/fbimage_saving.jpg" />
+	<!-- ended -->
+	<meta property="og:url" content="https://www.thechinfamily.hk/tools/en/saving.html" />
+	<meta property="og:image:type" content="image/jpg" />
+	<meta property="og:description" content="Do you have a savings goal in mind? Use our calculator to work out how much you need to save or how long it will take to reach your target savings." />
+	<!-- ended -->
+
+	<script src="../js/config.js"></script>
+
+	<script type="text/javascript">
+
+	document.write("<link href=\""+root_path+"/css/html4-reset.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+	document.write("<link href=\""+root_path+"/css/layout.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+	//document.write("<link href=\""+root_path+"/css/default.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+	document.write("<script src=\""+root_path+"/js/jquery.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/changeFont.js\"></scr" + "ipt>");
+	document.write("<script src=\"" + root_path + "/js/functions.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/tsUtil.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/sitemapUtil.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/sitemap_breadcrumb.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/iecGlobal.js\"></scr" + "ipt>");
+	document.write("<script src=\""+root_path+"/js/google_analytics.js\"></scr" + "ipt>");
+
+	var loc = window.location.href;
+	var lang = 'en';
+	if (loc.search('lang=tc') !== -1 || loc.search('/tc/') !== -1) {
+		lang = 'tc';
+	}
+
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="../css/default.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../css/calculator.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.fancybox-1.3.4.css" media="all" />
+
+	<link href="../css/footer/lib/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../css/footer/lib/footer.css" rel="stylesheet" type="text/css" />
+	<script src="../css/footer/lib/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--font-->
+		<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7132094/6453152/css/fonts.css" />
+		<script type="text/javascript" src="https://fast.fonts.net/jsapi/c550c076-1bd6-411f-ac61-2ea18430c967.js"></script>
+	<!--font end-->
+
+	<!-- Google Code for Remarketing Tag -->
+	<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 926048988;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+	</script>
+	<noscript>
+		<div style="display:inline;">
+			<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/926048988/?value=0&amp;guid=ON&amp;script=0" />
+		</div>
+	</noscript>
+
+
+
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window,
+			document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '1666299540302495');
+		fbq('track', "PageView");
+	</script>
+	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1666299540302495&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+
+	<title>Savings Goal Calculator</title>
+</head>
+
+<body>
+
+	<!-- 2013.10.28 to include header & footer -->
+	<div class="header">
+		<!--	<div class="useful-tools-wrapper">-->
+		<!-- USEFUL TOOL WITHIN THE HEADER, I.E. VIOLET AREA -->
+		<!--		<div class="useful-tools">-->
+
+		<!--			<div id="xxxsys_topLinkDiv" style="display:inline;"></div>-->
+		<!--			<div id="xxxsys_topSearchDiv" class="header-search"></div>-->
+		<!-- 2013.12.5 commonly include ended -->
+		<!--		</div>-->
+		<!-- /useful-tools -->
+		<!--	</div>-->
+		<!-- /useful-tools-wrapper -->
+		<div class="wrapper">
+			<div class="supported-by">
+				<!-- <p>The Investor Education Centre is supported by the financial regulators</p>
+			<img src="/images/common/img-supported-by.jpg" alt=""> -->
+			</div>
+			<!-- /supported-by -->
+			<a href="https://www.thechinfamily.hk/web/en/" class="logo-iec"><img src="../images/common/img-logo-iec.jpg" alt="" /></a>
+<!--
+			<script type="text/javascript">
+				document.writeln('<a href="https://www.thechinfamily.hk/web/iec/tc/" class="logo-iec"><img src="' + root_path + '/images/common/img-logo-iec.jpg" alt="" /></a>');
+			</script>
+-->
+			<div class="clearfix"></div>
+		</div>
+		<!-- /wrapper -->
+		<!-- <div id="sys_topMenuDiv"> -->
+			<!--*** Include top-menu.html here ***-->
+		<!-- </div> -->
+		<script>
+			ts_loadInclude("sys_topMenuDiv", root_path + "/" + lang + "/include/top-menu.html");
+		</script>
+	</div>
+	<!-- 2013.10.28 to include header & footer ended -->
+
+	<div id="saving_tool_container">
+		<div class="calculator inner calculator-saving">
+			<div class="calculator-wrapper">
+				<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Savings goal calculator</h1>
+				<div class="calculator-innerwrapper-left saving-wrapper">
+					<ul class="tab">
+
+						<li class="tab-report" style="display:none;">
+							<div class="no_hover"><span><img src="../images/common/calculator/icon-summy.png" alt="Summary" class="mt15"></span>Summary</div>
+						</li>
+						<li><a href="javascript:;" class="active"><span><img src="../images/common/calculator/icon-need-to-save.png" alt="How much you need to save" /></span>How much <br />you need to save</a></li>
+						<li><a href="javascript:;"><span><img src="../images/common/calculator/icon-savings-and-investments.png" alt="How much you will have" /></span>How much<br />you will have</a></li>
+						<li><a href="javascript:;"><span><img src="../images/common/calculator/icon-expenses.png" alt="How long will it take" /></span>How long will <br />it take</a></li>
+						<!-- this is the result tab, i.e. 100% width-->
+					</ul>
+					<!-- /tab -->
+					<div class="tab-assumption">
+						<a href="saving_disclaimer-2.html" class="btn-assumption"><span><img src="../images/common/calculator/btn-assumption.jpg" alt="btn-assumption"></span></a>
+						<div class="share-wrapper">
+							<a onclick="downloadExcelTracking(0)" href="javascript:;" title="Download Excel version"><img src="../images/common/calculator/btn-excel.png" alt="Download Excel version" /></a>
+							<a class="btn_submit" href="javascript:;" title="Save as PDF"><img src="../images/common/calculator/btn-pdf.png" alt="Save as PDF" /></a>
+							<a class="btn_print" href="javascript:;" title="Print"><img src="../images/common/calculator/btn-print.png" alt="Print" /></a>
+							<a class="btn_mailTo" href="javascript:;" title="Mail to friends"><img src="../images/common/calculator/btn-mail.png" alt="Mail to friends" /></a>
+<!--							<a class="btn_shareFB" href="javascript:;" title="Share in Facebook"><img src="../images/common/calculator/btn-share.png" alt="Share in Facebook" /></a>-->
+							<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://www.thechinfamily.hk/tools/en/saving.html" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><img src="../images/common/calculator/btn-share.png" alt="Facebook 分享" /></a>
+
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
+					<!-- 2013.12.12 start -->
+					<div class="form-wrapper form-result" style="display:none;">
+						<div class="form-innerwrapper summary-wrapper" style="display:block;">
+
+						</div>
+					</div>
+					<!-- 2013.12.12 ended -->
+
+					<div class="form-wrapper form-content" style="display:block;">
+						<!-- How much you need to save wrapper start -->
+						<!-- form 1 -->
+						<div class="form-innerwrapper active">
+							<form method="post" action="../pdfMonth.do?lang=0" name="month_form" id="month_form">
+								<!-- 2013.12.16 start -->
+								<!-- hidden field for the PDF report -->
+								<input type="hidden" id="savingForImg" name="savingForImg" value="">
+								<input type="hidden" id="savingForWord" name="savingForWord" value="">
+								<input type="hidden" id="withCIA" name="withCIA" value="">
+								<input type="hidden" id="withoutCIA" name="withoutCIA" value="">
+								<input type="hidden" id="period" name="period" value="">
+								<input type="hidden" id="contribute" name="contribute" value="">
+								<input type="hidden" id="linechart_period" name="linechart_period" value="">
+								<input type="hidden" id="withCData" name="withCData" value="">
+								<input type="hidden" id="withoutCData" name="withoutCData" value="">
+								<input type="hidden" id="ticksValue" name="ticksValue" value="">
+								<!-- 2013.12.16 ended -->
+								<div class="panel_wrapper">
+									<h3>How much do you need to save?</h3>
+									<p>This calculator helps you find out how much you’ll need to save regularly to reach your goal in time.</p>
+									<!-- goal start -->
+									<ul class="goal">
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo1" class="field1" checked="checked" />
+											<img src="../images/common/calculator/icon-education.png" alt="icon-education" width="34" height="34" /> Education
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo2" class="field1" />
+											<img src="../images/common/calculator/icon-starting-a-business.png" alt="icon-starting-a-business" width="34" height="34" /> Starting a business
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo3" class="field1" />
+											<img src="../images/common/calculator/icon-saving-for-a-rainy-day.png" alt="icon-saving-for-a-rainy-day" width="34" height="34" /> Saving for a rainy day
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo4" class="field1" />
+											<img src="../images/common/calculator/icon-wedding.png" alt="icon-wedding" width="34" height="34" /> Wedding
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo5" class="field1" />
+											<img src="../images/common/calculator/icon-housing.png" alt="icon-housing" width="34" height="34" /> Setting up home
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo6" class="field1" />
+											<img src="../images/common/calculator/icon-motor-vehicles.png" alt="icon-motor-vehicles" width="34" height="34" /> Buying a car
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo7" class="field1" />
+											<img src="../images/common/calculator/icon-having-a-baby.png" alt="icon-having-a-baby" width="34" height="34" /> Having a baby
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<!--
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo8" class="field1" />
+											<img src="../images/common/calculator/icon-retirement.png" alt="" width="34" height="34"/>
+											Retirement
+										</li>
+										-->
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo9" class="field1" />
+											<img src="../images/common/calculator/icon-holiday.png" alt="icon-holiday" width="34" height="34" /> Holiday
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li style="width: 320px;">
+											<input type="radio" name="month_rdo" id="month_rdo_last" class="field1 input-radio-other" /> Others
+											<input style="width: 200px;" type="text" maxlength="15" name="month_txt_last" id="month_txt_last" class="field2 input-other" />
+										</li>
+										<!-- li end -->
+
+									</ul>
+									<!-- goal end -->
+									<div class="clearfix"></div>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table need-to-save" style="position:relative;">
+										<tr>
+											<td class="topic qicon qicon2" width="223">Your savings goal </td>
+											<td width="36">HKD</td>
+											<td width="220">
+												<input type="text" maxlength="10" name="month_txt_g1" id="month_txt_g1" class="field3" />
+											</td>
+											<td width="185">&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="topic">Amount you have already</td>
+											<td>HKD</td>
+											<td>
+												<input type="text" maxlength="10" name="month_txt_g2" id="month_txt_g2" class="field4" />
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="topic qicon qicon3" colspan="2">Expected rate of return</td>
+											<td>
+												<input type="text" maxlength="5" name="month_txt_g3" id="month_txt_g3" class="field5" />
+											</td>
+											<td style="padding-left: 20px;">% p.a. (Up to two decimal places)</td>
+										</tr>
+										<tr>
+											<td class="topic" colspan="2">Saving period</td>
+											<td colspan="2">
+												<table border="0" cellspacing="0" cellpadding="0" class="blank-table date">
+													<tr>
+														<td width="70">
+															<input type="text" maxlength="2" name="month_txt_g4_a" id="month_txt_g4_a" class="field6" />
+														</td>
+														<td width="70">Year(s)</td>
+														<td width="70">
+															<input type="text" maxlength="2" name="month_txt_g4_b" id="month_txt_g4_b" class="field6" />
+														</td>
+														<td style="white-space:nowrap;">Month(s)</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td class="topic qicon qicon1" colspan="2">
+												Compounding frequency
+											</td>
+											<td colspan="2">
+												<input type="radio" maxlength="" name="month_rdo_g5" id="month_rdo_g5_c" class="field7" />&nbsp;Yearly&nbsp;
+												<input type="radio" maxlength="" name="month_rdo_g5" id="month_rdo_g5_b" class="field7" checked="checked" />&nbsp;Monthly&nbsp;
+												<input type="radio" maxlength="" name="month_rdo_g5" id="month_rdo_g5_a" class="field7" />&nbsp;Weekly
+											</td>
+										</tr>
+									</table>
+									<a href="javascript:;" class="btn btn_reset month_form">Reset</a>
+									<a href="javascript:;" class="btn btn_cal btn_month">Calculate</a>
+									<div class="clearfix"></div>
+								</div>
+								<div style="display:none;" class="chart_wrapper">
+									<h2 style="color:#A76E16;">Amount (HKD)</h2>
+									<div id="chart1div" style="margin-bottom:20px; width:675px; height:290px;"></div>
+
+
+									<a href="javascript:;" class="btn btn_submit btn_month_submit">Save as PDF</a>
+									<div class="clearfix"></div>
+									<br />
+									<a href="javascript:;" class="btn btn_back">Calculate again</a>
+								</div>
+							</form>
+						</div>
+						<!-- /form-innerwrapper -->
+						<!-- How much you need to save wrapper end -->
+						<!-- How much you will have wrapper start -->
+						<!-- form 2 -->
+						<div class="form-innerwrapper">
+							<form method="post" action="../pdfFinal.do?lang=0" name="final_form" id="final_form">
+								<!-- 2013.12.16 start -->
+								<!-- hidden field for the PDF report -->
+								<input type="hidden" id="savingForImg" name="savingForImg" value="">
+								<input type="hidden" id="savingForWord" name="savingForWord" value="">
+								<input type="hidden" id="withCIA" name="withCIA" value="">
+								<input type="hidden" id="withoutCIA" name="withoutCIA" value="">
+								<input type="hidden" id="period" name="period" value="">
+								<input type="hidden" id="contribute" name="contribute" value="">
+								<input type="hidden" id="linechart_period" name="linechart_period" value="">
+								<input type="hidden" id="withCData" name="withCData" value="">
+								<input type="hidden" id="withoutCData" name="withoutCData" value="">
+								<input type="hidden" id="ticksValue" name="ticksValue" value="">
+								<!-- 2013.12.16 ended -->
+								<div class="panel_wrapper">
+									<h3>How much will you have?</h3>
+									<p>This calculator helps you find out how much you will have if you put aside a fixed amount of money regularly.</p>
+									<!-- goal start -->
+									<ul class="goal">
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo1" class="field1" checked="checked" />
+											<img src="../images/common/calculator/icon-education.png" alt="icon-education" width="34" height="34" /> Education
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo2" class="field1" />
+											<img src="../images/common/calculator/icon-starting-a-business.png" alt="icon-starting-a-business" width="34" height="34" /> Starting a business
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo3" class="field1" />
+											<img src="../images/common/calculator/icon-saving-for-a-rainy-day.png" alt="icon-saving-for-a-rainy-day" width="34" height="34" /> Saving for a rainy day
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo4" class="field1" />
+											<img src="../images/common/calculator/icon-wedding.png" alt="icon-wedding" width="34" height="34" /> Wedding
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo5" class="field1" />
+											<img src="../images/common/calculator/icon-housing.png" alt="icon-housing" width="34" height="34" /> Setting up home
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo6" class="field1" />
+											<img src="../images/common/calculator/icon-motor-vehicles.png" alt="icon-motor-vehicles" width="34" height="34" /> Buying a car
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo7" class="field1" />
+											<img src="../images/common/calculator/icon-having-a-baby.png" alt="icon-having-a-baby" width="34" height="34" /> Having a baby
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo9" class="field1" />
+											<img src="../images/common/calculator/icon-holiday.png" alt="icon-holiday" width="34" height="34" /> Holiday
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li style="width: 300px;">
+											<input type="radio" name="final_rdo" id="final_rdo_last" class="field1 input-radio-other" /> Others
+											<input style="width: 200px;" type="text" maxlength="15" name="final_txt_last" id="final_txt_last" class="field2 input-other" />
+										</li>
+										<!-- li end -->
+									</ul>
+									<!-- goal end -->
+									<div class="clearfix"></div>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table need-to-save">
+										<tr>
+											<td class="topic qicon" width="223">Regular savings amount</td>
+											<td width="36">HKD</td>
+											<td width="200">
+												<input type="text" maxlength="10" name="final_txt_g1" id="final_txt_g1" class="field3" />
+											</td>
+											<td width="185" style="padding-left:20px;">
+												<select id="tab2_saveperiod">
+													<option value="0">Weekly</option>
+													<option value="1" selected>Monthly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td class="topic">Amount you have already</td>
+											<td>HKD</td>
+											<td>
+												<input type="text" maxlength="10" name="final_txt_g2" id="final_txt_g2" class="field4" />
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="topic qicon qicon3" colspan="2">Expected rate of return</td>
+											<td>
+												<input type="text" maxlength="5" name="final_txt_g3" id="final_txt_g3" class="field5" />
+											</td>
+											<td style="padding-left:20px;">% p.a. (Up to two decimal places)</td>
+										</tr>
+										<tr>
+											<td class="topic" colspan="2">Saving period</td>
+											<td colspan="2">
+												<table border="0" cellspacing="0" cellpadding="0" class="blank-table date">
+													<tr>
+														<td width="70">
+															<input type="text" maxlength="2" name="final_txt_g4_a" id="final_txt_g4_a" class="field6" />
+														</td>
+														<td width="70">Year(s)</td>
+														<td width="70">
+															<input type="text" maxlength="2" name="final_txt_g4_b" id="final_txt_g4_b" class="field6" />
+														</td>
+														<td>Month(s)</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									<a href="javascript:;" class="btn btn_reset final_form">Reset</a>
+									<a href="javascript:;" class="btn btn_cal btn_final">Calculate</a>
+									<div class="clearfix"></div>
+								</div>
+								<div style="display:none;" class="chart_wrapper">
+									<h2 style="color:#A76E16;">Amount (HKD)</h2>
+									<div id="chart2div" style="margin-bottom:20px; width:675px; height:290px;"></div>
+
+									<a href="javascript:;" class="btn btn_submit btn_final_submit">Save as PDF</a>
+									<div class="clearfix"></div>
+									<br />
+									<a href="javascript:;" class="btn btn_back">Calculate again</a>
+								</div>
+							</form>
+						</div>
+						<!-- /form-innerwrapper -->
+						<!-- How much you will have wrapper end -->
+						<!-- Expenses wrapper start -->
+						<!-- form 3 -->
+						<div class="form-innerwrapper">
+							<form method="post" action="../pdfLong.do?lang=0" name="long_form" id="long_form">
+								<!-- 2013.12.20 start -->
+								<!-- hidden field for the PDF report -->
+								<input type="hidden" id="savingForImg" name="savingForImg" value="">
+								<input type="hidden" id="savingForWord" name="savingForWord" value="">
+								<input type="hidden" id="withCIA" name="withCIA" value="">
+								<input type="hidden" id="withoutCIA" name="withoutCIA" value="">
+								<input type="hidden" id="period" name="period" value="">
+								<input type="hidden" id="contribute" name="contribute" value="">
+								<input type="hidden" id="linechart_period" name="linechart_period" value="">
+								<input type="hidden" id="withCData" name="withCData" value="">
+								<input type="hidden" id="withoutCData" name="withoutCData" value="">
+								<input type="hidden" id="ticksValue" name="ticksValue" value="">
+								<input type="hidden" id="year" name="year" value="">
+								<input type="hidden" id="month" name="month" value="">
+								<input type="hidden" id="savingGoal" name="savingGoal" value="">
+								<!-- 2013.12.20 ended -->
+
+								<div class="panel_wrapper">
+									<h3>How long will it take?</h3>
+									<p>This calculator helps you find out how long it will take to reach your savings goal.</p>
+									<!-- goal start -->
+									<ul class="goal">
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo1" class="field1" checked="checked" />
+											<img src="../images/common/calculator/icon-education.png" alt="icon-education." width="34" height="34" /> Education
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo2" class="field1" />
+											<img src="../images/common/calculator/icon-starting-a-business.png" alt="icon-starting-a-business" width="34" height="34" /> Starting a business
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo3" class="field1" />
+											<img src="../images/common/calculator/icon-saving-for-a-rainy-day.png" alt="icon-saving-for-a-rainy-day" width="34" height="34" /> Saving for a rainy day
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo4" class="field1" />
+											<img src="../images/common/calculator/icon-wedding.png" alt="icon-wedding" width="34" height="34" /> Wedding
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo5" class="field1" />
+											<img src="../images/common/calculator/icon-housing.png" alt="icon-housing" width="34" height="34" /> Setting up home
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo6" class="field1" />
+											<img src="../images/common/calculator/icon-motor-vehicles.png" alt="icon-motor-vehicles" width="34" height="34" /> Buying a car
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo7" class="field1" />
+											<img src="../images/common/calculator/icon-having-a-baby.png" alt="icon-having-a-baby" width="34" height="34" /> Having a baby
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<!--
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo8" class="field1" />
+											<img src="../images/common/calculator/icon-retirement.png" alt="" width="34" height="34"/>
+											Retirement
+										</li>
+										-->
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo9" class="field1" />
+											<img src="../images/common/calculator/icon-holiday.png" alt="icon-holiday" width="34" height="34" /> Holiday
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li style="width: 300px;">
+											<input type="radio" name="long_rdo" id="long_rdo_last" class="field1 input-radio-other" /> Others
+											<input style="width: 200px;" type="text" maxlength="15" name="long_txt_last" id="long_txt_last" class="field2 input-other" />
+										</li>
+										<!-- li end -->
+									</ul>
+									<!-- goal end -->
+									<div class="clearfix"></div>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table need-to-save">
+										<tr>
+											<td class="topic qicon qicon2" width="203">Your savings goal </td>
+											<td width="36">HKD</td>
+											<td width="220">
+												<input type="text" maxlength="10" name="long_txt_g1" id="long_txt_g1" class="field3" />
+											</td>
+											<td width="195">&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="topic">Amount you have already</td>
+											<td>HKD</td>
+											<td>
+												<input type="text" maxlength="10" name="long_txt_g2" id="long_txt_g2" class="field4" />
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="topic qicon">Regular savings amount</td>
+											<td>HKD</td>
+											<td>
+												<input type="text" maxlength="10" name="long_txt_g0" id="long_txt_g0" class="field3" />
+											</td>
+											<td style="padding-left:20px;">
+												<select id="tab3_saveperiod">
+													<option value="0">Weekly</option>
+													<option value="1" selected>Monthly</option>
+													<option value="2">Yearly</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td class="topic qicon qicon3" colspan="2">Expected rate of return</td>
+											<td>
+												<input type="text" maxlength="5" name="long_txt_g3" id="long_txt_g3" class="field5" />
+											</td>
+											<td style="padding-left:20px;">% p.a. (Up to two decimal places)</td>
+										</tr>
+									</table>
+									<a href="javascript:;" class="btn btn_reset long_form">Reset</a>
+									<a href="javascript:;" class="btn btn_cal btn_long">Calculate</a>
+									<div class="clearfix"></div>
+								</div>
+								<div style="display:none;" class="chart_wrapper">
+									<h2 style="color:#A76E16;">Amount (HKD)</h2>
+									<div id="chart3div" style="margin-bottom:20px; width:675px; height:290px;"></div>
+
+
+									<a href="javascript:;" class="btn btn_submit btn_long_submit">Save as PDF</a>
+									<div class="clearfix"></div>
+									<br />
+									<a href="javascript:;" class="btn btn_back">Calculate again</a>
+								</div>
+							</form>
+						</div>
+						<!-- /form-innerwrapper -->
+						<!-- Expenses wrapper end -->
+					</div>
+					<!-- /form-wrapper -->
+				</div>
+				<!-- /calculator-innerwrapper-left -->
+
+				<div class="clearfix"></div>
+			</div>
+			<!-- /wrapper -->
+		</div>
+		<!-- /calculator -->
+	</div>
+
+	<div style="display:none;" id="cache-template1">
+		<div class="have-to-save">
+			<table cellpadding="0" cellspacing="0" border="0" class="blank-table">
+				<tr>
+					<td class="pr20">
+						<!--
+							<img src="../images/common/calculator/icon-summy-others.png" alt="" /> <br />
+							-->
+						__savingForImg__
+						<br />
+						<h3>__savingForWord__ </h3>
+					</td>
+					<td>
+						You will have to save <span>__withCIA__<!-- HKD 1,451.6 --></span> __perPeriod__
+						<!-- per month -->
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- /have-to-save -->
+		<h3 class="topic1">Start saving early to contribute less and reach your goal earlier</h3>
+		<p>The earlier you start saving, the sooner you’ll allow yourself to benefit from compounding. Your savings grow not only by the amount you contribute, and the interest generated on that amount, but also earn interest on the interest.</p>
+		<p>With compound interest, you will contribute <span>__contribute__<!-- HKD 198.4 less --></span> __perPeriod__
+			<!-- per month -->as compared to regular savings without compound interest.</p>
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" class="summary-table">
+			<thead>
+				<tr>
+					<td class="thead-left">Compound interest</td>
+					<td>Amount needed to be saved __perPeriod__</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>With compound interest</td>
+					<td>__withCIA__
+						<!-- HKD 1,451.6 -->
+					</td>
+				</tr>
+				<tr>
+					<td>Without compound interest</td>
+					<td>__withoutCIA__
+						<!-- HKD 1,649 -->
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="tfoot-left">&nbsp;</td>
+					<td>__contribute__
+						<!-- HKD 198.4 less -->
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		<p>Apart from less contributions, you can also achieve your savings goal earlier with the same amount of monthly contribution with the power of compound interest. The below chart shows how you can achieve your savings goal in the saving period you selected:</p>
+		<div class="bar-chart-wrapper">
+			<h3>
+				How much you need to save
+				<!-- 2013.12.27 start -->
+				<!-- select period to change chart period -->
+				<select id="ciSelect1">
+					<option value="0">Week</option>
+					<option value="1">Month</option>
+					<option value="2">Year</option>
+				</select>
+				<!-- 2013.12.27 ended -->
+				</h3>
+			<div id="result_1_container" style="width:891px; height:500px; margin-top:50px;">
+				<div id="result_graph_1" style="width:891px; height:403px;"></div>
+				<div id="result_legend_1" style="width:891px; height:60px; font-size:20px; margin:0 auto;">
+					<table cellpadding="0" cellspacing="0" border="0" style="width:100%; margin:30px auto 0;">
+						<tbody>
+							<tr>
+								<td style="padding:0; width:290px;">
+									<div style="float:right; width:22px; height:22px; background:#3EA8A4; display:block;"></div>
+								</td>
+								<td style="padding:0; padding-left:8px; width:218px;"><span style="color:#666666; font-size:15px;">__ciwording1__</span></td>
+								<td style="padding:0; width:22px;">
+									<div style="width:22px; height:22px; background:#DC543A; display:block;"></div>
+								</td>
+								<td style="padding:0; padding-left:8px;  widt:168px;"><span style="color:#666666; font-size:15px;">__ciwording2__</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- <img src="../images/common/img-demo-chart-07.jpg" alt="" width="891" height="500" /> -->
+		</div>
+		<!-- WHAT I DO NEXT START -->
+		<div class="do-next-wrapper">
+			<a href="javascript:;" class="btn-do-next">What to do next?</a>
+			<div class="do-next-innerwrapper">
+				<span>
+		                     More about <a href="javascript:;" class="ex_link_0">setting up a home</a>,
+		                     <a href="javascript:;" class="ex_link_1">wedding</a>,
+		                     <a href="javascript:;" class="ex_link_2">buying a car</a> and
+		                     <a href="javascript:;" class="ex_link_3">having children</a>
+		                     </span>
+				<span>
+		                     Check out how to <a href="javascript:;" class="ex_link_4">save for the future</a>
+		                     </span>
+
+				<span>
+		                     Learn more about <a href="javascript:;" class="ex_link_5">financial planning</a>
+		                     and <a href="javascript:;" class="ex_link_6">get started with a financial plan</a>
+		                     </span>
+			</div>
+			<!-- /do-next-innerwrapper -->
+		</div>
+		<!-- /do-next-wrapper -->
+		<!-- WHAT I DO NEXT END -->
+		<div class="tac">
+			<a href="javascript:;" class="btn btm_btn_submit" title="Save as PDF">Save as PDF</a>
+			<a href="javascript:;" class="btn btn_back" title="Calculate again">Calculate again</a>
+		</div>
+		<div class="clearfix"></div>
+		<!-- Rating / Feedback section -->
+		<div class="clear"></div>
+		<table border="0" cellspacing="0" cellpadding="0" class="opinion">
+			<tbody>
+				<tr>
+					<td width="50%" class="feedback">
+						<a href="mailto:info@thechinfamily.hk?subject=Feedback%20on%20Savings%20goal%20calculator&amp;" id="tab1_feedback"><img src="../images/common/calculator/btn-feedback-e.jpg"></a>
+					</td>
+					<td width="50%" valign="middle" class="rating">
+						<p><strong>How satisfied are you with this Savings Goal Calculator?</strong>
+							<br> (1 is the lowest, 5 is the highest)</p>
+						<form>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										<input type="radio" name="rating" value="1" id="tab1_rating1">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="2" id="tab1_rating2">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="3" id="tab1_rating3">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="4" id="tab1_rating4">
+									</td>
+									<td boder="0">
+										<input type="radio" name="rating" value="5" id="tab1_rating5">
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+								</tr>
+							</table>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- End Rating / Feedback section -->
+	</div>
+
+	<div style="display:none;" id="cache-template2">
+		<div class="have-to-save">
+			<table cellpadding="0" cellspacing="0" border="0" class="blank-table">
+				<tr>
+					<td class="pr20">
+						<!--
+							<img src="../images/common/calculator/icon-summy-others.png" alt="" /> <br />
+							-->
+						__savingForImg__
+						<br />
+						<h3>__savingForWord__ </h3>
+					</td>
+					<td>
+						You will have <span>__withCIA__<!-- HKD 1,451.6 --></span> at the end of your saving period
+						<p class="tab2Phrase">&nbsp;</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- /have-to-save -->
+		<h3 class="topic2">Start saving early to grow your savings</h3>
+		<p>The earlier you start saving, the sooner you’ll allow yourself to benefit from compounding. Your savings grow not only by the amount you contribute, and the interest generated on that amount, but also earn interest on the interest.</p>
+		<p>With compound interest, you will have <span>__contribute__</span> at the end of your saving period as compared to regular savings without compound interest.</p>
+
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" class="summary-table">
+			<thead>
+				<tr>
+					<td class="thead-left">Compound interest</td>
+					<td>Amount at the end of the savings period</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>With compound interest</td>
+					<td>__withCIA__
+						<!-- HKD 1,451.6 -->
+					</td>
+				</tr>
+				<tr>
+					<td>Without compound interest</td>
+					<td>__withoutCIA__
+						<!-- HKD 1,649 -->
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="tfoot-left">&nbsp;</td>
+					<td>__contribute__
+						<!-- HKD 198.4 less -->
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		<p>With the same amount of contributions, you can have more money at the end of the saving period you selected with the power of compound interest. The below chart shows how much you will have at the end of the saving period you selected:</p>
+		<div class="bar-chart-wrapper">
+			<h3>
+				How much you will have
+				<!-- 2013.12.27 start -->
+				<!-- select period to change chart period -->
+				<select id="ciSelect2">
+					<option value="0">Week</option>
+					<option value="1">Month</option>
+					<option value="2">Year</option>
+				</select>
+				<!-- 2013.12.27 ended -->
+				</h3>
+			<div id="result_2_container" style="width:891px; height:500px; margin-top:50px;">
+				<div id="result_graph_2" style="width:891px; height:403px;"></div>
+				<div id="result_legend_2" style="width:891px; height:60px; font-size:20px; margin:0 auto;">
+					<table cellpadding="0" cellspacing="0" border="0" style="width:100%; margin:30px auto 0;">
+						<tbody>
+							<tr>
+								<td style="padding:0; width:290px;">
+									<div style="float:right; width:22px; height:22px; background:#3EA8A4; display:block;"></div>
+								</td>
+								<td style="padding:0; padding-left:8px; width:218px;"><span style="color:#666666; font-size:15px;">__ciwording1__</span></td>
+								<td style="padding:0; width:22px;">
+									<div style="width:22px; height:22px; background:#DC543A; display:block;"></div>
+								</td>
+								<td style="padding:0; padding-left:8px;  widt:168px;"><span style="color:#666666; font-size:15px;">__ciwording2__</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- <img src="../images/common/img-demo-chart-07.jpg" alt="" width="891" height="500" /> -->
+		</div>
+		<!-- WHAT I DO NEXT START -->
+		<div class="do-next-wrapper">
+			<a href="javascript:;" class="btn-do-next">What to do next?</a>
+			<div class="do-next-innerwrapper">
+				<span>
+		                     More about <a href="javascript:;" class="ex_link_0">setting up a home</a>,
+		                     <a href="javascript:;" class="ex_link_1">wedding</a>,
+		                     <a href="javascript:;" class="ex_link_2">buying a car</a> and
+		                     <a href="javascript:;" class="ex_link_3">having children</a>
+		                     </span>
+				<span>
+		                     Check out how to <a href="javascript:;" class="ex_link_4">save for the future</a>
+		                     </span>
+
+				<span>
+		                     Learn more about <a href="javascript:;" class="ex_link_5">financial planning</a>
+		                     and <a href="javascript:;" class="ex_link_6">get started with a financial plan</a>
+		                     </span>
+			</div>
+			<!-- /do-next-innerwrapper -->
+		</div>
+		<!-- /do-next-wrapper -->
+		<!-- WHAT I DO NEXT END -->
+		<div class="tac">
+			<a href="javascript:;" class="btn btm_btn_submit" title="Save as PDF">Save as PDF</a>
+			<a href="javascript:;" class="btn btn_back" title="Calculate again">Calculate again</a>
+		</div>
+		<div class="clearfix"></div>
+		<!-- Rating / Feedback section -->
+		<div class="clear"></div>
+		<table border="0" cellspacing="0" cellpadding="0" class="opinion">
+			<tbody>
+				<tr>
+					<td width="50%" class="feedback">
+						<a href="mailto:info@hkiec.hk?subject=Feedback%20on%20Savings%20goal%20calculator&amp;" id="tab2_feedback"><img src="../images/common/calculator/btn-feedback-e.jpg"></a>
+					</td>
+					<td width="50%" valign="middle" class="rating">
+						<p><strong>How satisfied are you with this Savings Goal Calculator?</strong>
+							<br> (1 is the lowest, 5 is the highest)</p>
+						<form>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										<input type="radio" name="rating" value="1" id="tab2_rating1">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="2" id="tab2_rating2">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="3" id="tab2_rating3">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="4" id="tab2_rating4">
+									</td>
+									<td boder="0">
+										<input type="radio" name="rating" value="5" id="tab2_rating5">
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+								</tr>
+							</table>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- End Rating / Feedback section -->
+	</div>
+
+	<div style="display:none;" id="cache-template3">
+		<div class="have-to-save">
+			<table cellpadding="0" cellspacing="0" border="0" class="blank-table">
+				<tr>
+					<td class="pr20">
+						<!--
+							<img src="../images/common/calculator/icon-summy-others.png" alt="" /> <br />
+							-->
+						__savingForImg__
+						<br />
+						<h3>__savingForWord__ </h3>
+					</td>
+					<td>
+						It will take you <span>__result__<!-- HKD 1,451.6 --></span> to reach your goal
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- /have-to-save -->
+		<h3 class="topic3">Start saving early to reach your goal earlier</h3>
+		<p>In the same regular savings amount, you can reach your goal sooner with the compounding effect. Your savings grow not only by the amount you contribute, and the interest generated on that amount, but also earn interest on the interest.</p>
+		<p>With compound interest, you can reach your goal <span>__contribute__</span> as compared to regular savings without compound interest.</p>
+
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" class="summary-table">
+			<thead>
+				<tr>
+					<td class="thead-left">Compound interest</td>
+					<td>Period of time to reach your goal</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>With compound interest</td>
+					<td>__withCIA__
+						<!-- HKD 1,451.6 -->
+					</td>
+				</tr>
+				<tr>
+					<td>Without compound interest</td>
+					<td>__withoutCIA__
+						<!-- HKD 1,649 -->
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="tfoot-left">&nbsp;</td>
+					<td>__contribute__
+						<!-- HKD 198.4 less -->
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		<p>With the same amount of contributions, you can reach your goal earlier with the power of compound interest. The below chart shows how you can achieve your savings goal in the regular savings you filled.</p>
+		<div class="bar-chart-wrapper">
+			<h3>
+				Hong long will it take
+				<!-- 2013.12.27 start -->
+				<!-- select period to change chart period -->
+				<select id="ciSelect3">
+					<option value="0">Week</option>
+					<option value="1">Month</option>
+					<option value="2">Year</option>
+				</select>
+				<!-- 2013.12.27 ended -->
+				</h3>
+			<div id="result_3_container" style="width:891px; height:500px; margin-top:50px;">
+				<div id="result_graph_3" style="width:891px; height:403px;"></div>
+				<div id="result_legend_3" style="width:891px; height:60px; font-size:20px; margin:0 auto;">
+					<table cellpadding="0" cellspacing="0" border="0" style="margin:30px auto 0;">
+						<tbody>
+							<tr>
+								<td style="padding:0; width:169px;">
+									<div style="float:right; width:22px; height:22px; background:#3EA8A4; display:block;"></div>
+								</td>
+								<td style="padding:0; padding-left:8px; width:198px;"><span style="color:#666666; font-size:15px;">__ciwording1__</span></td>
+								<td style="padding:0; width:22px;">
+									<div style="width:22px; height:22px; background:#DC543A; display:block;"></div>
+								</td>
+								<td style="padding:0; padding-left:8px;  widt:168px;"><span style="color:#666666; font-size:15px;">__ciwording2__</span></td>
+								<td style="padding:0 8px 0 28px; width:22px;">
+									<div style="width:22px; height:22px; background:#666666; display:block;"></div>
+								</td>
+								<td style="padding:0; width:168px;"><span style="color:#666666; font-size:15px;">Savings goal</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- <img src="../images/common/img-demo-chart-07.jpg" alt="" width="891" height="500" /> -->
+		</div>
+		<!-- WHAT I DO NEXT START -->
+		<div class="do-next-wrapper">
+			<a href="javascript:;" class="btn-do-next">What to do next?</a>
+			<div class="do-next-innerwrapper">
+				<span>
+		                     More about <a href="javascript:;" class="ex_link_0">setting up a home</a>,
+		                     <a href="javascript:;" class="ex_link_1">wedding</a>,
+		                     <a href="javascript:;" class="ex_link_2">buying a car</a> and
+		                     <a href="javascript:;" class="ex_link_3">having children</a>
+		                     </span>
+				<span>
+		                     Check out how to <a href="javascript:;" class="ex_link_4">save for the future</a>
+		                     </span>
+
+				<span>
+		                     Learn more about <a href="javascript:;" class="ex_link_5">financial planning</a>
+		                     and <a href="javascript:;" class="ex_link_6">get started with a financial plan</a>
+		                     </span>
+			</div>
+			<!-- /do-next-innerwrapper -->
+		</div>
+		<!-- /do-next-wrapper -->
+		<!-- WHAT I DO NEXT END -->
+		<div class="tac">
+			<a href="javascript:;" class="btn btm_btn_submit" title="Save as PDF">Save as PDF</a>
+			<a href="javascript:;" class="btn btn_back" title="Calculate again">Calculate again</a>
+		</div>
+		<div class="clearfix"></div>
+		<!-- Rating / Feedback section -->
+		<div class="clear"></div>
+		<table border="0" cellspacing="0" cellpadding="0" class="opinion">
+			<tbody>
+				<tr>
+					<td width="50%" class="feedback">
+						<a href="mailto:info@hkiec.hk?subject=Feedback%20on%20Savings%20goal%20calculator&amp;" id="tab3_feedback"><img src="../images/common/calculator/btn-feedback-e.jpg"></a>
+					</td>
+					<td width="50%" valign="middle" class="rating">
+						<p><strong>How satisfied are you with this Savings Goal Calculator?</strong>
+							<br> (1 is the lowest, 5 is the highest)</p>
+						<form>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										<input type="radio" name="rating" value="1" id="tab3_rating1">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="2" id="tab3_rating2">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="3" id="tab3_rating3">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="4" id="tab3_rating4">
+									</td>
+									<td boder="0">
+										<input type="radio" name="rating" value="5" id="tab3_rating5">
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+								</tr>
+							</table>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- End Rating / Feedback section -->
+	</div>
+
+	<!-- 2013.10.28 to include header & footer -->
+
+
+	<div class="clearfix footerfix"></div>
+
+
+
+
+	<div class="footercontenter">
+		<div id="site-footer" class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="footer-left">
+							<div class="footer-logo">
+								<a href="http://www.thechinfamily.hk/web/iec/en/">
+									<img src="../images/common/iec-hk-logo.png" alt="" title="" />
+								</a>
+							</div>
+
+							<div class="footer-statement">
+								<p>The Chin Family is managed by the Investor Education Centre, which is supported by the Education Bureau and financial regulators.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="footer-right">
+							<div class="input-group">
+								<!--
+								<p>e-Newsletter</p>
+								<a class="btn btn-default" href="/web/en/tools-and-resources/e-newsletters/index.html">Latest Issue</a>&nbsp;&nbsp;
+		-->
+								<!--						<a class="btn btn-default" href="/subscription/subscription.jsp?lang=en">Subscribe</a>-->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-sm-push-5">
+						<div class="footer-hyperlinks-wrapper">
+							<ul id="footer-hyperlinks" class="footer-menu footer-hyperlinks">
+								<li><a href="https://www.thechinfamily.hk/web/common/apps/en/contact_enquiry.html">Contact Us</a></li>
+									<li><a href="https://www.thechinfamily.hk/web/en/others/sitemap.html">Site Map</a></li>
+									<li><a href="https://www.thechinfamily.hk/web/en/others/liability-statement.html">Liability Statement</a></li>
+									<li><a href="https://www.thechinfamily.hk/web/en/others/privacy-policy.html">Privacy Policy</a></li>
+									<li><a href="https://www.thechinfamily.hk/web/en/others/hyperlink-policy.html">Hyperlink Policy</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-5 col-sm-pull-7">
+						<p class="footer-copyright">Copyright &copy;2016 Investor Education Centre. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--
+	<div class="footer">
+		<div class="footerinner">
+			<div class="row row1">
+				<div class="logo"><img src="/iecNetWorthCalc/css/images/img-logo-iec-footer.gif" alt="" /></div>
+				<div class="psBox">
+					<p>The Chin Family is managed by the Investor Education Centre,
+						<br> which is supported by the Education Bureau and financial regulators.</p>
+				</div>
+			</div>
+			<div class="row row2">
+				<div class="rights">Copyright@2016 Investor Education Centre. All right reserved.</div>
+				<div class="nevBox">
+					<a href="#">Site Map</a>
+					<a href="#">Liability Statement</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Hyperlink Policy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+-->
+	<!--
+	<div class="clearfix"></div>
+	<div class="footer">
+		<div class="click-link-wrapper">
+			<div id="sys_footerTopDiv" class="innerwrapper"></div>
+		</div>
+		<div id="sys_footerDiv"></div>
+		<script>ts_loadInclude("sys_footerDiv", root_path + "/" + lang + "/include/footer_inner.html");</script>
+	</div>
+-->
+	<!--	<div class="clearfix"></div>-->
+	<!--	<div id="sys_footerBottomDiv" class="footer-hyper-link"></div>-->
+	<!-- 2013.10.28 to include header & footer ended -->
+
+</body>
+<!-- 2013.10.28 to include header & footer -->
+<script>
+	iecGlobalUpdate(lang);
+</script>
+
+<!-- 2013.10.28 to include header & footer ended -->
+<!-- Fancybox for DISCLAIMER -->
+<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<!-- script & css to include for using jqplot and frontend calculator -->
+
+<script src="../js/jquery.jqplot.js"></script>
+<script src="../js/jqplot.dateAxisRenderer.js"></script>
+<script src="../js/jqplot.canvasTextRenderer.js"></script>
+<script type="text/javascript" src="../js/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script src="../js/jqplot.canvasAxisTickRenderer.js"></script>
+<script src="../js/jqplot.categoryAxisRenderer.js"></script>
+<script src="../js/jqplot.barRenderer.js"></script>
+<script src="../js/jqplot.highlighter.min.js"></script>
+<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="../js/excanvas.js"></script><![endif]-->
+<script src="../js/cal.saving.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/jquery.jqplot.css" />
+
+</html>

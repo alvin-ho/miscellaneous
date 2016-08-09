@@ -1,0 +1,1516 @@
+@charset "utf-8";
+body {
+	font-size: 10px;
+	/*	background: none repeat scroll 0 0 #E3E3E3;*/
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+}
+
+div.header {
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+
+a.btn {
+	background: none repeat scroll 0 0 #4a2680;
+	color: #FFFFFF !important;
+	display: inline-block;
+	font-size: 1.5em;
+	padding: 6px 8px;
+	text-align: center;
+	width: auto !important;
+}
+
+a.btn:hover {
+	background: #701b74;
+}
+
+.footer {
+/*	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;*/
+	background-color: #4a2680;
+	height: 131px;
+	color: #fff;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	font-size: 13px;
+}
+
+.footer p {
+	line-height: 1.5;
+}
+
+.footer a {
+	color: #fff;
+}
+
+.footer .footerinner {
+	width: 970px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.footer .row {
+	width: 100%;
+	clear: both;
+	display: table;
+}
+
+.footer .row1 {
+	height: 46px;
+	margin: 18px -18px;
+}
+
+.footer .row2 {
+	margin-top: 18px
+}
+
+.footer .logo {
+	width: 162px;
+	padding: 0 18px;
+	border-right: 1px solid #fff;
+	height: 46px;
+	display: table-cell
+}
+
+.footer .psBox {
+	padding: 0 18px;
+	height: 46px;
+	vertical-align: middle;
+	display: table-cell
+}
+
+.footer .rights {
+	display: table-cell
+}
+
+.footer .nevBox {
+	display: table-cell;
+	margin: 0 -10px;
+}
+
+.footer .nevBox a {
+	float: left;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	padding: 0 10px;
+}
+
+
+/* HEADER WRAPPER */
+
+.header .wrapper,
+.content .wrapper {
+	width: 970px;
+	margin: 0 auto;
+	min-width: 970px;
+	position: relative;
+}
+
+.header .wrapper {
+	z-index: 300;
+}
+
+a.logo-iec {
+	float: left;
+}
+
+.header {
+	background: #fff;
+	border-top: 25px solid #fff;
+	height: 85px;
+	margin-bottom: 15px;
+}
+
+.header .wrapper {
+	width: 970px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header .wrapper .logo {
+	background: url('images/net_worth_result01_03b_03.gif') no-repeat 0 0;
+	width: 230px;
+	height: 85px;
+	display: block;
+}
+
+
+/*
+.footer .click-link-wrapper .innerwrapper ul li.enews a.btn{
+	font-size: 12px;
+}
+*/
+
+.debt {
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+	font-size: 10px;
+}
+
+.debt-wrapper {
+	margin: 0 auto;
+	padding: 0;
+	width: 970px;
+}
+
+.debt-wrapper h1 {
+	margin: 20px 0;
+	padding: 20px 0;
+	font-size: 20px;
+	text-align: center;
+	background: url(../images/common/calculator/tool_cal_debt_03.png) no-repeat 315px center;
+}
+
+.debt-wrapper h1.tctitle {
+	background: url(../images/common/calculator/tool_cal_debt_03.png) no-repeat 345px center;
+}
+
+.debt .debt-wrapper p {
+	font-size: 15px;
+}
+
+.calcContainer {
+	margin: 0;
+	padding: 0;
+	height: 1%;
+}
+
+.calcContainer:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0pt;
+	visibility: hidden;
+}
+
+.calcHeaderContainer:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.calcHeaderContainer {
+	height: 1%;
+	margin: 0;
+	padding: 0;
+}
+
+.calcHeaderLeft {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 712px;
+	height: 60px;
+	margin-bottom: 0 !important;
+	position: relative;
+}
+
+.calcHeaderRight {
+	background-color: #4c2683;
+	float: left;
+	height: 60px;
+	margin: 0 0 0 1px;
+	padding: 0;
+	width: 257px;
+}
+
+.calcHeaderRight .share-wrapper {
+	height: 30px;
+	margin-bottom: 1px;
+	margin-top: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+.calcHeaderRight .share-wrapper a {
+	display: inline-block;
+	margin: 10px;
+	padding: 1px 3px;
+}
+
+.qicon a.qicon_hover,
+.qicon a.qicon_hover:hover {
+	color: #48b6bd;
+	padding: 0 0 20px;
+}
+
+.qicon .message2 {
+	width: 400px !important;
+	margin-left: 310px !important;
+}
+
+.qicon a.qicon_hover .qicon_message.messagetc {
+	margin-left: 121px;
+}
+
+.qicon a.qicon_hover .qicon_message {
+	background: none repeat scroll 0 0 #48b6bd;
+	color: #FFFFFF;
+	display: none;
+	padding: 10px;
+	position: absolute;
+	width: 210px;
+	z-index: 9999;
+	margin-left: 281px;
+	*margin-left: 0px;
+}
+
+.content-dsr .qicon_message2 {
+	background: none repeat scroll 0 0 #48b6bd;
+	color: #FFFFFF;
+	display: none;
+	padding: 10px;
+	position: absolute;
+	width: 300px;
+	z-index: 9999;
+	margin-left: 150px;
+	*margin-top: 20px;
+	*margin-left: -60px;
+}
+
+.qicon a.qicon_hover:hover .qicon_message,
+a.qicon_hover2:hover div.qicon_message2 {
+	display: block;
+}
+
+
+/*POPUP CSS FOR THE CALCULATOR*/
+
+.calculator-popup {
+	width: 877px;
+	background: none;
+}
+
+.calculator-popup .calculator-popup-t {
+	background: url(../images/common/calculator/bg-calculator-popup-t.png) 0 0 no-repeat;
+	width: 877px;
+	height: 37px;
+}
+
+.calculator-popup .calculator-popup-b {
+	background: url(../images/common/calculator/bg-calculator-popup-b.png) 0 0 no-repeat;
+	width: 877px;
+	height: 37px;
+}
+
+.calculator-popup .calculator-popup-innerwrapper {
+	background: url(../images/common/calculator/bg-calculator-popup-m.png) 0 0 repeat-y;
+	width: 877px;
+}
+
+.calculator-popup .calculator-popup-innerwrapper {
+	background: #fff;
+	/* width: 877px; */
+	border-radius: 7px;
+	box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.49);
+	padding: 30px 0;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner {
+	padding: 15px 50px;
+}
+
+.inner h1 {
+	font-size: 2.5em;
+	margin: 20px 0;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner .tac {
+	text-align: center;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner .btn {
+	width: 120px !important;
+	font-size: 1.4em;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner ul li {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner h1 {
+	margin-top: 0;
+}
+
+.debt ul.tab {
+	position: relative;
+	/* height: 60px;*/
+	height: 30px;
+}
+
+.debt ul.tab li {
+	float: left;
+	width: 162px;
+	height: 60px;
+	margin-right: 1px;
+	position: relative;
+	margin-bottom: 0 !important;
+}
+
+.debt ul.tab li a {
+	color: #fff;
+	font-size: 1.2em;
+/*	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;*/
+	width: 92px;
+	height: 60px;
+	display: table-cell;
+	background: #999999;
+	padding-left: 70px;
+	vertical-align: middle;
+	position: relative;
+	*padding-top: 5px;
+	*height: 55px;
+	*display: inline-block;
+}
+
+.debt ul.tab li a span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	background: #999999;
+	text-align: center;
+}
+
+.debt ul.tab li a:hover,
+.debt ul.tab li a.active {
+	background: #48b6bd;
+	color: #4c2683
+}
+
+.debt ul.tab li a:hover span,
+.debt ul.tab li a.active span {
+	background: #48b6bd;
+}
+
+.tab-assumption {
+	background: none repeat scroll 0 0 #A76E15;
+	height: 60px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 60px;
+}
+
+.debt .debt-wrapper .floatR {
+	float: right;
+}
+
+.debt .debt-wrapper .floatL {
+	float: left;
+}
+
+.debt .debt-wrapper .close-all {
+	font-size: 1.5em;
+}
+
+.debt .debt-wrapper .form-wrapper .form-innerwrapper {
+	display: none;
+	width: 970px;
+	padding: 20px 60px 60px;
+	background: #fff;
+	border: 4px solid #48b6bd;
+	margin-top: 1px;
+	min-height: 500px;
+	margin-bottom: 40px;
+	box-sizing: border-box;
+}
+
+.debt .debt-wrapper .form-wrapper .form-innerwrapper.active {
+	display: block;
+}
+
+.debt .debt-wrapper .calcContainerRight ul.expand-list li {
+	background: url(../images/common/calculator/bg-calculator-plus-right.gif) 0 20px no-repeat;
+}
+
+.debt .debt-wrapper .calcContainerRight ul.expand-list li.open {
+	background: url(../images/common/calculator/bg-calculator-minus-right.gif) 0 20px no-repeat;
+}
+
+
+/*.debt .debt-wrapper ul.expand-list li{ padding: 15px 0 5px; border-bottom: 1px #e3e3e3 solid; padding-left: 15px; background: url(../images/common/calculator/bg-calculator-plus-right.gif) 0px 20px no-repeat;}*/
+
+
+/*.debt .debt-wrapper ul.expand-list li.open {background: url(../images/common/calculator/bg-calculator-minus-right.gif) 0px 20px no-repeat;}*/
+
+.debt .debt-wrapper ul.expand-list li h2 {
+	margin: 0;
+	color: #f2c700;
+	padding-bottom: 10px;
+	margin-left: -15px;
+	padding-left: 15px;
+	font-size: 1.4em !important;
+}
+
+.debt .debt-wrapper ul.expand-list li table,
+.rating table {
+	display: none;
+	width: 100%;
+	border: 0;
+	border-spacing: 0;
+	*border-collapse: collapse;
+}
+
+.report-overview {
+	/*height:120px;*/
+}
+
+.report-overview table,
+.report-table table {
+	border: 1px #c3c3c3 solid;
+	width: 850px;
+}
+
+.report-overview table td {
+	text-align: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.inner .report-overview table tbody tr td,
+.inner .report-table table tbody tr td,
+.inner .higher table tbody tr td,
+.inner .jqplot-table-legend tbody tr td {
+	border: none;
+}
+
+.rating table tr.savings {
+	display: none;
+}
+
+.rating table tr td p {
+	margin: 0;
+	padding: 0;
+}
+
+.rating table tr td p span {
+	color: #48b6bd;
+	font-weight: bold;
+}
+
+.rating table tr td.width1 {
+	width: 26px;
+}
+
+.rating table tr td.width2 {
+	width: 220px;
+}
+
+.report {
+	margin: 0;
+	padding: 0;
+}
+
+.debt .form-wrapper .report h3 {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	color: #974806;
+}
+
+.billboardContainer {
+	margin: 0;
+	padding: 0 0 20px 0;
+	height: 1%;
+}
+
+.billboardContainer.last {
+	border-bottom: 1px solid #CCC;
+}
+
+.billboardContainer:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0pt;
+	visibility: hidden;
+}
+
+.debt .form-wrapper .billboardCol {
+	margin: 0 5px 0 0;
+	padding: 10px;
+	float: left;
+	width: 197px;
+	border: 1px solid #CCC;
+}
+
+.debt .form-wrapper .billboardCol.noborder {
+	border: none;
+}
+
+.debt .form-wrapper .billboardCol h4 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #974806;
+}
+
+.debt .form-wrapper .billboardCol p {
+	margin: 0;
+	padding: 0;
+}
+
+.debt .form-wrapper .billboardCol p span.billboardPrice {
+	color: #48b6bd;
+	font-weight: bold;
+}
+
+.debt .form-wrapper .billboardCol .billboardColLeft {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 20px;
+}
+
+.debt .form-wrapper .billboardCol .billboardColRight {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 177px;
+}
+
+.debt .debt-wrapper ul.expand-list li {
+	margin-bottom: 0px;
+}
+
+.debt .debt-wrapper table.blank-table {
+	margin-bottom: 0px;
+}
+
+.debt .debt-wrapper ul.expand-list li.open table {
+	display: block;
+}
+
+.debt .debt-wrapper ul.expand-list li a {
+	outline: 0;
+}
+
+.debt .debt-wrapper table tr td.topic {
+	color: #48b6bd;
+}
+
+.debt .debt-wrapper table tr td.topic img {
+	margin-right: 10px;
+}
+
+.debt .debt-wrapper input.input-other,
+.debt .debt-wrapper table tr td select,
+.debt .debt-wrapper .form-wrapper .form-innerwrapper table tr td input[type="text"] {
+	border: 1px #d3d3d3 solid;
+	padding: 4px;
+}
+
+.debt .debt-wrapper table tr td select {
+	width: 46.5%;
+}
+
+.debt .debt-wrapper table tr td .period_year,
+.debt .debt-wrapper table tr td .period_month {
+	width: 14.5%;
+}
+
+.debt .debt-wrapper table tr td input {
+	width: 45%;
+}
+
+.debt .debt-wrapper table tfoot tr td {
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+
+.debt .debt-wrapper .form-wrapper .form-innerwrapper a.btn {
+	width: 140px !important;
+	float: right;
+	margin-left: 10px;
+}
+
+.debt .debt-wrapper .form-wrapper .form-innerwrapper .higher a.btn {
+	float: left;
+}
+
+.debt .debt-wrapper .form-wrapper .form-innerwrapper .higher a.btn {
+	width: 126px !important;
+	font-size: 1.3em;
+}
+
+.debt .debt-wrapper .tab-report {
+	width: 714px !important;
+	display: none;
+}
+
+.debt .debt-wrapper .tab-report a {
+	color: #fff;
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+	width: 644px !important;
+	height: 60px;
+	display: table-cell;
+	background: #fcaf1a !important;
+	padding-left: 70px;
+	vertical-align: middle;
+	position: relative;
+	*padding-top: 5px;
+	*height: 55px;
+	*display: inline-block;
+}
+
+.debt .debt-wrapper .tab-report span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	background: #f2c700 !important;
+	text-align: center;
+}
+
+.calcContainerRight .share-wrapper {
+	width: 100%;
+	height: 30px;
+	background: #006eb8;
+	margin-bottom: 1px;
+	text-align: center;
+}
+
+.calcContainerRight .share-wrapper a {
+	margin: 5px;
+	padding: 1px 0;
+	display: inline-block;
+}
+
+.calcContainerRight .summary {
+	height: 60px;
+	background: #fcaf1a;
+	display: table-cell;
+	vertical-align: middle;
+	width: 176px;
+	color: #fff;
+	font-size: 2em;
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+	padding-left: 70px;
+}
+
+.calcContainerRight .summary span {
+	position: absolute;
+	top: 31px;
+	left: 0;
+	display: inline-block;
+	height: 46px;
+	width: 60px;
+	background: #f2c700;
+	text-align: center;
+	padding-top: 14px;
+}
+
+.debt .debt-wrapper .willSave {
+	margin: 0;
+	padding: 0 0 15px;
+	position: relative;
+}
+
+.debt .debt-wrapper .willSave h3 {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.debt .debt-wrapper .willSave p {
+	margin: 0 0 5px 0;
+	padding: 0;
+	text-align: center;
+}
+
+.debt .debt-wrapper .willSave p span.price,
+.debt .debt-wrapper .willSave p.annualExpense {
+	font-weight: bold;
+	color: #48b6bd;
+}
+
+.jqplot-data-label {
+	font-size: 1.8em;
+	color: #fff;
+}
+
+.summaryContainer {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+.summaryContainer .totalSave {
+	margin: 15px 0 15px 0;
+	padding: 0;
+	border-bottom: 1px solid #CCC;
+}
+
+.summaryContainer .totalSave p {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+.summaryContainer .totalSave p.price {
+	font-size: 16px;
+	color: #48b6bd;
+	font-weight: bold;
+}
+
+.summaryContainer .rating {
+	margin: 0;
+	padding: 0;
+}
+
+.summaryContainer .rating h3 {
+	margin: 10px 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	color: #974806;
+}
+
+.padding_left {
+	padding-left: 15px!important;
+}
+
+.result_summary {
+	border: 1px solid #CCCCCC;
+	height: 70px;
+	margin-left: 1px;
+	padding: 24px 10px 10px;
+	width: 579px;
+}
+
+.result_summary table {
+	margin-bottom: 0;
+}
+
+.result_summary td {
+	width: 190px;
+}
+
+.blank-result-table {
+	text-align: center;
+}
+
+#total_pay {
+	color: #47b6bd;
+	font-weight: bold;
+}
+
+#interest,
+#time_repay {
+	color: #4d2683;
+}
+
+.result_summary {
+	display: none;
+}
+
+.debt .debt-wrapper .report-table table tr td {
+	font-size: 15px !important;
+	text-align: left;
+}
+
+.report-table {
+	padding-bottom: 30px;
+}
+
+.debt .debt-wrapper .higher td {
+	padding: 0 0 0 5px;
+	vertical-align: middle;
+}
+
+#CCL_chart {
+	font-size: 1.5em;
+}
+
+.higher {
+	height: 73px;
+	width: 834px;
+}
+
+.higher span {
+	font-size: 15px;
+	float: left;
+	color: #666666;
+}
+
+.editrepay {
+	width: 80px;
+}
+
+.jqplot-yaxis-label {
+	left: 40px !important;
+	text-align: center;
+	top: -30px !important;
+	width: 30px;
+}
+
+.CCL_chart_container {
+	height: 310px;
+	padding-bottom: 30px;
+	width: 566px;
+}
+
+.addother span {
+	font-size: 16px;
+	padding-left: 4px;
+	color: #48b6bd;
+}
+
+.credit-title {
+	color: #4c2683;
+	font-size: 18px;
+	font-weight: normal;
+	height: 35px;
+}
+
+.summary-title {
+	margin-bottom: 5px;
+	margin-left: -19px;
+}
+
+.summary-title img {
+	background-color: #f2c700;
+}
+
+.summary-title {
+	background-image: url(../images/common/calculator/icon-summary.jpg);
+	background-repeat: no-repeat;
+	height: 35px;
+	padding-top: 14px;
+}
+
+.summary-title span {
+	padding-left: 55px;
+	font-size: 16px;
+	color: #4c2683;
+	font-weight: bold;
+}
+
+.blank-result-table {
+	font-size: 12px;
+}
+
+.notice li {
+	list-style: disc outside none;
+	padding: 0 0 10px 0;
+}
+
+.debt .form-wrapper .report h2 {
+	color: #7d4c24;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.debt .form-wrapper .notice h4 {
+	color: #4A2680;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.dialog {
+	-webkit-overflow-scrolling: 'touch';
+}
+
+#cc_dialog {
+	display: none;
+	padding: 60px 40px 0 40px;
+}
+
+#cc_dialog_mp {
+	display: none;
+	padding: 25px 40px 0 40px;
+}
+
+#cc_dialog h3,
+#cc_dialog_mp h3 {
+	color: #7d4c24;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+#cc_dialog .choice,
+#cc_dialog_mp .choice {
+	margin: 30px auto 0;
+	width: 715px;
+	text-align: center;
+}
+
+#cc_dialog_mp p {
+	margin-top: 15px;
+}
+
+.btn_yes {
+	width: 120px !important;
+}
+
+.btn_no,
+.mp_btn_no {
+	margin-left: 40px;
+	width: 120px !important;
+}
+
+.change_total,
+.changeperiod_total_list,
+.changeamount_total_list,
+.vs_min_payment {
+	margin: 20px 0;
+}
+
+.change_total table,
+.vs_min_payment table {
+	border: 1px solid #DDDDDD;
+	width: 710px;
+	padding: 0 15px;
+	border-collapse: inherit;
+	font-size: 12px;
+}
+
+.change_total #tnumber,
+.change_total #principle,
+.change_total #tinterest,
+.change_total #tperiod {
+	color: #4C2683;
+	font-weight: bold;
+}
+
+.change_total #tdebt {
+	color: #4C2683;
+	font-weight: bold;
+}
+
+.change_total .corner {
+	width: 70px;
+}
+
+.vs_min_payment table {
+	border-collapse: inherit;
+	padding: 10px 20px;
+	color: #666666;
+	font-weight: bold;
+}
+
+.vs_min_payment #ex_tamount {
+	width: 140px;
+}
+
+.change_total table tbody tr th {
+	padding: 10px 0 0 10px;
+	text-align: left;
+}
+
+.vs_min_payment table tbody tr th {
+	padding: 0 10px 10px;
+	text-align: left;
+}
+
+.vs_min_payment table tbody tr th,
+.vs_min_payment table .aline {
+	border-bottom: 1px solid #CECECE;
+}
+
+.change_total table tr td,
+.vs_min_payment table tr td {
+	padding: 5px 0 10px 10px;
+	text-align: left;
+}
+
+.vs_min_payment table tr td {
+	color: #4A2680;
+}
+
+.vs_min_payment table tr .first {
+	text-align: left;
+	color: #666666;
+}
+
+.change_total_list table {
+	border-bottom: 1px solid #CECECE;
+}
+
+.change_total_list table tbody tr th {
+	padding: 25px 20px 0;
+}
+
+#PL_review .all-table tbody tr th {
+	padding: 10px 14px;
+}
+
+#PL_review .all-table tbody tr td {
+	text-align: left;
+	padding: 5px 15px;
+}
+
+#PL_review .review_table {
+	margin: 10px 0;
+}
+
+#PL_review .review_table .all-table {
+	font-size: 12px;
+	margin: 0 auto;
+}
+
+.debtmain .summary_table .totalprincipal {
+	font-size: 15px;
+}
+
+.debtmain .summary_table,
+.debtmain .all-table {
+	border: 1px solid #dddddd;
+	border-collapse: inherit;
+	padding: 0 15px;
+}
+
+.debtmain .summary_table tbody tr th,
+.debtmain .all-table tbody tr th,
+#PL_review .all-table tbody tr th {
+	background: none repeat scroll 0 0 #ffffff;
+	border: none;
+	color: #646462;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 12px !important;
+	text-align: left;
+}
+
+.debtmain .all-table tbody tr th,
+#PL_review .all-table tbody tr th {
+	border-bottom: 1px solid #CECECE;
+}
+
+.report-overview #tnumber,
+.report-overview #principle,
+.report-overview #tinterest,
+.report-overview #tperiod {
+	color: #4C2683;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.report-overview #tdebt {
+	color: #4C2683;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.dsr-table .content-dsr {
+	display: block;
+	font-size: 15px;
+}
+
+.dsr-table .content-dsr a {
+	color: #666666;
+}
+
+.dsr-table {
+	height: 50px;
+}
+
+.dsr-table #dsr {
+	color: #4C2683;
+	font-weight: bold;
+}
+
+.report-table .all-table .first {}
+
+.inner table {
+	margin-bottom: 0 !important;
+}
+
+.inner table tbody tr td,
+.inner table tbody tr th {
+	padding: 5px;
+}
+
+#CCL_chart table.jqplot-table-legend,
+#OL_chart table.jqplot-table-legend {}
+
+#cc_change_amount table.jqplot-table-legend,
+#cc_change_period table.jqplot-table-legend {
+	width: 200px;
+}
+
+#cc_comparison_table table.jqplot-table-legend {
+	width: 123px;
+}
+
+div.jqplot-table-legend-swatch-outline {
+	padding-top: 5px;
+}
+
+.debtmain .debt .debt-wrapper .form-wrapper .report a.btn {
+	float: left;
+}
+
+#cc_change_period,
+#cc_change_amount,
+#cc_comparison_table,
+#PL_review {
+	padding: 20px 45px;
+}
+
+#cc_change_period h3,
+#cc_change_amount h3,
+#cc_comparison_table h3,
+#PL_review h3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #4C2683;
+}
+
+#cc_comparison_table h3 {
+	margin-top: 10px;
+}
+
+#cc_change_period .compare_btn,
+#cc_change_amount .compare_btn,
+.calculate_btn {
+	float: right;
+}
+
+.calculate_btn {
+	margin-right: 190px;
+}
+
+.calculate_btn .btn_minrepay {
+	width: 135px !important;
+}
+
+#cc_change_period .compare_btn a,
+#cc_change_amount .compare_btn a {
+	font-size: 1.2em;
+	text-align: center;
+	width: 135px !important;
+}
+
+table.edit-table {
+	border: 1px solid #dddddd;
+	border-collapse: inherit;
+	padding: 0 15px;
+	width: 710px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.edit-table tbody tr th {
+	border-bottom: 1px solid #CECECE;
+	padding: 10px;
+	text-align: left;
+}
+
+table.edit-table td {
+	padding: 5px 10px;
+	text-align: left;
+}
+
+.editperiod {
+	width: 40px;
+	border: 1px solid #CCCCCC;
+	text-align: right;
+	color: #FF0000;
+}
+
+.editamount,
+.editminamount {
+	width: 60px;
+	border: 1px solid #CCCCCC;
+	text-align: left;
+	color: #FF0000;
+}
+
+#CCL_chart_change_amount,
+#CCL_chart_change_period {
+	margin-top: 90px;
+}
+
+.dialog #CCL_chart_change_amount,
+.dialog #CCL_chart_change_period,
+.dialog #CCL_min_interest,
+.dialog #CCL_chart_min_period {
+	font-size: 16px;
+}
+
+td.jqplot-table-legend {
+	vertical-align: top;
+}
+
+.know_min_repay {
+	padding: 60px 185px;
+}
+
+.know_min_repay table.edit-table {
+	width: 400px;
+}
+
+.form-innerwrapper #title {
+	color: #48b6bd;
+}
+
+.debt .debt-wrapper .willSave h2,
+.debt .all_loan .willSave h2 {
+	color: #4C2683;
+}
+
+.report_pl .PL_chart_container,
+.report_ol .OL_chart_container {
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+
+.report_pl .PL_chart_container_frame,
+.report_ol .OL_chart_container_frame {
+	position: relative;
+}
+
+.report_pl .notice,
+.report_ol .notice {
+	margin: 20px 0;
+	height: 85px;
+}
+
+.debt .notice ul {
+	margin-bottom: 0px;
+	margin-left: 15px;
+}
+
+.debt .notice ul li {
+	font-size: 15px;
+}
+
+.buttonbox {
+	height: 30px;
+}
+
+.dc {
+	margin-top: 30px;
+}
+
+.dc h4 {
+	color: #4A2680;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.report_cc .notice,
+.cc-all .notice {
+	padding-bottom: 20px;
+}
+
+.all_loan .report-overview {
+	margin-top: 20px;
+}
+
+.all_loan #all_debt,
+.all_loan #all_interest,
+.all_loan #all_period,
+.all_loan #all_dsr {
+	color: #4C2683;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.all_loan h2 {
+	color: #4c2683;
+}
+
+.btn:hover {
+	font-weight: normal !important;
+}
+
+.details {
+	display: none;
+	height: 33px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.all_loan .report-table,
+.all_loan .notice {
+	display: none;
+}
+
+a.btn.highlight {
+	background: #701b74 !important;
+}
+
+a.btn.active {
+	background: none repeat scroll 0 0 #701B74 !important;
+}
+
+.debtmain .alltop .summary_table {
+	border: 2px solid #f2c700;
+}
+
+.debtmain .alltop .summary_table th,
+.alltop .summary_table td {
+	font-size: 16px !important;
+}
+
+.hr {
+	margin: 10px 0 10px -26px;
+}
+
+.ccard .tab0 .remove-tab,
+.loan .tabloan0 .remove-tab,
+.otherloan .tabotherloan0 .remove-tab {
+	display: none;
+}
+
+.debtmain ul {
+	margin-bottom: 0;
+}
+
+.debtmain .addother {
+	height: 50px;
+}
+
+.group-btn {
+	margin-top: 20px;
+}
+
+.ui-widget-header {
+	height: 20px;
+}
+
+.header .wrapper {
+	z-index: 0 !important;
+}
+
+.logo-iec img {
+	z-index: 1 !important;
+}
+
+table.jqplot-table-legend {
+	width: auto !important;
+	position: relative !important;
+}
+
+.messagetop {
+	color: #ccc;
+}
+
+.min_notice {
+	height: 55px;
+	margin: 30px 0 0;
+	font-size: 15px;
+	color: #666666;
+}
+
+.rating {
+	margin: 0 auto;
+	padding: 50px 0 0 0;
+	width: 530px;
+	height: 120px;
+}
+
+.rating:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0pt;
+	visibility: hidden;
+}
+
+.rating-col-left {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 306px;
+	position: relative;
+}
+
+.rating-col-left img {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+}
+
+.rating-col-left p {
+	margin: 0;
+	padding: 0;
+	font-size: 16px !important;
+	font-weight: bold;
+	color: #4a2680;
+	position: absolute;
+	top: 35px;
+	left: 47px;
+}
+
+.rating-col-left p a {
+	color: #4a2680;
+	text-decoration: underline;
+}
+
+.rating-col-right {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 220px;
+}
+
+.rating-col-right p {
+	margin: 0;
+	padding: 0;
+	color: #4a2680;
+	text-align: center;
+}
+
+.rating-col-right p.title {
+	font-weight: bold;
+}
+
+.rating-col-right ul {
+	margin: 0 auto;
+	padding: 14px 0 0 0;
+	list-style: none;
+	width: 172px;
+}
+
+.rating-col-right ul li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 34px;
+	color: #4a2680;
+	text-align: center;
+}
+
+.ratingThanks {
+	margin: 0;
+	padding: 40px 0 0 0;
+}
+
+.ratingThanks p {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	text-align: center;
+}

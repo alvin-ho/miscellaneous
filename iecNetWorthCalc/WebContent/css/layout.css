@@ -1,0 +1,2400 @@
+@charset "utf-8";
+html,
+body {
+	min-height: 100%
+}
+
+body {
+	background: #fff;
+	font-family: Gotham Rounded A, Gotham Rounded B, 'MYuen HK Semibold', 'Microsoft JhengHei', sans-serif;
+	font-size: 14px;
+	line-height: 1em;
+	position: relative;
+	/*	padding-bottom:142px*/
+}
+
+.header {
+	background: #fff;
+	border-top: 25px solid #fff;
+	height: 130px;
+	margin-bottom: 15px;
+}
+
+.header .wrapper {
+	width: 970px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header .wrapper .logo {
+	background: url('images/net_worth_result01_03b_03.gif') no-repeat 0 0;
+	width: 230px;
+	height: 85px;
+	display: block;
+}
+
+.footer {
+	font-family: Gotham Rounded A, Gotham Rounded B, 'MYuen HK Semibold', 'Microsoft JhengHei', sans-serif;
+	background-color: #4a2680;
+	height: 131px;
+	color: #fff;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	font-size: 13px;
+}
+
+.footer p {
+	line-height: 1.5;
+}
+
+.footer a {
+	color: #fff;
+}
+
+.footer .footerinner {
+	width: 970px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.footer .row {
+	width: 100%;
+	clear: both;
+	display: table;
+}
+
+.footer .row1 {
+	height: 46px;
+	margin: 18px -18px;
+}
+
+.footer .row2 {
+	margin-top: 18px
+}
+
+.footer .logo {
+	width: 162px;
+	padding: 0 18px;
+	border-right: 1px solid #fff;
+	height: 46px;
+	display: table-cell
+}
+
+.footer .psBox {
+	padding: 0 18px;
+	height: 46px;
+	vertical-align: middle;
+	display: table-cell
+}
+
+.footer .rights {
+	display: table-cell
+}
+
+.footer .nevBox {
+	display: table-cell;
+	margin: 0 -10px;
+}
+
+.footer .nevBox a {
+	float: left;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	padding: 0 10px;
+}
+
+.calculator {
+	width: 970px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.result {
+	width: 970px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.calculator h1 {
+	font-size: 25px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	line-height: 72px;
+	color: #4b2384;
+	display: block;
+	height: 72px;
+	font-family: Gotham Rounded A, Gotham Rounded B, 'MYuen HK Semibold', 'Microsoft JhengHei', sans-serif;
+	background: url('images/ico-calculator.gif') no-repeat 287px 7px;
+}
+
+.calculator .inner {
+	background: #fff;
+	position: relative;
+}
+
+.calculator .inner p {
+	color: #666666;
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 20px 85px 20px 5px;
+}
+
+.dataInner {
+	border-bottom: 1px solid #e3e3e3;
+	width: 870px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.dataInner .dataDiv {
+	display: block;
+	float: left;
+	width: 435px;
+	position: relative;
+	height: 39px;
+	margin: 0 0 50px 0;
+}
+
+.dataInner .dataDiv .text {
+	color: #2cb7b4;
+	font-size: 15px;
+	line-height: 18px;
+	display: table-cell;
+	width: 220px;
+	padding: 0 0 0 0px;
+	height: 39px;
+	vertical-align: middle;
+}
+
+.dataInner .dataDiv span a {
+	display: inline-block;
+	background: url('images/ico-hints.gif') no-repeat 0 12px;
+	width: 14px;
+	height: 39px;
+	margin: 0 0 0 5px;
+	vertical-align: middle;
+}
+
+.dataInner .dataDiv.right span {
+	padding: 0 0 0 50px;
+}
+
+.dataInner .dataDiv label {
+	display: block;
+	border: 1px solid #ddd;
+	width: 140px;
+	height: 37px;
+	line-height: 37px;
+	font-size: 15px;
+	color: #777;
+	padding: 0 0 0 12px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position: absolute;
+	right: 50px;
+	top: 0;
+}
+
+.dataInner .dataDiv.right label {
+	right: 0;
+}
+
+.dataInner .dataDiv label input {
+	border: 0;
+	color: #777;
+	font-size: 15px;
+	text-align: right;
+	width: 86px;
+	padding-right: 15px;
+	background-color: transparent
+}
+
+.btnFancy {
+	display: block;
+	position: absolute;
+	background: url('images/ico-question.gif') no-repeat 0 0;
+	width: 55px;
+	height: 61px;
+	right: 0;
+	top: 0;
+}
+
+a:hover.btnFancy {
+	opacity: 0.6;
+}
+
+.assetsInner {
+	width: 440px;
+	padding: 26px 0 0 45px;
+	border-right: 1px solid #e3e3e3;
+	position: relative;
+	display: block;
+	float: left
+}
+
+.assetsInner h3 {
+	color: #48247e;
+	font-size: 18px;
+	background: url('images/ico-assets.gif') no-repeat 0 0;
+	line-height: 47px;
+	margin: 0;
+	padding: 0 0 6px 53px;
+}
+
+.assetsInner h3 a {
+	display: inline-block;
+	background: url('images/ico-hints_purple.gif') no-repeat 0 12px;
+	width: 14px;
+	height: 39px;
+	margin: 0 0 0 5px;
+	vertical-align: middle;
+}
+
+.assetsInner .box {
+	position: relative;
+	display: block;
+}
+
+.assetsInner .box h4 {
+	background: url('images/ico-liquid.gif') no-repeat 3px -441px;
+	display: inline-block;
+	line-height: 39px;
+	font-size: 18px;
+	margin: 0;
+	padding: 20px 0 20px 53px;
+	color: #40b7ef;
+	cursor: pointer;
+}
+
+.assetsInner .box h4.hide {
+	background-position: 3px 20px;
+}
+
+.assetsInner .box.investmentAssets h4 {
+	background-image: url('images/ico-investment.gif');
+	color: #8cac3d;
+}
+
+.assetsInner .box.personalAssets h4 {
+	background-image: url('images/ico-personal.gif');
+	color: #5b848a;
+}
+
+.assetsInner .box.personalAssets h4 a {
+	display: inline-block;
+	background: url('images/ico-hints.gif') no-repeat 0 12px;
+	width: 14px;
+	height: 39px;
+	margin: 0 0 0 5px;
+	vertical-align: middle;
+}
+
+.assetsInner .box .dataDiv {
+	color: #666666;
+	font-size: 15px;
+	margin: 0 0 13px 0;
+	position: relative;
+	height: 82px;
+}
+
+.assetsInner .box .dataDiv .text {
+	display: block;
+	padding: 0 0 3px 53px;
+	background: url('images/ico-cash.gif') no-repeat 3px 0;
+	height: 39px;
+	line-height: 39px;
+}
+
+.assetsInner .box .dataDiv span a {
+	display: inline-block;
+	background: url('images/ico-hints_green.gif') no-repeat 0 12px;
+	width: 14px;
+	height: 39px;
+	margin: 0 0 0 5px;
+	vertical-align: middle;
+}
+
+.assetsInner .box .dataDiv.icoCash .text {
+	background-image: url('images/ico-cash.gif');
+}
+
+.assetsInner .box .dataDiv.icoSavings .text {
+	background-image: url('images/ico-savings.gif');
+}
+
+.assetsInner .box .dataDiv.icoCurrent .text {
+	background-image: url('images/ico-current.gif');
+}
+
+.assetsInner .box .dataDiv.icoFixedDeposit .text {
+	background-image: url('images/ico-fixed-deposit.gif');
+}
+
+.assetsInner .box .dataDiv.icoOtherLiquidAssets .text {
+	background-image: url('images/ico-other-liquid.gif');
+}
+
+.assetsInner .box .dataDiv.icoProperties .text {
+	background-image: url('images/ico-properties.gif');
+}
+
+.assetsInner .box .dataDiv.icoMpf .text {
+	background-image: url('images/ico-mpf.gif');
+}
+
+.assetsInner .box .dataDiv.icoInsurance .text {
+	background-image: url('images/ico-insurance.gif');
+}
+
+.assetsInner .box .dataDiv.icoFunds .text {
+	background-image: url('images/ico-funds.gif');
+}
+
+.assetsInner .box .dataDiv.icoStocks .text {
+	background-image: url('images/ico-stocks.gif');
+}
+
+.assetsInner .box .dataDiv.icoBonds .text {
+	background-image: url('images/ico-bonds.gif');
+}
+
+.assetsInner .box .dataDiv.icoBonds.icoBonds-tc .text {
+	background-image: url('images/ico-bonds-tc.gif');
+}
+
+.assetsInner .box .dataDiv.icoOther .text {
+	background-image: url('images/ico-other.gif');
+}
+
+.assetsInner .box .dataDiv.icoResidential .text {
+	background-image: url('images/ico-residential.gif');
+}
+
+.assetsInner .box .dataDiv.icoJewellery .text {
+	background-image: url('images/ico-jewellery.gif');
+}
+
+.assetsInner .box .dataDiv.icoCar .text {
+	background-image: url('images/ico-car.gif');
+}
+
+.assetsInner .box .dataDiv.icoPersonalUse .text {
+	background-image: url('images/ico-personal-use.gif');
+}
+
+.assetsInner .box .dataDiv .slider {
+	display: block;
+	position: absolute;
+	width: 175px;
+	bottom: 16px;
+	left: 5px;
+	background: #3db9ef;
+	height: 2px;
+	border: 1px solid #60b29c;
+}
+
+.assetsInner .box .dataDiv .slider.ui-slider-horizontal .ui-slider-handle {
+	top: -16px;
+	height: 20px;
+	width: 20px;
+	background: #40b7ef;
+	border: 7px solid #fff;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.assetsInner .box .dataDiv .ui-widget-header {
+	background: #64b9a3;
+	border-color: #60b29c;
+}
+
+.assetsInner .box.investmentAssets .dataDiv .slider {
+	background: #a0b964;
+	border: 1px solid #9bb360;
+}
+
+.assetsInner .box.investmentAssets .dataDiv .slider.ui-slider-horizontal .ui-slider-handle {
+	background: #b4d070;
+}
+
+.assetsInner .box.investmentAssets .dataDiv .ui-widget-header {
+	background: #a0b964;
+	border: 1px solid #9bb360;
+}
+
+.assetsInner .box.personalAssets .dataDiv .slider {
+	background: #EC933B;
+	border: 1px solid #EC933B;
+}
+
+.assetsInner .box.personalAssets .dataDiv .slider.ui-slider-horizontal .ui-slider-handle {
+	background: #EC933B;
+}
+
+.assetsInner .box.personalAssets .dataDiv .ui-widget-header {
+	background: #7bb0cc;
+	border: 1px solid #79adc8;
+}
+
+.assetsInner .box .dataDiv label {
+	display: block;
+	border: 1px solid #ddd;
+	width: 140px;
+	height: 37px;
+	line-height: 34px;
+	font-size: 15px;
+	color: #777;
+	padding: 0 0 0 7px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position: absolute;
+	right: 50px;
+	bottom: 0;
+	background: transparent;
+}
+
+.assetsInner .box .dataDiv label input {
+	border: 0;
+	color: #777;
+	font-size: 15px;
+	text-align: right;
+	width: 90px;
+	/* max-width: 86px*/
+	;
+	background-color: transparent
+}
+
+.assetsInner .box .dataDiv.alert {
+	height: 125px;
+}
+
+.assetsInner .box .dataDiv.alert .slider {
+	bottom: 59px;
+}
+
+.assetsInner .box .dataDiv.alert label {
+	bottom: 43px;
+}
+
+.assetsInner .box .dataDiv .caption {
+	display: none;
+}
+
+.assetsInner .box .dataDiv.alert .caption {
+	font-size: 12px;
+	line-height: 14px;
+	color: #a3a3a3;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+}
+
+.assetsInner .btnCollapse {
+	color: #47b6bd
+}
+
+.btnCollapse {
+	position: absolute;
+	right: 50px;
+	top: 40px;
+	color: #47b6bd
+}
+
+.liabilitiesInner {
+	width: 439px;
+	position: relative;
+	display: block;
+	float: left;
+	padding: 26px 0 0 45px;
+}
+
+.liabilitiesInner h3 {
+	color: #bc4d2b;
+	font-size: 18px;
+	background: url('images/ico-liabilities.gif') no-repeat 0 0;
+	line-height: 47px;
+	margin: 0;
+	padding: 0 0 26px 53px;
+}
+
+.liabilitiesInner .box {
+	position: relative;
+	display: block;
+}
+
+.liabilitiesInner .box .dataDiv {
+	color: #666666;
+	margin: 0 0 13px 0;
+	position: relative;
+	min-height: 82px;
+}
+
+.liabilitiesInner .box .dataDiv .text {
+	display: block;
+	padding: 0 0 43px 53px;
+	background: url('images/ico-mortgage.gif') no-repeat 3px 0;
+	height: 39px;
+	line-height: 39px;
+	font-size: 15px;
+}
+
+.liabilitiesInner .box .dataDiv span a {
+	display: inline-block;
+	background: url('images/ico-hints_pink.gif') no-repeat 0 12px;
+	width: 14px;
+	height: 39px;
+	margin: 0 0 0 5px;
+	vertical-align: middle;
+}
+
+.liabilitiesInner .box .dataDiv.icoMortgage .text {
+	background-image: url('images/ico-mortgage.gif');
+}
+
+.liabilitiesInner .box .dataDiv.question .text {
+	background: url('images/dot-puple.gif') no-repeat 6px 8px;
+	line-height: 20px;
+	padding: 0 0 43px 26px
+}
+
+.liabilitiesInner .box .dataDiv.icoCarLoan .text {
+	background-image: url('images/ico-car-loan.gif');
+}
+
+.liabilitiesInner .box .dataDiv.icoCredit .text {
+	background-image: url('images/ico-credit.gif');
+}
+
+.liabilitiesInner .box .dataDiv.icoOverdraft .text {
+	background-image: url('images/ico-overdraft.gif');
+}
+
+.liabilitiesInner .box .dataDiv.icoOtherLoan .text {
+	background-image: url('images/ico-other-loan.gif');
+}
+
+.liabilitiesInner .box .dataDiv .slider {
+	display: block;
+	position: absolute;
+	width: 175px;
+	top: 61px;
+	left: 5px;
+	background: #a03786;
+	height: 2px;
+	border: 1px solid #9d3683;
+}
+
+.liabilitiesInner .box .dataDiv .slider.ui-slider-horizontal .ui-slider-handle {
+	top: -16px;
+	height: 20px;
+	width: 20px;
+	background: #e25460;
+	border: 7px solid #fff;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.liabilitiesInner .box .dataDiv .ui-widget-header {
+	background: #a03786;
+	border-color: #9d3683;
+}
+
+.liabilitiesInner .box .dataDiv.question .slider {
+	background: #cd78b8;
+	border: 1px solid #c876b4;
+}
+
+.liabilitiesInner .box .dataDiv.question .slider.ui-slider-horizontal .ui-slider-handle {
+	background: #e25460;
+	border: 7px solid #fff;
+}
+
+.liabilitiesInner .box .dataDiv.question .ui-widget-header {
+	background: #cd78b8;
+	border-color: #c876b4;
+}
+
+.liabilitiesInner .box .dataDiv label {
+	display: block;
+	border: 1px solid #ddd;
+	width: 140px;
+	height: 37px;
+	line-height: 34px;
+	font-size: 15px;
+	color: #777;
+	padding: 0 0 0 7px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position: absolute;
+	right: 50px;
+	top: 42px;
+}
+
+.liabilitiesInner .box .dataDiv label input {
+	border: 0;
+	color: #777;
+	font-size: 15px;
+	text-align: right;
+	width: 90px;
+	background-color: transparent;
+	padding-right: 5px;
+}
+
+
+/*.liabilitiesInner .box .dataDiv.alert{ height: 125px;}
+.liabilitiesInner .box .dataDiv.alert .slider{ bottom:59px;}
+.liabilitiesInner .box .dataDiv.alert label{ bottom:43px;}*/
+
+.liabilitiesInner .box .dataDiv .caption {
+	display: none;
+	font-size: 12px;
+	line-height: 14px;
+	color: #a3a3a3;
+	padding: 40px 0 5px 5px;
+}
+
+.liabilitiesInner .box .dataDiv .caption2 {
+	display: none;
+	font-size: 12px;
+	line-height: 14px;
+	color: red;
+	padding: 8px 40px 8px 20px;
+}
+
+.liabilitiesInner .box .dataDiv.alert .caption {
+	display: block;
+}
+
+.liabilitiesInner .box .dataDiv.alert2 .caption2 {
+	display: block;
+}
+
+.liabilitiesInner .box .dataDiv.question {
+	display: none;
+}
+
+.liabilitiesInner .box .dataDiv.question.show {
+	display: block;
+}
+
+.totalInner {
+	border-top: 1px solid #e3e3e3;
+	width: 870px;
+	position: relative;
+	margin: 0 auto;
+	padding: 46px 0 68px 0;
+}
+
+.totalInner .totalAssets {
+	background: url('images/ico-total-assets.gif') no-repeat center 0;
+	padding: 116px 0 0 0;
+	text-align: center;
+	float: left;
+	width: 435px;
+}
+
+.totalInner .totalLiabilities {
+	background: url('images/ico-total-liabilities.gif') no-repeat center 0;
+	padding: 116px 0 0 0;
+	text-align: center;
+	float: left;
+	width: 435px;
+}
+
+.totalInner h3 {
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.totalInner h3 strong {
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.totalInner h3 span {
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.totalInner .totalAssets h3 {
+	color: #4c2683;
+}
+
+.totalInner .totalAssets h3 strong {
+	color: #40adf8;
+}
+
+.totalInner .totalLiabilities h3 {
+	color: #bc4d2b;
+}
+
+.totalInner .totalLiabilities h3 strong {
+	color: #f07650;
+}
+
+.endInner {
+	background: url('images/bg-total.gif') no-repeat 0 0 #f9f9f9;
+	width: 970px;
+	padding: 82px 0 0 0;
+	text-align: center;
+}
+
+.endInner h3 {
+	font-size: 45px;
+	line-height: 48px;
+	color: #4a247b;
+	padding: 0 0 30px 0;
+}
+
+.endInner h3.red {
+	color: red;
+}
+
+.endInner a {
+	text-decoration: underline;
+	color: #4a247b;
+	font-size: 16px;
+	line-height: 22px;
+	background: url('images/btn-arrow.gif') no-repeat 0 0;
+	display: inline-block;
+	height: 22px;
+	padding: 0 23px 0 32px;
+}
+
+
+/*.endInner a.btnback{width: 120px !important; font-size: 14px; line-height: 1.5; background: #4a2680; color: #fff; display: inline-block; padding: 6px 8px; text-align: center; text-decoration: none;}*/
+
+.endInner a.btnback {
+	width: 120px !important;
+	font-size: 14px;
+	line-height: 16px;
+	background: #4a2680;
+	color: #fff;
+	display: inline-block;
+	padding: 6px 8px;
+	text-align: center;
+}
+
+.endInner .socIco {
+	padding: 60px 0 30px 0;
+}
+
+.endInner .socIco a {
+	height: auto;
+	width: 80px;
+	margin: 0 5px;
+	padding: 50px 0 0 0;
+	text-decoration: none;
+	text-align: center;
+	font-size: 12px;
+	line-height: 18px;
+	background-position: center top;
+	vertical-align: top;
+}
+
+.endInner .socIco a.icoDoc {
+	background-image: url('images/btn-docs.gif');
+}
+
+.endInner .socIco a.icoPrint {
+	background-image: url('images/btn-print.gif');
+}
+
+.endInner .socIco a.icoPdf {
+	background-image: url('images/btn-pdf.gif');
+}
+
+.endInner .socIco a.icoEmail {
+	background-image: url('images/btn-email.gif');
+}
+
+.endInner .socIco a.icoFb {
+	background-image: url('images/btn-fb.gif');
+}
+
+.result {
+	display: none;
+}
+
+.result .inner {
+	background: #fff;
+}
+
+.result .inner p {
+	padding: 20px;
+	color: #777;
+	font-size: 14px;
+	line-height: 18px;
+	background: #fff;
+}
+
+.result h2 {
+	font-family: Gotham Rounded A, Gotham Rounded B, 'MYuen HK Semibold', 'Microsoft JhengHei', sans-serif;
+	font-size: 25px;
+	line-height: 55px;
+	margin: 0;
+	padding: 0 20px;
+	color: #4c2683;
+	display: block;
+	text-align: left;
+	background-color: #48b6bd;
+	font-weight: normal;
+}
+
+.result .chart {
+	height: 500px;
+	position: relative;
+	width: 100%;
+	background: #fff url('images/result-chart.gif') no-repeat center 40px;
+	overflow: hidden;
+}
+
+.result .chart .emergencyFund,
+.result .chart .moneyManagement,
+.result .chart .debtManagement {
+	position: absolute;
+	border: 0px solid #ddd;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	width: 200px;
+	height: 36px;
+}
+
+.result .chart .emergencyFund {
+	left: 48px;
+	top: 82px;
+	color: #7bb815;
+	padding: 16px 12px 0 0;
+}
+
+.result .chart .moneyManagement {
+	left: 720px;
+	top: 92px;
+	color: #3fb6ed;
+	padding: 5px 0 0 12px;
+}
+
+.result .chart .debtManagement {
+	left: 390px;
+	top: 411px;
+	color: #ec923a;
+	padding: 24px 0 0 0;
+}
+
+.result .chart .emergencyFund span,
+.result .chart .moneyManagement span,
+.result .chart .debtManagement span {
+	display: block;
+	position: absolute;
+	width: 69px;
+	height: 69px;
+}
+
+.result .chart .emergencyFund span {
+	right: -45px;
+	top: -6px;
+	background: url('images/ico-chart-1.gif') no-repeat 0 0;
+}
+
+.result .chart .moneyManagement span {
+	left: -60px;
+	top: -14px;
+	background: url('images/ico-chart-2.gif') no-repeat 0 0;
+}
+
+.result .chart .debtManagement span {
+	left: 62px;
+	top: -48px;
+	background: url('images/ico-chart-3.gif') no-repeat 0 0;
+}
+
+.result .chart .hints {
+	position: absolute;
+	right: 50px;
+	bottom: 40px;
+	border: 0px solid #ddd;
+	color: #4c2683;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	width: 254px;
+	height: 49px;
+	background: url('images/ico-chart-table.gif') no-repeat 0 0;
+}
+
+.result .chart .hints .left {
+	position: absolute;
+	left: 0;
+	top: 8px;
+	display: block;
+	width: 65px;
+}
+
+.result .chart .hints .right {
+	position: absolute;
+	right: 0;
+	top: 8px;
+	display: block;
+	width: 65px;
+}
+
+.result .resultBox {
+	position: relative;
+	padding: 26px 50px 0px 50px;
+}
+
+.result .resultBox h4 {
+	font-size: 25px;
+	padding: 0 0 2px 62px;
+	height: 34px;
+	line-height: 34px;
+	background: url('images/ico-result-1.gif') no-repeat 0 0;
+	color: #7bb815;
+}
+
+.result .resultBox.debtManagement h4 {
+	color: #ec923a;
+	background: url('images/ico-result-2.gif') no-repeat 0 0;
+}
+
+.result .resultBox.moneyManagement h4 {
+	color: #3fb6ed;
+	background: url('images/ico-result-3.gif') no-repeat 0 0;
+}
+
+.result .resultBox h5 {
+	color: #7bb815;
+	font-size: 18px;
+	position: absolute;
+	right: 50px;
+	top: 26px;
+	text-align: right;
+}
+
+.result .resultBox.debtManagement h5 {
+	color: #EC923A;
+}
+
+.result .resultBox.moneyManagement h5 {
+	color: #3EB7EE;
+}
+
+.result .resultBox h5 strong {
+	font-size: 25px;
+}
+
+.result .resultBox h5 span {
+	color: #7bb815;
+}
+
+.result .resultBox.debtManagement h5 span {
+	color: #EC923A;
+}
+
+.result .resultBox.moneyManagement h5 span {
+	color: #3EB7EE;
+}
+
+.result .resultBox p.error {
+	color: red;
+	position: absolute;
+	right: 50px;
+	top: 36px;
+	font-size: 18px;
+	text-align: right;
+	display: none;
+	background: none;
+	padding: 0;
+}
+
+.result .resultBox .contentBox p {
+	padding: 20px 0 0 0;
+	font-size: 15px;
+	line-height: 20px;
+	background: none;
+}
+
+.result .resultBox span.line {
+	display: block;
+	width: 870px;
+	height: 1px;
+	background: #e3e3e3;
+	margin: 18px auto 0 auto;
+}
+
+.result .resultBox ul li {
+	display: block;
+	margin: 0;
+	padding: 0 0 0 25px;
+	background: url('images/dot-result-2.gif') no-repeat 2px 6px;
+	font-size: 15px;
+	line-height: 18px;
+	color: #777;
+}
+
+.result .resultBox.moneyManagement ul li {
+	background-image: url('images/dot-result-3.gif');
+}
+
+.titleBar {
+	height: 60px;
+}
+
+.titleBar.titleBar-summary {
+	background-color: #48b6bd;
+}
+
+.titleBar .row {
+	display: table;
+	width: 100%;
+}
+
+.titleBar .textBox {
+	display: table-cell;
+	background: url('images/ico-summary.gif') no-repeat 10px center;
+	vertical-align: middle;
+	height: 60px;
+	padding-left: 60px;
+	font-size: 20px;
+	color: #4a2680;
+}
+
+.titleBar .btnFancy {
+	display: table-cell;
+}
+
+.result .endInner a.btnBack {
+	width: 120px !important;
+	background: #4a2680;
+	color: #fff;
+	display: inline-block;
+	padding: 6px 8px;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+/*
+.result .endInner{ background: #4c2683; padding: 40px 0 28px 0;}
+.result .endInner a{ width: 172px; height:37px; border: 1px solid #fff; color: #fff; text-decoration: none; background: none; line-height: 37px; text-align: center; padding: 0; }
+.result .endInner .socIco{ padding: 29px 0 0 0;}
+.result .endInner .socIco a{ background-repeat: no-repeat; border: none; margin: 0 5px; height: auto; width: 80px; margin: 0 5px; padding: 50px 0 0 0; text-decoration: none; text-align: center; font-size: 12px; line-height: 18px; background-position: center top; vertical-align: top;}
+.result .endInner .socIco a.icoDoc{ background-image: url('images/btn-docs-blue.gif');}
+.result .endInner .socIco a.icoPrint{ background-image: url('images/btn-print-blue.gif');}
+.result .endInner .socIco a.icoPdf{ background-image: url('images/btn-pdf-blue.gif');}
+.result .endInner .socIco a.icoEmail{ background-image: url('images/btn-email-blue.gif');}
+.result .endInner .socIco a.icoFb{ background-image: url('images/btn-fb-blue.gif');}
+*/
+
+.radar-chart-serie0 {
+	stroke: rgb(76, 38, 131);
+	fill: rgb(76, 38, 131) !important
+}
+
+#chart {
+	position: absolute;
+	left: 250px;
+	top: 9px;
+}
+
+circle.radar-chart-serie0 {
+	stroke: rgb(255, 255, 255);
+}
+
+.newLeft {
+	position: relative;
+	float: left;
+	width: 435px;
+}
+
+.newRight {
+	position: relative;
+	float: left;
+	width: 435px;
+}
+
+.tc .result .chart .emergencyFund {
+	left: 136px;
+	padding: 10px 12px 0 0;
+	width: 135px;
+}
+
+.tc .result .chart .moneyManagement {
+	padding: 0px 0 0 12px;
+	width: 135px;
+	height: 36px;
+	left: 683px;
+}
+
+.tc .result .chart .debtManagement {
+	height: 36px;
+}
+
+.tc .result .chart .emergencyFund span {
+	top: -13px;
+}
+
+.tc .result .chart .moneyManagement span {
+	top: -24px;
+	left: -38px;
+}
+
+.tc .result .chart .hints .left {
+	top: 17px;
+}
+
+.tc .result .chart .hints .right {
+	top: 17px;
+}
+
+.calculator-popup {
+	width: auto;
+	background: none;
+	padding-bottom: 0px !important;
+}
+
+.calculator-popup .calculator-popup-t {
+	background: url(images/bg-calculator-popup-t.png) 0 0 no-repeat;
+	width: auto;
+	height: 37px;
+}
+
+.calculator-popup .calculator-popup-b {
+	background: url(images/bg-calculator-popup-b.png) 0 0 no-repeat;
+	width: auto;
+	height: 37px;
+}
+
+.calculator-popup .calculator-popup-innerwrapper {
+	/*	background: url(images/bg-calculator-popup-m.png) 0 0 repeat-y;*/
+	    /* background: url(images/bg-calculator-popup-m.png) 0 0 repeat-y; */
+    background-color: #fff;
+    -moz-box-shadow: 0px 0px 12px 0 rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 12px 0 rgba(0,0,0,0.2);
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    /* margin: 12px; */
+    width: auto;
+    padding: 30px 0px;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner {
+	padding: 15px 50px;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner h1 {
+	margin-top: 0;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner h2 {
+	margin: 0 0 20px 0;
+	font-size: 25px;
+	line-height: 30px;
+	color: #4c2683;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner p {
+	margin: 0;
+	font-size: 13px;
+	color: #666;
+	padding: 0 0 20px 0;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner .tac {
+	text-align: center;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner .btn {
+	width: 120px !important;
+	font-size: 14px;
+	line-height: 16px;
+	background: #4a2680;
+	color: #fff;
+	display: inline-block;
+	padding: 6px 8px;
+	text-align: center;
+}
+
+.calculator-popup .calculator-popup-innerwrapper .inner ul li {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.calculator-popup-about {
+	width: 877px;
+	background: none;
+}
+
+.calculator-popup-about .calculator-popup-t {
+	background: url(images/bg-calculator-popup-t.png) 0 0 no-repeat;
+	width: 877px;
+	height: 37px;
+}
+
+.calculator-popup-about .calculator-popup-b {
+	background: url(images/bg-calculator-popup-b.png) 0 0 no-repeat;
+	width: 877px;
+	height: 37px;
+}
+
+.calculator-popup-about .calculator-popup-innerwrapper {
+/*	background: url(images/bg-calculator-popup-m.png) 0 0 repeat-y;*/
+/*	width: 877px;*/
+	    /* background: url(images/bg-calculator-popup-m.png) 0 0 repeat-y; */
+    background-color: #fff;
+    -moz-box-shadow: 0px 0px 12px 0 rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 12px 0 rgba(0,0,0,0.2);
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    /* margin: 12px; */
+    width: auto;
+    padding: 30px 0px;
+}
+
+.calculator-popup-about .calculator-popup-innerwrapper .inner {
+	padding: 15px 43px;
+	height: 485px;
+	overflow: auto;
+	width: 790px
+}
+
+.calculator-popup-about .calculator-popup-innerwrapper .inner h1 {
+	margin-top: 2px;
+	font-size: 25px;
+}
+
+.calculator-popup-about .calculator-popup-innerwrapper .inner h2 {
+	margin: 4px 0 28px 0;
+	font-size: 18px;
+	color: #4c2683;
+}
+
+.calculator-popup-about .calculator-popup-innerwrapper .inner p {
+	margin: 0;
+	font-size: 13px;
+	line-height: 18px;
+	color: #666;
+	padding: 0 0 20px 0;
+}
+
+.calculator-popup-about .calculator-popup-innerwrapper .inner .tac {
+	text-align: center;
+}
+
+.calculator-popup-about .calculator-popup-innerwrapper .inner .btn {
+	width: 120px !important;
+	font-size: 1.4em;
+	background: #4a2680;
+	color: #fff;
+	font-size: 18px;
+	display: inline-block;
+	padding: 6px 8px;
+	text-align: center;
+}
+
+.calculator-popup-about .calculator-popup-innerwrapper .inner ul li {
+	list-style-type: disc;
+	margin-left: 20px;
+	line-height: 18px;
+	font-size: 13px;
+	color: #666;
+}
+
+.calculator-popup-about .calculator-popup-innerwrapper .inner ol li {
+	margin-left: 20px;
+	font-size: 13px;
+	line-height: 18px;
+	color: #666;
+}
+
+
+/*  Rating / Feedback section 21/01/2015 */
+
+.clear {
+	clear: both;
+}
+
+.inner .opinion {
+	text-align: center;
+	color: #4c2683;
+	width: 610px;
+	margin: 20px auto 20px;
+}
+
+.opinion .rating {
+	vertical-align: middle;
+}
+
+.inner .opinion .rating table,
+.opinion .rating p {
+	color: #4c2683;
+	margin: auto;
+	line-height: 18px;
+	width: 240px;
+}
+
+.inner .opinion .rating table tbody tr td {
+	color: #4c2683;
+	font-weight: bold;
+	padding: 0;
+}
+
+.inner .opinion tbody tr td,
+.inner .opinion tbody tr td:last-child {
+	border: none;
+	padding: 0;
+	background-color: transparent;
+}
+
+.opinion .rating p {
+	padding: 0 0 15px;
+}
+
+.inner .opinion .rating input {
+	width: 22px;
+	height: 22px;
+	background-color: #fff;
+}
+
+
+/*  End Rating / Feedback section 21/01/2015 */
+.footercontenter {
+		position: relative !important;
+	}
+	
+	.footerfix{padding-bottom:0px  !important;}
+@media screen and (max-width:640px) {
+	body {
+		font-size: 20px;
+		line-height: 1.2em;
+		/*	padding-bottom: 200px*/
+	}
+	.footercontenter {
+		position: relative !important;
+	}
+	
+	.footerfix{padding-bottom:0px  !important;}
+	.header .wrapper {
+		width: 100%;
+	}
+	/*.header .wrapper .logo{ width: 198px; height: 80px; margin: 0 0 0 40px;}*/
+	.header .wrapper .logo {
+		height: 80px;
+		margin: 0 0 0 40px;
+	}
+	.calculator {
+		width: 100%;
+	}
+	.result {
+		width: 100%;
+	}
+	.dataInner {
+		width: 100%;
+	}
+	.assetsInner {
+		width: 100%;
+		padding: 42px 0 0 0px;
+		border-right: 0px solid #e3e3e3;
+		float: inherit;
+	}
+	.liabilitiesInner {
+		width: 100%;
+		float: inherit;
+		padding: 26px 0 0 0px;
+	}
+	.totalInner {
+		border-top: 1px solid #e3e3e3;
+		width: 100%;
+		padding: 46px 0 20px 0;
+	}
+	.endInner {
+		background: url('images/bg-total.gif') no-repeat center 0 #f9f9f9;
+		width: 100%;
+		padding: 82px 0 0 0;
+	}
+	.assetsInner .box h4 {
+		background: url('images/mobile/ico-liquid.gif') no-repeat 43px -425px;
+		line-height: 55px;
+		font-size: 35px;
+		margin: 0;
+		padding: 20px 0 20px 124px;
+		color: #48ae94;
+		cursor: pointer;
+	}
+	.assetsInner .box h4.hide {
+		background-position: 43px 20px;
+	}
+	.assetsInner .box.investmentAssets h4 {
+		background-image: url('images/mobile/ico-investment.gif');
+		color: #8cac3d;
+	}
+	.assetsInner .box.personalAssets h4 {
+		background-image: url('images/mobile/ico-personal.gif');
+		color: #5b848a;
+	}
+	/*.assetsInner .box .dataDiv .text{ display: table-cell; width: 200px; vertical-align: middle; padding: 0 0 3px 124px; background: url('images/mobile/ico-cash.gif') no-repeat 43px 10px; height: 75px; line-height: 25px;}*/
+	.assetsInner .box .dataDiv .text {
+		display: table-cell;
+		width: auto;
+		vertical-align: middle;
+		padding: 0 62px 3px 124px;
+		background: url('images/mobile/ico-cash.gif') no-repeat 43px 10px;
+		height: 75px;
+		line-height: 25px;
+	}
+	.assetsInner .box .dataDiv span a {
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		display: inline-block;
+		background: url('images/mobile/ico-hints.gif') no-repeat 0 0px;
+		width: 57px;
+		height: 57px;
+		margin: -51px 8px 0 5px;
+		vertical-align: middle;
+		float: right;
+	}
+	.assetsInner .box .dataDiv.icoCash .text {
+		background-image: url('images/mobile/ico-cash.gif');
+	}
+	.assetsInner .box .dataDiv.icoSavings .text {
+		background-image: url('images/mobile/ico-savings.gif');
+	}
+	.assetsInner .box .dataDiv.icoCurrent .text {
+		background-image: url('images/mobile/ico-current.gif');
+	}
+	.assetsInner .box .dataDiv.icoFixedDeposit .text {
+		background-image: url('images/mobile/ico-fixed-deposit.gif');
+	}
+	.assetsInner .box .dataDiv.icoOtherLiquidAssets .text {
+		background-image: url('images/mobile/ico-other-liquid.gif');
+	}
+	.assetsInner .box .dataDiv.icoProperties .text {
+		background-image: url('images/mobile/ico-properties.gif');
+	}
+	.assetsInner .box .dataDiv.icoMpf .text {
+		background-image: url('images/mobile/ico-mpf.gif');
+	}
+	.assetsInner .box .dataDiv.icoInsurance .text {
+		background-image: url('images/mobile/ico-insurance.gif');
+	}
+	.assetsInner .box .dataDiv.icoFunds .text {
+		background-image: url('images/mobile/ico-funds.gif');
+	}
+	.assetsInner .box .dataDiv.icoStocks .text {
+		background-image: url('images/mobile/ico-stocks.gif');
+	}
+	/*.assetsInner .box .dataDiv.icoBonds .text{ background-image: url('images/mobile/ico-bonds-tc.gif');}*/
+	.assetsInner .box .dataDiv.icoBonds .text {
+		background-image: url('images/mobile/ico-bonds.gif');
+	}
+	.assetsInner .box .dataDiv.icoOther .text {
+		background-image: url('images/mobile/ico-other.gif');
+	}
+	.assetsInner .box .dataDiv.icoResidential .text {
+		background-image: url('images/mobile/ico-residential.gif');
+	}
+	.assetsInner .box .dataDiv.icoJewellery .text {
+		background-image: url('images/mobile/ico-jewellery.gif');
+	}
+	.assetsInner .box .dataDiv.icoCar .text {
+		background-image: url('images/mobile/ico-car.gif');
+	}
+	.assetsInner .box .dataDiv.icoPersonalUse .text {
+		background-image: url('images/mobile/ico-personal-use.gif');
+	}
+	.assetsInner .box .dataDiv .slider {
+		display: none;
+	}
+	.assetsInner .box .dataDiv {
+		height: auto;
+		font-size: 25px;
+	}
+	/*.assetsInner .box .dataDiv label{ display: block; border:1px solid #ddd; width: 225px; height: 37px; line-height: 37px; font-size: 25px; color: #777; padding: 0 0 0 12px; border-radius: 5px; position:absolute; right: 40px; bottom: inherit; top:50%; margin: -19px 0 0 0;}*/
+	.assetsInner .box .dataDiv label {
+		display: block;
+		border: 1px solid #ddd;
+		width: 75%;
+		height: 37px;
+		line-height: 37px;
+		font-size: 25px;
+		color: #777;
+		padding: 0 0 0 12px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		position: relative;
+		right: 0;
+		bottom: inherit;
+		top: 69%;
+		margin: 0 11%;
+	}
+	.assetsInner .box .dataDiv label input {
+		border: 0;
+		color: #777;
+		font-size: 25px;
+		text-align: right;
+		width: 100%;
+		max-width: 200px;
+		float: right;
+		padding-right: 5%;
+		line-height: 1.5;
+	}
+	.assetsInner .box .dataDiv.alert label {
+		margin: -43px 0 0 0;
+	}
+	.liabilitiesInner h3 {
+		color: #bc4d2b;
+		font-size: 35px;
+		background: url('images/mobile/ico-liabilities.gif') no-repeat 40px 0;
+		line-height: 55px;
+		margin: 0;
+		padding: 0 0 26px 124px;
+	}
+	.liabilitiesInner .box .dataDiv {
+		min-height: inherit;
+	}
+	.liabilitiesInner .box .dataDiv .slider {
+		display: none;
+	}
+	.liabilitiesInner .box .dataDiv .text {
+		display: block;
+		padding: 0 0 3px 93px;
+		background: url('images/ico-mortgage.gif') no-repeat 43px 0;
+		height: 39px;
+		line-height: 39px;
+	}
+	.liabilitiesInner .box .dataDiv label {
+		display: block;
+		border: 1px solid #ddd;
+		width: 75%;
+		height: 37px;
+		line-height: 37px;
+		font-size: 25px;
+		color: #777;
+		padding: 0 0 0 12px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		position: relative;
+		right: 0;
+		bottom: inherit;
+		top: 69%;
+		margin: 0 11%;
+	}
+	.liabilitiesInner .box .dataDiv.alert .caption {
+		display: none;
+	}
+	.liabilitiesInner .box .dataDiv.question .text {
+		background: url('images/dot-puple.gif') no-repeat 46px 8px;
+		line-height: 20px;
+		padding: 0 0 3px 66px
+	}
+	.totalInner .totalAssets {
+		background: url('images/ico-total-assets.gif') no-repeat center 0;
+		padding: 116px 0 0 0;
+		text-align: center;
+		float: left;
+		width: 50%;
+	}
+	.totalInner .totalLiabilities {
+		background: url('images/ico-total-liabilities.gif') no-repeat center 0;
+		padding: 116px 0 0 0;
+		text-align: center;
+		float: left;
+		width: 50%;
+	}
+	.endInner a.btnCheck,
+	.endInner a.btnReset {
+		display: block;
+	}
+	/*.calculator h1{ font-size: 35px; background: url('images/ico-calculator.gif') no-repeat 120px 12px; text-align: left; padding: 0 0 0 190px; }*/
+	.calculator h1 {
+		font-size: 35px;
+		background: url('images/ico-calculator.gif') no-repeat 44px 0;
+		text-align: left;
+		padding: 80px 0 0 44px;
+		width: 100%;
+		line-height: 1.5;
+		height: auto;
+	}
+	.calculator .inner p {
+		color: #666666;
+		font-size: 25px;
+		line-height: 32px;
+		padding: 20px 75px 20px 40px;
+	}
+	.dataInner .dataDiv {
+		display: block;
+		float: inherit;
+		width: inherit;
+		position: relative;
+		height: inherit;
+		margin: 0 0 30px 0;
+	}
+	.dataInner .dataDiv .text {
+		color: #4c2683;
+		font-size: 25px;
+		line-height: 32px;
+		display: block;
+		width: auto;
+		padding: 0 0 0 40px;
+		height: inherit;
+		vertical-align: middle;
+	}
+	.dataInner .dataDiv label {
+		display: block;
+		border: 1px solid #ddd;
+		width: 230px;
+		height: 37px;
+		line-height: 37px;
+		font-size: 25px;
+		color: #777;
+		margin: 30px 0 0px 40px;
+		padding: 0 0 0 12px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		position: relative;
+		right: inherit;
+		top: inherit;
+	}
+	.dataInner .dataDiv label {
+		display: block;
+		border: 1px solid #ddd;
+		width: 80%;
+		height: 37px;
+		line-height: 37px;
+		font-size: 25px;
+		color: #777;
+		margin: 30px 0 0px 40px;
+		padding: 0 0 0 12px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		position: relative;
+		right: inherit;
+		top: inherit;
+	}
+	.dataInner .dataDiv label input {
+		border: 0;
+		color: #777;
+		font-size: 25px;
+		text-align: right;
+		width: 200px;
+		line-height: 1.5;
+		margin-right: 5%;
+		float: right;
+	}
+	.dataInner .dataDiv.right span {
+		padding: 0 0 0 40px;
+	}
+	.assetsInner h3 {
+		font-size: 35px;
+		background: url('images/mobile/ico-assets.gif') no-repeat 40px 0;
+		line-height: 63px;
+		padding: 0 0 6px 124px;
+		position: relative;
+	}
+	.assetsInner h3 a {
+		display: inline-block;
+		background: url('images/mobile/ico-hints.gif') no-repeat 0 0px;
+		width: 57px;
+		height: 57px;
+		margin: -53px -26px 0 0px;
+		position: absolute;
+		right: 40px;
+		top: 50%;
+		vertical-align: middle;
+	}
+	.newLeft {
+		position: relative;
+		float: inherit;
+		width: auto;
+	}
+	.newRight {
+		position: relative;
+		float: inherit;
+		width: auto;
+	}
+	.liabilitiesInner .box .dataDiv {
+		color: #666666;
+		margin: 0 0 13px 0;
+		position: relative;
+		min-height: 82px;
+	}
+	.liabilitiesInner .box .dataDiv .text {
+		font-size: 25px;
+		/* position: relative; */
+		/* width: 200px; */
+		display: table-cell;
+		vertical-align: middle;
+		padding: 0px 97px 0px 124px;
+		background: url('images/mobile/ico-mortgage.gif') no-repeat 43px 10px;
+		height: 75px;
+		line-height: 1.2;
+	}
+	.liabilitiesInner .box .dataDiv span a {
+		position: absolute;
+		right: 4%;
+		top: 10px;
+		display: inline-block;
+		background: url('images/mobile/ico-hints.gif') no-repeat 0 0px;
+		width: 57px;
+		height: 57px;
+		margin: 0 0 0 5px;
+		vertical-align: middle;
+		float: right;
+	}
+	.liabilitiesInner .box .dataDiv.icoMortgage .text {
+		background-image: url('images/mobile/ico-mortgage.gif');
+	}
+	.liabilitiesInner .box .dataDiv.question .text {
+		background: url('images/dot-puple.gif') no-repeat 50px 25px;
+		line-height: 25px;
+		padding: 0 0 3px 75px;
+		font-size: 20px;
+	}
+	.liabilitiesInner .box .dataDiv.question .text {
+		width: 240px;
+	}
+	.liabilitiesInner .box .dataDiv.question .text br {
+		display: none;
+	}
+	.liabilitiesInner .box .dataDiv.icoCarLoan .text {
+		background-image: url('images/mobile/ico-car-loan.gif');
+	}
+	.liabilitiesInner .box .dataDiv.icoCredit .text {
+		background-image: url('images/mobile/ico-credit.gif');
+	}
+	.liabilitiesInner .box .dataDiv.icoOverdraft .text {
+		background-image: url('images/mobile/ico-overdraft.gif');
+	}
+	.liabilitiesInner .box .dataDiv.icoOtherLoan .text {
+		background-image: url('images/mobile/ico-other-loan.gif');
+	}
+	.liabilitiesInner .box .dataDiv label input {
+		border: 0;
+		color: #777;
+		font-size: 25px;
+		text-align: right;
+		width: 70%;
+		float: right;
+		padding-right: 5%;
+		line-height: 1.5;
+	}
+	.liabilitiesInner .box .dataDiv.question {}
+	.liabilitiesInner .box .dataDiv .caption2 {
+		color: red;
+		padding: 24px 40px 24px 75px;
+	}
+	.liabilitiesInner .box .dataDiv.alert2 .caption2 {}
+	.en .liabilitiesInner .box .dataDiv.question.question1 .text,
+	.en .liabilitiesInner .box .dataDiv.question.question2 .text {
+		background-position: 50px 10px;
+	}
+	.en .liabilitiesInner .box .dataDiv.question.question3 .text {
+		background-position: 50px 20px;
+	}
+	.tc .liabilitiesInner .box .dataDiv.question.question1 .text,
+	.tc .liabilitiesInner .box .dataDiv.question.question2 .text {
+		background-position: 50px 25px;
+	}
+	.tc .liabilitiesInner .box .dataDiv.question.question3 .text {
+		background-position: 50px 35px;
+	}
+	.liabilitiesInner .box .dataDiv.question.question1 label {
+		top: 40px;
+	}
+	.liabilitiesInner .box .dataDiv.question.question2 label {
+		top: 40px;
+	}
+	.liabilitiesInner .box .dataDiv.question.question3 label {
+		top: 40px;
+	}
+	.tc .liabilitiesInner .box .dataDiv.question.question1 label {
+		top: 37px;
+	}
+	.tc .liabilitiesInner .box .dataDiv.question.question2 label {
+		top: 37px;
+	}
+	.tc .liabilitiesInner .box .dataDiv.question.question3 label {
+		top: 37px;
+	}
+	.totalInner .totalAssets h3,
+	.totalInner .totalLiabilities h3 {
+		font-size: 25px;
+		line-height: 36px;
+	}
+	.totalInner .totalAssets h3 strong,
+	.totalInner .totalLiabilities h3 strong {
+		display: block;
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.endInner h3 {
+		width: 460px;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 50px;
+		line-height: 56px;
+	}
+	.endInner a {
+		font-size: 25px;
+		line-height: 28px;
+	}
+	.endInner a.btnCheck {
+		width: 336px;
+		margin: 0 auto 40px auto;
+		height: auto;
+		background-position: left center;
+	}
+	.endInner a.btnReset {
+		width: 117px;
+		margin: 0 auto;
+		height: auto;
+		background-position: left center;
+	}
+	.endInner .socIco {
+		padding: 60px 0 40px 0;
+	}
+	.endInner .socIco a {
+		height: auto;
+		width: 80px;
+		margin: 0 15px;
+		padding: 70px 0 0 0;
+		text-decoration: none;
+		text-align: center;
+		font-size: 25px;
+		line-height: 30px;
+		background-position: center top;
+		vertical-align: top;
+	}
+	.endInner .socIco a.icoDoc {
+		background-image: url('images/mobile/btn-docs.gif');
+	}
+	.endInner .socIco a.icoPrint {
+		background-image: url('images/mobile/btn-print.gif');
+	}
+	.endInner .socIco a.icoPdf {
+		background-image: url('images/mobile/btn-pdf.gif');
+	}
+	.endInner .socIco a.icoEmail {
+		background-image: url('images/mobile/btn-email.gif');
+	}
+	.endInner .socIco a.icoFb {
+		background-image: url('images/mobile/btn-fb.gif');
+	}
+	#chart {
+		position: absolute;
+		left: 176px;
+		top: 50px;
+	}
+	#chart svg {
+		position: absolute;
+		left: -205px;
+		top: -100px;
+		-moz-transform: scale(1.48, 1.48);
+		transform: scale(1.48, 1.48);
+		-webkit-transform: scale(1.48, 1.48);
+		transform-origin-x: 0;
+		transform-origin-y: 0;
+		-webkit-transform-origin-x: 0;
+		-webkit-transform-origin-y: 0;
+	}
+	/*.android #chart{}
+.android #chart svg{ position: absolute; left: -205px; top: -100px;}*/
+	.result h2 {
+		font-family: Gotham Rounded A, Gotham Rounded B, 'MYuen HK Semibold', 'Microsoft JhengHei', sans-serif;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 40px;
+		height: 132px;
+		margin: 0;
+		padding: 20px 40px;
+		color: #4c2683;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: left;
+	}
+	.result .chart {
+		height: 655px;
+		position: relative;
+		width: 100%;
+		background: #fff url('images/mobile/result-chart.gif') no-repeat center 0px;
+		overflow: hidden;
+	}
+	.result .inner p {
+		padding: 20px 28px 20px 40px;
+		color: #777;
+		font-size: 25px;
+		line-height: 32px;
+		background: #fff;
+	}
+	.result .chart .emergencyFund {
+		position: absolute;
+		left: 5px;
+		top: 0px;
+		border: 0px solid #ddd;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		text-align: center;
+		font-size: 20px;
+		line-height: 24px;
+		color: #4c2683;
+		padding: 0px 0px 0 0;
+		width: 135px;
+		height: auto;
+	}
+	.result .chart .moneyManagement {
+		position: absolute;
+		left: 470px;
+		top: 0px;
+		border: 0px solid #ddd;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		text-align: center;
+		font-size: 20px;
+		line-height: 24px;
+		color: #48ae94;
+		padding: 0px 0 0 0px;
+		width: 151px;
+		height: auto;
+	}
+	.result .chart .debtManagement {
+		position: absolute;
+		left: 241px;
+		top: 490px;
+		border: 0px solid #ddd;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		text-align: center;
+		font-size: 20px;
+		line-height: 24px;
+		color: #79146a;
+		padding: 45px 0 0 0;
+		width: 141px;
+		height: auto;
+	}
+	.result .chart .emergencyFund span {
+		display: block;
+		position: absolute;
+		right: 50%;
+		top: 60px;
+		margin: 0 -28px 0 0;
+		background: url('images/mobile/ico-chart-1.gif') no-repeat 0 0;
+		width: 56px;
+		height: 56px;
+	}
+	.result .chart .moneyManagement span {
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 60px;
+		margin: 0 0 0 -28px;
+		background: url('images/mobile/ico-chart-2.gif') no-repeat 0 0;
+		width: 56px;
+		height: 56px;
+	}
+	.result .chart .debtManagement span {
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: -19px;
+		margin: 0 0 0 -28px;
+		background: url('images/mobile/ico-chart-3.gif') no-repeat 0 0;
+		width: 56px;
+		height: 56px;
+	}
+	.tc .result .chart .emergencyFund {
+		left: 5px;
+		padding: 0px 0px 0 0;
+		width: 135px;
+		top: 20px;
+	}
+	.tc .result .chart .moneyManagement {
+		padding: 7px 0 0 0px;
+		width: 135px;
+		height: 36px;
+	}
+	.tc .result .chart .debtManagement {
+		height: auto;
+	}
+	.tc .result .chart .emergencyFund span {
+		top: 40px;
+	}
+	.tc .result .chart .moneyManagement span {
+		top: 40px;
+	}
+	.result .chart .hints {
+		position: absolute;
+		right: 50%;
+		bottom: 0px;
+		border: 0px solid #ddd;
+		color: #4c2683;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		width: 441px;
+		margin: 0 -220px 0 0;
+		height: 49px;
+		background: url('images/mobile/ico-chart-table.gif') no-repeat 0 0;
+	}
+	.result .chart .hints .left {
+		position: absolute;
+		left: 0;
+		top: 13px;
+		display: block;
+		width: 164px;
+	}
+	.result .chart .hints .right {
+		position: absolute;
+		right: 0;
+		top: 13px;
+		display: block;
+		width: 164px;
+	}
+	.result .resultBox span.line {
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: #e3e3e3;
+		margin: 18px auto 0 auto;
+	}
+	.tc .result .chart .hints .left {
+		top: 12px;
+	}
+	.tc .result .chart .hints .right {
+		top: 12px;
+	}
+	.result .resultBox {
+		position: relative;
+		padding: 26px 0px 0px 0px;
+	}
+	.result .resultBox h4 {
+		font-size: 35px;
+		padding: 0 0 2px 112px;
+		height: auto;
+		line-height: 50px;
+		background: url('images/mobile/ico-result-1.gif') no-repeat 40px 0;
+		color: #4c2683;
+	}
+	.result .resultBox.debtManagement h4 {
+		color: #79146a;
+		background: url('images/mobile/ico-result-2.gif') no-repeat 35px 0;
+	}
+	.result .resultBox.moneyManagement h4 {
+		color: #48ae94;
+		background: url('images/mobile/ico-result-3.gif') no-repeat 40px 0;
+	}
+	.result .resultBox h5 {
+		color: #7bb815;
+		font-size: 35px;
+		line-height: 60px;
+		padding: 0 0 0 40px;
+		position: relative;
+		right: inherit;
+		top: inherit;
+		text-align: left;
+	}
+	.result .resultBox h5 strong {
+		font-size: 45px;
+	}
+	.result .resultBox .contentBox p {
+		padding: 20px 28px 0 40px;
+		font-size: 25px;
+		line-height: 30px;
+		background: none;
+	}
+	.result .resultBox ul li {
+		display: block;
+		margin: 0;
+		padding: 0 28px 0 60px;
+		background: url('images/mobile/dot-result-2.gif') no-repeat 42px 12px;
+		font-size: 25px;
+		line-height: 30px;
+		color: #777;
+	}
+	.result .resultBox.moneyManagement ul li {
+		background-image: url('images/mobile/dot-result-3.gif');
+	}
+	.result .endInner a {
+		width: 242px;
+		height: 59px;
+		border: 1px solid #fff;
+		color: #fff;
+		text-decoration: none;
+		background: none;
+		line-height: 59px;
+		font-size: 25px;
+		text-align: center;
+		padding: 0;
+	}
+	.result .endInner .socIco {
+		padding: 50px 0 0 0;
+	}
+	.result .endInner .socIco a {
+		background-repeat: no-repeat;
+		border: none;
+		margin: 0 15px;
+		height: auto;
+		width: 80px;
+		padding: 70px 0 0 0;
+		text-decoration: none;
+		text-align: center;
+		font-size: 25px;
+		line-height: 30px;
+		background-position: center top;
+		vertical-align: top;
+	}
+	.result .endInner .socIco a.icoDoc {
+		background-image: url('images/mobile/btn-docs-blue.png');
+	}
+	.result .endInner .socIco a.icoPrint {
+		background-image: url('images/mobile/btn-print-blue.png');
+	}
+	.result .endInner .socIco a.icoPdf {
+		background-image: url('images/mobile/btn-pdf-blue.png');
+	}
+	.result .endInner .socIco a.icoEmail {
+		background-image: url('images/mobile/btn-email-blue.png');
+	}
+	.result .endInner .socIco a.icoFb {
+		background-image: url('images/mobile/btn-fb-blue.png');
+	}
+	.result .endInner {
+		background: #4c2683;
+		padding: 50px 0 28px 0;
+	}
+	.result .resultBox p.error {
+		position: relative;
+		right: inherit;
+		top: inherit;
+		font-size: 25px;
+		line-height: 30px;
+		text-align: left;
+		padding: 0 28px 0 40px;
+	}
+	/*.btnCollapse{ right: 136px; top: 50px; z-index: 99;}*/
+	.btnCollapse {
+		right: 86px;
+		top: 23px;
+		z-index: 99;
+	}
+	.lightboxBg {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 9999;
+	}
+	.lightboxContent {
+		position: fixed;
+		width: 562px;
+		height: 368px;
+		left: 50%;
+		top: 50%;
+		margin: -144px 0 0 -281px;
+		z-index: 10000;
+		background: #fff url('images/mobile/ico-hints-question.gif') no-repeat 48px 28px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		-webkit-backface-visibility: hidden;
+	}
+	/*.lightboxContent p{ color: #fff; font-size: 25px; line-height: 32px; text-align: left; padding: 98px 48px 0 48px; margin: 0;}*/
+	.lightboxContent p {
+		color: #000;
+		font-size: 25px;
+		line-height: 32px;
+		text-align: left;
+		padding: 98px 48px 0 48px;
+		margin: 0;
+	}
+	.lightboxContent .btnClose {
+		display: block;
+		width: 240px;
+		height: 55px;
+		color: #fff;
+		font-size: 25px;
+		line-height: 55px;
+		text-align: center;
+		border: 2px solid #fff;
+		position: absolute;
+		left: 50%;
+		bottom: 28px;
+		margin: 0 0 0 -120px;
+		text-decoration: none;
+		background: #4d2683;
+		z-index: 10001;
+	}
+	.android .lightboxBg {
+		position: absolute;
+	}
+	/*
+.calculator-popup { width: 562px; background: none;}
+.calculator-popup .calculator-popup-t { background: url(images/mobile/bg-calculator-popup-t.png) 0 0 no-repeat; width: 562px; height: 25px; }
+.calculator-popup .calculator-popup-b { background: url(images/mobile/bg-calculator-popup-b.png) 0 0 no-repeat; width: 562px; height: 25px; }
+.calculator-popup .calculator-popup-innerwrapper { background: url(images/mobile/bg-calculator-popup-m.png) 0 0 repeat-y; width: 562px; }
+.calculator-popup .calculator-popup-innerwrapper .inner {padding: 15px 30px;}
+.calculator-popup .calculator-popup-innerwrapper .inner h1 {margin-top: 0; font-size: 35px;}
+.calculator-popup .calculator-popup-innerwrapper .inner h2 {margin: 0 0 28px 0; font-size: 35px; color: #4c2683;}
+.calculator-popup .calculator-popup-innerwrapper .inner p {margin: 0; font-size: 25px; line-height: 30px; color: #777; padding: 0 0 66px 0;}
+.calculator-popup .calculator-popup-innerwrapper .inner .tac { text-align: center;}
+.calculator-popup .calculator-popup-innerwrapper .inner .btn {width: 244px !important; font-size: 25px; line-height: 59px; height: 59px; background: #4c2683; color: #fff; display: inline-block; padding: 0px; text-align: center;}
+.calculator-popup .calculator-popup-innerwrapper .inner ul li {list-style-type: disc; margin-left: 20px;}
+*/
+	.calculator-popup {
+		width: 97%;
+		height: auto;
+		background: none;
+		margin: 0 auto;
+		margin-left: 3%;
+	}
+	.calculator-popup .calculator-popup-t {
+		background: url(images/mobile/bg-calculator-popup-t.png) 0 0 no-repeat;
+		width: 100%;
+		height: 25px;
+	}
+	.calculator-popup .calculator-popup-b {
+		background: url(images/mobile/bg-calculator-popup-b.png) 0 0 no-repeat;
+		width: 100%;
+		height: 25px;
+	}
+	.calculator-popup .calculator-popup-innerwrapper {
+		background: url(images/mobile/bg-calculator-popup-m.png) 0 0 repeat-y;
+		width: 100%;
+	}
+	.calculator-popup .calculator-popup-innerwrapper .inner {
+		padding: 0px;
+		width: 100%;
+	}
+	.calculator-popup .calculator-popup-innerwrapper .inner h1 {
+		margin-top: 0;
+		font-size: 35px;
+	}
+	.calculator-popup .calculator-popup-innerwrapper .inner h2 {
+		margin: -1px 5% 20px 5%;
+		font-size: 35px;
+		color: #4c2683;
+		overflow: hidden;
+	}
+	.calculator-popup .calculator-popup-innerwrapper .inner p {
+		padding: 0 5% 66px 5%;
+		font-size: 25px;
+		line-height: 30px;
+		color: #777;
+	}
+	.calculator-popup .calculator-popup-innerwrapper .inner .tac {
+		text-align: center;
+	}
+	.calculator-popup .calculator-popup-innerwrapper .inner .btn {
+		width: 244px !important;
+		font-size: 25px;
+		line-height: 59px;
+		height: 59px;
+		background: #4c2683;
+		color: #fff;
+		display: inline-block;
+		padding: 0px;
+		text-align: center;
+	}
+	.calculator-popup .calculator-popup-innerwrapper .inner ul li {
+		list-style-type: disc;
+		margin-left: 20px;
+	}
+	.calculator-popup-about {
+		width: 100%;
+		background: none;
+	}
+	.calculator-popup-about .calculator-popup-t {
+		background: url(images/mobile/bg-calculator-popup-t.png) 0 0 no-repeat;
+		width: 562px;
+		height: 25px;
+	}
+	.calculator-popup-about .calculator-popup-b {
+		background: url(images/mobile/bg-calculator-popup-b.png) 0 0 no-repeat;
+		width: 562px;
+		height: 25px;
+	}
+	.calculator-popup-about .calculator-popup-innerwrapper {
+/*		background: url(images/mobile/bg-calculator-popup-m.png) 0 0 repeat-y;*/width: 98%;margin-left: 10px;}
+	.calculator-popup-about .calculator-popup-innerwrapper .inner {
+		padding: 15px 3%;
+		height: 603px;
+		overflow: auto;
+		width: 94%;
+	}
+	.calculator-popup-about .calculator-popup-innerwrapper .inner h1 {
+		margin-top: 0;
+		font-size: 35px;
+		line-height: 40px;
+	}
+	.calculator-popup-about .calculator-popup-innerwrapper .inner h2 {
+		margin: 0 0 28px 0;
+		font-size: 25px;
+		color: #4c2683;
+	}
+	.calculator-popup-about .calculator-popup-innerwrapper .inner p {
+		margin: 0;
+		font-size: 25px;
+		line-height: 30px;
+		color: #666;
+		padding: 0 0 20px 0;
+	}
+	.calculator-popup-about .calculator-popup-innerwrapper .inner ul li {
+		list-style-type: disc;
+		margin-left: 25px;
+		line-height: 30px;
+		font-size: 25px;
+		color: #666;
+	}
+	.calculator-popup-about .calculator-popup-innerwrapper .inner ol li {
+		margin-left: 55px;
+		font-size: 25px;
+		line-height: 30px;
+		color: #666;
+	}
+	#fancybox-close {
+		right: 0 !important;
+		top: -50px !important;
+	}
+	#fancybox-content {
+		overflow: visible;
+	}
+	/*#fancybox-frame{ height: 700px;}*/
+	#fancybox-frame {
+		height: auto;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+	/*  Rating / Feedback section 21/01/2015 */
+	.inner .opinion {
+		width: 90%;
+	}
+	.inner .opinion .feedback img {
+		width: 95%;
+	}
+	.inner .opinion .rating table,
+	.opinion .rating p {
+		color: #4c2683;
+		margin: auto;
+		line-height: 28px;
+		width: 100%;
+		padding: 0;
+	}
+	.opinion .rating p {
+		padding: 0 0 15px;
+	}
+	/*  End Rating / Feedback section 21/01/2015 */
+}

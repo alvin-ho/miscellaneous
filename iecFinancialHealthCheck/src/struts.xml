@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- 默认的视图主题 -->
+    <constant name="struts.ui.theme" value="simple" />
+	
+	 <package name="user" namespace="/admin" extends="struts-default">
+	 	<action name="iec_action_*" class="hk.hkiec.web.action.IecAction" method="{1}">
+	 	</action>
+	 		 	
+	 	<action name="PDF" class="hk.hkiec.web.action.PDFAction" method="printResumeToPDF">
+	 	</action>
+	 </package>
+</struts>

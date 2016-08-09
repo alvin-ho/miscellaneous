@@ -1,0 +1,130 @@
+/* line 3, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+html {
+  height: 100%;
+  position: relative;
+  overflow: auto; }
+
+/* line 4, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+body {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+/* line 9, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+.footerfix {
+  padding-bottom: 150px; }
+
+/* line 12, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+.footercontenter {
+  font-size: 15px;
+  overflow: hidden;
+  position: absolute;
+  height: auto;
+  bottom: 0px;
+  width: 100%;
+  /* This selector is reserved for reversing the footer layout. */
+  /* This selector is reserved for reversing the footer layout. */ }
+  /* line 19, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .site-footer {
+    padding-bottom: 25px;
+    /*height: 225px;*/
+    font-size: 0.8em;
+    color: #FFFFFF;
+    background-color: #4a2680;
+    width: 100%; }
+  /* line 30, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .site-footer .row {
+    background-color: #4a2680; }
+  /* line 34, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .site-footer .btn {
+    font-size: 0.85em; }
+  /* line 39, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-left,
+  .footercontenter .footer-right {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  /* line 44, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-right {
+    text-align: center; }
+  /* line 48, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-right .input-group {
+    display: inline-block;
+    text-align: left; }
+  /* line 53, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-right .btn {
+    padding: 3px 18px 3px 18px; }
+  /* line 57, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-copyright {
+    margin: 10px 0 0 0; }
+  /* line 61, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-menu {
+    padding: 0;
+    margin: 10px 0 0 0; }
+  /* line 66, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-hyperlinks-wrapper {
+    text-align: center; }
+  /* line 70, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-menu.footer-hyperlinks {
+    list-style: none;
+    text-align: center; }
+  /* line 75, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-menu li {
+    list-style: none;
+    display: inline-block;
+    /*	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;*/ }
+  /* line 84, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-menu a {
+    margin: 0 20px 0 0;
+    color: #FFFFFF; }
+  /* line 90, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-logo {
+    margin-bottom: 20px;
+    text-align: center; }
+  /* line 95, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-logo {
+    padding-right: 20px;
+    border-right: 1px solid #FFFFFF;
+    display: table-cell;
+    vertical-align: top; }
+  /* line 102, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-logo img {
+    width: 120px; }
+  /* line 111, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-statement {
+    padding-left: 20px;
+    display: table-cell;
+    vertical-align: top; }
+  /* line 117, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-statement p {
+    margin: 0; }
+  /* line 121, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+  .footercontenter .footer-copyright {
+    text-align: center; }
+  @media (min-width: 768px) {
+    /* line 126, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+    .footercontenter .site-footer {
+      font-size: 0.85em;
+      /* height: 134px; */ }
+    /* line 131, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+    .footercontenter .footer-right {
+      text-align: right; }
+    /* line 135, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+    .footercontenter .footer-menu {
+      float: right; }
+    /* line 139, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+    .footercontenter .footer-menu a {
+      margin: 0 0 0 20px; }
+    /* line 143, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+    .footercontenter .footer-menu li {
+      float: left; }
+    /* line 147, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+    .footercontenter .footer-logo img {
+      width: auto; }
+    /* line 151, D:/pjs/IEC/dev/iecRetirementPlanner/css/footer/lib/footer.scss */
+    .footercontenter .footer-copyright {
+      text-align: left; } }
+
+/*# sourceMappingURL=footer.css.map */

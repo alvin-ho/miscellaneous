@@ -1,0 +1,167 @@
+.slideContainer > #previous{		margin-right:10px;	}
+.slideContainer > #next{		margin-left:10px;	}
+
+
+.description a.analysisBtn{
+	background-image:url('../images/en/index_start_btn.png');
+}
+.description .leftCol a.startBtn{
+	background-image:url('../images/en/index_question_btn.png');
+}
+.description .leftCol a.calBtn, a.mCalBtn{
+	background-image:url('../images/en/calculator_en.png');
+}
+
+.investment #investmentCon .qBox:nth-child(2) label
+{
+	width:100%;
+}
+
+.hoverele
+{
+	background:url('../images/share/stepbox.png') no-repeat;
+	width: 155px;
+	right: -70px;
+	font-size: 1.0em;
+	padding-top:11px;
+	padding-left:5px;
+	padding-right:5px;
+}
+#track0 .hoverele, #track2 .hoverele, #track4 .hoverele{	padding-top:16px;	}
+#tabs ul li{	width:90%;	}
+
+#tabs ul li a
+{
+	padding:17px 6px 0 50px;
+	font-size: 12px;
+	
+}
+/*
+.yellowBtn,.redBtn,.greenBtn
+{
+	background-position:0px center;
+}
+*/
+
+.indication .yellowBtn, .indication .redBtn, .indication .greenBtn
+{
+	background-position:0 0;
+}
+
+#u_rate{	width:26%;	}
+
+.ratingCon span{
+	/*font-size:12px;*/
+}
+
+.resultContainer .actionBtn{
+	background: url(../../images/en/action_now_btn_en.png) no-repeat;
+}
+
+.re_top .re_top_budget1{
+	font-size: 15px;
+	line-height: 27px;
+}
+.re_highlight_big{
+	font-size:18px;
+}
+.re_big_text{
+	font-size:25px;
+}
+
+.re_top_budget2{
+	font-size: 16px;
+	line-height: 27px;
+	margin: 20px 0px 0px 80px;
+}
+
+.middle_header_line{
+	background: #FFFFFF url('../images/share/actionPlan.png') no-repeat 347px center;
+}
+.re_more_box{
+	font-size: 13px;
+}
+
+.question.m_expenses{
+	width:36%;
+}
+.sliderWidget.shortM_Widget.m_expenses{
+	width: 39%;
+}
+.re_header{
+	background: url('../images/en/shortfall_en.png') no-repeat;
+}
+
+.re_header .re_money_l{
+	top: 190px;
+	left: 76px;
+}
+
+.re_header .re_money_r {
+	top: 265px;
+	left: 585px;
+}
+
+.re1_header .re1_money_l{
+	top: 267px;
+	left: 129px;
+    width: 21%;
+}
+
+.re1_header .re1_money_r {
+	top: 188px;
+	left: 626px;
+    width: 21%;
+}
+
+.balance_header .re1_money_l{
+	top: 250px;
+}
+
+.balance_header .re1_money_r {
+	top: 250px;
+	left: 498px;
+}
+
+.txtVA{	vertical-align:super;}
+
+.actionTitle{	/*margin-right:50px;*/	}
+
+.re_remark{	padding:0 43px; text-align:left;	}
+
+.re1_header{
+	background: url('../images/en/no_shortfall_en.png') no-repeat;
+}
+
+.tabletMiddle_header_line
+{
+	background-position: 371px center;
+	padding-left: 107px;
+}
+
+.slideContainer {
+	width:100%;
+}
+
+.slideContainer > #previous ,.slideContainer > #next{
+	width:5%;
+	display:inline-block;
+}
+
+.slideContainer > span.sTitle{
+	display:inline-block;
+	width:67%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.re1_actiontitle_en
+{
+	background-position:317px 0px;
+}
+
+.middle_header_line p
+{
+	margin-top: 6px;
+	font-weight: bold;
+}

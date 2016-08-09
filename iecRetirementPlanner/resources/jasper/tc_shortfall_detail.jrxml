@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="shortfall_detail_01" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="246b3844-8d22-4d70-ae5a-7868d577fc03">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="ireport.zoom" value="1.4641000000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="520" splitType="Stretch">
+			<image>
+				<reportElement uuid="a31572b8-f9e3-4e89-9edb-a878f3363bfe" x="40" y="101" width="25" height="17"/>
+				<imageExpression><![CDATA["iec-tactics.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="9f47ab1e-312f-4e2c-a893-27edd51b9c33" mode="Transparent" x="68" y="102" width="203" height="15" forecolor="#2DBDB6" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[檢討投資策略及改善投資回報]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7bcc0bd4-affd-4b1f-9a65-0bb84cb9f072" x="81" y="123" width="438" height="15" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[你的投資策略將直接影響你退休時可獲得的金額。]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="f0449daa-1b51-4a1c-bd9c-e761a62198b9" x="69" y="128" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="063a8dce-6749-4863-bf4c-ffc661e56822" x="81" y="143" width="438" height="45" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[每個強積金計劃都為成員提供不同的基金選擇。不同基金有不同程度的風險和潛在回報，一般而言，基金潛在回報愈高，風險亦愈高。小心選擇合適自己風險回報要求的基金組合。請瀏覽積金局網頁了解更多有關強積金投資的資料。]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="5c44d6aa-9418-46ea-9006-506e7febbc71" x="69" y="148" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="c73a386d-9ba6-4c53-b954-d4e2d52fd3bc" x="81" y="187" width="438" height="15" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[考慮你的投資期(即距離退休還有多長時間及退休生活年期)、投資目標、經驗及風險承受能力。]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="0c06d7ad-2d7b-410f-a292-4041d49fe07e" x="69" y="192" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="e366412e-8e86-4f49-85cc-a3a7398a2462" x="42" y="205" width="22" height="22"/>
+				<imageExpression><![CDATA["iec-plusMoney.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="9104dffd-2a83-4ec0-9797-7796e6fa86f9" x="69" y="236" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="c16d323a-b11a-4be3-8112-35e03f24e0ca" x="80" y="232" width="438" height="30" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[想想如何增加收入，從而可以有更多資金用作退休儲蓄或投資之用。例如可以考慮工餘時間兼職或做特約工作(如僱主允許的話)。長線而言，可以考慮透過進修及專業培訓以增加收入。
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bfdc3106-cff3-45b7-9d57-e8367a81e53e" mode="Transparent" x="68" y="210" width="203" height="14" forecolor="#2DBDB6" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[增加收入]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="210eea6f-cb84-47e9-b697-1f17295394d6" x="81" y="292" width="438" height="30" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[以上的預期退休所需金額是按你輸入的預計退休後每月開支計算。如果你面對一個較大的退休預算差額，你可以重新考慮你的退休生活方式，看看有沒有一些開支可以減省。]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="3cb219b4-75d3-448e-afe8-9825997ce6ce" x="40" y="268" width="25" height="19"/>
+				<imageExpression><![CDATA["iec-control.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="7640ed49-eed5-4997-bc5a-44facef89a69" x="69" y="329" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="767f82d0-31af-435f-9624-e6d1b90adf59" x="81" y="357" width="438" height="15" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[飲食健康和經常運動，保持身體健康，可以有助減低醫療開支。]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="8f0879bf-d795-47c2-8276-9fd8b687c9b1" x="69" y="297" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="d807c856-9a82-41af-815d-b71abf49ebaf" x="69" y="362" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="7fb28b8b-db3c-4fbb-8459-fb4b3f866fac" x="81" y="324" width="438" height="30" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[較簡樸的生活方式可以減低退休所需的金額，例如假若你計劃退休後每年去兩次旅遊，可考慮改為一次。另外，你可以減少外出用膳，多些在家享受入廚樂，亦有助減低退休後膳食方面的支出。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a139e781-d93d-4a17-9521-9a6ab4e97070" mode="Transparent" x="68" y="271" width="203" height="14" forecolor="#2DBDB6" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[控制退休後的開支]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="54342f40-1604-42b0-a163-9ebaa90d6fd6" x="80" y="403" width="438" height="30" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[如果你面對一個較大的退休預算差額，你可以考慮延遲退休繼續工作的可行性。這可以減低退休所需金額，亦讓你有更多時間累積工作收入。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="24a18a89-d5f9-4e30-9728-d35cfaaa09d4" mode="Transparent" x="68" y="381" width="203" height="14" forecolor="#2DBDB6" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[考慮延遲退休]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="5a4cc9ef-5af1-4bc1-a527-d857c7ce4b07" x="42" y="373" width="22" height="24"/>
+				<imageExpression><![CDATA["iec-consider.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="36d9f48c-de2c-4743-94a8-1df904a41819" x="69" y="408" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="875d116b-993a-4cf0-a057-99197cf3fbd2" x="69" y="59" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="1951c6f1-275c-47b0-b2eb-e46f320354a0" x="81" y="55" width="438" height="15" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[考慮預留一筆資金作應急錢用途。]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="aca4cd0c-a769-40c0-bfde-491fb1561760" x="69" y="82" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="3a704719-0f12-4aba-9d9a-3b8e7c61dcb5" x="83" y="38" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["square.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="8e4509ce-c529-4142-8846-cf8945ad7365" x="81" y="78" width="438" height="15" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[未雨綢繆，力求在退休之前還清所有債務，包括按揭貸款、個人貸款和信用卡債務。]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="f407f2e0-5477-4f07-ae9a-3580a4f52273" x="83" y="6" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["square.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="921bcac7-b88e-41bf-a074-1436c43f5730" x="95" y="33" width="423" height="15" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[訂立規條：例如為生日或節慶禮物訂立價格上限，或考慮親手製作禮物。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d82139c6-9082-4d3e-8ba6-3fceb87f1965" x="95" y="2" width="423" height="30" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[避免一時衝動購物：使用信用卡購物前，先想想累積卡數的後果。如果你不能妥善控制自己使用信用卡，嘗試把信用卡留在家中。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ccec7ebb-a18b-4b4d-afd4-b51fc0245e24" mode="Transparent" x="127" y="485" width="219" height="19" forecolor="#2DBDB6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isUnderline="true" isStrikeThrough="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[https://www.thechinfamily.hk/web/tc/pre-retiree/]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d2ddb0d7-b508-4b0a-b797-bec88e3103ae" mode="Transparent" x="345" y="485" width="135" height="18" forecolor="#414141" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[了解更多有關籌劃退休的資料]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c572e96b-18ef-47ae-bf4a-5abd42636fb0" mode="Transparent" x="97" y="485" width="30" height="18" forecolor="#414141" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[瀏覽]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

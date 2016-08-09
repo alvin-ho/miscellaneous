@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="debt" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="147591df-c3f0-405a-a675-bb4a5a107743">
+	<property name="ireport.zoom" value="1.3310000000000022"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="PATH" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="9960aa85-8844-4745-a762-2dfac13a6d6f" x="680" y="-20" width="123" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Gotham Rounded Book"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="343" splitType="Stretch">
+			<frame>
+				<reportElement uuid="a3410039-0291-4504-b5db-b35f18b776b2" x="14" y="136" width="758" height="168"/>
+				<staticText>
+					<reportElement uuid="c2ad1099-7fd2-4e28-a373-3f1085bd9a17" x="23" y="35" width="735" height="31"/>
+					<textElement markup="none">
+						<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[Pay off your debts as much as you can each month, at least pay the minimum payment requirement you owe on each loan otherwise late and finance charges will be incurred.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="5acc2c67-9113-472f-a863-1b4703b7d9d8" x="10" y="10" width="656" height="20" forecolor="#2CB7B4"/>
+					<textElement>
+						<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[You can consider managing your debts with the following options:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="c5dfc09c-75dd-4f66-b4bf-20dc770100af" x="23" y="67" width="735" height="20"/>
+					<textElement markup="none">
+						<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[If there is a need to pay the minimum amount, please note however that you will pay more interest with longer repayment period.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="6c1f0874-8b09-4b10-96f3-f474f2376e63" x="23" y="87" width="735" height="20"/>
+					<textElement markup="none">
+						<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[Pay off your debt with a higher repayment amount.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="66ce3c22-78ff-4a5f-97f1-dc6f00166618" x="23" y="107" width="735" height="20"/>
+					<textElement markup="none">
+						<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[Pay off your debt earlier.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="1ce90de6-9f94-49a9-8ad1-2fc469f78182" x="23" y="126" width="735" height="20"/>
+					<textElement markup="none">
+						<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[If you can afford to pay more for some of the debts, pay the loan with the highest interest rate first.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="6885d5c8-849d-4b70-a914-a8b18dc20928" x="23" y="148" width="735" height="20"/>
+					<textElement markup="none">
+						<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[Consolidate your debt.]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement uuid="8d07bfb5-48a8-4b5e-a226-2ea2698d2977" x="1" y="97" width="801" height="27" forecolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Credit card debt overview]]></text>
+			</staticText>
+			<elementGroup/>
+			<image>
+				<reportElement uuid="80b2f876-ab5a-4b7c-b5b8-f5cf7cac3db4" x="0" y="0" width="140" height="51"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/logo-iec.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="d6cf5aa9-33c8-4359-a919-b6d7cf822ccc" mode="Transparent" x="625" y="15" width="176" height="33" forecolor="#4B2384" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="20" isBold="false" isItalic="false" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Debt calculator"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="777cf292-a802-4035-9cb1-800323755a69" mode="Opaque" x="0" y="65" width="802" height="30" forecolor="#4B2384" backcolor="#2CB7B4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[          Summary]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="9dee2abc-1627-4b69-bf9f-3854842c7948" x="1" y="65" width="30" height="30" forecolor="#2CB7B4" backcolor="#2CB7B4"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/icon-report.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="1e3c0900-7287-44d7-8910-1f2aa04fb7ec" x="30" y="171" width="17" height="15"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[•]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5dd11e5e-4cb1-4f19-95ad-9fd10faf3c60" x="30" y="284" width="17" height="15"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[•]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6f825ec0-eefe-4497-8b92-eac40551793a" x="30" y="243" width="17" height="15"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[•]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5420317a-bca7-4b22-8f75-2ed2f8f13038" x="30" y="223" width="17" height="15"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[•]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4f42102b-03c1-4a2d-95b4-8b53ef01c2b8" x="30" y="203" width="17" height="15"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[•]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6647cf01-1331-4b86-aac9-52be948dfc07" x="30" y="262" width="17" height="15"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[•]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+</jasperReport>

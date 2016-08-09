@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="debt2" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="63a1b05d-513a-4f2b-abf3-966cfffc8d44">
+	<property name="ireport.zoom" value="1.3310000000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="1ce833cc-3b6f-4c63-8b7b-08ec2e38a9e9"/>
+	<parameter name="PATH" class="java.lang.String"/>
+	<parameter name="XAISLABELEN" class="java.lang.String"/>
+	<field name="category" class="java.lang.String"/>
+	<field name="amount" class="java.lang.Number"/>
+	<field name="series" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="121" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="62425024-7afb-48fd-b4de-04ee2fdd9f51" x="1" y="98" width="801" height="20" forecolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="12" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[以你填寫資料時的次序排列]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="badf4bd4-8244-4726-93f4-16b41f2d9ff0" x="0" y="0" width="140" height="51"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/logo-iec.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="cc915ed0-e545-4c58-b4d2-42308193c4b6" mode="Opaque" x="0" y="65" width="802" height="30" forecolor="#4B2384" backcolor="#2CB7B4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[          信用卡債務概覽]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="c332ef9a-942a-445b-92fa-577fa6628345" mode="Transparent" x="690" y="15" width="115" height="33" forecolor="#4B2384" backcolor="#1D70B7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="20" isBold="false" isItalic="false" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["債務計算機"]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="9990d685-492f-433b-bb05-9c3bcd3657b1" x="680" y="-20" width="123" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="1f1f3ec2-7e47-4828-ae14-aec75c03c366" x="1" y="65" width="30" height="30" forecolor="#2CB7B4" backcolor="#2CB7B4"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/icon-report.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<summary>
+		<band height="424" splitType="Stretch">
+			<stackedBarChart>
+				<chart isShowLegend="true" customizerClass="org.hksfc.sfc.iec.pdf.BarChartCustomizer" renderType="draw" theme="default">
+					<reportElement uuid="2df5180b-8175-4597-a7a0-c6335a2f2dc7" mode="Transparent" x="0" y="3" width="802" height="220"/>
+					<chartTitle position="Top">
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartSubtitle>
+					<chartLegend position="Right">
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartLegend>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{series}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{amount}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot isShowLabels="false" isShowTickLabels="true" isShowTickMarks="false">
+					<plot orientation="Horizontal">
+						<seriesColor seriesOrder="0" color="#2CB7B4"/>
+						<seriesColor seriesOrder="1" color="#F2C700"/>
+						<seriesColor seriesOrder="2" color="#4B2384"/>
+					</plot>
+					<itemLabel>
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</itemLabel>
+					<categoryAxisFormat>
+						<axisFormat verticalTickLabels="true">
+							<labelFont>
+								<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+							</tickLabelFont>
+						</axisFormat>
+					</categoryAxisFormat>
+					<valueAxisLabelExpression><![CDATA[$P{XAISLABELEN}]]></valueAxisLabelExpression>
+					<valueAxisFormat>
+						<axisFormat verticalTickLabels="false">
+							<labelFont>
+								<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+							</tickLabelFont>
+						</axisFormat>
+					</valueAxisFormat>
+				</barPlot>
+			</stackedBarChart>
+			<frame>
+				<reportElement uuid="2ddc658d-7d0c-4aa8-ad7f-68ded55528f4" x="0" y="226" width="802" height="189"/>
+				<staticText>
+					<reportElement uuid="1c9635f1-3945-4c16-9870-bea2f99b25d6" x="14" y="32" width="740" height="20"/>
+					<textElement markup="none">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•每月儘量繳清結欠，或至少繳付最低還款額，否則你須繳付逾期還款費用和手續費。]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="aa8d5ee1-4a31-4039-a58c-d96eb28a8134" x="10" y="9" width="791" height="20" forecolor="#2CB7B4"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="12" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[你可考慮以下建議管理債務:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="47ba06a2-dd0a-4371-bc34-9ff2e407bf15" x="14" y="55" width="740" height="20"/>
+					<textElement markup="none">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•如你只能繳付最低還款額，請留意還款期越長，所須繳交的利息便越高。]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="211128d6-8127-4ec3-88ce-be1d37f62e42" x="14" y="79" width="740" height="20"/>
+					<textElement markup="none">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•提高還款金額來繳清信用卡結欠。]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="b6d2dc71-5e52-4347-a34a-a5df771784ce" x="14" y="102" width="740" height="20"/>
+					<textElement markup="none">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•提早繳清信用卡結欠。]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4b063485-980f-444b-bd80-25c56dd36098" x="14" y="125" width="740" height="20"/>
+					<textElement markup="none">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•如果你有能力增加還款金額，應先償還利率最高的貸款。]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f47d9947-9de0-4c37-81b1-d4a8eb3bc0d5" x="14" y="148" width="740" height="20"/>
+					<textElement markup="none">
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•合併債務]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</summary>
+</jasperReport>

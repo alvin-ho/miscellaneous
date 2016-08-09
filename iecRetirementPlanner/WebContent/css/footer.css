@@ -1,0 +1,138 @@
+div + .site-footer{margin-top: 40px}
+.site-footer {
+	padding-bottom: 25px;
+	/*height: 225px;*/
+	font-size: 0.8em;
+	color: #FFFFFF;
+	background-color: #4a2680;
+	position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.site-footer .row {
+	background-color: #4a2680;
+}
+
+.site-footer .btn {
+	font-size: 0.85em;
+}
+
+.footer-left,
+.footer-right {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.footer-right {
+	text-align: center;
+}
+
+.footer-right .input-group {
+	display: inline-block;
+	text-align: left;
+}
+
+.footer-right .btn {
+	padding: 3px 18px 3px 18px;
+}
+
+.footer-copyright {
+    margin: 10px 0 0 0;
+}
+
+.footer-menu {
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.footer-hyperlinks-wrapper {
+	text-align: center;
+}
+
+.footer-menu.footer-hyperlinks {
+	list-style: none;
+	text-align: center;
+}
+
+.footer-menu li {
+	list-style: none;
+	display:inline-block;
+/*	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;*/
+}
+
+.footer-menu a {
+	margin: 0 20px 0 0;
+	color: #FFFFFF;
+}
+
+/* This selector is reserved for reversing the footer layout. */
+.footer-logo {
+	margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+	padding-right: 20px;
+	border-right: 1px solid #FFFFFF;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.footer-logo img {
+	width: 120px;
+}
+
+.footer-hyperlinks {
+	
+}
+
+/* This selector is reserved for reversing the footer layout. */
+.footer-statement {
+	padding-left: 20px;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.footer-statement p {
+	margin: 0;
+}
+
+.footer-copyright {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.site-footer {
+		font-size: 0.85em;
+		/* height: 134px; */
+	}
+	
+	.footer-right {
+		text-align: right;
+	}
+	
+	.footer-menu {
+		float: right;
+	}
+	
+	.footer-menu a {
+		margin: 0 0 0 20px;
+	}
+	
+	.footer-menu li {
+		float: left;
+	}
+	
+	.footer-logo img{
+		width: auto;
+	}
+	
+	.footer-copyright {
+		text-align: left;
+	}
+	
+}

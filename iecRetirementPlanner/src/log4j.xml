@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration>	
+
+   <appender name="fileAppender" class="org.apache.log4j.DailyRollingFileAppender">
+      <param name="Threshold" value="INFO" />
+	  <param name="File" value="/profiles/app/iecRetirementPlanner/logs/retirementPlanner.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSS} [%t] %-5p %c %x - %m%n" />
+      </layout>
+   </appender>
+	
+    <appender name="ASYNC" class="org.apache.log4j.AsyncAppender">
+        <param name="BufferSize" value="500"/>
+        <appender-ref ref="fileAppender"/>
+    </appender>
+    
+   <logger name="hk.hkiec" additivity="false" >
+      <level value="INFO" />
+      <appender-ref ref="fileAppender"/>
+   </logger>
+    
+	<root>
+		<priority value="info"></priority>
+		<appender-ref ref="ASYNC"/>
+	</root>
+	
+</log4j:configuration>

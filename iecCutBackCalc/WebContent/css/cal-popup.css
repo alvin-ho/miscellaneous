@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/*MAIL POPUP STYLE , EVERY PAGES SOCIAL MEDIA PART*/
+
+.popup>img {
+	display: block;
+}
+
+.popup {
+	width: 670px;
+}
+
+.popup .mail-wrapper {
+	background-color: #fff;
+	width: 640px;
+	position: relative;
+}
+
+.popup .mail-wrapper h1 {
+	font-size: 30px;
+	color: #1d70b7;
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+	font-weight: bold;
+	padding: 0 23px 15px;
+}
+
+.popup .mail-wrapper h2 {
+	font-size: 18px;
+	color: #1d70b7;
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+}
+
+.popup .mail-wrapper table {
+	border-top: 1px #1d70b7 solid;
+	width: 640px;
+}
+
+.popup .mail-wrapper table tr td {
+	padding: 15px 23px;
+	border-bottom: 1px #d8d8d8 solid;
+}
+
+.popup .mail-wrapper table tr.last td {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.popup .mail-wrapper table tr td textarea {
+	resize: none;
+	width: 100%;
+	border: none;
+	color: #666666;
+	font-size: 12px;
+	outline: none;
+}
+
+.popup .mail-wrapper table tr td span {
+	font-size: 12px;
+	color: #666;
+	display: inline-block;
+	width: 300px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.popup .mail-wrapper table tr td input[type="text"] {
+	width: 100%;
+	color: #666666;
+	font-size: 12px;
+	outline: none;
+	border: none !important;
+}
+
+.popup .mail-wrapper table tr td .btn-popup-mail {
+	display: inline-block;
+	background: url(../images/common/mail/btn-popup-mail.gif) 0 0 no-repeat;
+	width: 96px;
+	height: 39px;
+	font-size: 18px;
+	color: #fff;
+	line-height: 39px;
+	padding-left: 15px;
+	text-align: left;
+	text-decoration: none;
+}
+
+.popup .mail-wrapper table tr td .btn-popup-mail:hover {
+	background-position: 0 bottom;
+	text-decoration: none;
+}
+
+.popup .mail-wrapper .btn {
+	width: 120px !important;
+}
+
+.popup .mail-wrapper .error-message tr td {
+	height: 200px;
+	vertical-align: middle;
+	font-size: 25px;
+}

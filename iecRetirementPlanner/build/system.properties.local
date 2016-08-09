@@ -1,0 +1,8 @@
+#----- Url
+URL_DOMAIN=http://localhost:8080/tools/retirement/
+
+#----- File
+FILE_ROOT=C\:/Temp/profiles/app/iecRetirementPlanner/jasper/
+
+#----- Google Analytic Account
+GA_AC=UA-36354635-1

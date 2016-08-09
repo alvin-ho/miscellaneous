@@ -1,0 +1,8 @@
+# resource info
+PATH=C:/Temp/profiles/app/iecCutbackCalcWeb/jasper/
+RESPATH=C:/Temp/profiles/app/iecCutbackCalcWeb/jasper/images/common/calculator/
+
+#cutback
+CUTBACKREPORTFILE=/cutback.jasper
+CUTBACKHEADERARG2=attachment;filename=IEC_cutback_calc.pdf
+CUTBACKREPORTFILETC=/cutback.tc.jasper

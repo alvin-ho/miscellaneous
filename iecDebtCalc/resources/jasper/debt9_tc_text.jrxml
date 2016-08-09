@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="debt" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="147591df-c3f0-405a-a675-bb4a5a107743">
+	<property name="ireport.zoom" value="1.3310000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="PATH" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="317" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="6921368b-b6d6-478d-8c58-80dea91cbd81" x="1" y="98" width="801" height="20" forecolor="#4B2384"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="12" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[其他貸款概覽]]></text>
+			</staticText>
+			<frame>
+				<reportElement uuid="cfbeebbd-8c5b-4782-9582-b020af02546e" x="14" y="132" width="771" height="170"/>
+				<staticText>
+					<reportElement uuid="b16ac9db-75b8-41fe-a33d-1cdf93dd0c2f" x="10" y="31" width="761" height="20"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•編製預算表，詳列每月的支出、儲蓄和借貸，然後計算自己的還款能力]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="b4af4de1-f113-49cc-8e47-e65cfe764507" x="5" y="8" width="766" height="20" forecolor="#2CB7B4"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="12" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[在進行借貸之前，請考慮以下事項:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="bc616275-a818-49e7-ad08-50a600f78883" x="10" y="54" width="761" height="20"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•只借取你需要和能輕鬆償還的金額。即使你有資格借取較高金額，亦切勿貿然提高借貸額 ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2a4f1945-8618-4106-a043-0dceeb73514a" x="10" y="77" width="761" height="20"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•比較不同機構的貸款利率，並留意任何額外費用]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="eaa8a708-66e8-4974-af23-387bc132dc23" x="10" y="100" width="761" height="20"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•因應個人需要選擇合適的貸款種類 ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="bca4ffe3-393a-4c5e-8fe8-ce8033f30e75" x="10" y="123" width="761" height="20"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•按時還款以免遭受罰息，並盡快清還債務，以減少所支付的利息總額 ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="bf39c748-4c53-4db1-a995-4421d053617c" x="10" y="146" width="761" height="20"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•如無必要，避免向多個信貸來源借錢，以方便處理還款 ]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement uuid="a8839a2d-4d3d-4e9e-8aa4-7c7d0c30edf8" mode="Opaque" x="0" y="65" width="802" height="30" forecolor="#4B2384" backcolor="#2CB7B4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="14" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[         概要]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="c58007f0-6caa-4769-82aa-6edd474fb92e" x="680" y="-20" width="123" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b9d63136-1887-43b5-8190-fae03246aebd" mode="Transparent" x="685" y="15" width="116" height="33" forecolor="#4B2384" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="20" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["債務計算機"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="f554744b-fa2e-4e9b-a9ca-bdb1ff651b22" x="0" y="0" width="140" height="51"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/logo-iec.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="67edb295-d03b-4389-a8f4-aab4d598e69d" x="1" y="65" width="30" height="30" forecolor="#2CB7B4" backcolor="#2CB7B4"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/icon-report.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+</jasperReport>

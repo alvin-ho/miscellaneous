@@ -1,0 +1,299 @@
+body{
+
+}
+
+
+.wrapper{	
+	width:760px;	
+	margin: 0 auto;
+}
+
+/***** Header *****/
+
+a.logo-iec{
+	margin-left:20px;
+}
+
+span.toolsSelect{	
+	margin-right:33px;
+}
+
+
+
+/***** Content *****/
+
+.description .leftCol{
+	width:60%;
+}
+
+.description .rightCol{
+	width:30%;
+}
+
+.description a.explainBtn
+{
+	padding:14px 0 0 70px;
+	height:45px;
+}
+
+/***** Question *****/
+.qTitle_LongImg {
+	background:url('../../images/tc/qTitleImg2.gif') no-repeat left center;
+	height:82px;
+}
+.qTitle {	
+	width: 104%;
+	left: -4%;
+}
+.mBanner {
+	display:none;
+}
+
+.timeLinePadd{
+	padding:27px 20px;
+}
+.normalPadd{
+	//padding: 27px 20px;
+	padding: 27px  0 27px 20px;
+}
+input[type=radio].css-checkbox + label.css-label {
+	 background-position: 23px 0;
+}
+
+input[type=radio].css-checkbox:checked + label.css-label {
+    background-position: 23px -30px;
+}
+
+.radioName { 
+	padding-left:0;
+}
+
+.leftCol > .cbContainer:nth-child(2)
+ {	
+	padding-right:22px;
+}
+
+/***** steptrack *****/
+.step_check .prepage .inner p
+{
+	margin: 13px 0px 0px 30px;
+}
+
+.step_check .prepage .inner img
+{
+	display:none;
+}
+.step_check .nextpage .inner p
+{
+	margin: 13px 0px 0px 38px;
+}
+
+.step_check .nextpage .inner img
+{
+	display:none;
+}
+
+#sectionTab
+{
+	width:18%;
+}
+
+#sectionTab li a{
+	font-size: 12px;
+	padding: 18px 0px 18px 40px;
+}
+
+/*****loanpage  *****/
+.successresult
+{
+	min-width:740px;
+	height:370px;
+	padding: 32px 10px 10px 10px;
+}
+
+.successresult .moneypig
+{
+	/*float:right;*/
+}
+.successresult > .result_pics
+{
+	width:226px;
+	height:300px;
+	float:left;
+}
+
+.successresult .content p:nth-child(1)
+{
+	margin-bottom: none;
+}
+
+.successresult > .content
+{
+	float:right;
+	width:62%;
+}
+/***** income_and_expense *****/
+.income_and_expense .questionContainer
+{
+	margin-bottom:30px;
+}
+
+.income_and_expense .successresult 
+{
+	min-width: 740px;
+	height: 380px;
+	padding: 45px 10px 10px 10px;
+}
+
+#sectionTab
+{
+	width:18%;
+}
+
+#sectionTab li a{
+	font-size: 12px;
+	padding: 18px 0px 18px 40px;
+}
+/*****investment *****/
+
+/****dragtree start****/
+/*#dropTree
+{
+	width:65%;
+	float:right;
+}
+
+.dragTreeRadioGroup
+{
+	display: inline-block;
+	margin-bottom: 10px;
+	width:100%;
+}
+
+#choice1, #choice2, #choice3, #choice4{
+	float:left;
+}
+
+#dropTree input[type=radio].css-checkbox + label.css-label
+{
+	padding-right:0px;
+}
+
+.padtoleft
+{
+	width:80%;
+}
+
+.firstspan
+{
+	padding-top: 10px;
+}
+
+.dragTreePadd
+{
+	padding: 15px;
+}
+*/
+
+
+/***** dragTree end****/
+
+
+
+.longqBox
+{
+	margin-left: 37px;
+	width: 94%;
+}
+
+.longqBox  .qTitle
+{
+	left: -2.3%;
+	width: 102.45%;
+}
+
+/*width: 102.45%;*/
+.result
+{
+	width:740px;
+	height:361px;
+}
+
+.underpig{
+	margin-top: 113px;
+}
+
+#tabs ul  li.pinen {	width:99%;	}
+#tabs ul  li a{
+	padding:18px 11px 0px 42px;
+	display:block;
+	font-size:12px;
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+	color:#000;
+}
+
+#tabs ul .pinen a
+{
+	min-height:68px;
+}	
+
+#tabs ul .pinchi a
+{
+	min-height:54px;
+}	
+
+#tabs a.yellowBtn{
+	background:url(../../images/tc/yellowFill.png) no-repeat 10px center;
+}
+#tabs a.greenBtn{
+	background:url(../../images/tc/greenFill.png) no-repeat 10px center;
+}
+#tabs a.redBtn{
+	background:url(../../images/tc/redFill.png) no-repeat 10px center;
+}
+.resultContainer .moneypig {
+	width: 36%;
+}
+.resultContainer .actionBtn{
+	right:10px;
+}
+.indication {
+	padding:20px 20px 20px 20px;
+}
+
+#index .indexbanner
+{	
+	display:block;
+}
+#index .animateIndex
+{
+	display:none;
+}
+/***** Rate *****/
+.rating #feedback, .rating #u_rate{
+	margin-right:32px;
+}
+
+.rating #u_rate{
+	margin-right:52px;
+}
+
+.span.titleimg
+{
+	font-size:2.0em;
+}
+
+.entabCon div.innerresult
+{
+	min-height:544px;
+}
+
+/***** Footer *****/
+#footer > .wrapper span.allRight{
+	float:right;
+}
+
+/***** Mobile Menu *****/
+#mmenuTitle{
+	display:none;
+}

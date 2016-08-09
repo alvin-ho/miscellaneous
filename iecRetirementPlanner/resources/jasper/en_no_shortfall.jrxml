@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="en_no_shortfall" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="110f2ca2-2828-4c6a-984f-ead34ddca511">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="ireport.zoom" value="1.464100000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="224"/>
+	<parameter name="reserved" class="java.lang.String"/>
+	<parameter name="required" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="115" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="7c4f12b8-04e3-49b4-ba3a-660f048e3ac5" x="431" y="100" width="124" height="15" forecolor="#414141"/>
+				<textElement textAlignment="Right">
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="97174a84-8daf-4e02-b5f9-1fef0c8232bc" x="161" y="63" width="34" height="35">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["iec-retirement.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="b50bbb1d-b09b-47df-bbbd-f15ab6dfb1cf" x="0" y="0" width="140" height="51">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="0" bottomPadding="0"/>
+				<imageExpression><![CDATA["iec-logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="d0da7847-d2d1-4cad-9e9c-5a34dce45a9d" x="205" y="70" width="180" height="22" forecolor="#4B2384">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="18" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Retirement Planner]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="230" splitType="Stretch">
+			<image scaleImage="FillFrame" hAlign="Center">
+				<reportElement uuid="6fd57305-c0aa-49d0-a062-56d807bac6e9" mode="Transparent" x="0" y="30" width="555" height="195"/>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["no_shortfall_en.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="844a7f33-793a-4af2-a64d-d367df34698c" mode="Opaque" x="0" y="0" width="555" height="25" forecolor="#4B2384" backcolor="#2DBDB6">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gotham Rounded Book" size="14" isBold="false" isItalic="false"/>
+					<paragraph leftIndent="15"/>
+				</textElement>
+				<text><![CDATA[   Result]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="15c25011-a029-4e89-be4b-b5bbcb1013d7" x="5" y="5" width="15" height="15">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["icon-summy.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="407" splitType="Stretch">
+			<image>
+				<reportElement uuid="b84bb749-7084-4d31-9ebd-f927f301c108" x="124" y="63" width="75" height="76"/>
+				<imageExpression><![CDATA["iec-pigImgM.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="f2311a2c-7ac3-47a0-95ce-53bda2dc91dd" mode="Transparent" x="215" y="82" width="195" height="31" forecolor="#414141" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Your expected reserve can meet with your retirement needs.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="338500f8-a74e-45da-8342-dbe2a71e4d73" mode="Transparent" x="215" y="112" width="195" height="23" forecolor="#4B2384" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Keep up your good planning!!]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="da415a3c-fede-451e-b906-10a435270406" x="40" y="144" width="480" height="1" backcolor="#E5E5E5">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement uuid="052a2b59-5379-4d23-9051-5c3ad5aac8bf" x="40" y="204" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="d5f6b86f-1b33-45b0-9a6b-dcc954b3fe73" x="53" y="200" width="460" height="19" forecolor="#414141"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Review your retirement budget from time to time to make sure it still works.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3648a904-0e49-4249-9373-ecb8831532ee" x="53" y="227" width="460" height="31" forecolor="#414141"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Regularly review your retirement schemes and investment plans to ensure they meet your needs when situations change.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="fca1b895-093d-466e-8230-3a8892f2b159" x="40" y="231" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="3fbaf4c8-2cab-4821-8e0e-1141ec8ad56b" x="53" y="260" width="460" height="19" forecolor="#414141"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Consider ways to generate regular income after retirement by putting your assets to work.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="95e94791-bc91-48f1-9f32-370709972f7d" x="40" y="263" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="608cd6e1-6b6e-412f-9894-3421dfd31813" x="53" y="290" width="460" height="25" forecolor="#414141">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Review your insurance coverage as medical expenses can be a significant cost as one gets older.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="427c2097-6412-4f80-9409-215a58e462b8" x="40" y="294" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="b91c2b52-2a99-44cd-953a-ae3bba866d6d" x="53" y="317" width="460" height="31" forecolor="#414141"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book" size="10"/>
+				</textElement>
+				<text><![CDATA[Consider estate planning and wills to make clear how you wish to be cared for medically and financially in your final days.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="a87a673a-538b-4834-8a09-64f2da2554aa" x="40" y="321" width="5" height="5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["disc.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="3b0b058b-c284-4b83-9629-03aa414b8bc5" mode="Transparent" x="133" y="360" width="40" height="18" forecolor="#414141" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Visit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0a4e7ffe-795f-4e96-9923-2df1ecff1e63" mode="Transparent" x="166" y="360" width="272" height="19" forecolor="#2DBDB6" backcolor="#FFFFFF">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[https://www.thechinfamily.hk/web/tc/pre-retiree/]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a6025c12-1057-4d46-97b2-542c1c68510a" x="161" y="373" width="277" height="22" forecolor="#414141"/>
+				<textElement>
+					<font fontName="Gotham Rounded Book"/>
+				</textElement>
+				<text><![CDATA[for more information about retirement planning.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c291bb38-5508-4241-85be-7cd07e55277d" mode="Transparent" x="295" y="10" width="20" height="18" forecolor="#4B2384" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[HKD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9e69f672-df2b-4869-b36a-007c361af86c" mode="Transparent" x="39" y="33" width="256" height="22" forecolor="#414141" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Expected amount required when you retire]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement uuid="bf5a572b-9e36-464e-b38a-90968434c41b" mode="Transparent" x="319" y="32" width="236" height="25" forecolor="#4B2384" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="18" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{required}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement uuid="0fe2ff76-b862-4551-9602-d406aaf54510" mode="Transparent" x="319" y="5" width="236" height="25" forecolor="#4B2384" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="18" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reserved}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7a3d5403-f368-4890-95ef-2a6b86e63b2a" mode="Transparent" x="295" y="37" width="20" height="18" forecolor="#4B2384" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[HKD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="508181e0-d256-4cf9-ab5b-2ade324fe18d" mode="Transparent" x="39" y="9" width="256" height="19" forecolor="#414141" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Expected reserve accumulated when you retire]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="de36cede-aec6-43ee-a917-520b84fbc0fc" mode="Transparent" x="230" y="158" width="142" height="20" forecolor="#000000" backcolor="#1A1A1A"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Gotham Rounded Book" size="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Your action plan]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="3bd7211d-0324-4648-8020-c81614fa0a99" x="207" y="156" width="20" height="20">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["iec-confirm.png"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

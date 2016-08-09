@@ -1,0 +1,55 @@
+.slideContainer > #previous{		margin-right:10px;	}
+.slideContainer > #next{		margin-left:10px;	}
+
+
+.description a.analysisBtn{
+	background-image:url('../../images/en/start.png');
+}
+.description .leftCol a.startBtn{
+	background-image:url('../../images/tc/userguide.png');
+}
+.description .leftCol a.calBtn, a.mCalBtn{
+	background-image:url('../../images/en/calculator_en.png');
+}
+
+.investment #investmentCon .qBox:nth-child(2) label
+{
+	width:100%;
+}
+
+.hoverele
+{
+	background:url('../../images/tc/tooltipen.png') no-repeat;
+	width: 200px;
+	right: -90px;
+	font-size: 1.3em;
+}
+#tabs ul li{	width:90%;	}
+ul#sectionTab li{width:160px;}
+#tabs ul li a
+{
+	font-size: 12px;
+	
+}
+
+
+.indication .yellowBtn, .indication .redBtn, .indication .greenBtn
+{
+	background-position:0 0;
+}
+
+#u_rate{	width:26%;	}
+
+
+.resultContainer .actionBtn{
+	background: url(../../images/en/action_now_btn_en.png) no-repeat;
+}
+
+.qTitle p{
+	font-weight:normal;
+}
+
+.description .leftCol p
+{
+	letter-spacing:0;
+}

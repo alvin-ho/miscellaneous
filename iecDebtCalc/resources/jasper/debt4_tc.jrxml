@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="debt2" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="63a1b05d-513a-4f2b-abf3-966cfffc8d44">
+	<property name="ireport.zoom" value="1.3310000000000026"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="c2e4445a-1b38-4707-ba1c-caa4226d6407"/>
+	<parameter name="PATH" class="java.lang.String"/>
+	<parameter name="XAISLABELEN" class="java.lang.String"/>
+	<field name="category" class="java.lang.String"/>
+	<field name="amount" class="java.lang.Number"/>
+	<field name="series" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="97" splitType="Stretch">
+			<textField>
+				<reportElement uuid="b6bd3d4c-4488-44a7-80ae-bcc8423eed30" mode="Transparent" x="690" y="15" width="115" height="33" forecolor="#4B2384" backcolor="#1D70B7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="20" isBold="false" isItalic="false" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["債務計算機"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="92874a4e-80de-465e-8184-37569c356682" mode="Opaque" x="0" y="65" width="802" height="30" forecolor="#4B2384" backcolor="#2CB7B4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[          私人貸款概覽]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="afed6bcf-4b8a-4e37-9825-f6a1fa36c8e6" x="680" y="-20" width="123" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="2210f2a1-828e-41f3-b669-dbdf796fafae" x="0" y="0" width="140" height="51"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/logo-iec.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="454f6f80-8ee8-40b8-9de6-dd0e91f5514d" x="1" y="65" width="30" height="30" forecolor="#2CB7B4" backcolor="#2CB7B4"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/icon-report.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<summary>
+		<band height="439" splitType="Stretch">
+			<stackedBarChart>
+				<chart isShowLegend="true" customizerClass="org.hksfc.sfc.iec.pdf.BarChartCustomizer" renderType="draw" theme="default">
+					<reportElement uuid="2df5180b-8175-4597-a7a0-c6335a2f2dc7" mode="Transparent" x="0" y="3" width="802" height="250"/>
+					<chartTitle position="Top">
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartSubtitle>
+					<chartLegend position="Right">
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</chartLegend>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{series}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{amount}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot isShowLabels="false" isShowTickLabels="true" isShowTickMarks="false">
+					<plot orientation="Horizontal">
+						<seriesColor seriesOrder="0" color="#2CB7B4"/>
+						<seriesColor seriesOrder="1" color="#F2C700"/>
+						<seriesColor seriesOrder="2" color="#4B2384"/>
+					</plot>
+					<itemLabel>
+						<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+					</itemLabel>
+					<categoryAxisFormat>
+						<axisFormat verticalTickLabels="true">
+							<labelFont>
+								<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+							</tickLabelFont>
+						</axisFormat>
+					</categoryAxisFormat>
+					<valueAxisLabelExpression><![CDATA[$P{XAISLABELEN}]]></valueAxisLabelExpression>
+					<valueAxisFormat>
+						<axisFormat verticalTickLabels="false">
+							<labelFont>
+								<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="MYuen HK Medium" pdfFontName="MYuen HK Medium" isPdfEmbedded="true"/>
+							</tickLabelFont>
+						</axisFormat>
+					</valueAxisFormat>
+				</barPlot>
+			</stackedBarChart>
+			<frame>
+				<reportElement uuid="e016ab21-3491-464c-9d8b-d8332e9c9088" x="0" y="260" width="802" height="170"/>
+				<staticText>
+					<reportElement uuid="b7e64858-311a-4fc8-9d92-14d7ef815f15" x="14" y="32" width="788" height="20"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•編製預算表，詳列每月的支出、儲蓄和借貸，然後計算自己的還款能力]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="0daf72fb-0bc7-43a2-b7d5-0060828893d8" x="10" y="9" width="792" height="20" forecolor="#2CB7B4"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="12" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[在進行借貸之前，請考慮以下事項:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f5602f18-6d47-465a-81c8-aa6c96a3714c" x="14" y="55" width="788" height="20"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•只借取你需要和能輕鬆償還的金額。即使你有資格借取較高金額，亦切勿貿然提高借貸額 ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2224d5f1-89fe-4422-88a9-9f6e93d0ba21" x="14" y="78" width="788" height="20"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•比較不同機構的貸款利率，並留意任何額外費用]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7e57f675-aaa4-4623-a3bd-06391a1512dd" x="14" y="101" width="788" height="20"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•因應個人需要選擇合適的貸款種類 ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="1264a995-d932-4759-be57-586091b5203c" x="14" y="124" width="788" height="20"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•按時還款以免遭受罰息，並盡快清還債務，以減少所支付的利息總額 ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="e67e2c3c-ce63-4449-9085-ebee2d13de36" x="14" y="147" width="788" height="20"/>
+					<textElement>
+						<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[•如無必要，避免向多個信貸來源借錢，以方便處理還款 ]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</summary>
+</jasperReport>

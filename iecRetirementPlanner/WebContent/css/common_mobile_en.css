@@ -1,0 +1,11 @@
+﻿body {	}
+
+.questContainer, .intro, .questCheckBox, .schemesContent {
+	font-size:16px;
+}
+
+.sectionTitle, .sectionFour .longQuestion {
+	font-size:18px;
+}
+
+.mAnnualReturnWords_en{	display:inline-block;	  margin: 10px 0 10px 20px !important;}

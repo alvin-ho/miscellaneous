@@ -1,0 +1,41 @@
+body{	min-width: 970px;	position: relative ;min-height: 100%;}
+
+.wrapper{
+	width:970px; 
+	margin: 0 auto;
+}
+
+
+/***** Header *****/
+
+span.titleimg  {
+	margin-left:120px;
+}
+
+
+/***** Question *****/
+
+.mleft_Title{	/* margin-left:32px; */	}
+
+.schemesContent .mountContainer {	text-align:right;	}
+
+.sectionFour .sectionPadd {	padding: 0px 43px 35px 43px;	}
+
+.schemesContent .percent_Widget{	width:49.3%;	/*49%*/	}
+.schemesContent .mountPercent{	width:17%;	}
+
+.sectionFour .short_Widget {		width:44.7%;	/*43.3%*/}
+.sectionFour .percent_Widget {		width:49.7%;	/*48%*/	}
+
+.accordion .planTitle {	padding: 15px 30px 15px 0px;	}
+
+.mResTitle{	display:none;	}
+
+
+/***** Footer *****/
+
+#footer > .wrapper span.allRight{
+	float:right;
+}
+
+

@@ -1,0 +1,8 @@
+#----- Url
+URL_DOMAIN=https://thechinfamily.intra.hksfc.org.hk/tools/retirement/
+
+#----- File
+FILE_ROOT=/profiles/app/iecRetirementPlanner/jasper/
+
+#----- Google Analytic Account
+GA_AC=UA-36354635-1

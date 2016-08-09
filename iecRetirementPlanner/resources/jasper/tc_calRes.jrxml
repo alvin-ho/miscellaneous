@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="calRes" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a2cd85bc-503c-4bed-93e2-a0a711d6bb7f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="step1_0" class="java.lang.String"/>
+	<parameter name="step1_1" class="java.lang.String"/>
+	<parameter name="step1_2" class="java.lang.String"/>
+	<parameter name="res_nper1" class="java.lang.String"/>
+	<parameter name="res_nper2" class="java.lang.String"/>
+	<parameter name="step2_0" class="java.lang.String"/>
+	<parameter name="step2_2" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="step2_3" class="java.lang.String"/>
+	<parameter name="res_dtexp" class="java.lang.String"/>
+	<parameter name="step3_0_0" class="java.lang.String"/>
+	<parameter name="step3_0_1" class="java.lang.String"/>
+	<parameter name="step3_0_2" class="java.lang.String"/>
+	<parameter name="step3_0_3" class="java.lang.String"/>
+	<parameter name="step3_0_4" class="java.lang.String"/>
+	<parameter name="step3_0_5" class="java.lang.String"/>
+	<parameter name="step3_0_6" class="java.lang.String"/>
+	<parameter name="step3_0_7" class="java.lang.String"/>
+	<parameter name="res_mpf" class="java.lang.String"/>
+	<parameter name="step3_1_0" class="java.lang.String"/>
+	<parameter name="step3_1_1" class="java.lang.String"/>
+	<parameter name="step3_1_2" class="java.lang.String"/>
+	<parameter name="step3_1_3" class="java.lang.String"/>
+	<parameter name="step4_0" class="java.lang.String"/>
+	<parameter name="step4_1" class="java.lang.String"/>
+	<parameter name="step4_2" class="java.lang.String"/>
+	<parameter name="res_ttSaving" class="java.lang.String"/>
+	<parameter name="step5_0" class="java.lang.String"/>
+	<parameter name="step5_1" class="java.lang.String"/>
+	<parameter name="employType" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="1c6c49e1-6685-4771-8d28-a09dab2fcbb1" mode="Opaque" x="0" y="0" width="555" height="25" forecolor="#4B2384" backcolor="#2DBDB6">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="14" isBold="false" isItalic="false"/>
+					<paragraph leftIndent="15"/>
+				</textElement>
+				<text><![CDATA[    計算結果]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="4ef778a5-09e8-4f2b-8111-471f814d1756" x="5" y="5" width="15" height="15">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["icon-summy.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="619">
+			<staticText>
+				<reportElement uuid="77514ae7-9bc4-4920-9bb8-2363e51ab5b8" x="25" y="15" width="233" height="20" forecolor="#2DBDB6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="12" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[個人資料]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="deb07b8e-9ba2-4d77-8ae6-d781589be272" mode="Opaque" x="11" y="45" width="248" height="20" forecolor="#414141" backcolor="#E3F2F5"/>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[你現時的年齡]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="becc8c1f-ef4b-4ca6-8f40-7a8ae1f99400" mode="Opaque" x="292" y="45" width="252" height="20" forecolor="#414141" backcolor="#E3F2F5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期退休生活每月開支]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9cc90c7a-25b8-4e2b-bb5a-f3221c52c86f" x="305" y="15" width="238" height="20" forecolor="#2DBDB6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="12" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[你需要多少退休儲備?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5ab57994-7608-478b-a11f-3ee327a30cf6" mode="Opaque" x="11" y="65" width="248" height="20" forecolor="#414141" backcolor="#FFFFFF"/>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期退休年齡]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ccb9ee00-7876-4aa4-b19d-cda55b30b609" mode="Opaque" x="11" y="85" width="248" height="20" forecolor="#414141" backcolor="#E3F2F5">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期壽命]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a0370ccb-173c-4fa4-95fb-578320ea515e" mode="Opaque" x="11" y="105" width="248" height="20" forecolor="#414141" backcolor="#FFFFFF">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[從現在到退休]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5aa9a7c6-1370-4c77-b25b-47f9fdc8a16c" mode="Opaque" x="11" y="125" width="248" height="20" forecolor="#414141" backcolor="#E3F2F5">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[退休生活年期]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9eaccb96-6f5c-4ca5-9544-2ca74d002525" mode="Opaque" x="292" y="66" width="252" height="20" forecolor="#414141" backcolor="#FFFFFF">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期通脹率]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f0675e07-cce2-4705-a47b-6b0cc486bb2d" mode="Opaque" x="292" y="106" width="252" height="47" forecolor="#414141" backcolor="#FFFFFF">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="8" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期退休總開支]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2c9d50cb-c499-4354-98b7-e844bda935c9" mode="Opaque" x="292" y="86" width="252" height="20" forecolor="#414141" backcolor="#E3F2F5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期退休後的投資回報率]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="f43a2320-78dd-4371-b0de-b06272dee533" x="11" y="45" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{step1_0}+" 歲"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f6daf82d-3052-4d73-b5d0-16ce4cd88708" x="11" y="65" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{step1_1}+" 歲"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="205c5138-8b69-4cf4-9b77-73fd9141b866" x="11" y="85" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{step1_2}+" 歲"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="48aebbda-b1dd-496b-82a8-6e0673689be9" x="11" y="105" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{res_nper1}+" 年"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="07029be0-7341-4361-981c-d2a5e63f5ec9" x="11" y="125" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{res_nper2}+" 年"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="08e03d3c-fc7d-4bd0-9551-9be45ba5f4ec" x="292" y="45" width="252" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{step2_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="207afccb-b212-4ff8-a908-ef0ab665b914" x="292" y="65" width="252" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{step2_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="05b9b995-4a24-4c56-b718-7c7c824259dd" x="292" y="86" width="252" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{step2_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2f257bb0-bfdf-41c3-afd2-eb56ea3c21b1" x="292" y="133" width="252" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{res_dtexp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7a36048f-e4bb-4eac-9234-5ff02c591279" x="25" y="165" width="233" height="20" forecolor="#2DBDB6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="12" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[強積金
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d6abe2bd-3a5e-4160-918c-85fb952dcf56" mode="Opaque" x="11" y="278" width="248" height="20" forecolor="#414141" backcolor="#FFFFFF">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[你的每月自願性供款]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="379e7552-3d96-4e0a-80d8-fe62e1abb014" mode="Opaque" x="11" y="298" width="248" height="20" forecolor="#414141" backcolor="#E3F2F5">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[僱主每月自願性供款]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8eb3e685-8175-453f-b690-064254be4685" mode="Opaque" x="11" y="218" width="248" height="20" forecolor="#414141" backcolor="#E3F2F5"/>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[有關入息]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c88c152a-9510-47b8-bada-0ed7c9549444" mode="Opaque" x="11" y="238" width="248" height="20" forecolor="#414141" backcolor="#FFFFFF"/>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[年終花紅]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="86b2cc30-c496-4458-b5cf-aea5c39e0b15" mode="Opaque" x="11" y="258" width="248" height="20" forecolor="#414141" backcolor="#E3F2F5">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期每年加薪幅度]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="12ac5dc1-05c8-419f-ab63-ab522eefbd74" mode="Opaque" x="11" y="318" width="248" height="20" forecolor="#414141" backcolor="#FFFFFF">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[每月特別自願性供款]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="580a3d30-1d2e-435d-a214-dae510b7364c" mode="Opaque" x="11" y="338" width="248" height="20" forecolor="#414141" backcolor="#E3F2F5">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[你現有的強積金結餘]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="24b7376b-9bfe-4ccc-aecd-acf0eb48323d" mode="Opaque" x="11" y="358" width="248" height="20" forecolor="#414141" backcolor="#FFFFFF">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期強積金投資每年回報率]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cd140557-7cbd-44a1-a3fa-ec3a036eed36" mode="Opaque" x="11" y="378" width="248" height="39" forecolor="#414141" backcolor="#E3F2F5">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="150"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期退休時強積金累算權益]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e94fdd08-1ad1-451b-babd-becd552b5300" mode="Opaque" x="292" y="267" width="252" height="75" forecolor="#414141" backcolor="#E3F2F5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="160"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期退休時可從退休金計劃所獲得的一筆過金額或退休酬金]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0fa81210-6563-4414-830e-a5c8a8358a94" mode="Opaque" x="292" y="343" width="252" height="40" forecolor="#414141" backcolor="#FFFFFF">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期退休後獲得
+的每月退休金(如有)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="27ac1ce7-7046-4724-b258-0d81ca3696ef" mode="Opaque" x="292" y="247" width="252" height="20" forecolor="#414141" backcolor="#FFFFFF">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[年中花紅(如有)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="baa6cd36-d0a4-452a-853e-2ae125413aae" mode="Opaque" x="292" y="226" width="252" height="20" forecolor="#414141" backcolor="#E3F2F5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[月薪]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c0bfa007-944a-4173-ae27-1a5e941e22c8" x="305" y="165" width="238" height="50" forecolor="#2DBDB6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="12" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[其他退休金計劃，例如職業退休計劃(ORSO)、公務員退休金計劃、補助/津貼學校
+公積金等]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="5907a9b9-443c-40dd-8296-e7cc85385322" x="10" y="217" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{step3_0_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4f08e302-db06-4613-844d-6ad8a078e1bb" x="10" y="237" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{step3_0_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9281dc3a-bfda-41f4-8af5-0dfc22779867" x="10" y="257" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{step3_0_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a39356b6-a3ef-4deb-a71b-57f65cf043d8" x="10" y="277" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{step3_0_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a2f2a7f0-82cd-491b-b138-87abfdb95b52" x="10" y="297" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{step3_0_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="525cfe00-f1be-4eda-a9ed-989db1a44809" x="10" y="317" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{step3_0_5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="35be9299-f1e0-4851-a0ca-c249c2ed93d0" x="10" y="337" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{step3_0_6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8f5d15d2-4a34-4a4d-9574-27566d3f530c" x="10" y="357" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{step3_0_7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f42127d5-2b30-4fc4-b8dc-633f84734bc2" x="10" y="377" width="248" height="40"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{res_mpf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="754eb08f-0784-4423-905c-14b8e581e12f" x="292" y="226" width="252" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{step3_1_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="303a2cf8-acd4-4705-8e84-e5f419526a11" x="292" y="246" width="252" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{step3_1_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="79c1b013-f5ed-49b2-8d85-3a17f46959d7" x="292" y="289" width="252" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{step3_1_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e254f68-ee22-4036-9095-e09318f769d3" x="292" y="353" width="252" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{step3_1_3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c9dd6c33-bf3b-4d3a-af5b-90f02ba177a1" x="25" y="434" width="233" height="20" forecolor="#2DBDB6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="12" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[你的儲蓄及投資]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a068c203-7d95-435e-a030-7279e1562465" mode="Opaque" x="11" y="464" width="248" height="20" forecolor="#414141" backcolor="#E3F2F5"/>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[現時儲蓄及投資結存]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6be90cee-16bc-440c-a72e-94ad9930a5e3" mode="Opaque" x="11" y="504" width="248" height="20" forecolor="#414141" backcolor="#E3F2F5">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期每年回報率]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="edacc712-87b5-4196-823e-91a61ce973ed" mode="Opaque" x="11" y="484" width="248" height="20" forecolor="#414141" backcolor="#FFFFFF"/>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[每月儲蓄及投資]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="93993543-1eb8-4256-83ea-91270bc82626" x="10" y="463" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{step4_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="37c811fb-82b1-4b95-9b77-513538602be3" x="10" y="484" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{step4_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="93cde9d0-b012-43a4-b674-23cd0adfa005" x="10" y="504" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{step4_2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="eed3b8a7-e71d-4a56-aade-980f59d563e1" mode="Opaque" x="11" y="525" width="248" height="47" forecolor="#414141" backcolor="#FFFFFF"/>
+				<box topPadding="8" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期退休時可獲得金額]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="a7343042-467b-4043-b02e-61a5390f7c02" x="10" y="551" width="248" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{res_ttSaving}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="444413e2-db60-4a73-8864-8bfc7007b106" x="305" y="435" width="238" height="20" forecolor="#2DBDB6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="12" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[你的其他退休收入]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4e11e32b-375b-411c-bcb0-22bbaa332e16" mode="Opaque" x="292" y="506" width="252" height="40" forecolor="#414141" backcolor="#FFFFFF">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期退休後這些收入
+每年增長率]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="59ac0e19-2f57-4a8b-9f41-d29fdaf5d48e" mode="Opaque" x="292" y="465" width="252" height="40" forecolor="#414141" backcolor="#E3F2F5"/>
+				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="100"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[預期退休後從其他方面獲得的每月收入]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="d28c57ff-ca1a-43ab-8368-e2b5fa7ed2cd" x="292" y="516" width="252" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{step5_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7df1c259-2542-4cae-b47d-237f57f21fb3" x="292" y="475" width="252" height="20"/>
+				<box rightPadding="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["港元  " + $P{step5_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ecb1b32e-e037-45bd-9f21-a2e1738bea1a" mode="Opaque" x="11" y="197" width="248" height="20" forecolor="#414141" backcolor="#FFFFFF"/>
+				<box padding="0" topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="1.0" firstLineIndent="0" leftIndent="0" rightIndent="0" spacingBefore="0" spacingAfter="0" tabStopWidth="40"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{employType}.equals( "EE" ) ? "僱員" : "自僱人士"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="6d29c47c-9955-4df9-9c8f-84ac4ef93da3" x="0" y="0" width="554" height="30" forecolor="#414141"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[註：退休時所欠金額與現時年薪計算的圖例僅供參考，此年薪數值並沒有包括年薪的增幅。]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

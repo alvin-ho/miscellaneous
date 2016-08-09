@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DataSourceReport" pageWidth="595" pageHeight="842" columnWidth="565" leftMargin="15" rightMargin="15" topMargin="15" bottomMargin="15" uuid="472e7edf-e7c1-4379-a4aa-34559ceec757">
+	<property name="ireport.zoom" value="2.143588810000002"/>
+	<property name="ireport.x" value="170"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="PATH" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TOTALSAVE" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ANNUALINCOME" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CATEGORYAMOUNT" class="java.lang.Double" isForPrompting="false"/>
+	<parameter name="CATE1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ITEM1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="SAVEAMOUNT1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ITEM1ICON" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CATE2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ITEM2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="SAVEAMOUNT2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ITEM2ICON" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CATE3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ITEM3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="SAVEAMOUNT3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ITEM3ICON" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CATE4" class="java.lang.String"/>
+	<parameter name="ITEM4" class="java.lang.String"/>
+	<parameter name="SAVEAMOUNT4" class="java.lang.String"/>
+	<parameter name="ITEM4ICON" class="java.lang.String"/>
+	<parameter name="CATE5" class="java.lang.String"/>
+	<parameter name="ITEM5" class="java.lang.String"/>
+	<parameter name="SAVEAMOUNT5" class="java.lang.String"/>
+	<parameter name="ITEM5ICON" class="java.lang.String"/>
+	<parameter name="CATE6" class="java.lang.String"/>
+	<parameter name="ITEM6" class="java.lang.String"/>
+	<parameter name="SAVEAMOUNT6" class="java.lang.String"/>
+	<parameter name="ITEM6ICON" class="java.lang.String"/>
+	<parameter name="CATE7" class="java.lang.String"/>
+	<parameter name="ITEM7" class="java.lang.String"/>
+	<parameter name="SAVEAMOUNT7" class="java.lang.String"/>
+	<parameter name="ITEM7ICON" class="java.lang.String"/>
+	<parameter name="CATE8" class="java.lang.String"/>
+	<parameter name="ITEM8" class="java.lang.String"/>
+	<parameter name="SAVEAMOUNT8" class="java.lang.String"/>
+	<parameter name="ITEM8ICON" class="java.lang.String"/>
+	<parameter name="CATE9" class="java.lang.String"/>
+	<parameter name="ITEM9" class="java.lang.String"/>
+	<parameter name="SAVEAMOUNT9" class="java.lang.String"/>
+	<parameter name="ITEM9ICON" class="java.lang.String"/>
+	<parameter name="CATE10" class="java.lang.String"/>
+	<parameter name="ITEM10" class="java.lang.String"/>
+	<parameter name="SAVEAMOUNT10" class="java.lang.String"/>
+	<parameter name="ITEM10ICON" class="java.lang.String"/>
+	<parameter name="CATE11" class="java.lang.String"/>
+	<parameter name="ITEM11" class="java.lang.String"/>
+	<parameter name="SAVEAMOUNT11" class="java.lang.String"/>
+	<parameter name="ITEM11ICON" class="java.lang.String"/>
+	<parameter name="CATE12" class="java.lang.String"/>
+	<parameter name="ITEM12" class="java.lang.String"/>
+	<parameter name="SAVEAMOUNT12" class="java.lang.String"/>
+	<parameter name="ITEM12ICON" class="java.lang.String"/>
+	<parameter name="CATE13" class="java.lang.String"/>
+	<parameter name="ITEM13" class="java.lang.String"/>
+	<parameter name="SAVEAMOUNT13" class="java.lang.String"/>
+	<parameter name="ITEM13ICON" class="java.lang.String"/>
+	<parameter name="CATE14" class="java.lang.String"/>
+	<parameter name="ITEM14" class="java.lang.String"/>
+	<parameter name="SAVEAMOUNT14" class="java.lang.String"/>
+	<parameter name="ITEM14ICON" class="java.lang.String"/>
+	<parameter name="CATE15" class="java.lang.String"/>
+	<parameter name="ITEM15" class="java.lang.String"/>
+	<parameter name="SAVEAMOUNT15" class="java.lang.String"/>
+	<parameter name="ITEM15ICON" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[${id}]]>
+	</queryString>
+	<group name="Bar Group"/>
+	<title>
+		<band/>
+	</title>
+	<columnHeader>
+		<band height="101">
+			<textField>
+				<reportElement uuid="83f1ddf9-69e0-448e-990b-2c8ee111ceec" mode="Transparent" x="418" y="15" width="152" height="33" forecolor="#4B2384" backcolor="#4B2384"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="20" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["削減開支計算機"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="50e8a06c-dcf4-4883-9a52-509191454e5f" mode="Opaque" x="0" y="65" width="565" height="25" forecolor="#4B2384" backcolor="#2DBDB6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["         概要"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="daa76236-fabd-4ee1-a7c8-7428b44895e0" x="0" y="0" width="140" height="51"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/logo-iec.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="295c1e0e-b475-45bc-90e2-c3f52f0a16f1" x="6" y="70" width="18" height="18"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/pdf/ico-report.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<summary>
+		<band height="696">
+			<textField>
+				<reportElement uuid="65b60959-6190-47f3-8b48-47e7247bd1b7" x="222" y="8" width="326" height="25" forecolor="#4B2384" backcolor="#4B2384"/>
+				<textElement textAlignment="Left">
+					<font fontName="MYuen HK Medium" size="16" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TOTALSAVE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ecb2a608-1ac2-4480-9c8f-2dee727293bb" x="163" y="8" width="58" height="25" forecolor="#4B2384" backcolor="#4B2384"/>
+				<textElement textAlignment="Right">
+					<font fontName="MYuen HK Medium" size="16" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[每年 ]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="90f43b6b-3347-4935-97e3-db2c8d6bbbad" x="108" y="97" width="299" height="20" forecolor="#666666"/>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE1} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM1} + "</style>"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7f5fd741-ebcc-4629-92d7-157dd5f15eb4" x="5" y="66" width="161" height="27" forecolor="#4B2384" backcolor="#4B2384"/>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="14" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[節省項目分布]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4fc1c3a7-a49f-4aa8-a428-cad8ee0ce735" x="5" y="8" width="128" height="25" forecolor="#4B2384" backcolor="#4B2384"/>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="14" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[你將會節省]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="a29f437c-6591-4e93-a5b9-e126c1e9504a" x="16" y="32" width="529" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ANNUALINCOME}  != "0% of your annual income"]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="14" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["("+$P{ANNUALINCOME}+")"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="e17cb56d-60f1-4f30-a36d-6cfc69175aa1" x="0" y="58" width="565" height="1" forecolor="#DDDDDD"/>
+			</line>
+			<textField>
+				<reportElement uuid="3cf4e61e-a781-4e44-8d85-fc0a9dac9b9d" x="177" y="116" width="220" height="27" forecolor="#4B2384"/>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="16" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="bf9b8d9f-4235-4e74-a711-febbb85af93a" x="108" y="123" width="67" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM1}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[你將每年節省]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="8c117cd3-afaa-4ac4-9c75-c26e7a9c6306" x="108" y="155" width="299" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM2}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE2} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM2} + "</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8909362a-66e8-424b-a4ed-3812392e7731" x="177" y="174" width="220" height="27" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM2}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="16" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="78b0e935-81e2-4ce9-879e-3bd447b2446f" x="108" y="180" width="67" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM2}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[你將每年節省]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="b18fcc7d-9aed-4ce8-a925-9541d63846a1" x="177" y="232" width="220" height="27" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM3}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="16" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3da5fe91-5ba8-4263-91b0-38d45e203e53" x="108" y="213" width="299" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM3}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE3} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM3} + "</style>"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="eb21df4b-91b5-433a-bad7-86a8f7591423" x="108" y="238" width="67" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM3}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[你將每年節省]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="4b7eac38-1800-4af5-9940-8cc943a3e503" x="48" y="98" width="40" height="40"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM1ICON}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="4eeeb4d4-b4dd-43af-8d2f-a57c29742fe9" x="48" y="156" width="40" height="40">
+					<printWhenExpression><![CDATA[$P{ITEM2}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM2ICON}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="fbcedb79-a794-4802-b888-d76f6b3dd61a" x="48" y="214" width="40" height="40">
+					<printWhenExpression><![CDATA[$P{ITEM3}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM3ICON}]]></imageExpression>
+			</image>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="9c849bfd-1342-4fa0-bd1b-3c9eee237a4b" x="442" y="-116" width="123" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="582e5579-2df5-4ba8-9767-d694ddec021a" x="5" y="276" width="161" height="27" forecolor="#4B2384" backcolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM4}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="14" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[其他節省項目]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ac5021f0-0bd8-429e-8e21-6846e65442a1" x="434" y="276" width="128" height="27" forecolor="#4B2384" backcolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM4}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="14" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[每年節省]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="d68419ea-7cc8-4c51-993e-bd47502bd3a0" x="5" y="309" width="25" height="25">
+					<printWhenExpression><![CDATA[$P{ITEM4}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM4ICON}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="99d87521-b68f-4041-833b-5e2eba9a29ff" x="46" y="311" width="363" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM4}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE4} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM4} + "</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c9dca0da-1d9f-4d27-8378-0795820ebf74" x="434" y="311" width="129" height="20" forecolor="#4B2384" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$P{ITEM4}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT4}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="1f150364-06d2-43de-95a7-9b77bbe6c7ca" x="5" y="340" width="25" height="25">
+					<printWhenExpression><![CDATA[$P{ITEM5}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM5ICON}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="01469331-5a13-43fe-8b79-fd6c307dff68" x="46" y="342" width="363" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM5}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE5} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM5} + "</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c3bb92eb-d529-4203-b56f-a45ef102bd82" x="434" y="342" width="129" height="20" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM5}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT5}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="3d38169f-696a-4e83-bd14-abf0a0f5bd7b" x="5" y="371" width="25" height="25">
+					<printWhenExpression><![CDATA[$P{ITEM6}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM6ICON}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="ef43fb90-6746-4ca5-8fa9-a8b4209bb193" x="46" y="373" width="363" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM6}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE6} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM6} + "</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="25d3053c-a077-47b8-a188-d6228876821e" x="434" y="373" width="129" height="20" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM6}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT6}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="846a36b2-3d5e-416c-bbf2-20d4b851a7f4" x="5" y="402" width="25" height="25">
+					<printWhenExpression><![CDATA[$P{ITEM7}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM7ICON}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="f83f40df-bc02-4919-9be0-06f29295fe73" x="46" y="404" width="363" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM7}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE7} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM7} + "</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4fc76932-efcb-4fed-83a8-584f8f50e4c1" x="434" y="404" width="129" height="20" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM7}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT7}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="fcc09bad-e29f-4ad1-8594-ef05960df787" x="5" y="433" width="25" height="25">
+					<printWhenExpression><![CDATA[$P{ITEM8}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM8ICON}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="674ae529-c32f-4a31-bdaf-cf4189abf80b" x="46" y="435" width="363" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM8}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE8} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM8} + "</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fe345025-2c6c-4fb8-b996-3ae97534c278" x="434" y="435" width="129" height="20" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM8}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT8}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="3a87612e-76f1-4af7-b38d-e3535c613fd6" x="5" y="464" width="25" height="25">
+					<printWhenExpression><![CDATA[$P{ITEM9}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM9ICON}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="a726f519-3f12-4703-9eca-40e2321eafbe" x="46" y="466" width="363" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM9}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE9} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM9} + "</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1ca5c4e1-deb4-45c7-86ac-1e429f3888fe" x="434" y="466" width="129" height="20" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM9}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT9}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="6dbd779e-451b-4c04-a4f6-0ef809d58a2b" x="5" y="495" width="25" height="25">
+					<printWhenExpression><![CDATA[$P{ITEM10}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM10ICON}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="8fe15445-1a5e-4cc3-8fc0-a8e204f9d190" x="46" y="497" width="363" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM10}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE10} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM10} + "</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="39928d81-1035-4c23-9f72-129f244f0ba3" x="434" y="497" width="129" height="20" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM10}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT10}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="26f6574f-be91-48be-9f86-171d1559802a" x="5" y="526" width="25" height="25">
+					<printWhenExpression><![CDATA[$P{ITEM11}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM11ICON}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="8060cb6d-a77e-4d58-ae2a-6e777b0bcc85" x="46" y="528" width="363" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM11}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE11} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM11} + "</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="deaaa7f1-57fc-4e56-bb4a-85f13c4fb6af" x="434" y="528" width="129" height="20" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM11}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT11}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="2913adb1-8c62-4cd9-a09c-44837a4c1da1" x="5" y="557" width="25" height="25">
+					<printWhenExpression><![CDATA[$P{ITEM12}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM12ICON}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="d6125e7b-623e-4c26-92e5-086c1b741830" x="46" y="559" width="363" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM12}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE12} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM12} + "</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8193461c-7bc4-4912-890d-af5d69eee42c" x="434" y="559" width="129" height="20" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM12}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT12}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="4d21ca91-b26c-43bf-a119-c1bf61e0830b" x="5" y="588" width="25" height="25">
+					<printWhenExpression><![CDATA[$P{ITEM13}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM13ICON}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="a9d50f72-b02c-4ba2-92e0-ec8661038c54" x="46" y="590" width="363" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM13}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE13} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM13} + "</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b73361a3-ea8f-4320-87fe-ea7618b42fab" x="434" y="590" width="129" height="20" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM13}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT13}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="9fc21710-222a-45b7-903f-e8f315721309" x="5" y="619" width="25" height="25">
+					<printWhenExpression><![CDATA[$P{ITEM14}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM14ICON}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="e8c9480b-7c0b-425d-b56f-a190a95bc7a5" x="46" y="621" width="363" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM14}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE14} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM14} + "</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a43394f7-43b6-4646-b2ee-ec738e0c44a8" x="434" y="621" width="129" height="20" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM14}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT14}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="491d3b0e-a3fd-4f2f-a198-98559fef29b7" x="5" y="650" width="25" height="25">
+					<printWhenExpression><![CDATA[$P{ITEM15}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/" + $P{ITEM15ICON}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="7bbde797-7607-4c6a-b98f-99598c1a0984" x="46" y="650" width="363" height="20" forecolor="#666666">
+					<printWhenExpression><![CDATA[$P{ITEM15}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CATE15} + " － " + "<style forecolor=\"#2cb7b4\">" + $P{ITEM15} + "</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e333bfce-9b97-4690-85d7-38ee7497e8ee" x="434" y="652" width="129" height="20" forecolor="#4B2384">
+					<printWhenExpression><![CDATA[$P{ITEM15}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="MYuen HK Medium" size="10" isBold="false" isItalic="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAVEAMOUNT15}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="5f5b3d66-a427-441c-8c95-2cae6052fc56" x="5" y="97" width="25" height="27"/>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/no1.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="4ada54bf-6a87-4c69-8291-efa556de5102" x="5" y="155" width="25" height="27">
+					<printWhenExpression><![CDATA[$P{ITEM2}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/no2.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="232b26c8-abc2-49f8-8479-a08f5137905e" x="5" y="213" width="25" height="27">
+					<printWhenExpression><![CDATA[$P{ITEM3}.toString() != ""]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{PATH} + "images/common/calculator/no3.jpg"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement uuid="c56dc101-77b5-438b-be3e-18fb8b9b9cd2" x="0" y="270" width="565" height="1" forecolor="#DDDDDD"/>
+			</line>
+		</band>
+	</summary>
+</jasperReport>

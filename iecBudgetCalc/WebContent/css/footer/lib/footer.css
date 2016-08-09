@@ -1,0 +1,133 @@
+/* line 3, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+html {
+  height: 100%;
+  position: relative;
+  overflow: auto; }
+
+/* line 4, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+body {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+/* line 9, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+.footerfix {
+  padding-bottom: 150px; }
+
+/* line 12, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+.footercontenter {
+  font-size: 15px;
+  overflow: hidden;
+  position: absolute;
+  height: auto;
+  bottom: 0px;
+  width: 100%;
+  /* This selector is reserved for reversing the footer layout. */
+  /* This selector is reserved for reversing the footer layout. */ }
+  /* line 17, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .container {
+    background-color: #4a2680; }
+  /* line 21, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .site-footer {
+    padding-bottom: 25px;
+    /*height: 225px;*/
+    font-size: 0.8em;
+    color: #FFFFFF;
+    background-color: #4a2680;
+    width: 100%; }
+  /* line 32, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .site-footer .row {
+    background-color: #4a2680; }
+  /* line 36, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .site-footer .btn {
+    font-size: 0.85em; }
+  /* line 41, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-left,
+  .footercontenter .footer-right {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  /* line 46, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-right {
+    text-align: center; }
+  /* line 50, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-right .input-group {
+    display: inline-block;
+    text-align: left; }
+  /* line 55, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-right .btn {
+    padding: 3px 18px 3px 18px; }
+  /* line 59, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-copyright {
+    margin: 10px 0 0 0; }
+  /* line 63, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-menu {
+    padding: 0;
+    margin: 10px 0 0 0; }
+  /* line 68, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-hyperlinks-wrapper {
+    text-align: center; }
+  /* line 72, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-menu.footer-hyperlinks {
+    list-style: none;
+    text-align: center; }
+  /* line 77, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-menu li {
+    list-style: none;
+    display: inline-block;
+    /*	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;*/ }
+  /* line 86, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-menu a {
+    margin: 0 20px 0 0;
+    color: #FFFFFF; }
+  /* line 92, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-logo {
+    margin-bottom: 20px;
+    text-align: center; }
+  /* line 97, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-logo {
+    padding-right: 20px;
+    border-right: 1px solid #FFFFFF;
+    display: table-cell;
+    vertical-align: top; }
+  /* line 104, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-logo img {
+    width: 120px; }
+  /* line 113, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-statement {
+    padding-left: 20px;
+    display: table-cell;
+    vertical-align: top; }
+  /* line 119, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-statement p {
+    margin: 0; }
+  /* line 123, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+  .footercontenter .footer-copyright {
+    text-align: center; }
+  @media (min-width: 768px) {
+    /* line 128, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+    .footercontenter .site-footer {
+      font-size: 0.85em;
+      /* height: 134px; */ }
+    /* line 133, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+    .footercontenter .footer-right {
+      text-align: right; }
+    /* line 137, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+    .footercontenter .footer-menu {
+      float: right; }
+    /* line 141, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+    .footercontenter .footer-menu a {
+      margin: 0 0 0 20px; }
+    /* line 145, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+    .footercontenter .footer-menu li {
+      float: left; }
+    /* line 149, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+    .footercontenter .footer-logo img {
+      width: auto; }
+    /* line 153, D:/pjs/IEC/dev/iecBudgetCalc/css/footer/lib/footer.scss */
+    .footercontenter .footer-copyright {
+      text-align: left; } }
+
+/*# sourceMappingURL=footer.css.map */

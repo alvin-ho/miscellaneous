@@ -1,0 +1,8 @@
+domain=http\://10.10.11.23
+jasperpath=/profiles/app/iecFinancialHealthCheck/jasper/report10.jasper
+pdn=thechinfamily.intra.hksfc.org.hk
+psi=UA-36354635-1
+ogdomain=https\://thechinfamily.intra.hksfc.org.hk
+
+# www.hkiec.hk
+# UA-34416257-1

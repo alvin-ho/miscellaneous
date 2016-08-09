@@ -1,0 +1,749 @@
+body{
+/*padding-bottom:  0px !important	*/
+}
+
+.wrapper{	
+	width:320px;	
+	margin: 0 auto;
+}
+
+
+/***** Opening *****/
+#opening{
+	padding:15px 10px;
+}
+
+.fancybox-wrap{
+	width:80% !important;
+}
+.fancybox-inner{
+	width:100% !important;
+}
+
+/***** Header *****/
+
+span.toolsSelect{	
+	display:none;	
+}
+
+.oMenu{	
+	display:block;	
+}
+
+a.logo-iec{
+	margin-left:20px;
+}
+
+/****** Content ******/
+#content{
+ padding-bottom: 0px;}
+#content > .paddtxtC{
+	text-align:center;
+	background-color:transparent!important;
+}
+
+.description .leftCol{
+	width:100%;
+}
+
+.description .gotomain
+{
+	display:none;
+}
+
+.description .rightCol{
+	float:none;
+	width:174px;
+	text-align:left;
+}
+
+.description a.explainBtn
+{
+	padding:10px 0 0 50px;
+	height:42px;
+}
+
+
+/***** Question *****/
+.main {
+	padding: 0;
+	background-color:#E3E3E3 !important;
+	min-height:0;
+	text-align:left;
+}
+.qTitle_LongImg {
+	background:url('../../images/tc/qTitleImg2.gif') no-repeat left center;
+	height:82px;
+}
+.qTitle {	
+	width: 105%;
+	left: -5%;
+}
+.mBanner {
+	display:block;
+}
+
+.animate {
+	display:none;
+}
+
+.qBox{
+	width:95%;
+}
+
+.longqBox
+{
+	margin-left: 14px;
+	width: 95%;
+}
+
+.underpig{
+	margin-top: 0px;
+}
+
+.qAnsContainer{
+	padding:43px 0 19px 25px;
+}
+
+.qAns{
+	background:none;
+	float:none;
+}
+
+.timeLine {	background:none;	}
+
+label.css-label{
+	background-image:url('../../images/tc/uncheckbox_radio.png');
+	
+}
+
+
+input[type=radio].css-checkbox + label.css-label {
+	height: auto !important;
+	padding:0;
+	font-size:8px;
+	background-position: 0 0;
+	width:100%;
+}
+
+
+input[type=radio].css-checkbox:checked + label.css-label {
+	background:url('../../images/tc/checkbox_radio.png') no-repeat 0 0px;
+}
+
+
+
+.radioGroup{
+	width:100%;
+	margin: 0px 0 26px 0;
+}
+
+.radioName {
+	padding:0;
+	float:none;
+}
+
+.radioGroup:first-child > .radioName, 
+.radioGroup:last-child > .radioName{
+	margin-left:-4px;
+}
+/* which type */
+.qAns > .rightCol, 
+.qAns > .leftCol{
+	width:100%;
+}
+.qAns > .rightCol{
+	margin:0;
+}
+
+.leftCol > .cbContainer, 
+.rightCol > .cbContainer{
+	width:100%;
+	float:none;
+}
+
+.cbContainer > .jobType {	
+	display:none;
+}
+
+.cbContainer > .radioGroup{
+	margin:0 0 26px 0;
+}
+
+.borderSet{
+	border:0
+}
+
+.sliderWidget p.maxMessage
+{
+	margin: 10px 0px 5px 0px;
+}
+
+	.sliderWidget
+	{
+		height:75px;
+		margin:0px;
+		width: 100%;
+		margin-bottom:10px;
+	}
+	
+
+
+	
+	.inputBox
+	{
+		float: left;
+		width: 100%;
+		margin: 30px 0px 20px 0px;
+	}
+	
+	.maxValue
+	{
+		margin-right:7px;
+		margin-top:0px;
+	}
+	
+	.minValue
+	{
+		margin-top:0px;
+	}
+	
+/***** result *****/
+.result
+{
+	width:300px;
+	height:785px;
+}
+
+/***** loanmanage *****/
+.successresult
+{
+	min-width:290px;
+	min-height:785px;
+	height:auto;
+	padding:16px 23px;
+}
+
+
+/***** estateplanning *****/
+.estateplanning
+{
+	padding :0px;
+}
+
+.estateplanning .qBox
+{
+	margin-left:15px;
+}
+
+
+
+.track
+{
+	padding-top:20px;
+}
+.step_check{
+	background-color:transparent;
+}
+.track .step_btn_outer, .track .step_btn, .inner img{	display:none;	}
+.track .prepage, .track .nextpage{
+	width:140px;
+	height:auto;
+	background:none;
+	background-color: #4a2680;
+	-moz-border-radius-bottomleft:0;
+	     border-bottom-left-radius:0;
+	/* box-shadow: 0px 3px  #014A80; */
+	-moz-border-radius: 0;
+	     border-radius: 0;
+}
+.track .inner{
+	padding:5px 0;
+	width:100%;
+	margin:0;
+	height:auto;
+}
+.step_check .prepage a#bottomPrev,
+.step_check .nextpage a#bottomNext{
+	background:none;
+	margin:0;
+}
+.step_check .prepage  .inner p, .step_check .nextpage  .inner p{
+	font-size:14px;
+	float:none;
+	margin:0;
+}
+.sliderBar
+{
+	width: 131px;
+}
+
+.financialgoal .forpadbottom
+{
+	padding-bottom:20px;
+}
+
+.sliderContainer
+{
+
+	width: 162px;
+}
+.minus,.add
+{
+	/*margin: 5px 5px -10px 0px;*/
+}
+
+
+.slideWord{}
+/***** insurance.jsp *****/
+
+.insurance > .wrapper  > .main > .qBox
+{
+	float:none;
+	margin-left:14px;
+}
+/***** saving.jsp *****/
+.saving > .wrapper > .main > .qBox
+{
+	float:none;
+	margin-left: 14px;
+}
+.saving
+{
+	background-color:transparent;
+}
+
+.about
+{
+	/*padding: 0px 0px 75px 0px;*/
+	padding: 0px 0px 0px 0px;
+}
+
+.about .qAns > .leftCol
+{
+	width:54%;
+}
+.about .qAns > .mleftCol{		width:100%;		}
+.about .qAns > .rightCol
+{	
+	width:54%;
+	margin-left:0px;
+}
+.about .qAns > .mrightCol{		width:100%;		}
+.income_and_expense
+{
+	padding: 0px;
+}
+.income_and_expense .normalPadd
+{
+	padding: 30px 0px 5px 23px;
+}
+
+.insurance
+{
+	padding: 0px;
+}
+
+.insurance .qBox
+{
+	margin-left:14px;
+}
+.investment
+{
+	padding: 0px;
+}
+
+.longqBox .qTitle {
+left: -5%;
+width: 105%;
+}
+
+#investmentCon .marginPad
+{
+	margin-bottom: 0px;
+	
+}
+
+
+.financialgoal
+{
+	padding: 0px;
+}
+
+.loanmanage
+{
+	padding: 0px;
+}
+
+.retirement
+{
+	padding: 0px;
+	background-color:transparent;
+}
+
+
+.retirement .widthPaddsix
+{
+	width:26px;
+}
+
+.retirement .widthPaddthirdty
+{
+	width:30px;
+}
+.saving
+{
+	padding: 0px;
+}
+
+.saving .qBox
+{
+	margin-left:14px;
+}
+
+.questionContainer
+{
+	padding: 0px;
+}
+
+.loanmanage .questionContainer
+{
+	padding: 0px;
+}
+
+.qAns > .marStatus > .resetMargin
+{
+	margin: 0 0 26px 0;
+}
+/*add images to menu*/
+	
+ul#loadMenu li, ul#loadMenu li a.toolsimg{
+	margin:0;
+}
+#blockLayer > ul#loadMenu li a
+{
+	padding: 21px 0px 39px 90px;
+}
+
+#blockLayer > ul#loadMenu li  a.email
+{ 
+	background-position: 33px -31px;
+}
+
+#blockLayer > ul#loadMenu li  a.facebook
+{
+	background-position: 33px -166px;
+}
+
+#blockLayer > ul#loadMenu li a.quest
+{
+	background-position: 33px -216px;
+}
+
+.radionameone
+{
+	padding-left: 25px;
+}
+
+.radionamefourth
+{
+	padding-right: 10px;
+}
+.planContent .backTop_btn{
+	display:none;
+}
+/***** Footer *****/
+
+#footer > .paddtxtC{
+	text-align:center;
+}
+
+#footer > .wrapper span.allRight{
+	margin-top:25px;
+	display:block;
+}
+
+.mfooterLine
+{
+	width: 320px;
+	margin: 0 auto;
+	padding: 12px 0;
+	-moz-box-shadow: 0px 2px #b2b6b8;
+	     box-shadow: 0px 2px #b2b6b8;
+	display:block;
+	text-align: right;
+}
+
+#footer .goToTop
+{
+	background-image:url('../../images/tc/gototop.png');
+	width:22px;
+	height:22px;
+	cursor:pointer;
+	display:inline-block;
+}
+
+.site-footer {
+
+	position: relative !important;
+  
+}
+
+.tabs_Container{
+	margin-top:0;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.resPlan{
+	padding: 8px 28px;
+	margin-bottom:0;
+	-moz-box-shadow:none;
+	     box-shadow:none;
+	-moz-border-radius-topleft: 10px;
+	     border-top-left-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	     border-top-right-radius: 10px;
+}
+.resPlan p{
+	font-size: 18px;
+	text-align:center;
+}
+ #tabs{
+	padding:0;
+	float:none;
+	position: relative;
+ }
+ #tabs ul#sectionTab{	
+	float:none;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	display:none;
+ }
+#tabs ul li{	width:100%;	}
+ #sectionTab li
+ {	
+	background-color: #b2d0e8;
+	border-bottom: 1px solid #64adf1;
+	-moz-box-shadow:none;
+	     box-shadow:none;
+	padding-left:20px;
+ }
+  #sectionTab li:last-child
+  {
+	border-bottom: 10px solid #81bff8;
+	-moz-border-radius-bottomleft: 10px;
+	     border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	     border-bottom-right-radius: 10px;
+  }
+ 
+.tabCon div.innerresult
+{
+	width: 100%;
+	padding: 20px 15px;
+	margin:0;
+	-moz-box-shadow: none;
+	     box-shadow: none;
+}
+.analysisTitle .incomeClass, #tabs .analysisTitle .titleIcon
+{	
+	display:none;
+}
+.resultContainer{
+	border:0;
+}
+.resultContainer .moneypig{
+	margin: 0 auto;
+}
+.resultContainer .moneypig{
+	padding: 0;
+	float: none;
+	width: 80%;
+}
+
+.successresult .moneypig
+{
+	margin:auto;
+	margin-top:30px;
+}
+.resultContainer .content{
+	width: 100%;
+	padding: 0;
+	min-height:0;
+}
+.resultContainer .actionBtn{
+	width: 80%;
+	position:static;
+	margin-top: 30px;
+}
+.actionContainer{
+	float:none;
+	top:0;
+	width:100%;
+}
+ .indication{
+	padding: 20px 0 20px 15px;
+ }
+ .notice, .better, .perfect{
+	display: block;
+	float: none;
+	padding-bottom: 20px;
+	width:100%;
+ }
+ 
+ .result_pics
+{
+	text-align:center;
+}
+ .planTitle{
+	padding: 8px 0 5px 17px;
+ }
+ .planTitle p.actionTitle{
+	vertical-align: middle;
+ }
+ .planTitle p br.lineBreak{
+	content:normal;
+ }
+ #accordion{
+	margin-bottom:20px;
+ }
+ #accordion .planTitle .ocIcon{
+	top:20px;
+ }
+label.css-label  > span {
+	left: 0px;
+	padding-left:27px;
+	font-size: 14px;
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+	text-align: left;
+	display: block;
+
+	position: static;
+
+}
+
+.radioName > span
+{
+	display:none;
+}
+
+#actionPlanner .resPlan p{
+	display:block; 
+	font-size: 18px;
+	background-position: 28px 0;
+	-moz-background-size: 22px 20px;
+	     background-size: 22px 20px;
+ }
+ 
+ 	.ratingCon{
+		position:static;
+		text-align: center;
+	}
+#bottomBtn{
+	position: fixed;
+	bottom: 0%;
+	text-align: initial;
+	width: 100%;
+	background: #FFF;
+	padding: 0;
+	-moz-box-shadow: 0px -2px 5px #acacac;
+	     box-shadow: 0px -2px 5px #acacac;
+}
+#bottomBtn .planPageBtn{
+	margin:0;
+	width: 18%;
+	padding: 10px 5px;
+	text-align: center;
+}
+#bottomBtn .planPageBtn:nth-child(3){
+	margin:0;
+	width: 20%;
+	padding: 10px 5px;
+}
+
+#notcompleteReminder{
+	padding: 15px 20px;
+}
+
+span.titleimg
+{
+	font-size:1.69em;
+	padding: 0 0 0 78px;
+}
+
+/***** Rate *****/
+.ratingCon{
+	margin-bottom:0px;
+	
+	padding: 0 10px;
+	margin-top:-20px;
+	background-color: #FFF;
+}
+
+.rating #u_rate{		width:100%;		}
+.rating #feedback, .rating #u_rate{
+	margin-right:0px;
+	margin-top:40px;
+}
+.rating #u_rate{
+	margin-bottom:40px;
+}
+#index .indexbanner
+{	
+	display:block;
+}
+#index .animateIndex
+{
+	display:none;
+}
+.indication, #actionPlanner{
+	background-color: #FFF; 
+}
+.calcIEC{
+	background-color:#FFF;
+	width:100%;
+	text-align:center;
+}
+.calcIEC .mCalBtn{	
+	display:inline-block;
+	margin:20px 0;
+
+}
+/***** Mobile Menu *****/
+
+#mmenuTitle{
+	display:block;
+	background-color: #5099cc;
+	padding: 10px 16px;
+	position: relative;
+	border-top: 1px #ffffff solid;
+}
+#mmenuTitle span#sTitle{
+	color: #FFFFFF;
+	font-size: 15px;
+	font-family: Gotham Rounded A, Gotham Rounded B,'MYuen HK Semibold','Microsoft JhengHei', sans-serif;
+	background-position: 0 center;
+	padding-left: 30px;
+}
+
+#mmenuTitle img{
+	width: 20px;
+	height: 13px;
+	position: absolute;
+	right: 16px;
+	top: 16px;
+}
+
+.rssureBtn,.rscancelBtn,.isureBtn,.icancelBtn,.rsureBtn,.rcancelBtn{
+	float:none;
+}
+
+.rssureBtn a.planBtn,.rscancelBtn a.planBtn,.isureBtn a.planBtn,.icancelBtn a.planBtn,.rsureBtn a.planBtn,.rcancelBtn a.planBtn
+{
+	padding: 6px 50px;
+}
+
+
+.footerfix{padding-bottom: 0px !important;}
+.footercontenter{position: relative !important;}

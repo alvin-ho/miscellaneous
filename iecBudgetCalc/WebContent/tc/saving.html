@@ -1,0 +1,1225 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+	<!-- Social Link -->
+	<meta property="og:title" content="儲蓄目標計算機" />
+	<meta property="og:type" content="website" />
+	<!-- must be absolute path to make stable reference for facebook, should not be an internal or private network -->
+	<meta property="og:image" content="https://www.thechinfamily.hk/tools/common/fbimages/fbimage_saving.jpg" />
+	<meta property="og:image:secure_url" content="https://www.thechinfamily.hk/tools/common/fbimages/fbimage_saving.jpg" />
+	<!-- ended -->
+	<meta property="og:url" content="https://www.thechinfamily.hk/tools/tc/saving.html" />
+	<meta property="og:image:type" content="image/jpg" />
+	<meta property="og:description" content="你有儲蓄目標嗎? 儲蓄目標計算機可助你計算須定時地儲蓄多少，或計算要達到你指定儲蓄目標的所需時間。" />
+	<!-- ended -->
+	<!-- 2013.10.28 to include header & footer -->
+
+	<script src="../js/config.js"></script>
+
+	<script type="text/javascript">
+
+
+	document.write("<link href=\"" + root_path + "/css/html4-reset.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+	document.write("<link href=\"" + root_path + "/css/layout.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+	//document.write("<link href=\"" + root_path + "/css/default.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">");
+	document.write("<script src=\"" + root_path + "/js/jquery.js\"></scr" + "ipt>");
+	document.write("<script src=\"" + root_path + "/js/changeFont.js\"></scr" + "ipt>");
+	document.write("<script src=\"" + root_path + "/js/functions.js\"></scr" + "ipt>");
+	document.write("<script src=\"" + root_path + "/js/tsUtil.js\"></scr" + "ipt>");
+	document.write("<script src=\"" + root_path + "/js/sitemapUtil.js\"></scr" + "ipt>");
+	document.write("<script src=\"" + root_path + "/js/sitemap_breadcrumb.js\"></scr" + "ipt>");
+	document.write("<script src=\"" + root_path + "/js/iecGlobal.js\"></scr" + "ipt>");
+
+	/** 2014.1.30 start **
+	** GA event & tracking **/
+	document.write("<script src=\"" + root_path + "/js/google_analytics.js\"></scr" + "ipt>");
+	/** 2014.1.30 ended **/
+
+	var loc = window.location.href;
+	var lang = 'en';
+	if (loc.search('lang=tc') !== -1 || loc.search('/tc/') !== -1) {
+		lang = 'tc';
+	}
+
+	</script>
+
+	<script src="../css/footer/lib/bootstrap.min.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="../css/default.css" media="all" />
+	<link href="../css/footer/lib/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../css/footer/lib/footer.css" rel="stylesheet" type="text/css" />
+	<link href="../css/calculator.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.fancybox-1.3.4.css" media="all" />
+
+	<script>
+		function fbShare(url, title, descr, image, winWidth, winHeight) {
+			var winTop = (screen.height / 2) - (winHeight / 2);
+			var winLeft = (screen.width / 2) - (winWidth / 2);
+			window.open('https://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
+		}
+	</script>
+	<!-- <a href="javascript:fbShare('https://www.thechinfamily.hk/tools/networth/en/index.html', 'IEC Net worth calculator', 'Check out how good you are at managing your wealth! Use our calculator to work out if what you own outweighs what you owe.', 'http://www.thechinfamily.hk/web/images/tc/tools-and-resources/tools/tools-head-banner_tc.jpg', 520, 350)" class="icoFb"></a>-->
+	<!-- Google Code for Remarketing Tag -->
+	<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 926048988;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+	</script>
+	<noscript>
+		<div style="display:inline;">
+			<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/926048988/?value=0&amp;guid=ON&amp;script=0" />
+		</div>
+	</noscript>
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window,
+			document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1666299540302495');
+		fbq('track', "PageView");
+	</script>
+	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1666299540302495&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+
+	<!--font-->
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7132094/6453152/css/fonts.css" />
+	<script type="text/javascript" src="https://fast.fonts.net/jsapi/c550c076-1bd6-411f-ac61-2ea18430c967.js"></script>
+	<!--font end-->
+
+	<title>儲蓄目標計算機</title>
+</head>
+<body>
+	<!-- 2013.10.28 to include header & footer -->
+	<div class="header">
+		<!--	<div class="useful-tools-wrapper">-->
+		<!-- USEFUL TOOL WITHIN THE HEADER, I.E. VIOLET AREA -->
+		<!--		<div class="useful-tools">-->
+		<!-- 2013.12.5 commonly include start -->
+		<!--			<div id="xxxsys_topLinkDiv" style="display:inline;"></div>-->
+		<!--			<div id="xxxsys_topSearchDiv" class="header-search"></div>-->
+		<!-- 2013.12.5 commonly include ended -->
+		<!--		</div>-->
+		<!-- /useful-tools -->
+		<!--	</div>-->
+		<!-- /useful-tools-wrapper -->
+		<div class="wrapper">
+			<div class="supported-by">
+				<!-- <p>The Investor Education Centre is supported by the financial regulators</p>
+			<img src="/images/common/img-supported-by.jpg" alt=""> -->
+			</div>
+			<!-- /supported-by -->
+			<a href="https://www.thechinfamily.hk/web/tc/" class="logo-iec"><img src="../images/common/img-logo-iec.jpg" alt="" /></a>
+<!--
+			<script type="text/javascript">
+				document.writeln('<a href="' + root_path + '/tc/index.html" class="logo-iec"><img src="' + root_path + '/images/common/img-logo-iec.jpg" alt="" /></a>');
+			</script>
+-->
+			<div class="clearfix"></div>
+		</div>
+
+		<script>
+			ts_loadInclude("sys_topMenuDiv", root_path + "/" + lang + "/include/top-menu.html");
+		</script>
+	</div>
+	<!-- 2013.10.28 to include header & footer ended -->
+	<div id="saving_tool_container">
+		<div class="calculator inner calculator-saving">
+			<div class="calculator-wrapper">
+				<h1>儲蓄目標計算機</h1>
+				<div class="calculator-innerwrapper-left saving-wrapper">
+					<ul class="tab">
+						<li class="tab-report" style="display:none;">
+							<div class="no_hover" style=" font-size:22px;"><span><img src="../images/common/calculator/icon-summy.png" alt="概要" class="mt15"></span>概要</div>
+						</li>
+						<li><a href="javascript:;" class="active"><span><img src="../images/common/calculator/icon-need-to-save.png" alt="需儲蓄的金額" /></span>需儲蓄的金額</a></li>
+						<li><a href="javascript:;"><span><img src="../images/common/calculator/icon-savings-and-investments.png" alt="最終可儲蓄的金額" /></span>最終可儲蓄<br />的金額</a></li>
+						<li><a href="javascript:;"><span><img src="../images/common/calculator/icon-expenses.png" alt="儲蓄需時多久" /></span>儲蓄需時多久</a></li>
+						<!-- this is the result tab, i.e. 100% width-->
+					</ul>
+					<!-- /tab -->
+					<div class="tab-assumption">
+						<a href="saving_disclaimer-2.html" class="btn-assumption"><span><img src="../images/common/calculator/btn-assumption.jpg" alt="assumption" /></span></a>
+						<div class="share-wrapper">
+							<a onclick="downloadExcelTracking(1)" href="javascript:;" title="下載 Excel 版本"><img src="../images/common/calculator/btn-excel.png" alt="下載 Excel 版本" /></a>
+							<a class="btn_submit" href="javascript:;" title="下載 PDF 版本"><img src="../images/common/calculator/btn-pdf.png" alt="下載 PDF 版本" /></a>
+							<a class="btn_print" href="javascript:;" title="列印"><img src="../images/common/calculator/btn-print.png" alt="列印" /></a>
+							<a class="btn_mailTo" href="javascript:;" title="電郵分享"><img src="../images/common/calculator/btn-mail.png" alt="電郵分享" /></a>
+							<!--							<a class="btn_shareFB" href="javascript:;" title="Facebook 分享"><img src="../images/common/calculator/btn-share.png" alt="Facebook 分享" /></a>-->
+							<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://www.thechinfamily.hk/tools/tc/saving.html" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><img src="../images/common/calculator/btn-share.png" alt="Facebook 分享" /></a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<!-- 2013.12.12 start -->
+					<div class="form-wrapper form-result" style="display:none;">
+						<div class="form-innerwrapper summary-wrapper" style="display:block;">
+						</div>
+					</div>
+					<!-- 2013.12.12 ended -->
+					<div class="form-wrapper form-content" style="display:block;">
+						<!-- How much you need to save wrapper start -->
+						<!-- form 1 -->
+						<div class="form-innerwrapper active">
+							<form method="post" action="../pdfMonth.do?lang=1" name="month_form" id="month_form">
+								<!-- 2013.12.16 start -->
+								<!-- hidden field for the PDF report -->
+								<input type="hidden" id="savingForImg" name="savingForImg" value="">
+								<input type="hidden" id="savingForWord" name="savingForWord" value="">
+								<input type="hidden" id="withCIA" name="withCIA" value="">
+								<input type="hidden" id="withoutCIA" name="withoutCIA" value="">
+								<input type="hidden" id="period" name="period" value="">
+								<input type="hidden" id="contribute" name="contribute" value="">
+								<input type="hidden" id="linechart_period" name="linechart_period" value="">
+								<input type="hidden" id="withCData" name="withCData" value="">
+								<input type="hidden" id="withoutCData" name="withoutCData" value="">
+								<input type="hidden" id="ticksValue" name="ticksValue" value="">
+								<!-- 2013.12.16 ended -->
+								<div class="panel_wrapper">
+									<h3>你需儲蓄的金額是多少?</h3>
+									<p>此計算機助你計算須定時地儲蓄多少，才可如期達到指定目標。</p>
+									<!-- goal start -->
+									<ul class="goal">
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo1" class="field1" checked="checked" />
+											<img src="../images/common/calculator/icon-education.png" alt="icon-education" width="34" height="34" /> 教育
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo2" class="field1" />
+											<img src="../images/common/calculator/icon-starting-a-business.png" alt="icon-starting-a-business" width="34" height="34" /> 創業
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo3" class="field1" />
+											<img src="../images/common/calculator/icon-saving-for-a-rainy-day.png" alt="icon-saving-for-a-rainy-day" width="34" height="34" /> 未雨綢繆
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo4" class="field1" />
+											<img src="../images/common/calculator/icon-wedding.png" alt="icon-wedding" width="34" height="34" /> 結婚
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo5" class="field1" />
+											<img src="../images/common/calculator/icon-housing.png" alt="icon-housing" width="34" height="34" /> 置業家居
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo6" class="field1" />
+											<img src="../images/common/calculator/icon-motor-vehicles.png" alt="icon-motor-vehicles" width="34" height="34" /> 買車
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo7" class="field1" />
+											<img src="../images/common/calculator/icon-having-a-baby.png" alt="icon-having-a-baby" width="34" height="34" /> 生育
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<!--
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo8" class="field1" />
+											<img src="../images/common/calculator/icon-retirement.png" alt="" width="34" height="34"/>
+											退休
+										</li>
+										-->
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="month_rdo" id="month_rdo9" class="field1" />
+											<img src="../images/common/calculator/icon-holiday.png" alt="icon-holiday" width="34" height="34" /> 渡假
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li style="width:300px;">
+											<input type="radio" name="month_rdo" id="month_rdo_last" class="field1 input-radio-other" /> 其他
+											<input style="width:200px;" type="text" maxlength="15" name="month_txt_last" id="month_txt_last" class="field2 input-other" />
+										</li>
+										<!-- li end -->
+									</ul>
+									<!-- goal end -->
+									<div class="clearfix"></div>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table need-to-save" style="position:relative;">
+										<tr>
+											<td class="topic qicon qicon2" width="203">目標金額 </td>
+											<td width="36">港元</td>
+											<td width="220">
+												<input type="text" maxlength="10" name="month_txt_g1" id="month_txt_g1" class="field3" />
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="topic">現有儲蓄</td>
+											<td>港元</td>
+											<td>
+												<input type="text" maxlength="10" name="month_txt_g2" id="month_txt_g2" class="field4" />
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="topic qicon qicon3" colspan="2">預期回報率</td>
+											<td>
+												<input type="text" maxlength="5" name="month_txt_g3" id="month_txt_g3" class="field5" />
+											</td>
+											<td style="padding-left:20px;">年利率%
+												<br />(最多可包含兩個小數點)</td>
+										</tr>
+										<tr>
+											<td class="topic" colspan="2">儲蓄期</td>
+											<td>
+												<table border="0" cellspacing="0" cellpadding="0" class="blank-table date">
+													<tr>
+														<td width="70">
+															<input type="text" maxlength="2" name="month_txt_g4_a" id="month_txt_g4_a" class="field6" />
+														</td>
+														<td width="70">年</td>
+														<td width="70">
+															<input type="text" maxlength="2" name="month_txt_g4_b" id="month_txt_g4_b" class="field6" />
+														</td>
+														<td>月</td>
+													</tr>
+												</table>
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="topic qicon qicon1" colspan="2">
+												複利息次數
+											</td>
+											<td colspan="2">
+												<input type="radio" maxlength="" name="month_rdo_g5" id="month_rdo_g5_c" class="field7" />&nbsp;每年一次&nbsp;
+												<input type="radio" maxlength="" name="month_rdo_g5" id="month_rdo_g5_b" class="field7" checked="checked" />&nbsp;每月一次&nbsp;
+												<input type="radio" maxlength="" name="month_rdo_g5" id="month_rdo_g5_a" class="field7" />&nbsp;每周一次
+											</td>
+										</tr>
+									</table>
+									<a href="javascript:;" class="btn btn_reset month_form">重設</a>
+									<a href="javascript:;" class="btn btn_cal btn_month">計算</a>
+									<div class="clearfix"></div>
+								</div>
+								<div style="display:none;" class="chart_wrapper">
+									<h2 style="color:#A76E16;">金額 (港元)</h2>
+									<div id="chart1div" style="margin-bottom:20px; width:675px; height:290px;"></div>
+									<a href="javascript:;" class="btn btn_submit btn_month_submit">儲存為PDF檔案</a>
+									<div class="clearfix"></div>
+									<br />
+									<a href="javascript:;" class="btn btn_back">重新計算</a>
+								</div>
+							</form>
+						</div>
+						<!-- /form-innerwrapper -->
+						<!-- How much you need to save wrapper end -->
+						<!-- How much you will have wrapper start -->
+						<!-- form 2 -->
+						<div class="form-innerwrapper">
+							<form method="post" action="../pdfFinal.do?lang=1" name="final_form" id="final_form">
+								<!-- 2013.12.16 start -->
+								<!-- hidden field for the PDF report -->
+								<input type="hidden" id="savingForImg" name="savingForImg" value="">
+								<input type="hidden" id="savingForWord" name="savingForWord" value="">
+								<input type="hidden" id="withCIA" name="withCIA" value="">
+								<input type="hidden" id="withoutCIA" name="withoutCIA" value="">
+								<input type="hidden" id="period" name="period" value="">
+								<input type="hidden" id="contribute" name="contribute" value="">
+								<input type="hidden" id="linechart_period" name="linechart_period" value="">
+								<input type="hidden" id="withCData" name="withCData" value="">
+								<input type="hidden" id="withoutCData" name="withoutCData" value="">
+								<input type="hidden" id="ticksValue" name="ticksValue" value="">
+								<!-- 2013.12.16 ended -->
+								<div class="panel_wrapper">
+									<h3>最終可儲蓄的金額</h3>
+									<p>你最終可儲蓄的金額是多少?此計算機助你計算若定時儲蓄固定金額，最終可儲蓄多少。</p>
+									<!-- goal start -->
+									<ul class="goal">
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo1" class="field1" checked="checked" />
+											<img src="../images/common/calculator/icon-education.png" alt="icon-education" width="34" height="34" /> 教育
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo2" class="field1" />
+											<img src="../images/common/calculator/icon-starting-a-business.png" alt="icon-starting-a-business" width="34" height="34" /> 創業
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo3" class="field1" />
+											<img src="../images/common/calculator/icon-saving-for-a-rainy-day.png" alt="icon-saving-for-a-rainy-day" width="34" height="34" /> 未雨綢繆
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo4" class="field1" />
+											<img src="../images/common/calculator/icon-wedding.png" alt="icon-wedding" width="34" height="34" /> 結婚
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo5" class="field1" />
+											<img src="../images/common/calculator/icon-housing.png" alt="icon-housing" width="34" height="34" /> 置業家居
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo6" class="field1" />
+											<img src="../images/common/calculator/icon-motor-vehicles.png" alt="icon-motor-vehicles" width="34" height="34" /> 買車
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo7" class="field1" />
+											<img src="../images/common/calculator/icon-having-a-baby.png" alt="icon-having-a-baby" width="34" height="34" /> 生育
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<!--
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo8" class="field1" />
+											<img src="../images/common/calculator/icon-retirement.png" alt="" width="34" height="34"/>
+											退休
+										</li>
+										-->
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="final_rdo" id="final_rdo9" class="field1" />
+											<img src="../images/common/calculator/icon-holiday.png" alt="icon-holiday" width="34" height="34" /> 渡假
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li style="width:300px;">
+											<input type="radio" name="final_rdo" id="final_rdo_last" class="field1 input-radio-other" /> 其他
+											<input style="width:200px;" type="text" maxlength="15" name="final_txt_last" id="final_txt_last" class="field2 input-other" />
+										</li>
+										<!-- li end -->
+									</ul>
+									<!-- goal end -->
+									<div class="clearfix"></div>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table need-to-save">
+										<tr>
+											<td class="topic qicon" width="203">定時儲蓄金額</td>
+											<td width="36">港元</td>
+											<td width="220">
+												<input type="text" maxlength="10" name="final_txt_g1" id="final_txt_g1" class="field3" />
+											</td>
+											<td style="padding-left:20px;" width="185">
+												<select id="tab2_saveperiod">
+													<option value="0">每周</option>
+													<option value="1" selected>每月</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td class="topic">現有儲蓄</td>
+											<td>港元</td>
+											<td>
+												<input type="text" maxlength="10" name="final_txt_g2" id="final_txt_g2" class="field4" />
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="topic qicon qicon3" colspan="2">預期回報率</td>
+											<td>
+												<input type="text" maxlength="5" name="final_txt_g3" id="final_txt_g3" class="field5" />
+											</td>
+											<td style="padding-left:20px;">年利率%
+												<br />(最多可包含兩個小數點)</td>
+										</tr>
+										<tr>
+											<td class="topic" colspan="2">儲蓄期</td>
+											<td>
+												<table cellspacing="0" cellpadding="0" border="0" class="blank-table date">
+													<tbody>
+														<tr>
+															<td width="70">
+																<input type="text" class="field6" id="final_txt_g4_a" name="final_txt_g4_a" maxlength="2">
+															</td>
+															<td width="70">年</td>
+															<td width="70">
+																<input type="text" class="field6" id="final_txt_g4_b" name="final_txt_g4_b" maxlength="2">
+															</td>
+															<td>月</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+									</table>
+									<a href="javascript:;" class="btn btn_reset final_form">重設</a>
+									<a href="javascript:;" class="btn btn_cal btn_final">計算</a>
+									<div class="clearfix"></div>
+								</div>
+								<div style="display:none;" class="chart_wrapper">
+									<h2 style="color:#A76E16;">金額 (港元)</h2>
+									<div id="chart2div" style="margin-bottom:20px; width:675px; height:290px;"></div>
+									<a href="javascript:;" class="btn btn_submit btn_final_submit">儲存為PDF檔案</a>
+									<div class="clearfix"></div>
+									<br />
+									<a href="javascript:;" class="btn btn_back">重新計算</a>
+								</div>
+							</form>
+						</div>
+						<!-- /form-innerwrapper -->
+						<!-- How much you will have wrapper end -->
+						<!-- Expenses wrapper start -->
+						<!-- form 3 -->
+						<div class="form-innerwrapper">
+							<form method="post" action="../pdfLong.do?lang=1" name="long_form" id="long_form">
+								<!-- 2013.12.20 start -->
+								<!-- hidden field for the PDF report -->
+								<input type="hidden" id="savingForImg" name="savingForImg" value="">
+								<input type="hidden" id="savingForWord" name="savingForWord" value="">
+								<input type="hidden" id="withCIA" name="withCIA" value="">
+								<input type="hidden" id="withoutCIA" name="withoutCIA" value="">
+								<input type="hidden" id="period" name="period" value="">
+								<input type="hidden" id="contribute" name="contribute" value="">
+								<input type="hidden" id="linechart_period" name="linechart_period" value="">
+								<input type="hidden" id="withCData" name="withCData" value="">
+								<input type="hidden" id="withoutCData" name="withoutCData" value="">
+								<input type="hidden" id="ticksValue" name="ticksValue" value="">
+								<input type="hidden" id="year" name="year" value="">
+								<input type="hidden" id="month" name="month" value="">
+								<input type="hidden" id="savingGoal" name="savingGoal" value="">
+								<!-- 2013.12.20 ended -->
+								<div class="panel_wrapper">
+									<h3>儲蓄需時多久?</h3>
+									<p>此計算機助你計算要達到你指定儲蓄目標的所需時間。</p>
+									<!-- goal start -->
+									<ul class="goal">
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo1" class="field1" checked="checked" />
+											<img src="../images/common/calculator/icon-education.png" alt="icon-education" width="34" height="34" /> 教育
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo2" class="field1" />
+											<img src="../images/common/calculator/icon-starting-a-business.png" alt="icon-starting-a-business" width="34" height="34" /> 創業
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo3" class="field1" />
+											<img src="../images/common/calculator/icon-saving-for-a-rainy-day.png" alt="icon-saving-for-a-rainy-day" width="34" height="34" /> 未雨綢繆
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo4" class="field1" />
+											<img src="../images/common/calculator/icon-wedding.png" alt="icon-wedding" width="34" height="34" /> 結婚
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo5" class="field1" />
+											<img src="../images/common/calculator/icon-housing.png" alt="icon-housing" width="34" height="34" /> 置業家居
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo6" class="field1" />
+											<img src="../images/common/calculator/icon-motor-vehicles.png" alt="icon-motor-vehicles" width="34" height="34" /> 買車
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo7" class="field1" />
+											<img src="../images/common/calculator/icon-having-a-baby.png" alt="icon-having-a-baby" width="34" height="34" /> 生育
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<!--
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo8" class="field1" />
+											<img src="../images/common/calculator/icon-retirement.png" alt="" width="34" height="34"/>
+											退休
+										</li>
+										-->
+										<!-- li end -->
+										<!-- li start -->
+										<li>
+											<input type="radio" name="long_rdo" id="long_rdo9" class="field1" />
+											<img src="../images/common/calculator/icon-holiday.png" alt="icon-holiday" width="34" height="34" /> 渡假
+										</li>
+										<!-- li end -->
+										<!-- li start -->
+										<li style="width:300px;">
+											<input type="radio" name="long_rdo" id="long_rdo_last" class="field1 input-radio-other" /> 其他
+											<input style="width:200px;" type="text" maxlength="15" name="long_txt_last" id="long_txt_last" class="field2 input-other" />
+										</li>
+										<!-- li end -->
+									</ul>
+									<!-- goal end -->
+									<div class="clearfix"></div>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blank-table need-to-save">
+										<tr>
+											<td class="topic qicon qicon2" width="203">目標金額 </td>
+											<td width="36">港元</td>
+											<td width="220">
+												<input type="text" maxlength="10" name="long_txt_g1" id="long_txt_g1" class="field3" />
+											</td>
+											<td width="195">&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="topic">現有儲蓄</td>
+											<td>港元</td>
+											<td>
+												<input type="text" maxlength="10" name="long_txt_g2" id="long_txt_g2" class="field4" />
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="topic qicon">定時儲蓄金額</td>
+											<td>港元</td>
+											<td>
+												<input type="text" maxlength="10" name="long_txt_g0" id="long_txt_g0" class="field3" />
+											</td>
+											<td style="padding-left:20px;">
+												<select id="tab3_saveperiod">
+													<option value="0">每周</option>
+													<option value="1" selected>每月</option>
+													<option value="2">每年</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td class="topic qicon qicon3" colspan="2">預期回報率</td>
+											<td>
+												<input type="text" maxlength="5" name="long_txt_g3" id="long_txt_g3" class="field5" />
+											</td>
+											<td style="padding-left:20px;">年利率%
+												<br>(最多可包含兩個小數點)</td>
+										</tr>
+									</table>
+									<a href="javascript:;" class="btn btn_reset long_form">重設</a>
+									<a href="javascript:;" class="btn btn_cal btn_long">計算</a>
+									<div class="clearfix"></div>
+								</div>
+								<div style="display:none;" class="chart_wrapper">
+									<h2 style="color:#A76E16;">金額 (港元)</h2>
+									<div id="chart3div" style="margin-bottom:20px; width:675px; height:290px;"></div>
+									<a href="javascript:;" class="btn btn_submit btn_long_submit">儲存為PDF檔案</a>
+									<div class="clearfix"></div>
+									<br />
+									<a href="javascript:;" class="btn btn_back">重新計算</a>
+								</div>
+							</form>
+						</div>
+						<!-- /form-innerwrapper -->
+						<!-- Expenses wrapper end -->
+					</div>
+					<!-- /form-wrapper -->
+				</div>
+				<!-- /calculator-innerwrapper-left -->
+				<div class="clearfix"></div>
+			</div>
+			<!-- /wrapper -->
+		</div>
+		<!-- /calculator -->
+	</div>
+	<div style="display:none;" id="cache-template1">
+		<div class="have-to-save">
+			<table cellpadding="0" cellspacing="0" border="0" class="blank-table">
+				<tr>
+					<td class="pr20">
+						<!--
+							<img src="../images/common/calculator/icon-summy-others.png" alt="" /> <br />
+							-->
+						__savingForImg__
+						<br />
+						<h3>__savingForWord__ </h3>
+					</td>
+					<td>
+						你需__perPeriod__
+						<!-- 每月/每年 -->儲蓄 <span>__withCIA__<!-- HKD 1,451.6 --></span>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- /have-to-save -->
+		<h3 class="topic1" style="padding-left:0; text-align:center; background-position:140px 0;">未雨綢繆 省回需儲蓄金額及更早達成儲蓄目標</h3>
+		<p>你越早開始實行儲蓄計劃，便可越早讓自己從複息效應中得益。你的儲蓄不單隨__perPeriod__
+			<!-- 每月/每年 -->定額本金增加，亦兼享利息增長所帶來的好處，利上加利。</p>
+		<p>與沒有複合利息之定時儲蓄相比較，在複息效應下，你__perPeriod__
+			<!-- 每月/每年 -->可 <span>__contribute__<!-- 節省 港元 198.4 --></span>。</p>
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" class="summary-table">
+			<thead>
+				<tr>
+					<td class="thead-left">複合利息</td>
+					<td>__perPeriod__
+						<!-- 每月/每年 -->須定時儲蓄的金額</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>有</td>
+					<td>__withCIA__
+						<!-- 港元 198.4 -->
+					</td>
+				</tr>
+				<tr>
+					<td>沒有</td>
+					<td>__withoutCIA__
+						<!-- 港元 198.4 -->
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="tfoot-left">&nbsp;</td>
+					<td>__contribute__
+						<!-- 節省 港元 198.4 -->
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		<p>除了__perPeriod__
+			<!-- 每月/每年 -->可節省需儲蓄金額外，你還可在複息效應下，更早達到自己的儲蓄目標。下列圖表列出你如何於你所指定的儲蓄期內，達成目標。</p>
+		<div class="bar-chart-wrapper">
+			<h3>
+				你需要儲蓄多少
+				<!-- 2013.12.27 start -->
+				<!-- select period to change chart period -->
+				<select id="ciSelect1">
+					<option value="0">周</option>
+					<option value="1">月</option>
+					<option value="2">年</option>
+				</select>
+				<!-- 2013.12.27 ended -->
+				</h3>
+			<div id="result_1_container" style="width:891px; height:500px; margin-top:50px;">
+				<div id="result_graph_1" style="width:891px; height:403px;"></div>
+				<div id="result_legend_1" style="width:891px; height:60px; font-size:20px; margin:0 auto;">
+					<table cellpadding="0" cellspacing="0" border="0" style="width:100%; margin:30px auto 0;">
+						<tbody>
+							<tr>
+								<td style="padding:0; width:330px;">
+									<div style="float:right; width:22px; height:22px; background:#3EA8A4; display:block;"></div>
+								</td>
+								<td style="padding:0; padding-left:8px; width:178px;"><span style="color:#666666; font-size:15px;">__ciwording1__</span></td>
+								<td style="padding:0; width:22px;">
+									<div style="width:22px; height:22px; background:#DC543A; display:block;"></div>
+								</td>
+								<td style="padding:0; padding-left:8px; widt:168px;"><span style="color:#666666; font-size:15px;">__ciwording2__</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- <img src="../images/common/img-demo-chart-07.jpg" alt="" width="891" height="500" /> -->
+		</div>
+		<!-- WHAT I DO NEXT START -->
+		<div class="do-next-wrapper">
+			<a href="javascript:;" class="btn-do-next">下一步該做什麼?</a>
+			<div class="do-next-innerwrapper">
+				<span>想知道更多關於
+		                     <a href="javascript:;" class="ex_link_0">置業安居</a> ，
+		                     <a href="javascript:;" class="ex_link_1">結婚</a> ，
+		                     <a href="javascript:;" class="ex_link_2">買車</a> 和
+		                     <a href="javascript:;" class="ex_link_3">生育</a>
+		                     </span>
+				<span>學習 <a href="javascript:;" class="ex_link_4">儲蓄為未來</a></span>
+				<span>認識更多關於
+		                     <a href="javascript:;" class="ex_link_5">財務策劃</a> 和
+		                     <a href="javascript:;" class="ex_link_6">怎樣展開財務策劃</a>
+		                     </span>
+			</div>
+			<!-- /do-next-innerwrapper -->
+		</div>
+		<!-- /do-next-wrapper -->
+		<!-- WHAT I DO NEXT END -->
+		<div class="tac">
+			<a href="javascript:;" class="btn btm_btn_submit" title="下載 PDF 版本">下載 PDF 版本</a>
+			<a href="javascript:;" class="btn btn_back" title="重新計算">重新計算</a>
+		</div>
+		<div class="clearfix"></div>
+		<!-- Rating / Feedback section -->
+		<div class="clear"></div>
+		<table border="0" cellspacing="0" cellpadding="0" class="opinion">
+			<tbody>
+				<tr>
+					<td width="50%" class="feedback">
+						<a href="mailto:info@thechinfamily.hk?subject=Feedback%20on%20Savings%20goal%20calculator&amp;" id="tab1_feedback"><img src="../images/common/calculator/btn-feedback-c.jpg"></a>
+					</td>
+					<td width="50%" valign="middle" class="rating">
+						<p><strong>你滿意這個儲蓄目標計算機嗎？</strong>
+							<br> (1分為最低，5分為最高)
+						</p>
+						<form>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										<input type="radio" name="rating" value="1" id="tab1_rating1">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="2" id="tab1_rating2">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="3" id="tab1_rating3">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="4" id="tab1_rating4">
+									</td>
+									<td boder="0">
+										<input type="radio" name="rating" value="5" id="tab1_rating5">
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+								</tr>
+							</table>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- End Rating / Feedback section -->
+	</div>
+	<div style="display:none;" id="cache-template2">
+		<div class="have-to-save">
+			<table cellpadding="0" cellspacing="0" border="0" class="blank-table">
+				<tr>
+					<td class="pr20">
+						<!--
+							<img src="../images/common/calculator/icon-summy-others.png" alt="" /> <br />
+							-->
+						__savingForImg__
+						<br />
+						<h3>__savingForWord__ </h3>
+					</td>
+					<td>
+						在儲蓄期完結時，你最終所得的儲蓄金額是<span>__withCIA__<!-- 港元 198.4 --></span>
+						<p class="tab2Phrase">&nbsp;</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- /have-to-save -->
+		<h3 class="topic2" style="background-position:280px 0;">盡早儲蓄 累積財富</h3>
+		<p>你越早開始實行儲蓄計劃，便可越早讓自己從複息效應中得益。你的儲蓄不單隨__perPeriod__
+			<!-- 每月/每年 -->定額本金增加，亦兼享利息增長所帶來的好處，利上加利。</p>
+		<p>與沒有複合利息之定時儲蓄相比較，在複息效應下，你將會在你指定的儲蓄期內<span>__contribute__<!-- 多獲 [港元xxxxx] --></span>。</p>
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" class="summary-table">
+			<thead>
+				<tr>
+					<td class="thead-left">複合利息</td>
+					<td>儲蓄期末時所得</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>有</td>
+					<td>__withCIA__
+						<!-- 港元 198.4 -->
+					</td>
+				</tr>
+				<tr>
+					<td>沒有</td>
+					<td>__withoutCIA__
+						<!-- 港元 198.4 -->
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="tfoot-left">&nbsp;</td>
+					<td>__contribute__
+						<!-- 多獲 [港元xxxxx] -->
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		<p>透過定時儲蓄固定金額，藉着複息效應，在儲蓄期末時你就能累積更多。下列圖表列出你於你所指定的儲蓄期內，最終可累積多少財富。</p>
+		<div class="bar-chart-wrapper">
+			<h3>
+				最終可儲蓄多少
+				<!-- 2013.12.27 start -->
+				<!-- select period to change chart period -->
+				<select id="ciSelect2">
+					<option value="0">周</option>
+					<option value="1">月</option>
+					<option value="2">年</option>
+				</select>
+				<!-- 2013.12.27 ended -->
+				</h3>
+			<div id="result_2_container" style="width:891px; height:500px; margin-top:50px;">
+				<div id="result_graph_2" style="width:891px; height:403px;"></div>
+				<div id="result_legend_2" style="width:891px; height:60px; font-size:20px; margin:0 auto;">
+					<table cellpadding="0" cellspacing="0" border="0" style="width:100%; margin:30px auto 0;">
+						<tbody>
+							<tr>
+								<td style="padding:0; width:330px;">
+									<div style="float:right; width:22px; height:22px; background:#3EA8A4; display:block;"></div>
+								</td>
+								<td style="padding:0; padding-left:8px; width:178px;"><span style="color:#666666; font-size:15px;">__ciwording1__</span></td>
+								<td style="padding:0; width:22px;">
+									<div style="width:22px; height:22px; background:#DC543A; display:block;"></div>
+								</td>
+								<td style="padding:0; padding-left:8px; widt:168px;"><span style="color:#666666; font-size:15px;">__ciwording2__</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- <img src="../images/common/img-demo-chart-07.jpg" alt="" width="891" height="500" /> -->
+		</div>
+		<!-- WHAT I DO NEXT START -->
+		<div class="do-next-wrapper">
+			<a href="javascript:;" class="btn-do-next">下一步該做什麼?</a>
+			<div class="do-next-innerwrapper">
+				<span>想知道更多關於
+		                     <a href="javascript:;" class="ex_link_0">置業安居</a> ，
+		                     <a href="javascript:;" class="ex_link_1">結婚</a> ，
+		                     <a href="javascript:;" class="ex_link_2">買車</a> 和
+		                     <a href="javascript:;" class="ex_link_3">生育</a>
+		                     </span>
+				<span>學習 <a href="javascript:;" class="ex_link_4">儲蓄為未來</a></span>
+				<span>認識更多關於
+		                     <a href="javascript:;" class="ex_link_5">財務策劃</a> 和
+		                     <a href="javascript:;" class="ex_link_6">怎樣展開財務策劃</a>
+		                     </span>
+			</div>
+			<!-- /do-next-innerwrapper -->
+		</div>
+		<!-- /do-next-wrapper -->
+		<!-- WHAT I DO NEXT END -->
+		<div class="tac">
+			<a href="javascript:;" class="btn btm_btn_submit" title="下載 PDF 版本">下載 PDF 版本</a>
+			<a href="javascript:;" class="btn btn_back" title="重新計算">重新計算</a>
+		</div>
+		<div class="clearfix"></div>
+		<!-- Rating / Feedback section -->
+		<div class="clear"></div>
+		<table border="0" cellspacing="0" cellpadding="0" class="opinion">
+			<tbody>
+				<tr>
+					<td width="50%" class="feedback">
+						<a href="mailto:info@thechinfamily.hk?subject=Feedback%20on%20Savings%20goal%20calculator&amp;" id="tab2_feedback"><img src="../images/common/calculator/btn-feedback-c.jpg"></a>
+					</td>
+					<td width="50%" valign="middle" class="rating">
+						<p><strong>你滿意這個儲蓄目標計算機嗎？</strong>
+							<br> (1分為最低，5分為最高)
+						</p>
+						<form>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										<input type="radio" name="rating" value="1" id="tab2_rating1">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="2" id="tab2_rating2">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="3" id="tab2_rating3">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="4" id="tab2_rating4">
+									</td>
+									<td boder="0">
+										<input type="radio" name="rating" value="5" id="tab2_rating5">
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+								</tr>
+							</table>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- End Rating / Feedback section -->
+	</div>
+	<div style="display:none;" id="cache-template3">
+		<div class="have-to-save">
+			<table cellpadding="0" cellspacing="0" border="0" class="blank-table">
+				<tr>
+					<td class="pr20">
+						<!--
+							<img src="../images/common/calculator/icon-summy-others.png" alt="" /> <br />
+							-->
+						__savingForImg__
+						<br />
+						<h3>__savingForWord__ </h3>
+					</td>
+					<td>
+						要達到你的目標，你將需要 <span>__result__<!-- HKD 1,451.6 --></span>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- /have-to-save -->
+		<h3 class="topic3" style="background-position:245px 0;">盡早儲蓄 及早成就目標</h3>
+		<p>同樣__perPeriod__
+			<!-- 每月/每年 -->儲蓄固定金額，你越早開展儲蓄計劃，透過複息效應，你就能更早成就目標。你的儲蓄不單隨__perPeriod__
+			<!-- 每月/每年 -->定額本金增加，亦兼享利息增長所帶來的好處，利上加利。</p>
+		<p>與沒有複合利息的定時儲蓄相比較，在複息效應下，你可 <span>__contribute__</span> 達成儲蓄目標。</p>
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" class="summary-table">
+			<thead>
+				<tr>
+					<td class="thead-left">複合利息</td>
+					<td>達成儲蓄目標需時</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>有</td>
+					<td>__withCIA__
+						<!-- HKD 1,451.6 -->
+					</td>
+				</tr>
+				<tr>
+					<td>沒有</td>
+					<td>__withoutCIA__
+						<!-- HKD 1,649 -->
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="tfoot-left">&nbsp;</td>
+					<td>__contribute__
+						<!-- HKD 198.4 less -->
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		<p>透過定時儲蓄固定金額，在複息效應下，你便能更早達成心願，實現儲蓄目標。下列圖表列出你所指定的儲蓄金額將需要多久才達成儲蓄目標。</p>
+		<div class="bar-chart-wrapper">
+			<h3>
+				儲蓄需時多久
+				<!-- 2013.12.27 start -->
+				<!-- select period to change chart period -->
+				<select id="ciSelect3">
+					<option value="0">周</option>
+					<option value="1">月</option>
+					<option value="2">年</option>
+				</select>
+				<!-- 2013.12.27 ended -->
+				</h3>
+			<div id="result_3_container" style="width:891px; height:500px; margin-top:50px;">
+				<div id="result_graph_3" style="width:891px; height:403px;"></div>
+				<div id="result_legend_3" style="width:891px; height:60px; font-size:20px; margin:0 auto;">
+					<table cellpadding="0" cellspacing="0" border="0" style="margin:30px auto 0;">
+						<tbody>
+							<tr>
+								<td style="padding:0; width:22px;">
+									<div style="float:right; width:22px; height:22px; background:#3EA8A4; display:block;"></div>
+								</td>
+								<td style="padding:0; padding-left:8px; width:158px;"><span style="color:#666666; font-size:15px;">__ciwording1__</span></td>
+								<td style="padding:0; width:22px;">
+									<div style="width:22px; height:22px; background:#DC543A; display:block;"></div>
+								</td>
+								<td style="padding:0; padding-left:8px; width:158px;"><span style="color:#666666; font-size:15px;">__ciwording2__</span></td>
+								<td style="padding:0; width:22px;">
+									<div style="width:22px; height:22px; background:#666666; display:block;"></div>
+								</td>
+								<td style="padding:0; padding-left:8px; "><span style="color:#666666; font-size:15px;">目標金額</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- <img src="../images/common/img-demo-chart-07.jpg" alt="" width="891" height="500" /> -->
+		</div>
+		<!-- WHAT I DO NEXT START -->
+		<div class="do-next-wrapper">
+			<a href="javascript:;" class="btn-do-next">下一步該做什麼?</a>
+			<div class="do-next-innerwrapper">
+				<span>想知道更多關於
+		                     <a href="javascript:;" class="ex_link_0">置業安居</a> ，
+		                     <a href="javascript:;" class="ex_link_1">結婚</a> ，
+		                     <a href="javascript:;" class="ex_link_2">買車</a> 和
+		                     <a href="javascript:;" class="ex_link_3">生育</a>
+		                     </span>
+				<span>學習 <a href="javascript:;" class="ex_link_4">儲蓄為未來</a></span>
+				<span>認識更多關於
+		                     <a href="javascript:;" class="ex_link_5">財務策劃</a> 和
+		                     <a href="javascript:;" class="ex_link_6">怎樣展開財務策劃</a>
+		                     </span>
+			</div>
+			<!-- /do-next-innerwrapper -->
+		</div>
+		<!-- /do-next-wrapper -->
+		<!-- WHAT I DO NEXT END -->
+		<div class="tac">
+			<a href="javascript:;" class="btn btm_btn_submit" title="下載 PDF 版本">下載 PDF 版本</a>
+			<a href="javascript:;" class="btn btn_back" title="重新計算">重新計算</a>
+		</div>
+		<div class="clearfix"></div>
+		<!-- Rating / Feedback section -->
+		<div class="clear"></div>
+		<table border="0" cellspacing="0" cellpadding="0" class="opinion">
+			<tbody>
+				<tr>
+					<td width="50%" class="feedback">
+						<a href="mailto:info@thechinfamily.hk?subject=Feedback%20on%20Savings%20goal%20calculator&amp;" id="tab3_feedback"><img src="../images/common/calculator/btn-feedback-c.jpg"></a>
+					</td>
+					<td width="50%" valign="middle" class="rating">
+						<p><strong>你滿意這個儲蓄目標計算機嗎？</strong>
+							<br> (1分為最低，5分為最高)
+						</p>
+						<form>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										<input type="radio" name="rating" value="1" id="tab3_rating1">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="2" id="tab3_rating2">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="3" id="tab3_rating3">
+									</td>
+									<td>
+										<input type="radio" name="rating" value="4" id="tab3_rating4">
+									</td>
+									<td boder="0">
+										<input type="radio" name="rating" value="5" id="tab3_rating5">
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+								</tr>
+							</table>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- End Rating / Feedback section -->
+	</div>
+	<div class="clearfix footerfix"></div>
+	<div class="footercontenter">
+		<div id="site-footer" class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="footer-left">
+							<div class="footer-logo">
+								<a href="http://www.thechinfamily.hk/web/iec/tc/">
+									<img src="../images/common/iec-hk-logo.png" alt="" title="" />
+								</a>
+							</div>
+							<div class="footer-statement">
+								<p>錢家有道由投資者教育中心管理，
+									<br/>並獲教育局及金融監管機構支持。</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="footer-right">
+							<div class="input-group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-sm-push-5">
+						<div class="footer-hyperlinks-wrapper">
+							<ul id="footer-hyperlinks" class="footer-menu footer-hyperlinks">
+								<li><a href="https://www.thechinfamily.hk/web/common/apps/tc/contact_enquiry.html">聯絡我們</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/sitemap.html">網站指南</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/liability-statement.html">免責聲明</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/privacy-policy.html">私隱政策聲明</a></li>
+								<li><a href="https://www.thechinfamily.hk/web/tc/others/hyperlink-policy.html">超連結政策</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-sm-pull-7">
+						<p class="footer-copyright">© 2016 投資者教育中心 版權所有。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 2013.10.28 to include header & footer -->
+	<!--	<div class="clearfix"></div>-->
+	<!--	<div class="footer">-->
+	<!--		<div class="click-link-wrapper">-->
+	<!--			<div id="sys_footerTopDiv" class="innerwrapper"></div>-->
+	<!-- /innerwrapper -->
+	<!--		</div>-->
+	<!-- /click-link-wrapper -->
+	<!--		<div id="sys_footerDiv">-->
+	<!--*** Include footer_inner.html here ***-->
+	<!--		</div>-->
+	<!--
+		<script>
+//			ts_loadInclude("sys_footerDiv", root_path + "/" + lang + "/include/footer_inner.html");
+		</script>
+-->
+	<!--	</div>-->
+	<!--
+	<div class="clearfix"></div>
+	<div id="sys_footerBottomDiv" class="footer-hyper-link"></div>
+-->
+	<!-- 2013.10.28 to include header & footer ended -->
+</body>
+<!-- 2013.10.28 to include header & footer -->
+<script>
+	iecGlobalUpdate(lang);
+</script>
+<!-- 2013.10.28 to include header & footer ended -->
+<!-- Fancybox for DISCLAIMER -->
+<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<!-- script & css to include for using jqplot and frontend calculator -->
+<script src="../js/jquery.jqplot.js"></script>
+<script src="../js/jqplot.dateAxisRenderer.js"></script>
+<script src="../js/jqplot.canvasTextRenderer.js"></script>
+<script type="text/javascript" src="../js/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script src="../js/jqplot.canvasAxisTickRenderer.js"></script>
+<script src="../js/jqplot.categoryAxisRenderer.js"></script>
+<script src="../js/jqplot.barRenderer.js"></script>
+<script src="../js/jqplot.highlighter.min.js"></script>
+<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="../js/excanvas.js"></script><![endif]-->
+<script src="../js/cal.saving.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/jquery.jqplot.css" />
+</html>
